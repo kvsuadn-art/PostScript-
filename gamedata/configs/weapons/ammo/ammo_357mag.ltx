@@ -1,0 +1,38 @@
+[ammo_357_hp_mag]:identity_immunities,default_weapon_params
+GroupControlSection	= spawn_group
+discovery_dependency = 
+$spawn			= "weapons\wpn_ammo\ammo_357_hp_mag" ; option for Level Editor
+class			= AMMO
+cform                   = skeleton
+visual                  = dynamics\weapons\wpn_ammo\ammo_357_jhp.ogf
+description		= ammo-357_hp_mag_descr
+$prefetch 		= 64
+
+cost			= 250
+
+box_size		= 50	
+
+inv_name		= ammo-357_hp_mag
+inv_name_short		= ammo-357_hp_mag_s
+inv_weight		= 0.25
+
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x		= 8
+inv_grid_y		= 29
+
+k_dist			= 1000000	;1.0
+k_disp			= 1.0
+k_hit			= 1.25
+k_impulse		= 1.5
+k_pierce		= 1.0
+k_ap			= 0.1
+impair			= 1.15
+buck_shot		= 1
+tracer			= on
+wm_size        		= 0.05
+
+;belt				= true;
+slot				= -1
+explosive			= false
+

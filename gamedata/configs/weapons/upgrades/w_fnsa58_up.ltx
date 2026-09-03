@@ -1,0 +1,421 @@
+; Fluffy22
+
+;***************************************
+; Effects
+;***************************************
+
+; Tier 1
+[up_sect_a1_fnsa58]
+cost		      		= 2700
+value					= -30
+
+cam_dispersion              = -0.23		;0.5
+cam_dispersion_inc         	= -0.23		;0.5
+cam_step_angle_horz        	= -0.3		;1.5
+
+zoom_cam_dispersion          = -0.18	;0.5
+zoom_cam_dispersion_inc      = -0.18	;0.5
+zoom_cam_step_angle_horz     = -0.23 	;1.0
+
+[up_sect_b1_fnsa58]
+cost		      		= 2700
+value					= +10
+misfire_probability 	= -0.00006
+condition_shot_dec 		= -0.000015
+
+[up_sect_c1_fnsa58]
+cost		      		= 2700
+value					= -0.45
+inv_weight				= -0.45
+
+[up_sect_d1_fnsa58]
+cost		      		= 2700
+value					= +10
+ammo_mag_size           = 10
+
+
+; Tier 2
+[up_sect_a2_fnsa58]
+cost		      		= 4050
+value					= +25
+rpm						= 150
+
+[up_sect_a3_fnsa58]
+cost		      		= 4050
+value					= +20
+fire_dispersion_base	= -0.14 	;1
+
+[up_sect_b2_fnsa58]
+cost		      		= 4050
+value					= -20
+
+cam_dispersion              = -0.14		;0.5
+cam_dispersion_inc         	= -0.14		;0.5
+cam_step_angle_horz        	= -0.2		;1.5
+
+zoom_cam_dispersion          = -0.1		;0.5
+zoom_cam_dispersion_inc      = -0.1		;0.5
+zoom_cam_step_angle_horz     = -0.14 	;1.0
+
+[up_sect_b3_fnsa58]
+cost		      		= 4050
+value					= +50
+bullet_speed			= 200
+hit_power				= 0.9, 0.9, 0.9, 0.9
+
+[up_sect_c2_fnsa58]
+cost					= 4050
+value		            = +15
+control_inertion_factor = -0.15
+inv_weight              = -0.675
+PDM_disp_vel_factor 	= -0.3 ;1.3
+PDM_disp_accel_factor 	= -0.3 ;1.3
+
+[up_sect_c3_fnsa58]
+cost					= 4050
+value					= -20
+
+cam_dispersion              = -0.14		;0.5
+cam_dispersion_inc         	= -0.14		;0.5
+cam_step_angle_horz        	= -0.2		;1.5
+
+zoom_cam_dispersion          = -0.1		;0.5
+zoom_cam_dispersion_inc      = -0.1		;0.5
+zoom_cam_step_angle_horz     = -0.14 	;1.0
+
+
+; Tier 3
+[up_sect_a4_fnsa58]
+cost		      		= 5400
+value					= +25
+rpm						= 150
+
+prerequired_upgrades	= up_sect_a2_fnsa58, up_sect_a3_fnsa58
+
+[up_sect_a5_fnsa58]
+cost		      		= 5400
+value					= +20
+fire_dispersion_base	= -0.14 	;1
+
+prerequired_upgrades	= up_sect_a2_fnsa58, up_sect_a3_fnsa58
+
+[up_sect_b4_fnsa58]
+cost		      		= 5400
+silencer_status			= 2
+silencer_name           = wpn_addon_silencer
+silencer_x              = 195
+silencer_y              = 8
+
+silencer_smoke_particles   = weapons\generic_shoot_00
+snd_silncer_shot        = weapons\w_ak74_shot1
+
+prerequired_upgrades	= up_sect_b2_fnsa58, up_sect_b3_fnsa58
+
+;***************************************
+; Properties
+;***************************************
+
+; Tier 1
+
+[up_a1_fnsa58]
+scheme_index            = 0, 0
+known                   = 1
+effects                 = up_gr_a2or3_fnsa58, up_gr_a4or5_fnsa58
+section                 = up_sect_a1_fnsa58
+property                = prop_recoil
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = on_weapon_upgrade_something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_porsh_recoil
+description             = st_upg_porsh_recoil_descr
+icon                    = ui_wp_upgrade_41
+
+;;...
+[up_b1_fnsa58]
+scheme_index            = 0, 1
+known                   = 1
+effects                 = up_gr_b2or3_fnsa58, up_gr_b4_fnsa58
+section                 = up_sect_b1_fnsa58
+property                = prop_reliability 
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_hard_barrel_curved
+description             = st_upg_hard_barrel_curved_descr
+icon                    = ui_wp_upgrade_48
+
+[up_c1_fnsa58]
+scheme_index            = 0, 2
+known                   = 1
+effects                 = up_gr_c2or3_fnsa58
+section                 = up_sect_c1_fnsa58
+property                = prop_weight 
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_poly_weight
+description             = st_upg_poly_weight_descr
+icon                    = ui_wp_upgrade_47
+
+[up_d1_fnsa58]
+scheme_index            = 0, 3
+known                   = 1
+effects                 = 
+section                 = up_sect_d1_fnsa58
+property                = prop_ammo_size 
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_charger_big
+description             = st_upg_charger_big_descr
+icon                    = ui_wp_upgrade_19
+
+[up_a2_fnsa58]
+scheme_index            = 1, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a2_fnsa58
+property                = prop_rpm
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_zatvor_rpm
+description             = st_upg_zatvor_rpm_descr
+icon                    = ui_wp_upgrade_30
+
+[up_a3_fnsa58]
+scheme_index            = 1, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_a3_fnsa58
+property                = prop_dispersion
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_zatvor_recoil
+description             = st_upg_zatvor_recoil_descr
+icon                    = ui_wp_upgrade_31
+
+
+[up_b2_fnsa58]
+scheme_index            = 1, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b2_fnsa58
+property                = prop_recoil
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_barrel_recoil
+description             = st_upg_barrel_recoil_descr
+icon                    = ui_wp_upgrade_24
+
+
+[up_b3_fnsa58]
+scheme_index            = 1, 3
+known                   = 1
+effects                 = 
+section                 = up_sect_b3_fnsa58
+property                = prop_bullet_speed
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_barrel_curved
+description             = st_upg_barrel_curved_descr
+icon                    = ui_wp_upgrade_18
+
+[up_c2_fnsa58]
+scheme_index            = 1, 4
+known                   = 1
+effects                 = 
+section                 = up_sect_c2_fnsa58
+property                = prop_inertion
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_butt_recoil3
+description             = st_upg_butt_recoil3_descr
+icon                    = ui_wp_upgrade_15
+
+[up_c3_fnsa58]
+scheme_index            = 1, 5
+known                   = 1
+effects                 = 
+section                 = up_sect_c3_fnsa58
+property                = prop_recoil
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_butt_recoil
+description             = st_upg_butt_recoil_descr
+icon                    = ui_wp_upgrade_16
+
+
+[up_a4_fnsa58]
+scheme_index            = 2, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a4_fnsa58
+property                = prop_rpm
+
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_auto_rpm
+description             = st_upg_auto_rpm_descr
+icon                    = ui_wp_upgrade_38
+
+[up_a5_fnsa58]
+scheme_index            = 2, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_a5_fnsa58
+property                = prop_dispersion
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+; ui
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_trigger_accur
+description             = st_upg_trigger_accur_descr
+icon                    = ui_wp_upgrade_34
+
+[up_b4_fnsa58]
+scheme_index            = 2, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b4_fnsa58
+property                = prop_silencer
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_bind_silencer
+description             = st_upg_bind_silencer_descr
+icon                    = ui_wp_upgrade_36
+
+
+
+;***************************************
+; Handlers
+;***************************************
+
+; Tier 1
+[up_gr_a1_fnsa58]
+elements                = up_a1_fnsa58
+[up_gr_b1_fnsa58]
+elements                = up_b1_fnsa58
+[up_gr_c1_fnsa58]
+elements                = up_c1_fnsa58
+[up_gr_d1_fnsa58]
+elements                = up_d1_fnsa58
+
+;Tier 2
+[up_gr_a2or3_fnsa58]
+elements                = up_a2_fnsa58, up_a3_fnsa58
+[up_gr_b2or3_fnsa58]
+elements                = up_b2_fnsa58, up_b3_fnsa58
+[up_gr_c2or3_fnsa58]
+elements                = up_c2_fnsa58, up_c3_fnsa58
+
+;Tier 3
+[up_gr_a4or5_fnsa58]
+elements                = up_a4_fnsa58, up_a5_fnsa58
+[up_gr_b4_fnsa58]
+elements                = up_b4_fnsa58
+
