@@ -1,0 +1,35 @@
+<w>
+	<window x="0" y="0" width="494" height="193">
+		<texture x="0" y="0" width="494" height="193">ui\ui_ps_dialogs</texture>
+	</window>
+	
+	<sleep_icon x="30" y="65" width="77" height="77">
+		<texture x="500" y="100" width="77" height="77">ui\ui_ps_dialogs</texture>
+	</sleep_icon>
+	
+	<button_sleep x="245" y="158" width="111" height="29">
+		<text align="c" font="letterica16" r="227" g="199" b="178">ui_ps_sleep_start</text>	
+		<texture>ui_button_ordinary</texture>			
+	</button_sleep>
+	
+	<button_cancel x="370" y="158" width="111" height="29">
+		<text align="c" font="letterica16" r="227" g="199" b="178">ui_ps_sleep_cancel</text>	
+		<texture>ui_button_ordinary</texture>			
+	</button_cancel>
+	
+	<button_left x="200" y="130" width="40" height="25">
+		<texture>ui_button_arrow_left</texture>			
+	</button_left>
+	
+	<button_right x="313" y="130" width="40" height="25">
+		<texture>ui_button_arrow_right</texture>			
+	</button_right>
+	
+	<value_sleep_time x="245" y="133" width="58" height="29">
+		<text align="l" x="0" y="0" font="letterica16" r="227" g="199" b="178"/>
+	</value_sleep_time>
+	
+	<value_sleep_info x="165" y="40" width="58" height="29">
+		<text align="l" x="0" y="0" font="letterica16" r="227" g="199" b="178">ui_ps_sleep_info</text>
+	</value_sleep_info>
+</w>

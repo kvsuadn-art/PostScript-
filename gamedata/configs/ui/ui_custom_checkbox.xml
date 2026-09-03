@@ -1,0 +1,9 @@
+<w> 
+	<button_off x="0" y="0" width="30" height="23">
+		<texture>ui_checker</texture>
+	</button_off>
+	
+	<button_on x="0" y="0" width="30" height="23">
+		<texture>ui_checker_on</texture>
+	</button_on>
+</w>

@@ -1,0 +1,1770 @@
+﻿<w>
+  <main x="0" y="0" width="331" height="768" >
+    <auto_static x="0" y="0" width="331" height="142">
+		<texture>ui_inGame2_left_top</texture>
+	</auto_static>
+  </main>
+  <scheme x="0" y="280" width="331" height="488" />
+  <property x="50" y="15" width="19" height="19" />
+  
+  <background x="0" y="141" width="331" height="627">
+    <texture>ui_inv_mechanic_back</texture>
+  </background>
+  
+  <!--delimiter  x="0" y="260" width="330" height="19">
+    <texture a="0">ui_inv_delimiter</texture>
+  </delimiter-->
+
+  <repair_button x="264" y="212" width="56" height="57">
+    <window_name>repair_button</window_name>
+	<texture>ui_bt_repair</texture>
+	<hint_text delay="800">ui_repair_button_hint</hint_text>
+  </repair_button>
+
+  <border texture="ui_bt_upgrade_border" />
+  <inking texture="ui_bt_upgrade_chain" />
+
+  <cell_states>
+    <state>
+      <type>enabled</type>
+      <back_texture></back_texture>
+    </state>
+
+    <state>
+      <type>highlight</type>
+      <back_texture></back_texture>
+    </state>
+
+    <state>
+      <type>touched</type>
+      <back_texture></back_texture>
+    </state>
+
+    <state>
+      <type>selected</type>
+      <back_texture>ui_bt_upgrade_taken</back_texture>
+    </state>
+
+    <state>
+      <type>unknown</type>
+      <back_texture>ui_bt_upgrade_unknown</back_texture>
+    </state>
+	
+    <state>
+      <type>disabled_parent</type>
+      <back_texture>ui_bt_upgrade_not_allowed</back_texture>
+    </state>
+
+    <state>
+      <type>disabled_group</type>
+      <back_texture>ui_bt_upgrade_dissabled</back_texture>
+    </state>
+
+    <state>
+      <type>disabled_money</type>
+      <back_texture>ui_bt_upgrade_not_allowed</back_texture>
+    </state>
+	
+    <state>
+      <type>disabled_quest</type>
+      <back_texture>ui_bt_upgrade_not_allowed</back_texture>
+    </state>
+
+  </cell_states>
+
+  <templates>
+	<cell_item   x="0"  y="0"  width="70"  height="40"/>
+  	<cell_border x="-5" y="-5" width="105" height="56"/>
+
+    <template name="upgrade_scheme_u20a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+     </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="385" />
+      </column>
+
+      <column>
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="195" />
+        <cell x="220" y="290" />        
+      </column>
+
+    </template>
+
+    <template name="upgrade_scheme_u20">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+        <cell x="20" y="430" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+      </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+        <cell x="220" y="385" />
+        <cell x="220" y="430" />
+      </column>
+
+    </template>
+
+   <template name="upgrade_scheme_u19">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+	  </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+        <cell x="220" y="385" />
+      </column>
+
+    </template>
+	
+	<template name="upgrade_scheme_u19a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+     </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />        
+      </column>
+
+      <column>
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="195" />
+        <cell x="220" y="290" />        
+      </column>
+
+    </template>
+
+   <template name="upgrade_scheme_u18">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+        <cell x="20" y="430" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="195" />
+        <cell x="220" y="240" />
+      </column>
+
+    </template>
+    
+   <template name="upgrade_scheme_u17b">
+	<!-- ����� ������� �� 17� ??? -->
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+        <cell x="220" y="385" />
+      </column>
+
+    </template>
+
+   <template name="upgrade_scheme_u17a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+        <cell x="220" y="385" />
+      </column>
+
+    </template>
+
+   <template name="upgrade_scheme_u17">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+        <cell x="20" y="430" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>
+
+   <template name="upgrade_scheme_u16b">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+	</column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+
+   <template name="upgrade_scheme_u16a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+	
+   <template name="upgrade_scheme_u16">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+        <cell x="20" y="430" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+
+	<template name="upgrade_scheme_u15a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="385" />
+       </column>
+
+      <column>
+        <cell x="220" y="385" />
+      </column>
+
+    </template>		
+	
+	<template name="upgrade_scheme_u15">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+       </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+
+    <template name="upgrade_scheme_u14">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+      </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+	
+    <template name="upgrade_scheme_u14a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+      </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+
+    </template>	
+	
+	<template name="upgrade_scheme_u14b">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+		<cell x="120" y="385" />
+      </column>
+
+    </template>
+	
+    <template name="upgrade_scheme_u13">
+
+      <column>
+        <cell x="20" y="30"  />
+        <cell x="20" y="75"  />
+        <cell x="20" y="130" />
+        <cell x="20" y="175" />
+        <cell x="20" y="230" />
+        <cell x="20" y="280" />
+      </column>
+
+      <column>
+        <cell x="120" y="80"  />
+        <cell x="120" y="125" />
+        <cell x="120" y="230" />
+        <cell x="120" y="280" />
+      </column>
+
+      <column>
+        <cell x="220" y="180" />
+        <cell x="220" y="230" />
+        <cell x="220" y="280" />
+      </column>
+
+    </template>
+	
+	<template name="upgrade_scheme_u13a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+      </column>
+
+    </template>
+		
+    <template name="upgrade_scheme_u12">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+      </column>
+
+    </template>
+	
+    <template name="upgrade_scheme_u11a">
+
+	  <column>
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+     </column>
+
+      <column>
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+      </column>
+      
+      <column>
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+	
+	</template>
+	
+    <template name="upgrade_scheme_u11">
+
+	  <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+    </template>
+	
+    <template name="upgrade_scheme_u10a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+    </template>
+	
+    <template name="upgrade_scheme_u10">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />		
+      </column>
+
+    </template>
+	
+    <template name="upgrade_scheme_u9">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+	    </template>
+		
+    <template name="upgrade_scheme_u9a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="195" />	
+      </column>
+
+    </template>		
+	
+    <template name="upgrade_scheme_u9b">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="100" />
+        <cell x="20" y="195" />
+        <cell x="20" y="290" />
+        <cell x="20" y="385" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="240" />
+      </column>
+
+      <column>
+        <cell x="220" y="145" />
+        <cell x="220" y="335" />		
+      </column>
+
+    </template>	
+
+    <template name="upgrade_scheme_u9c">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"  />
+        <cell x="120" y="50" />
+      </column>
+
+	    </template>
+	    
+    <template name="upgrade_scheme_u9d">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+	    </template>
+
+    <template name="upgrade_scheme_u8a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+        <cell x="20" y="290" />
+      </column>
+
+      <column>
+        <cell x="120" y="290" />
+      </column>
+
+    </template>	
+	
+    <template name="upgrade_scheme_u8">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="200" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+      <column>
+        <cell x="220" y="75" />
+      </column>
+
+    </template>	
+
+    <template name="upgrade_scheme_u7a">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="200" />
+      </column>
+
+      <column>
+        <cell x="120" y="25"  />
+        <cell x="120" y="122" />
+      </column>
+
+    </template>
+
+    <template name="upgrade_scheme_u7">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="55"  />
+        <cell x="20" y="105" />
+        <cell x="20" y="155" />
+        <cell x="20" y="205" />
+        <cell x="20" y="255" />
+        <cell x="20" y="305" />
+      </column>
+
+    </template>
+
+    <template name="upgrade_scheme_u6">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+      </column>
+
+    </template>
+		
+    <template name="upgrade_scheme_u5">
+
+      <column>
+        <cell x="20" y="30"  />
+        <cell x="20" y="75"  />
+        <cell x="20" y="130" />
+        <cell x="20" y="175" />
+        <cell x="20" y="230" />
+      </column>
+
+    </template>
+
+    <template name="upgrade_scheme_u3">
+
+      <column>
+        <cell x="20" y="30"  />
+        <cell x="20" y="80"  />
+        <cell x="20" y="130" />
+      </column>
+
+    </template>
+
+    <template name="upgrade_scheme_g1">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+        <cell x="20" y="240" />
+      </column>
+
+      <column>
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+
+	</template>
+
+    <template name="upgrade_scheme_g2">
+
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+      </column>
+
+      <column>
+        <cell x="120" y="25"  />
+        <cell x="120" y="125" />
+      </column>	
+
+    </template>
+	
+	
+	<!-- modded suit - jacket -->
+	<template name="upgrade_scheme_jacket">
+      <column>
+        <cell x="20" y="5"   />
+        <cell x="20" y="50"  />
+        <cell x="20" y="100" />
+      </column>
+
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+       </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="220" y="100" />
+      </column>
+    </template>	
+
+	<!-- modded suit - sunrise -->
+	<template name="upgrade_scheme_sunrise">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="290" />
+        <cell x="220" y="335" />
+      </column>
+    </template>		
+	
+	<!-- modded suit - wind of freedom -->
+	<template name="upgrade_scheme_wfreedom">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="28"   />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+      </column>
+    </template>		
+	
+	<!-- modded suit - cs-3a -->
+	<template name="upgrade_scheme_cs3a">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+      </column>
+    </template>	
+
+	<!-- modded suit - cs-1 -->
+	<template name="upgrade_scheme_cs1">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+		<cell x="220" y="408" />
+      </column>
+    </template>	
+	
+	<!-- modded suit - berill -->
+	<template name="upgrade_scheme_specops">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="123" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+       </column>
+
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="290" />
+        <cell x="220" y="335" />
+      </column>
+    </template>	
+
+	<!-- modded suit - bulat -->
+	<template name="upgrade_scheme_bulat">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="385" />
+        <cell x="220" y="430" />
+      </column>
+    </template>	
+	
+	<!-- modded suit - guardian of freedom -->
+	<template name="upgrade_scheme_gfreedom">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="290" />
+        <cell x="220" y="335" />
+      </column>
+    </template>	
+	
+	<!-- modded suit - ssp99-->
+	<template name="upgrade_scheme_ssp99">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="195" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+    </template>	
+
+	<!-- modded suit - merc -->
+	<template name="upgrade_scheme_merc">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="217" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+      </column>
+    </template>	
+
+	<!-- modded suit - seva -->
+	<template name="upgrade_scheme_seva">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="290" />
+        <cell x="220" y="335" />
+        <cell x="220" y="408" />
+      </column>
+    </template>	
+
+	<!-- modded suit - exo -->
+	<template name="upgrade_scheme_exo">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="123" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="385" />
+        <cell x="220" y="430" />
+      </column>
+    </template>	
+
+	<!-- modded suit - exo (has upgrade to enable running) -->
+	<template name="upgrade_scheme_exo_up_run">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="290" />
+        <cell x="20" y="335" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="123" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="385" />
+        <cell x="120" y="430" />
+       </column>
+
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+        <cell x="220" y="240" />
+        <cell x="220" y="385" />
+        <cell x="220" y="430" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - pm -->
+	<template name="upgrade_scheme_pm">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="195" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - pb -->
+	<template name="upgrade_scheme_pb">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="123" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="123" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - colt -->
+	<template name="upgrade_scheme_colt">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="195" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - gp100 revolver -->
+	<template name="upgrade_scheme_gp100">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="100" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="5"  />
+        <cell x="220" y="50" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - spas12 -->
+	<template name="upgrade_scheme_spas12">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <!--cell x="20" y="290" /-->
+        <cell x="20" y="313" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="195" />
+        <cell x="220" y="240" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - prtoecta -->
+	<template name="upgrade_scheme_protecta">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="195" />
+        <cell x="220" y="240" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - toz34-->
+	<template name="upgrade_scheme_toz34">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="123" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - bm16-->
+	<template name="upgrade_scheme_bm16">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+      </column>
+
+      <column>
+        <cell x="120" y="28"  />
+        <cell x="120" y="123" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - abakan-->
+	<template name="upgrade_scheme_abakan">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="408" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="313" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - akm74-->
+	<template name="upgrade_scheme_akm74">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="408" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="313" />
+		<cell x="220" y="408" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - SIG 5K-->
+	<template name="upgrade_scheme_sig550">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+        <cell x="20" y="385" />
+        <cell x="20" y="430" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="408" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="217" />
+        <cell x="220" y="313" />
+		<cell x="220" y="408" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - lr300-->
+	<template name="upgrade_scheme_lr300">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="290" />
+        <cell x="120" y="335" />
+        <cell x="120" y="408" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="313" />
+		<cell x="220" y="408" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - val -->
+	<template name="upgrade_scheme_val">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="195" />
+      </column>
+
+      <column>
+        <cell x="120" y="28"  />
+        <cell x="120" y="123" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - svd & svu-->
+	<template name="upgrade_scheme_svd">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="195" />
+		<cell x="20" y="240" />
+      </column>
+
+      <column>
+        <cell x="120" y="28"  />
+        <cell x="120" y="126" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - tunder-->
+	<template name="upgrade_scheme_groza">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="100" />
+        <cell x="20" y="145" />
+        <cell x="20" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="145" />
+        <cell x="220" y="195" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - akm74u-->
+	<template name="upgrade_scheme_ak74u">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+      </column>
+	  
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+      </column>
+	  
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="123" />
+      </column>
+    </template>	
+	
+	<!-- modded weapon - pkm-->
+	<template name="upgrade_scheme_pkm">
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="123" />
+        <cell x="20" y="217" />
+        <cell x="20" y="313" />
+		<cell x="20" y="408" />
+      </column>
+	  
+      <column>
+        <cell x="120" y="28"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+        <cell x="120" y="195" />
+        <cell x="120" y="240" />
+        <cell x="120" y="313" />
+      </column>
+		
+      <column>
+        <cell x="220" y="28"  />
+        <cell x="220" y="123" />
+        <cell x="220" y="217" />
+        <cell x="220" y="290" />
+        <cell x="220" y="335" />
+      </column>
+    </template>	
+
+    <template name="upgrade_scheme_m1891">
+
+      <column>
+        <cell x="20" y="28"  />
+        <cell x="20" y="128" />
+      </column>	
+
+      <column>
+        <cell x="120" y="5"   />
+        <cell x="120" y="50"  />
+        <cell x="120" y="100" />
+        <cell x="120" y="145" />
+      </column>
+
+      <column>
+        <cell x="220" y="5"   />
+        <cell x="220" y="50"  />
+        <cell x="220" y="100" />
+        <cell x="220" y="145" />
+      </column>
+
+    </template>
+	
+  </templates>
+
+</w>

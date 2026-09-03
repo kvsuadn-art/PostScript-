@@ -1,0 +1,45 @@
+<w> 
+	<background x="0" y="0" width="45" height="21">
+		<auto_static x="0" y="0" width="14" height="21">
+			<texture>ui_spiner_b</texture>
+		</auto_static>
+		<auto_static x="14" y="0" width="17" height="21">
+			<texture>ui_spiner_back</texture>
+		</auto_static>
+		<auto_static x="31" y="0" width="14" height="21">
+			<texture>ui_spiner_e</texture>
+		</auto_static>
+	</background>
+	
+	<label_value x="2" y="2" width="30" height="17">
+		<text font="letterica16" color="ui_6"/>
+	</label_value>
+	
+	<button_up x="33" y="0" width="11" height="11">
+		<texture>ui_spiner_button_t</texture>
+	</button_up>
+	
+	<button_down x="33" y="11" width="11" height="11">
+		<texture>ui_spiner_button_b</texture>
+	</button_down>
+	
+	<background_long x="0" y="0" width="62" height="21">
+		<auto_static x="0" y="0" width="14" height="21">
+			<texture>ui_spiner_b</texture>
+		</auto_static>
+		<auto_static x="14" y="0" width="34" height="21" stretch="1">
+			<texture>ui_spiner_back</texture>
+		</auto_static>
+		<auto_static x="48" y="0" width="14" height="21">
+			<texture>ui_spiner_e</texture>
+		</auto_static>
+	</background_long>
+	
+	<button_up_long x="50" y="0" width="11" height="11">
+		<texture>ui_spiner_button_t</texture>
+	</button_up_long>
+	
+	<button_down_long x="50" y="11" width="11" height="11">
+		<texture>ui_spiner_button_b</texture>
+	</button_down_long>
+</w>

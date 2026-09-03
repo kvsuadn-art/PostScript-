@@ -1,0 +1,55 @@
+<w>
+	<file name="ui\ui_pda">
+		<texture id="ui_ps_pda_background" x="0" y="0" width="1024" height="702" />
+		<texture id="ui_ps_pda_vert_frame_l" x="0" y="710" width="12" height="32" />
+		<texture id="ui_ps_pda_vert_frame_m" x="12" y="710" width="12" height="32" />
+		<texture id="ui_ps_pda_vert_frame_r" x="24" y="710" width="16" height="32" />
+	</file>
+	
+	<file name="ui\ui_pda_frames">
+		<texture id="ui_ps_pda_frame" x="0" y="0" width="764" height="488"/>
+		<texture id="ui_ps_pda_frame2" x="0" y="500" width="764" height="488"/>
+	</file>
+	
+	<!-- locations - encyclopedia -->
+	<file name="ui\ui_ps_pda_locations">
+		<texture id="ui_location_agroprom" x="0" y="0" width="165" height="108" />
+		<texture id="ui_location_darkvalley" x="165" y="0" width="165" height="108" />
+		<texture id="ui_location_escape" x="330" y="0" width="165" height="108" />
+		<texture id="ui_location_garbage" x="495" y="0" width="165" height="108" />
+		<texture id="ui_location_marsh" x="0" y="108" width="165" height="108" />
+		<texture id="ui_location_military" x="165" y="108" width="165" height="108" />
+		<texture id="ui_location_red_forest" x="330" y="108" width="165" height="108" />
+		<texture id="ui_location_yantar" x="495" y="108" width="165" height="108" />
+		<texture id="ui_location_limansk" x="0" y="216" width="165" height="108" />
+	</file>
+	
+	<!-- locations - maps -->
+	<file name="ui\ui_noise">
+		<texture id="ui_map_location_blank" x="0" y="0" width="256" height="256" />
+	</file>
+	<file name="map\map_agroprom">
+		<texture id="ui_map_location_agroprom" x="0" y="0" width="1024" height="1024" />
+	</file>
+	<file name="map\map_darkvalley">
+		<texture id="ui_map_location_darkvalley" x="0" y="0" width="512" height="1024" />
+	</file>
+	<file name="map\map_escape">
+		<texture id="ui_map_location_escape" x="0" y="0" width="1024" height="2048" />
+	</file>
+	<file name="map\map_garbage">
+		<texture id="ui_map_location_garbage" x="0" y="0" width="1024" height="1024" />
+	</file>
+	<file name="map\map_marsh">
+		<texture id="ui_map_location_marsh" x="0" y="0" width="2048" height="2048" />
+	</file>
+	<file name="map\map_military">
+		<texture id="ui_map_location_military" x="0" y="0" width="1024" height="1024" />
+	</file>
+	<file name="map\map_red_forest">
+		<texture id="ui_map_location_red_forest" x="0" y="0" width="1024" height="1024" />
+	</file>
+	<file name="map\map_yantar">
+		<texture id="ui_map_location_yantar" x="0" y="0" width="1024" height="1024" />
+	</file>
+</w>

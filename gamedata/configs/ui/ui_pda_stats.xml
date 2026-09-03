@@ -1,0 +1,113 @@
+<w> 
+	<frame_stats x="0" y="0" width="764" height="488">
+		<texture>ui_icons_PDA_tooltips</texture>
+	</frame_stats>
+
+	<actor_icon x="10" y="10" width="165" height="108" stretch="1">
+		<texture>ui_npc_u_neutral_1</texture>
+	</actor_icon>
+	<actor_icon_over x="10" y="10" width="165" height="108" stretch="1">
+		<texture>ui_fm_over_chars</texture>
+	</actor_icon_over>
+	
+	<label_name x="10" y="133" width="84" height="25">
+		<text align="l" x="0" y="0" font="letterica25" color="ui_2">st_actor_name</text>
+	</label_name>
+	
+	<label_faction x="10" y="163" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">ui_st_community</text>
+	</label_faction>
+	<value_faction x="70" y="163" width="42" height="16"/>
+	
+	<label_reputation x="10" y="184" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">ui_st_reputation</text>
+	</label_reputation>
+	<value_reputation x="95" y="184" width="42" height="16"/>
+	
+	<value_rankicon x="10" y="209" width="46" height="47"/>
+	<faction_icon x="66" y="205" width="125" height="54"/>
+	<faction_icon_over x="65" y="204" width="127" height="56">
+		<texture>ui_fm_list_foverlay</texture>
+	</faction_icon_over>
+	
+	<bar_seperator_v_1 x="222" y="10" width="5" height="470" stretch="1">
+		<texture color="ui_white">ui\ui_pda_vertical_line</texture>
+	</bar_seperator_v_1>
+	
+	<bar_seperator_h_1 x="233" y="33" width="525" height="3" stretch="1">
+		<texture color="ui_white">ui\ui_pda_horizontal_line</texture>
+	</bar_seperator_h_1>
+	<bar_seperator_h_2 x="233" y="125" width="525" height="3" stretch="1">
+		<texture color="ui_white">ui\ui_pda_horizontal_line</texture>
+	</bar_seperator_h_2>
+	<bar_seperator_h_3 x="233" y="197" width="525" height="3" stretch="1">
+		<texture color="ui_white">ui\ui_pda_horizontal_line</texture>
+	</bar_seperator_h_3>
+	
+	<info_gameplay x="233" y="10" width="42" height="16">
+		<text align="l" font="letterica16" color="ui_2">pda_stat_general</text>
+	</info_gameplay>
+	
+	<label_stash x="233" y="40" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_2</text>
+	</label_stash>
+	<value_stash x="343" y="40" width="42" height="16"/>
+	<label_money_earnt x="400" y="40" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_3</text>
+	</label_money_earnt>
+	<value_money_earnt x="510" y="40" width="42" height="16"/>
+	<label_money_lost x="400" y="63" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_4</text>
+	</label_money_lost>
+	<value_money_lost x="500" y="63" width="42" height="16"/>
+	
+	<info_tasks x="233" y="104" width="42" height="16">
+		<text align="l" font="letterica16" color="ui_2">pda_stat_missions</text>
+	</info_tasks>
+	
+	<label_tasks_total x="234" y="133" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_5</text>
+	</label_tasks_total>
+	<value_tasks_total x="304" y="133" width="42" height="16"/>
+	<label_tasks_done x="400" y="133" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_6</text>
+	</label_tasks_done>
+	<value_tasks_done x="483" y="133" width="42" height="16"/>
+	<label_tasks_fail x="568" y="133" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_7</text>
+	</label_tasks_fail>
+	<value_tasks_fail x="619" y="133" width="42" height="16"/>
+	
+	<info_kills x="233" y="174" width="42" height="16">
+		<text align="l" font="letterica16" color="ui_2">ps_pda_stat_frags</text>
+	</info_kills>
+	
+	<label_kills_human x="234" y="201" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_8</text>
+	</label_kills_human>
+	<value_kills_human x="302" y="201" width="42" height="16"/>
+	<label_kills_mutant x="400" y="201" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_9</text>
+	</label_kills_mutant>
+	<value_kills_mutant x="480" y="201" width="42" height="16"/>
+	
+	<label_kills_mutant_powerful x="234" y="230" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_10</text>
+	</label_kills_mutant_powerful>
+	<label_kills_mutant_powerful_icon x="234" y="255" width="165" height="108" stretch="1"/>
+	<label_kills_mutant_powerful_icon_over x="234" y="255" width="165" height="108" stretch="1">
+		<texture>ui_fm_over_chars</texture>
+	</label_kills_mutant_powerful_icon_over>
+	
+	
+	<label_kills_table x="474" y="230" width="42" height="16">
+		<text align="l" x="0" y="0" font="letterica16" color="ui_3">pda_stat_11</text>
+	</label_kills_table>
+	<list_kills_over x="474" y="255" width="250" height="196">
+		<texture>ui_fm_over_fraction_logo_l</texture>
+	</list_kills_over>
+	<list_kills_table x="479" y="260" width="240" height="186" item_height="18" always_show_scroll="1">
+		<text align="l" x="0" y="0" font="letterica16" complex_mode="1" vert_align="l"/>
+	</list_kills_table>
+	
+</w>

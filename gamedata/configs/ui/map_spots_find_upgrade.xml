@@ -1,0 +1,119 @@
+
+	
+    <secondary_task_find_upgrade_complex_spot x="0"  y="0"  width="30" height="27" stretch="0" alignment="c" location_level="5" scale="0" scale_min="2.5" scale_max="5.1">
+	    <left_icon   x="0"  y="0"  width="0"  height="0"  stretch="1" />
+        <right_icon  x="0"  y="0"  width="0"  height="0"  stretch="1" />
+        <top_icon    x="6"  y="5.5"  width="19" height="19" stretch="1" >
+			<texture  r="242" g="231" b="11">ui_pda2_upgrades2</texture>
+		</top_icon>
+        <timer       x="0"  y="25" width="30" height="10" >
+        <text font="letterica18" r="238" g="155" b="223" align="c" stretch="1" vert_align="c" />
+            <texture></texture>
+        </timer>
+		<static_border x="2.5" y="2.5" width="25" height="25" stretch="0" light_anim="ui_slow_blinking_alpha" la_cyclic="1" la_texture="1" la_text="0" la_alpha="1">
+			<texture r="242" g="231" b="11">ui_pda2_stask_last_02a</texture>
+		</static_border>
+    </secondary_task_find_upgrade_complex_spot>
+	
+	<!-- fluffy22 -->
+	<secondary_task_location_complex_toolkit_basic>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_toolkit_basic>
+	
+	<secondary_task_location_complex_toolkit_advanced>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_toolkit_advanced>
+	
+	<secondary_task_location_complex_toolkit_expert>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_toolkit_expert>
+
+	
+	<secondary_task_location_complex_flash_up_full_l85>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_l85>
+	
+	<secondary_task_location_complex_flash_up_full_chaser13>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_chaser13>
+
+	<secondary_task_location_complex_flash_up_full_svu>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_svu>
+	
+	<secondary_task_location_complex_flash_up_full_mg>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_mg>
+
+	<secondary_task_location_complex_flash_up_full_seva>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_seva>
+
+	<secondary_task_location_complex_flash_up_full_exo>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_exo>
+
+	<secondary_task_location_complex_flash_up_full_g36>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_full_g36>
+	
+	
+	<secondary_task_location_complex_flash_up_part_shotgun_barrel>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_shotgun_barrel>
+	
+	<secondary_task_location_complex_flash_up_part_elec_stab>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_elec_stab>
+
+	<secondary_task_location_complex_flash_up_part_servomotor>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_servomotor>
+
+	<secondary_task_location_complex_flash_up_part_val>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_val>
+
+	<secondary_task_location_complex_flash_up_part_tunder_mech>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_tunder_mech>
+
+	<secondary_task_location_complex_flash_up_part_tunder_barrel>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_tunder_barrel>
+
+	<secondary_task_location_complex_flash_up_part_military_armor>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_military_armor>
+
+	<secondary_task_location_complex_flash_up_part_shotgun_striker>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_shotgun_striker>
+
+	<secondary_task_location_complex_flash_up_part_g36>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_g36>
+
+	<secondary_task_location_complex_flash_up_part_anomaly_armor>
+		<complex_spot spot="secondary_task_find_upgrade_complex_spot" pointer="quest_pointer2"/>
+		<mini_map     spot="secondary_task_spot_mini" pointer="quest_pointer2"/>
+	</secondary_task_location_complex_flash_up_part_anomaly_armor>

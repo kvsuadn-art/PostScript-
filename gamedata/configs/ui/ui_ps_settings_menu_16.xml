@@ -1,0 +1,99 @@
+<w> 
+	<background x="0" y="0" width="1024" height="768">
+		<auto_static x="0" y="0" width="1024" height="430">
+			<texture x="0" y="0" width="1024" height="430">ui\ui_mm_window_back_crop</texture>
+		</auto_static>
+		<auto_static x="0" y="0" width="1024" height="768">
+			<texture>ui_inGame2_back_01</texture>
+		</auto_static>
+		<auto_static x="275" y="425" width="128" height="256">
+			<texture>ui\ui_mm_rug02</texture>
+		</auto_static>
+	</background>
+	
+	<dialog x="415" y="168" width="548" height="461">
+		<texture>ui_menu_options_dlg</texture>
+	</dialog>
+	
+	<background_frame x="476" y="212" width="470" height="380">
+		<texture>ui_tablist_textbox</texture>
+	</background_frame>
+
+	<static_options x="45" y="9" width="378" height="33">
+		<text font="graffiti22" color="ui_6">ui_ps_settings</text>
+	</static_options>
+	
+	<button_accept x="219" y="429" width="157" height="48">
+		<text font="graffiti19" align="c">ui_ps_settings_apply</text>
+		<texture>ui_button_main02</texture>
+		<text_color>
+			<e r="227" g="199" b="178"/> <t r="180" g="153" b="155"/> <d r="106" g="95" b="91"/> <h r="0" g="0" b="0"/>
+		</text_color>
+	</button_accept>
+		
+	<button_cancel x="375" y="429" width="157" height="48">
+		<text font="graffiti19" align="c">ui_ps_settings_cancel</text>
+		<texture>ui_button_main02</texture>
+		<text_color>
+			<e r="227" g="199" b="178"/> <t r="180" g="153" b="155"/> <d r="106" g="95" b="91"/> <h r="0" g="0" b="0"/>
+		</text_color>
+	</button_cancel>
+	
+	<scroll_window x="478" y="214" width="464" height="376" right_ident="0" left_ident="0" top_indent="0" bottom_indent="0" 
+		vert_interval="0" always_show_scroll="0" scroll_enable="1" map_move_step="11"/>
+		
+	<static_af_spawn_chance x="488" y="225" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_af_spawn_chance</text>
+	</static_af_spawn_chance>
+	<window_af_spawn_chance_size x="868" y="225" width="45" height="32"/>
+	
+	<static_store_weapons_on_death x="488" y="255" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_store_weapons_on_death</text>
+	</static_store_weapons_on_death>
+	<window_store_weapons_on_death x="881" y="255" width="30" height="23"/>
+	
+	<static_hunger_on x="488" y="285" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_hunger_on</text>
+	</static_hunger_on>
+	<window_hunger_on x="881" y="285" width="30" height="23"/>
+		
+	<static_autosave_interval x="488" y="315" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_autosave_interval</text>
+	</static_autosave_interval>
+	<window_autosave_interval x="868" y="315" width="45" height="32"/>
+		
+	<static_surge_start_time x="488" y="345" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_surge_start_time</text>
+	</static_surge_start_time>
+	<window_surge_start_time x="868" y="345" width="45" height="32"/>
+		
+	<static_surge_finish_interval x="488" y="375" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_surge_finish_time</text>
+	</static_surge_finish_interval>
+	<window_surge_finish_interval x="868" y="375" width="45" height="32"/>
+	
+	<static_spawn_added_weapons x="488" y="405" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_spawn_added_weapons</text>
+	</static_spawn_added_weapons>
+	<window_spawn_added_weapons x="881" y="405" width="30" height="23"/>
+	
+	<static_use_mod_pda x="488" y="435" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_use_mod_pda</text>
+	</static_use_mod_pda>
+	<window_use_mod_pda x="881" y="435" width="30" height="23"/>
+	
+	<static_smart_terain_display x="488" y="465" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_smart_terain_display</text>
+	</static_smart_terain_display>
+	<window_smart_terain_display x="881" y="465" width="30" height="23"/>
+	
+	<static_emission_chance x="488" y="495" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_emission_chance</text>
+	</static_emission_chance>
+	<window_emission_chance x="868" y="495" width="45" height="32"/>
+	
+	<static_show_pda_dots x="488" y="525" width="370" height="23" >
+		<text font="letterica16" color="ui_6" complex_mode="1">ui_ps_show_pda_dots</text>
+	</static_show_pda_dots>
+	<window_show_pda_dots x="881" y="525" width="45" height="32"/>
+</w>
