@@ -1,0 +1,332 @@
+; Fluffy22
+
+;***************************************
+; Effects
+;***************************************
+
+; Tier 1
+[up_sect_a1_ssp99m_outfit]
+cost 		= 6450
+value		= +10
+value2		= st_upg_cevlars_armor_battle
+bones_koeff_protection = actor_light_armor_1
+fire_wound_protection		= 0.02
+
+[up_sect_b1_ssp99m_outfit]
+cost 		= 5300
+value		= +7
+shock_protection 			= 0.02 ;0.3
+
+[up_sect_c1_ssp99m_outfit]
+cost 		= 5300
+value		= +4
+power_restore_speed				= 0.004
+
+; Tier 2
+[up_sect_a2_ssp99m_outfit]
+cost		= 10750
+value		= +50
+immunities_sect		= sect_ecologist_green_outfit_immunities_1
+
+[up_sect_a3_ssp99m_outfit]
+cost 		= 10750
+value		= -1.4
+inv_weight 	= -1.4
+power_loss  = -0.05
+
+[up_sect_b2_ssp99m_outfit]
+cost 		= 8800
+value		= +7
+burn_protection 			= 0.02 ;0.3
+
+[up_sect_b3_ssp99m_outfit]
+cost 		= 8800
+value 		= +15
+radiation_protection 		= 0.02 ;0.1
+chemical_burn_protection 	= 0.02 ;0.1
+
+[up_sect_c2_ssp99m_outfit]
+cost		= 5300
+value 		= +50
+telepatic_protection = 0.04
+
+; Tier 3
+[up_sect_a4_ssp99m_outfit]
+cost		= 16125
+value		= +20
+strike_protection 			= 0.05	;0.25
+wound_protection			= 0.06	;0.3
+explosion_protection 		= 0.06	;0.3
+hit_fraction_actor			= -0.05
+
+prerequired_upgrades	= up_sect_a2_ssp99m_outfit, up_sect_a3_ssp99m_outfit
+
+[up_sect_b4_ssp99m_outfit]
+cost		= 13100
+value		= +6
+health_restore_speed			= 0.0006
+bleeding_restore_speed			= 0.006
+
+prerequired_upgrades	= up_sect_b2_ssp99m_outfit, up_sect_b3_ssp99m_outfit
+
+[up_sect_b5_ssp99m_outfit]
+cost		= 13100
+value 		= +30
+radiation_restore_speed		= -0.002
+
+prerequired_upgrades	= up_sect_b2_ssp99m_outfit, up_sect_b3_ssp99m_outfit
+
+;***************************************
+; Properties
+;***************************************
+
+; Tier 1
+[up_a1_ssp99m_outfit]
+scheme_index            = 0, 0
+known                   = 1
+effects                 = up_gr_a2or3_ssp99m_outfit, up_gr_a4_ssp99m_outfit
+section                 = up_sect_a1_ssp99m_outfit
+property                = prop_armor
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_cevlars_armor_battle
+description             = st_upg_cevlars_armor_battle_descr
+icon                    = ui_am_upgrade_06
+
+[up_b1_ssp99m_outfit]
+scheme_index            = 0, 1
+known                   = 1
+effects                 = up_gr_b2or3_ssp99m_outfit, up_gr_b4or5_ssp99m_outfit
+section                 = up_sect_b1_ssp99m_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_wire_mesh
+description             = st_upg_wire_mesh_descr
+icon                    = ui_am_upgrade_12
+
+[up_c1_ssp99m_outfit]
+scheme_index            = 0, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_c1_ssp99m_outfit
+property                = prop_power
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_electro_stimulant_battle
+description             = st_upg_electro_stimulant_battle_descr
+icon                    = ui_am_upgrade_27
+
+; Tier 2
+[up_a2_ssp99m_outfit]
+scheme_index            = 1, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a2_ssp99m_outfit
+property                = prop_durability
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_double_layer_body_armor_battle
+description             = st_upg_double_layer_body_armor_battle_descr
+icon                    = ui_am_upgrade_25
+
+[up_a3_ssp99m_outfit]
+scheme_index            = 1, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_a3_ssp99m_outfit
+property                = prop_weight
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_light_armor
+description             = st_upg_light_armor_descr
+icon                    = ui_am_upgrade_04
+
+[up_b2_ssp99m_outfit]
+scheme_index            = 1, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b2_ssp99m_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_thermo_cool
+description             = st_upg_thermo_cool_descr
+icon                    = ui_am_upgrade_11
+
+[up_b3_ssp99m_outfit]
+scheme_index            = 1, 3
+known                   = 1
+effects                 = 
+section                 = up_sect_b3_ssp99m_outfit
+property                = prop_tonnage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_active_filter_stalk
+description             = st_upg_active_filter_stalk_descr
+icon                    = ui_am_upgrade_20
+
+[up_c2_ssp99m_outfit]
+scheme_index            = 1, 4
+known                   = 1
+effects                 = 
+section                 = up_sect_c2_ssp99m_outfit
+property                = prop_psy
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_psy_shielding_stalk
+description             = st_upg_psy_shielding_stalk_descr
+icon                    = ui_am_upgrade_26
+
+;Tier 3
+[up_a4_ssp99m_outfit]
+scheme_index            = 2, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a4_ssp99m_outfit
+property                = prop_damage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_polymer_pillow_battle
+description             = st_upg_polymer_pillow_battle_descr
+icon                    = ui_am_upgrade_15
+
+[up_b4_ssp99m_outfit]
+scheme_index            = 2, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_b4_ssp99m_outfit
+property                = prop_restore_health
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_health_sustaining_sys_battle
+description             = st_upg_health_sustaining_sys_battle_descr
+icon                    = ui_am_upgrade_28
+
+[up_b5_ssp99m_outfit]
+scheme_index            = 2, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b5_ssp99m_outfit
+property                = prop_radio_chem
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_radiation_reduce_sys_battle
+description             = st_upg_radiation_reduce_sys_battle_descr
+icon                    = ui_am_upgrade_17
+
+
+
+;***************************************
+; Handlers
+;***************************************
+
+; Tier 1
+[up_gr_a1_ssp99m_outfit]
+elements                = up_a1_ssp99m_outfit
+[up_gr_b1_ssp99m_outfit]
+elements				= up_b1_ssp99m_outfit
+[up_gr_c1_ssp99m_outfit]
+elements				= up_c1_ssp99m_outfit
+
+; Tier 2
+[up_gr_a2or3_ssp99m_outfit]
+elements				= up_a2_ssp99m_outfit, up_a3_ssp99m_outfit
+[up_gr_b2or3_ssp99m_outfit]
+elements				= up_b2_ssp99m_outfit, up_b3_ssp99m_outfit
+[up_gr_c2_ssp99m_outfit]
+elements				= up_c2_ssp99m_outfit
+
+; Tier 3
+[up_gr_a4_ssp99m_outfit]
+elements				= up_a4_ssp99m_outfit
+[up_gr_b4or5_ssp99m_outfit]
+elements				= up_b4_ssp99m_outfit, up_b5_ssp99m_outfit

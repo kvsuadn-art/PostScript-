@@ -1,0 +1,253 @@
+; Fluffy22
+
+;***************************************
+; Effects
+;***************************************
+
+; Tier 1
+[up_sect_a1_novice_outfit]
+cost 		= 400
+inv_weight	= 2.0
+value		= +20
+value2		= st_upg_cevlar_body_armor_battle
+bones_koeff_protection = actor_armor_suit_1
+fire_wound_protection		= 0.5
+
+[up_sect_b1_novice_outfit]
+cost 		= 250
+value		= +150
+burn_protection 			= 0.008 ;0.1
+shock_protection 			= 0.008 ;0.1
+
+[up_sect_c1_novice_outfit]
+cost 		= 250
+value		= +5
+additional_inventory_weight		= 5		; +max_walk_weight
+additional_inventory_weight2	= 5	
+
+; Tier 2
+[up_sect_a2_novice_outfit]
+cost 		= 350
+value		= -0.6
+inv_weight	= -0.6
+
+
+[up_sect_b2_novice_outfit]
+cost 		= 350
+value		= +100
+burn_protection 			= 0.005 ;0.1
+shock_protection 			= 0.005 ;0.1
+
+[up_sect_c2_novice_outfit]
+cost 		= 350
+value		= +130
+radiation_protection 		= 0.008 ;0.1
+chemical_burn_protection 	= 0.008 ;0.1
+
+; Tier 3
+[up_sect_a4_novice_outfit]
+cost 		= 350
+value		= +30
+strike_protection 			= 0.05	;0.1
+wound_protection			= 0.05	;0.1
+explosion_protection 		= 0.05	;0.1
+hit_fraction_actor			= -0.05
+
+[up_sect_c4_novice_outfit]
+cost 		= 750
+value		= +2
+artefact_count				= 2
+
+;***************************************
+; Properties
+;***************************************
+
+; Tier 1
+[up_a1_novice_outfit]
+scheme_index            = 0, 0
+known                   = 1
+effects                 = up_gr_a2_novice_outfit, up_gr_a4_novice_outfit
+section                 = up_sect_a1_novice_outfit
+property                = prop_armor
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_cevlar_body_armor_battle
+description             = st_upg_cevlar_body_armor_battle_descr
+icon                    = ui_am_upgrade_04
+
+[up_b1_novice_outfit]
+scheme_index            = 0, 1
+known                   = 1
+effects                 = up_gr_b2_novice_outfit
+section                 = up_sect_b1_novice_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_brigandine_suit_stalk
+description             = st_upg_brigandine_suit_stalk_descr
+icon                    = ui_am_upgrade_12
+
+[up_c1_novice_outfit]
+scheme_index            = 0, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_c1_novice_outfit
+property                = prop_tonnage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_outfit_b_stalk
+description             = st_upg_outfit_b_stalk_descr
+icon                    = ui_am_upgrade_02
+
+; Tier 2
+[up_a2_novice_outfit]
+scheme_index            = 1, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a2_novice_outfit
+property                = prop_weight
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_light_armor
+description             = st_upg_light_armor_descr
+icon                    = ui_am_upgrade_04
+
+[up_b2_novice_outfit]
+scheme_index            = 1, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_b2_novice_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_polymer_coating_stalk
+description             = st_upg_polymer_coating_stalk_descr
+icon                    = ui_am_upgrade_08
+
+[up_c2_novice_outfit]
+scheme_index            = 1, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_c2_novice_outfit
+property                = prop_radio_chem
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_respirator
+description             = st_upg_respirator_descr
+icon                    = ui_am_upgrade_18
+
+;Tier 3
+[up_a4_novice_outfit]
+scheme_index            = 2, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a4_novice_outfit
+property                = prop_damage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_slice_leather_battle
+description             = st_upg_slice_leather_battle_descr
+icon                    = ui_am_upgrade_13
+
+[up_c4_novice_outfit]
+scheme_index            = 2, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_c4_novice_outfit
+property                = prop_artefact
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_artefact_slot
+description             = st_upg_artefact_slot_descr
+icon                    = ui_am_upgrade_05
+
+
+
+;***************************************
+; Handlers
+;***************************************
+
+; Tier 1
+[up_gr_a1_novice_outfit]
+elements                = up_a1_novice_outfit
+[up_gr_b1_novice_outfit]
+elements				= up_b1_novice_outfit
+[up_gr_c1_novice_outfit]
+elements				= up_c1_novice_outfit
+; Tier 2
+[up_gr_a2_novice_outfit]
+elements				= up_a2_novice_outfit
+[up_gr_b2_novice_outfit]
+elements				= up_b2_novice_outfit
+[up_gr_c2_novice_outfit]
+elements				= up_c2_novice_outfit
+
+; Tier 3
+[up_gr_a4_novice_outfit]
+elements				= up_a4_novice_outfit
+[up_gr_c3_novice_outfit]
+elements				= up_c4_novice_outfit

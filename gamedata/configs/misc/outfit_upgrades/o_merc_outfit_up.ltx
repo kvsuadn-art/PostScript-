@@ -1,0 +1,445 @@
+; Fluffy22
+
+;***************************************
+; Effects
+;***************************************
+
+; Tier 1
+[up_sect_a1_merc_outfit]
+cost 		= 3400
+value		= +10
+value2		= st_upg_cevlars_armor_battle
+bones_koeff_protection = actor_light_armor_2
+fire_wound_protection		= 0.03
+
+[up_sect_b1_merc_outfit]
+cost 		= 3400
+value		= +5
+additional_inventory_weight		= 5		; +max_walk_weight
+additional_inventory_weight2	= 5	
+
+[up_sect_c1_merc_outfit]
+cost		= 3400
+value		= +20
+strike_protection 			= 0.06	;0.3
+wound_protection			= 0.07	;0.35
+explosion_protection 		= 0.07	;0.35
+hit_fraction_actor			= -0.05
+
+[up_sect_d1_merc_outfit]
+cost 		= 3400
+value 		= +55
+radiation_protection 		= 0.01 ;0.1
+chemical_burn_protection 	= 0.01 ;0.1
+
+; Tier 2
+[up_sect_a2_merc_outfit]
+cost		= 4850
+value		= +50
+immunities_sect		= sect_merc_outfit_immunities_1
+
+[up_sect_a3_merc_outfit]
+cost 		= 4850
+value		= -1.0
+inv_weight 	= -1.0
+power_loss  = -0.05
+
+[up_sect_b2_merc_outfit]
+cost 		= 4850
+value		= +55
+burn_protection 			= 0.01 ;0.3
+shock_protection 			= 0.01 ;0.3
+
+[up_sect_b3_merc_outfit]
+cost 		= 4850
+value		= +5
+additional_inventory_weight		= 5		; +max_walk_weight
+additional_inventory_weight2	= 5	
+
+[up_sect_c2_merc_outfit]
+cost		= 4850
+value		= -0.5
+inv_weight 	= -0.5
+power_loss  = -0.02
+
+[up_sect_d2_merc_outfit]
+cost 		= 5050
+value		= +1
+nightvision_sect = effector_nightvision_bad
+
+[up_sect_d3_merc_outfit]
+cost 		= 5400
+value		= +5
+telepatic_protection 		= 0.008 ;0.1
+
+; Tier 3
+[up_sect_a4_merc_outfit]
+cost		= 7200
+value		= +20
+value2		= st_upg_cevlars_armor_battle
+bones_koeff_protection = actor_medium_armor_1
+fire_wound_protection		= 0.04
+
+prerequired_upgrades	= up_sect_a2_merc_outfit, up_sect_a3_merc_outfit
+
+[up_sect_b4_merc_outfit]
+cost		= 7200
+value		= +55
+burn_protection 			= 0.01 ;0.3
+shock_protection 			= 0.01 ;0.3
+
+prerequired_upgrades	= up_sect_b2_merc_outfit, up_sect_b3_merc_outfit
+
+[up_sect_b5_merc_outfit]
+cost		= 7200
+value 		= +55
+radiation_protection 		= 0.01 ;0.1
+chemical_burn_protection 	= 0.01 ;0.1
+
+prerequired_upgrades	= up_sect_b2_merc_outfit, up_sect_b3_merc_outfit
+
+[up_sect_c4_merc_outfit]
+cost 		= 7300
+value		= +2
+artefact_count				= 2
+
+;***************************************
+; Properties
+;***************************************
+
+; Tier 1
+[up_a1_merc_outfit]
+scheme_index            = 0, 0
+known                   = 1
+effects                 = up_gr_a2or3_merc_outfit, up_gr_a4_merc_outfit
+section                 = up_sect_a1_merc_outfit
+property                = prop_armor
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_cevlars_armor_battle
+description             = st_upg_cevlars_armor_battle_descr
+icon                    = ui_am_upgrade_06
+
+[up_b1_merc_outfit]
+scheme_index            = 0, 1
+known                   = 1
+effects                 = up_gr_b2or3_merc_outfit, up_gr_b4or5_merc_outfit
+section                 = up_sect_b1_merc_outfit
+property                = prop_tonnage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_outfit_a_stalk
+description             = st_upg_outfit_a_stalk_descr
+icon                    = ui_am_upgrade_01
+
+[up_c1_merc_outfit]
+scheme_index            = 0, 2
+known                   = 1
+effects                 = up_gr_c2_merc_outfit, up_gr_c4_merc_outfit
+section                 = up_sect_c1_merc_outfit
+property                = prop_damage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_sintetic_pillow_battle
+description             = st_upg_sintetic_pillow_battle_descr
+icon                    = ui_am_upgrade_14
+
+[up_d1_merc_outfit]
+scheme_index            = 0, 3
+known                   = 1
+effects                 = up_gr_d2or3_merc_outfit
+section                 = up_sect_d1_merc_outfit
+property                = prop_radio_chem
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_respirator
+description             = st_upg_respirator_descr
+icon                    = ui_am_upgrade_18
+
+; Tier 2
+[up_a2_merc_outfit]
+scheme_index            = 1, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a2_merc_outfit
+property                = prop_durability
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_double_layer_body_armor_battle
+description             = st_upg_double_layer_body_armor_battle_descr
+icon                    = ui_am_upgrade_25
+
+[up_a3_merc_outfit]
+scheme_index            = 1, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_a3_merc_outfit
+property                = prop_weight
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_light_armor
+description             = st_upg_light_armor_descr
+icon                    = ui_am_upgrade_04
+
+[up_b2_merc_outfit]
+scheme_index            = 1, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b2_merc_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_brigandine_suit_stalk
+description             = st_upg_brigandine_suit_stalk_descr
+icon                    = ui_am_upgrade_09
+
+[up_b3_merc_outfit]
+scheme_index            = 1, 3
+known                   = 1
+effects                 = 
+section                 = up_sect_b3_merc_outfit
+property                = prop_tonnage
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_relax_suit_stalk
+description             = st_upg_relax_suit_stalk_descr
+icon                    = ui_am_upgrade_01
+
+[up_c2_merc_outfit]
+scheme_index            = 1, 4
+known                   = 1
+effects                 = 
+section                 = up_sect_c2_merc_outfit
+property                = prop_weight
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_light_gear
+description             = st_upg_light_gear_descr
+icon                    = ui_am_upgrade_25
+
+[up_d2_merc_outfit]
+scheme_index            = 1, 5
+known                   = 1
+effects                 = 
+section                 = up_sect_d2_merc_outfit
+property                = prop_night_vision
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_night_vision_battle
+description             = st_upg_night_vision_battle_descr
+icon                    = ui_am_upgrade_22
+
+[up_d3_merc_outfit]
+scheme_index            = 1, 6
+known                   = 1
+effects                 = 
+section                 = up_sect_d3_merc_outfit
+property                = prop_psy
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_psi_helmet
+description             = st_upg_psi_helmet_descr
+icon                    = ui_am_upgrade_26
+
+;Tier 3
+[up_a4_merc_outfit]
+scheme_index            = 2, 0
+known                   = 1
+effects                 = 
+section                 = up_sect_a4_merc_outfit
+property                = prop_armor
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_cevlars_armor_battle
+description             = st_upg_cevlars_armor_battle_descr
+icon                    = ui_am_upgrade_06
+
+[up_b4_merc_outfit]
+scheme_index            = 2, 1
+known                   = 1
+effects                 = 
+section                 = up_sect_b4_merc_outfit
+property                = prop_thermo_electro
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_spec_coating_stalk
+description             = st_upg_spec_coating_stalk_descr
+icon                    = ui_am_upgrade_08
+
+[up_b5_merc_outfit]
+scheme_index            = 2, 2
+known                   = 1
+effects                 = 
+section                 = up_sect_b5_merc_outfit
+property                = prop_radio_chem
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_antistatic_coating_stalk
+description             = st_upg_antistatic_coating_stalk_descr
+icon                    = ui_am_upgrade_17
+
+[up_c4_merc_outfit]
+scheme_index            = 2, 3
+known                   = 1
+effects                 = 
+section                 = up_sect_c4_merc_outfit
+property                = prop_artefact
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           = money(1000), item(habar)
+name                    = st_upg_artefact_slot
+description             = st_upg_artefact_slot_descr
+icon                    = ui_am_upgrade_05
+
+
+
+;***************************************
+; Handlers
+;***************************************
+
+; Tier 1
+[up_gr_a1_merc_outfit]
+elements                = up_a1_merc_outfit
+[up_gr_b1_merc_outfit]
+elements				= up_b1_merc_outfit
+[up_gr_c1_merc_outfit]
+elements				= up_c1_merc_outfit
+[up_gr_d1_merc_outfit]
+elements				= up_d1_merc_outfit
+
+; Tier 2
+[up_gr_a2or3_merc_outfit]
+elements				= up_a2_merc_outfit, up_a3_merc_outfit
+[up_gr_b2or3_merc_outfit]
+elements				= up_b2_merc_outfit, up_b3_merc_outfit
+[up_gr_c2_merc_outfit]
+elements				= up_c2_merc_outfit
+[up_gr_d2or3_merc_outfit]
+elements				= up_d2_merc_outfit, up_d3_merc_outfit
+
+; Tier 3
+[up_gr_a4_merc_outfit]
+elements				= up_a4_merc_outfit
+[up_gr_b4or5_merc_outfit]
+elements				= up_b4_merc_outfit, up_b5_merc_outfit
+[up_gr_c4_merc_outfit]
+elements				= up_c4_merc_outfit
