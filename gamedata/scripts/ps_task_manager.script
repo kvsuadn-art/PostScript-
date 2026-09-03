@@ -1,0 +1,472 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local board = nil
+
+local locked_tasks = {}
+
+function save(packet)
+	--set_save_marker(packet, "save", false, "PSTask")
+	local n = 0
+	for k,v in pairs(locked_tasks) do
+		n = n + 1
+	end
+	packet:w_int(n)
+	for k,v in pairs(locked_tasks) do
+		packet:w_stringZ(k)
+		packet:w_CTime(v)
+	end
+	get_task_board():save(packet)
+	--set_save_marker(packet, "save", true, "PSTask")
+end
+
+function load(reader)
+	--set_save_marker(reader, "load", false, "PSTask")
+	local n = reader:r_int(0)
+	locked_tasks = {}
+	for i=1,n do
+		id = reader:r_stringZ("")
+		time = reader:r_CTime()
+		locked_tasks[id] = time
+	end
+	get_task_board():load(reader)
+	--set_save_marker(reader, "load", true, "PSTask")
+end
+
+-- code for locking, unlocking and checking if task is available 
+function is_task_unlocked(section_name)
+	task_time = locked_tasks[section_name]
+	local time = game.get_game_time()
+	if task_time ~= nil then
+		if math.floor(time:diffSec(task_time)) > 86400 then
+		--if math.floor(time:diffSec(task_time)) > 300 then
+			return true
+		end
+	else
+		return true
+	end
+	return false
+end
+
+function unlock_task(section_name)
+	if is_task_unlocked(section_name) == true then
+		local count = 1
+		for k,v in pairs(locked_tasks) do
+			if section_name == k then
+				table.remove(locked_tasks, count)
+				break
+			end
+			count = count + 1
+		end
+	end
+end
+
+function is_task_available(section_name)
+	if is_task_unlocked(section_name) == true then
+		unlock_task(section_name)
+		return true
+	end
+	return false
+end
+
+function lock_task(section_name)
+	local time = game.get_game_time()
+	locked_tasks[section_name] = time
+end
+
+
+function dialog_npc_has_tasks(fs,ss)
+        local npc = dialogs.who_is_npc(fs,ss)
+        return npc_has_tasks(db.actor, npc)
+end
+
+function dialog_npc_show_tasks(fs,ss)
+        local npc = dialogs.who_is_npc(fs,ss)
+        npc_show_tasks(npc, db.actor)
+end
+
+
+-- code for selecting and displaying of missions
+function npc_has_tasks(actor, npc)
+	error_log(npc:id().." NPC has tasks")
+	error_log(type(npc))
+	local tm = task_manager.get_task_manager()
+	local community = npc:character_community()
+	--error_log(tostring(community))
+	tm:select_ps_task(npc, community)
+	--error_log("ps_tasks: has tasks npc:id() 1")
+	local task_table = tm.inited_ps_tasks[npc:id()]
+	for k,v in pairs(task_table) do
+		--error_log("checking tasks")
+		if(v.status=="normal") then
+			--error_log("Valid task found")
+			return true
+		end
+	end
+	return false
+end
+
+function npc_show_tasks(npc, actor)--, dialog, phrase)
+	get_task_board():show_missions(npc)
+end
+
+function give_deliver_item_task(actor, npc)--, p1, p2)
+	error_log(npc:id().." NPC give tasks")
+	local community = npc:character_community()
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	for k,v in pairs(task_table) do
+		if v.status == "normal" then
+			v:give_task(community)
+		end
+	end
+end
+
+function can_mission_complete(actor, npc)
+	if get_task_board():can_complete_mission(npc) == true then
+		return true
+	end
+	return false
+end
+
+function complete_mission(npc, actor)--actor, npc)
+	get_task_board():complete_mission(npc)
+end
+
+
+function contains(str, array)
+	for k,v in pairs(array) do
+		if str == v then
+			return true
+		end
+	end
+	return false
+end
+
+
+
+local taskers = {
+	"esc_m_trader",
+	"esc_stalker_leader",
+	"esc_stalker_mechanic",
+	"gar_bandit_leader",
+	"gar_bandit_fixer",
+	"val_freedom_leader",
+	"val_freedom_fixer",
+	"agr_duty_commander",
+	"agr_duty_mechanic",
+	"agr_duty_base_medic",
+	"mar_csky_tech",
+	"mar_csky_commander",
+	"yan_stalker_sakharov",
+}
+
+-- Manager
+class "TaskBoard"
+function TaskBoard:__init()
+	self.data = {}
+	for i,tasker in pairs(taskers) do
+		npc = alife():object(tasker)
+		npc_id = npc.id
+		self.data[npc_id] = {}
+		self.data[npc_id].mission1 = "nil"
+		self.data[npc_id].mission2 = "nil"
+		self.data[npc_id].mission3 = "nil"
+		self.data[npc_id].mission4 = "nil"
+	end	
+end
+
+function TaskBoard:save(packet)
+	for i,tasker in pairs(taskers) do
+		local tasker_id = alife():object(tasker).id
+		packet:w_stringZ(tostring(self.data[tasker_id]["mission1"]))
+		packet:w_stringZ(tostring(self.data[tasker_id]["mission2"]))
+		packet:w_stringZ(tostring(self.data[tasker_id]["mission3"]))
+		packet:w_stringZ(tostring(self.data[tasker_id]["mission4"]))
+	end
+end
+
+function TaskBoard:load(reader)
+	for i,tasker in pairs(taskers) do
+		local tasker_id = alife():object(tasker).id
+		self.data[tasker_id]["mission1"] = reader:r_stringZ("nil")
+		if self.data[tasker_id]["mission1"] == "nil" then
+			--self.data[tasker_id]["mission1"] = nil
+		end
+		self.data[tasker_id]["mission2"] = reader:r_stringZ("nil")
+		if self.data[tasker_id]["mission2"] == "nil" then
+			--self.data[tasker_id]["mission2"] = nil
+		end
+		self.data[tasker_id]["mission3"] = reader:r_stringZ("nil")
+		if self.data[tasker_id]["mission3"] == "nil" then
+			--self.data[tasker_id]["mission3"] = nil
+		end
+		self.data[tasker_id]["mission4"] = reader:r_stringZ("nil")
+		if self.data[tasker_id]["mission4"] == "nil" then
+			--self.data[tasker_id]["mission4"] = nil 
+		end
+	end
+end
+
+function TaskBoard:set_missions(npc)
+	local available_missions = {}
+	--error_log("ps_tasks: set missions npc:id() 1")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	local community = npc:character_community()
+	error_log(npc:id().." Set missions")
+	for k,v in pairs(task_table) do
+		local tsk = v
+		--error_log("ps_tasks: set missions npc:id() 2")
+		if tsk ~= nil then
+			if tsk.status == "normal" and contains(tsk.base_id, self.data[npc:id()]) == false then
+				table.insert(available_missions, tsk)
+			end
+		end
+	end
+	local task_no = 0	
+	local count = #available_missions
+	for j = 1,4 do
+		local kk = "mission"..tostring(j)
+		--error_log("ps_tasks: set missions npc:id() 3")
+		local vv = self.data[npc:id()][kk]
+		--error_log(tostring(kk).." "..tostring(vv))
+		count = #available_missions
+		if vv == "nil" and count > 0 then
+			task_no = math.random(count)
+			task_id = available_missions[task_no].base_id
+			--error_log(tostring(task_no).." "..tostring(task_id))
+			--error_log("ps_tasks: set missions npc:id() 4")
+			self.data[npc:id()][kk] = task_id
+			table.remove(available_missions, task_no)
+		end
+	end
+end
+
+function TaskBoard:show_missions(npc)
+	if npc_has_tasks(nil, npc) then
+		self:check_missions(npc)
+		self:set_missions(npc)
+	else
+		return
+	end
+	local news_text = ""
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table == nil then
+		return
+	end
+	for k,v in pairs(task_table) do
+		local tsk = v
+		--error_log("ps_tasks: show missions npc:id() 1")
+		if tsk.status == "normal" and contains(tsk.base_id, self.data[npc:id()]) then
+			local icon = tsk.type
+			if tsk.custom_icon ~= nil then
+				icon = tsk.custom_icon
+			end
+			news_text = game.translate_string(tsk.dialog.."_descr")
+			db.actor:give_talk_message2(game.translate_string(""), news_text, "ui_iconsTotal_storyline", "iconed_answer_item")
+		end
+	end
+end
+
+function TaskBoard:check_missions(npc)
+	--error_log("ps_tasks: check missions npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	local mission_id = 0
+	--error_log("ps_tasks: check missions npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	local community = npc:character_community()
+	if task_table == nil then
+		return false
+	end
+	error_log(npc:id().." check missions")
+	if npc_tasks ~= nil then
+		for k,v in pairs(npc_tasks) do
+			mission_id = v
+			for kk,vv in pairs(task_table) do
+				local task = vv
+				if task.base_id == mission_id and task.type == "eliminate_smart" then
+					if task.check_target(npc, community) == false then
+						--error_log("ps_tasks: check missions npc:id() 3")
+						self.data[npc:id()][kk] = nil
+					end
+				end
+			end
+		end
+	end
+end
+
+function TaskBoard:give_mission(npc, mission)
+	--error_log("ps_tasks: give missions npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	local mission_id = npc_tasks[mission]
+	--error_log("ps_tasks: give missions npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table == nil then
+		return
+	end
+	for k,v in pairs(task_table) do
+		if v.base_id == mission_id then
+			if v.status == "normal" then
+				v:give_task(npc:character_community())
+			end
+		end
+	end
+end
+
+function TaskBoard:can_complete_mission(npc)
+	--error_log("ps_tasks: check complete missions npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	local mission_id = 0
+	--error_log("ps_tasks: check complete missions npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table == nil then
+		return false
+	end
+	if npc_tasks ~= nil then
+		for k,v in pairs(npc_tasks) do
+			mission_id = v
+			for kk,vv in pairs(task_table) do
+				local task = vv
+				if task.base_id == mission_id then
+					if task.state == "have_item" or vv.last_check_task == "pending" then
+						return true
+					end
+				end
+			end
+		end
+	end
+	return false
+end
+
+function TaskBoard:complete_mission(npc)
+	--error_log("ps_tasks: complete missions npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	local mission_id = 0
+	local mission = ""
+	--error_log("ps_tasks: complete missions npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table == nil then
+		return
+	end
+	if npc_tasks ~= nil then
+		for k,v in pairs(npc_tasks) do
+			mission = k
+			mission_id = v
+			for kk,vv in pairs(task_table) do
+				if vv.base_id == mission_id then
+					if vv.state == "have_item" then
+						vv:transfer_items_looking_for(npc)
+					elseif vv.last_check_task == "pending" then
+						vv:transfer_reward(npc)
+					end
+					vv:finish_task()
+					npc_tasks[mission] = "nil"
+				end
+			end
+		end
+	end
+end
+
+function TaskBoard:get_mission_title(npc, mission, str)
+	--error_log(str)
+	--error_log("ps_tasks: get mission title npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	if npc_tasks == nil then
+		return
+	end
+	local mission_id = npc_tasks[mission]
+	--error_log("ps_tasks: get mission title npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table ~= nil then
+		for k,v in pairs(task_table) do
+			if v.base_id == mission_id and v.dialog ~= "" then
+				return game.translate_string(v.dialog.."_"..str)
+			end
+		end
+	end
+end
+
+function TaskBoard:has_mission(npc, mission)
+	--error_log("ps_tasks: has mission npc:id() 1")
+	local npc_tasks = self.data[npc:id()]
+	if npc_tasks == nil then
+		error_log("No missions available")
+		return false
+	end
+	local tsk = npc_tasks[mission]
+	--error_log("ps_tasks: has mission npc:id() 2")
+	local task_table = task_manager.get_task_manager().inited_ps_tasks[npc:id()]
+	if task_table ~= nil then
+		for k,v in pairs(task_table) do
+			--error_log(v.base_id.." "..mission)
+			if v.base_id == tsk and v.status == "normal" then
+				return true
+			end
+		end
+	end
+	return false
+end
+
+
+function give_mission1(actor, npc)
+	get_task_board():give_mission(npc, "mission1")
+end
+function give_mission2(actor, npc)
+	get_task_board():give_mission(npc, "mission2")
+end
+function give_mission3(actor, npc)
+	get_task_board():give_mission(npc, "mission3")
+end
+function give_mission4(actor, npc)
+	get_task_board():give_mission(npc, "mission4")
+end
+
+function has_mission_1(actor, npc)
+	return get_task_board():has_mission(npc, "mission1")
+end
+function has_mission_2(actor, npc)
+	return get_task_board():has_mission(npc, "mission2")
+end
+function has_mission_3(actor, npc)
+	return get_task_board():has_mission(npc, "mission3")
+end
+function has_mission_4(actor, npc)
+	return get_task_board():has_mission(npc, "mission4")
+end
+
+function mission1_title(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission1", "descr")
+end
+function mission2_title(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission2", "descr")
+end
+function mission3_title(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission3", "descr")
+end
+function mission4_title(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission4", "descr")
+end
+
+function mission1_descr(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission1", "descr2")
+end
+function mission2_descr(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission2", "descr2")
+end
+function mission3_descr(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission3", "descr2")
+end
+function mission4_descr(npc, actor)
+	return get_task_board():get_mission_title(npc, "mission4", "descr2")
+end
+
+
+
+function get_task_board()
+	if board == nil then
+		board = TaskBoard()
+	end
+	return board
+end

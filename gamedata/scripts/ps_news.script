@@ -1,0 +1,49 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+function show_news()
+
+ local ps_stalkers_news=ps_stalkers_news.get_strings()
+ local ps_duty_news=ps_duty_news.get_strings()
+ local ps_freedom_news=ps_freedom_news.get_strings()
+ local ps_bandits_news=ps_bandits_news.get_strings()
+ local ps_mercenaries_news=ps_mercenaries_news.get_strings()
+ local ps_network_news=ps_network_news.get_strings()
+ local when,where,text=ps_information_news.get_strings()
+ local name,sname=ps_personalized_news.get_strings()
+ local reason,dead=ps_mortality_news.get_strings()
+ 
+  if math.random(0,1)>0.2 then
+	if math.random(0,1)>0.875 then
+      if math.random(0,1)>0.5 then
+        ps.send_tip(ps_duty_news,"Долг", 0, 12)
+       else
+        ps.send_tip(ps_freedom_news,"Свобода", 0, 12)
+      end
+      else
+      if math.random(0,1)>0.57 then
+        ps.send_tip(ps_mercenaries_news,"Наемники", 0, 12)
+      else
+        ps.send_tip(ps_bandits_news,"Бандиты", 0, 12)
+      end
+      end
+	 else
+	  if math.random(0,1)>0.5 then
+              if math.random(0,1)>0.5 then
+             ps.send_tip(ps_stalkers_news,"Сталкеры", 0, 12)
+       else
+             ps.send_tip(ps_network_news,"Сеть", 0, 12)
+       end
+       else
+	   if math.random(0,1)>0.5 then
+	         ps.send_tip(when.." "..where.." "..text.." ",name.." "..sname, 0, 12)
+             else
+             	         ps.send_tip(name.." "..sname..". "..dead..". "..reason,"Погиб сталкер:", 0, 12)
+             end
+             end
+             end
+ps.g_start_timer("show_news",0,0,math.random(20,40))
+end

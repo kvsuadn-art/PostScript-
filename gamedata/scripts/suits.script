@@ -1,0 +1,39 @@
+local allowed_suits = {
+	"exo_outfit",
+	"svoboda_exo_outfit",
+}
+
+local forbidden_weapons = {
+	"wpn_m82",
+}
+
+function item_in_table(t, item)
+	for k,v in pairs(t) do
+		if v == item then
+			return true
+		end
+	end
+	return false
+end
+
+function check_weapons_and_suits()
+	local actor = db.actor
+	local suit = actor:item_in_slot(6)
+	local weapon = actor:item_in_slot(2)
+	local sini = system_ini()
+	--if allowed_suits ~= nil and forbidden_weapons ~= nil then
+		if suit ~= nil and weapon ~= nil then
+			local suit_section = suit:section()
+			local weapon_section = weapon:section()
+			if item_in_table(forbidden_weapons, weapon_section) == true and item_in_table(allowed_suits, suit_section) == false then
+				actor:transfer_item(weapon, actor)
+			end
+		elseif suit == nil and weapon ~= nil then
+			local weapon_section = weapon:section()
+			if item_in_table(forbidden_weapons, weapon_section) == true then
+				actor:transfer_item(weapon, actor)
+			end
+		end
+	--end
+end
+

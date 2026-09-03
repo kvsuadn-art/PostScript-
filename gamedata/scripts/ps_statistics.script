@@ -1,0 +1,61 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+kill_counts = {
+	neutral_novice = 0, neutral_experienced = 0, neutral_veteran = 0, neutral_master = 0,
+	monolith_novice = 0, monolith_experienced = 0, monolith_veteran = 0, monolith_master = 0,
+	military_novice = 0, military_experienced = 0, military_veteran = 0, military_master = 0,
+	killer_novice = 0, killer_experienced = 0, killer_veteran = 0, killer_master = 0,
+	ecolog_novice = 0, ecolog_experienced = 0, ecolog_veteran = 0, ecolog_master = 0,
+	dolg_novice = 0, dolg_experienced = 0, dolg_veteran = 0, dolg_master = 0,
+	freedom_novice = 0, freedom_experienced = 0, freedom_veteran = 0, freedom_master = 0,
+	bandit_novice = 0, bandit_experienced = 0, bandit_veteran = 0, bandit_master = 0,
+	zombied_novice = 0, zombied_experienced = 0, zombied_veteran = 0, zombied_master = 0,
+	renegade_novice = 0, renegade_experienced = 0, renegade_veteran = 0, renegade_master = 0,
+
+	tushkano_weak = 0,
+	flesh_weak = 0, flesh_normal = 0, flesh_strong = 0,
+	boar_weak = 0, boar_normal = 0, boar_strong = 0,
+	dog_weak = 0, dog_normal = 0, dog_strong = 0,
+	pseudodog_weak = 0, pseudodog_normal = 0, pseudodog_strong = 0,
+	psy_dog_weak = 0, psy_dog_normal = 0, psy_dog_strong = 0,
+	snork_weak = 0, snork_normal = 0, snork_strong = 0,
+	poltergeist_weak = 0,
+	pseudo_gigant_weak = 0,
+	controller_weak = 0,
+	bloodsucker_weak = 0, bloodsucker_normal = 0, bloodsucker_strong = 0,
+	chimera_weak = 0, chimera_normal = 0, chimera_strong = 0,
+	cat_weak = 0, cat_normal = 0, cat_strong = 0,
+}
+
+kill_order = {
+	"neutral_novice", "neutral_experienced", "neutral_veteran", "neutral_master", "bandit_novice", "bandit_experienced", "bandit_veteran", "bandit_master",
+	"dolg_novice", "dolg_experienced", "dolg_veteran", "dolg_master", "freedom_novice", "freedom_experienced", "freedom_veteran", "freedom_master",
+	"military_novice", "military_experienced", "military_veteran", "military_master", "killer_novice", "killer_experienced", "killer_veteran", "killer_master",
+	"monolith_novice", "monolith_experienced", "monolith_veteran", "monolith_master", "ecolog_novice", "ecolog_experienced", "ecolog_veteran", "ecolog_master",
+	"renegade_novice", "renegade_experienced", "renegade_veteran", "renegade_master",
+	"zombied_novice", "zombied_experienced", "zombied_veteran", "zombied_master",
+	"boar_weak", "boar_normal", "boar_strong", "flesh_weak", "flesh_normal", "flesh_strong", "cat_weak", "cat_normal", "cat_strong", "tushkano_weak",
+	"dog_weak", "dog_normal", "dog_strong", "pseudodog_weak", "pseudodog_normal", "pseudodog_strong", "psy_dog_weak", "psy_dog_normal", "psy_dog_strong",
+	"snork_weak", "snork_normal", "snork_strong", "bloodsucker_weak", "bloodsucker_normal", "bloodsucker_strong", "poltergeist_weak", "pseudo_gigant_weak", "controller_weak",
+}
+
+function addKill(sect_name)
+	kill_counts[sect_name] = kill_counts[sect_name] + 1
+end
+
+function save(package)
+	for k,v in pairs(kill_counts) do
+		package:w_int(v)
+	end
+end
+
+function load(reader)
+	for k,v in pairs(kill_counts) do
+		kill_counts[k] = reader:r_int(v)
+	end
+end

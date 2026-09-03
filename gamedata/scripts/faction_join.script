@@ -1,0 +1,133 @@
+
+function canJoinDuty()
+	local kills = xr_statistic.actor_statistic.killed_monsters
+	local rep = xr_statistic.actor_statistic.reputation
+	if kills >= 50 and rep >= 20 then
+		return true
+	else
+		return false
+	end
+end
+
+function cannotJoinDuty()
+	return not canJoinDuty()
+end
+
+-- Items recived for joining Duty
+function transfer_items_dolg(first_speaker, second_speaker)
+	if not has_alife_info("agr_joined_duty") then
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "dolg_outfit")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_abakan")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_5.45x39_fmj", 3)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "grenade_f1", 5)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit_army", 5)
+		db.actor:give_info_portion("agr_joined_duty")
+	end
+end
+
+function canJoinBandits()
+	local kills = xr_statistic.actor_statistic.killed_stalkers
+	local rep = xr_statistic.actor_statistic.reputation
+	if kills >= 30 and rep <= 50 then
+		return true
+	else
+		return false
+	end
+end
+
+function cannotJoinBandits()
+	return not canJoinBandits()
+end
+
+-- Items recieved for joining Bandits
+function transfer_items_bandit(first_speaker, second_speaker)
+	if not has_alife_info("gar_joined_bandits") then
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "trench_outfit")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_vintorez")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x39_pab9", 5)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "grenade_rgd5", 3)
+		dialogs.relocate_money(first_speaker, 2000, "in")
+		db.actor:give_info_portion("gar_joined_bandits")
+	end
+end
+
+
+function canJoinFreedom()
+	local rep = xr_statistic.actor_statistic.reputation
+	if rep >= 30 then
+		return true
+	else
+		return false
+	end
+end
+
+function cannotJoinFreedom()
+	return not canJoinFreedom()
+end
+
+-- Items recieved for joining Freedom
+function transfer_items_freedom(first_speaker, second_speaker)
+	if not has_alife_info("val_joined_freedom") then
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "svoboda_medium_outfit")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_lr300")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_5.56x45_ap", 3)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit_scientic", 1)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit_army", 5)
+		db.actor:give_info_portion("val_joined_freedom")
+	end
+end
+
+-- Items recieved for joining Clear Sky
+function transfer_items_csky(first_speaker, second_speaker)
+	if not has_alife_info("mar_joined_csky") then
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_advanced")
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 3)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "antirad", 3)
+		dialogs.relocate_money(first_speaker, 2000, "in")
+		db.actor:give_info_portion("mar_joined_csky")
+	end
+end
+
+
+
+
+function reset_faction_goodwill(fact, gw)
+	if db.actor and fact then
+		local board_players = sim_board.get_sim_board().players
+		local faction = board_players[tostring(fact)]
+		--error_log("Faction "..tostring(fact).." goodwill reset")
+		--error_log(tostring(faction~=nil))
+		if faction then
+			--error_log("Faction "..tostring(fact).." goodwill reset")
+			db.actor:set_community_goodwill(fact, gw)
+			--error_log("Done")
+		end
+	end
+end
+
+function reset_duty_goodwill(actor, npc)
+	reset_faction_goodwill("dolg", 0)
+end
+
+function reset_freedom_goodwill(actor, npc)
+	reset_faction_goodwill("freedom", 0)
+end
+
+function reset_bandit_goodwill(actor, npc)
+	reset_faction_goodwill("bandit", 0)
+end
+
+function reset_stalker_goodwill(actor, npc)
+	reset_faction_goodwill("stalker", 0)
+end
+
+function leave_dolg_enemy_goodwill(actor, npc)
+	reset_faction_goodwill("freedom", -200)
+	reset_faction_goodwill("bandit", -200)
+end
+
+function leave_freedom_enemy_goodwill(actor, npc)
+	reset_faction_goodwill("dolg", -200)
+end
+
+

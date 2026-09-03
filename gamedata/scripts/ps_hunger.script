@@ -1,0 +1,119 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+local eat_id = nil
+local eat_section = nil
+
+local max_hunger = 1
+local min_hunger = 0
+local hunger_drop = 0.001
+current_hunger = 0.04
+local threshold = 0.01
+local increment = 0.1
+local last_time_check = game.get_game_time()
+
+
+local food = {"bread",
+			  "kolbasa",
+			  "conserva",
+			  "vodka",
+			  }
+
+local hunger_restore = {
+	bread 	= 0.02,
+	kolbasa	= 0.04,
+	conserva	= 0.06,
+	vodka	= 0.005,
+}
+
+
+function on_item_drop(obj)
+	eat_id = obj:id()
+	eat_section = obj:section()	
+end
+
+
+function eaten(section)
+	local eaten = section
+	for k,v in pairs(food) do
+		if eaten == v then
+			local restore = hunger_restore[eaten]
+			current_hunger = current_hunger + restore
+			if current_hunger > max_hunger then
+				current_hunger = max_hunger
+			end
+			if tonumber(current_hunger) > threshold then
+				toggle_hunger_icon("off")
+			end
+			break
+		end
+	end	
+end
+
+
+
+function update()
+
+	if eat_id then
+		if eat_id and alife():object(eat_id)==nil then
+			eaten(eat_section)
+		end
+		eat_id = nil
+		eat_section = nil
+	end
+
+	if ps_settings.HungerEnabled() == true then
+		local time = game.get_game_time()
+		if math.floor(time:diffSec(last_time_check)) >= 360 then
+			last_time_check = time
+			current_hunger = current_hunger - hunger_drop
+			if current_hunger < min_hunger then
+				current_hunger = min_hunger
+			end
+			if tonumber(current_hunger) >= threshold then
+				toggle_hunger_icon("off")
+			else
+				toggle_hunger_icon("on")
+			end
+		end
+	end
+end
+
+function toggle_hunger_icon(value)
+	if value == "on" then
+		local icon = get_hud():GetCustomStatic("starvation_static")
+		if not icon then
+			get_hud():AddCustomStatic("starvation_static", true)
+			icon = get_hud():GetCustomStatic("starvation_static"):wnd()
+			icon:SetColor(GetARGB(255, 76, 138, 3))			
+		end
+	elseif value == "off" then
+		local icon = get_hud():GetCustomStatic("starvation_static")
+		if icon then
+			get_hud():RemoveCustomStatic("starvation_static")
+		end		
+	end
+end
+
+function save(package)
+	--set_save_marker(package, "save", false, "psHunger")
+	--package:w_u8(current_hunger)
+	--package:w_u8(last_hour)
+	package:w_float(current_hunger)
+	--set_save_marker(package, "save", true, "psHunger")
+end
+
+function load(reader)
+	--set_save_marker(reader, "load", false, "psHunger")
+	local h = reader:r_float(current_hunger)	--reader:r_u8()
+	current_hunger = h
+	--last_hour = reader:r_u8()
+	if h > max_hunger then
+		current_hunger = max_hunger
+	end
+	--set_save_marker(reader, "load", true, "psHunger")
+end

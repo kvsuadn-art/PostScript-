@@ -1,0 +1,63 @@
+class "CUICheckbox"(CUIScriptWnd)
+
+function CUICheckbox:__init(handler, x, y, state) super()
+	if x == nil then x = 0 end
+	if y == nil then y = 0 end
+	if state == nil then state = false end
+	self.handler = handler
+	self.x = x
+	self.y = y
+	self.state = state
+	self:init_interface()
+	self:init_callbacks()
+	self:SetCheck(state)
+end
+
+function CUICheckbox:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_custom_checkbox.xml")
+	
+	self:SetWndPos(vector2():set(self.x,self.y))
+	
+	self.on = xml:Init3tButton("button_on", self)
+	self:Register(self.on, "button_on")
+	self.off = xml:Init3tButton("button_off", self)
+	self:Register(self.off, "button_off")
+end
+
+function CUICheckbox:init_callbacks()
+	self:AddCallback("button_off",	ui_events.BUTTON_CLICKED, self.turn_on, self)
+	self:AddCallback("button_on",	ui_events.BUTTON_CLICKED, self.turn_off, self)
+end
+
+function CUICheckbox:turn_on()
+	self:toggle_state()
+end
+
+function CUICheckbox:turn_off()
+	self:toggle_state()
+end
+
+function CUICheckbox:toggle_state()
+	self.state = self.state==false
+	self.on:Show(self.state)
+	self.off:Show(self.state==false)
+end
+
+function CUICheckbox:SetCheck(state)
+	self.state = state
+	self.on:Show(state)
+	self.off:Show(state==false)
+end
+
+function CUICheckbox:GetCheck()
+	return self.state
+end
+
+function CUICheckbox:SetPosition(x, y)
+	self.x = x
+	self.y = y
+end
+
+
+

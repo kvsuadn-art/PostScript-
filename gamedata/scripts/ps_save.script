@@ -1,0 +1,212 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local save_filename = nil
+
+function set_save_name(filename)
+	save_filename = filename
+end
+
+function get_save_name()
+	local filename = nil
+	if save_filename == nil then
+		if utils.level_changing() == true then
+			filename = string.lower(user_name().."_autosave")
+		else
+			filename = string.lower(user_name().."_quicksave")
+		end
+		return filename
+	else
+		filename = save_filename
+		save_filename = nil
+		return filename
+	end
+end
+
+function does_file_exist(filename, silent)
+	local fs = getFS()
+	local saved_games = fs:update_path("$game_saves$", "")
+	error_log(tostring(saved_games))
+	local file = io.open(saved_games..filename..".PSsave", "r")
+	if file == nil then
+		if silent == false then
+			error_log("PreSky save file with filename '"..filename..".PSsave' doesn't exist!")
+		end
+		return false
+	end
+	file:close()
+	return true
+end
+
+
+class "Saver"
+function Saver:__init(filename)
+	self.filename = filename
+	self.save_dir = ""
+	self.file = ""
+	self.save_dir = getFS():update_path("$game_saves$", "")
+	self.file = io.open(self.save_dir..self.filename..".PSsave", "w")
+end
+
+function Saver:finish_write()
+	if self.file ~= "" then
+		self.file:write(tostring("*****EOF*****"))
+	end
+	self.file:close()
+	error_log("Game "..self.filename..".PSsave is successfully saved to file '"..self.save_dir..self.filename..".PSsave'")
+end
+
+function Saver:w_stringZ(str)
+	if self.file ~= "" then
+		self.file:write(tostring(str).."\n")
+	end
+end
+
+function Saver:w_int(int)
+	self:w_stringZ(int)
+end
+
+function Saver:w_u8(int)
+	if int > 255 then
+		int = 0
+	elseif int < 0 then
+		int = 0
+	end
+	self:w_stringZ(int)
+end
+
+function Saver:w_u16(int)
+	if int > 65535 then
+		int = 0
+	elseif int < 0 then
+		int = 0
+	end
+	self:w_stringZ(int)
+end
+
+function Saver:w_u32(int)
+	if int > 4294967295 then
+		int = 0
+	elseif int < 0 then
+		int = 0
+	end
+	self:w_stringZ(int)
+end
+
+function Saver:w_float(float)
+	self:w_stringZ(float)
+end
+
+function Saver:w_bool(bool)
+	self:w_stringZ(bool)
+end
+
+function Saver:w_CTime(t)
+	if self.file ~= "" then
+		if t == nil then
+			self.file:write(tostring("-1").."\n")
+			return
+		end
+		if (CTime == nil) or (t ~= utils.CTime_0) then
+			local Y, M, D, h, m, s, ms = 0, 0, 0, 0, 0, 0, 0
+			Y, M, D, h, m, s, ms = t:get( Y, M, D, h, m, s, ms )
+			str = Y..":"..M..":"..D..":"..h..":"..m..":"..s..":"..ms
+			self.file:write(tostring(str).."\n")
+		else
+			self.file:write(tostring("0").."\n")
+		end
+	end
+end
+
+
+class "Loader"
+function Loader:__init(filename)
+	self.filename = filename
+	self.load_dir = ""
+	self.file = ""
+	self.load_dir = getFS():update_path("$game_saves$", "")
+	if does_file_exist(self.filename, false) == true then
+		self.file = io.open(self.load_dir..self.filename..".PSsave", "r")
+		error_log("Opening PreSky save file with filename: "..filename)
+	else
+		error_log("Cannot open PreSky save file with filename: "..filename..".PSsave")
+	end
+end
+
+function Loader:finish_read()
+	if self.file ~= "" then
+		if self.file:read("*l") ~= "*****EOF*****" then
+			error_log("CRITICAL ERROR: EOF MISREAD IN PSSAVE FILE "..self.filename)
+		else
+			error_log("Game "..self.filename..".PSsave is successfully loaded from file '"..self.load_dir..self.filename..".PSsave'")
+		end
+	end
+	self.file:close()
+end
+
+function Loader:r_stringZ(default)
+	if self.file ~= "" then
+		return tostring(self.file:read("*l"))
+	end
+	return default
+end
+
+function Loader:r_int(default)
+	if self.file ~= "" then
+		return tonumber(self.file:read("*l"))
+	end
+	return default
+end
+
+function Loader:r_u8(default)
+	return self:r_int(default)
+end
+
+function Loader:r_u16(default)
+	return self:r_int(default)
+end
+
+function Loader:r_u32(default)
+	return self:r_int(default)
+end
+
+function Loader:r_float(default)
+	return self:r_int(default)
+end
+
+function Loader:r_bool()
+	b = self:r_stringZ()
+	if b == "true" then
+		return true
+	end
+	return false
+end
+
+function Loader:r_CTime()
+	if self.file ~= "" then
+		local line = self:r_stringZ("-1")
+		if line == "-1" then
+			return
+		end
+		if line == "0" then
+			return 0
+		end
+		local t = game.CTime()
+		local chars = global_func.split(line, ":")
+		t:set(chars[1], chars[2], chars[3], chars[4], chars[5], chars[6], chars[7])
+		return t
+	end
+end
+
+
+function get_Saver(filename)
+	return Saver(filename)
+end
+
+function get_Loader(filename)
+	return Loader(filename)
+end
+

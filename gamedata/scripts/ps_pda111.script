@@ -1,0 +1,765 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local pda_id = nil
+local ui_call_init = false
+local pda_active = false
+local clock_label = nil
+local current_pda = nil
+local _activate_over_default = false
+
+function on_item_drop(obj)
+	if obj:section() == "pda_actor" then
+		pda_id = obj:id()
+		ui_call_init = true	
+	end
+end
+
+function update()
+	if ui_call_init then
+		if pda_id and alife():object(pda_id)==nil then
+			ui_call_init = false
+			clock_label = nil
+			pda_active = true
+			local act = db.actor
+			alife():create("pda_actor", act:position(), act:level_vertex_id(), act:game_vertex_id(), act:id())
+			get_hud():HideActorMenu()
+			activate_PDA()
+		else
+			ui_call_init = false
+			pda_id = nil
+		end
+	end
+	if pda_active == true then
+		if clock_label ~= nil then
+			clock_label:SetText(pda.get_stat(9))
+		end
+	end
+	if _activate_over_default == true then
+		get_hud():HidePdaMenu()
+	end
+end
+
+function activate_PDA()
+	if current_pda == nil then
+		current_pda = PDA() --ps_pda.PDA()
+	end
+	current_pda.active_window:init_values()
+	level.start_stop_menu(current_pda, true)
+end
+
+function activate_over_default(bool)
+	if bool ~= nil then
+		_activate_over_default = bool
+	else
+		return _activate_over_default
+	end
+end
+
+
+--Base PDA
+
+class "PDA" (CUIScriptWnd)
+function PDA:__init() super()
+	self.active_window = nil
+	self:init_interface()
+	self:init_callbacks()
+end
+
+function PDA:__finalize() 
+end
+
+function PDA:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_pda_new.xml")
+	
+	self.background = xml:InitStatic("background",self)
+	self:SetWndPos(vector2():set(0,20))
+	self:SetWndSize(vector2():set(self.background:GetWidth(),self.background:GetHeight()))
+	self.background:SetWndPos(vector2():set(0,0))
+	
+	
+	xml:InitStatic("frame_buttons_line",self.background)
+	xml:InitStatic("frame_time",self.background)
+	self.CurrentTime = xml:InitStatic("value_time",self)
+	self.CurrentTime:SetText(pda.get_stat(9))
+	pda_active = true
+	clock_label = self.CurrentTime
+
+	self.button_map = xml:InitButton("button_map",self)
+	self:Register(self.button_map, "button_map")
+
+	self.button_diary = xml:InitButton("button_diary",self)
+	self:Register(self.button_diary, "button_diary")
+
+	self.button_stats = xml:InitButton("button_stats",self)
+	self:Register(self.button_stats, "button_stats")
+
+	self.button_enc = xml:InitButton("button_enc",self)
+	self:Register(self.button_enc, "button_enc")
+
+	self.button_tasks = xml:InitButton("button_mission",self)
+	self:Register(self.button_tasks, "button_tasks")
+
+	self.button_quit = xml:InitButton("close_button",self)
+	self:Register(self.button_quit, "close_button")
+	
+	self.list_contents = xml:InitList("list_contents", self)
+	self.list_contents:EnableScrollBar(true)
+	self.list_contents:ShowSelectedItem(false)
+	self:Register(self.list_contents, "list_contents")
+	
+	self.map = PageMap(self)
+	self.diary = PageDiary(self)
+	self.stats = PageStats(self)
+	self.enc = PageEnc(self)
+	self.tasks = PageTasks(self)
+	
+	self:AttachChild(self.map)
+	self:AttachChild(self.diary)
+	self:AttachChild(self.stats)
+	self:AttachChild(self.enc)
+	self:AttachChild(self.tasks)
+	
+	xml:InitWindow("window_size", 0, self.map)
+	xml:InitWindow("window_size", 0, self.diary)
+	xml:InitWindow("window_size", 0, self.stats)
+	xml:InitWindow("window_size", 0, self.enc)
+	xml:InitWindow("window_size", 0, self.tasks)
+	
+	self:ui_map()
+end
+	
+function PDA:init_callbacks()
+	self:AddCallback("button_map",		ui_events.BUTTON_CLICKED, 	self.ui_map, 			self)
+	self:AddCallback("button_diary",	ui_events.BUTTON_CLICKED, 	self.ui_diary, 			self)
+	self:AddCallback("button_stats",	ui_events.BUTTON_CLICKED, 	self.ui_stats, 			self)
+	self:AddCallback("button_enc",		ui_events.BUTTON_CLICKED, 	self.ui_enc,   			self)
+	self:AddCallback("button_tasks",	ui_events.BUTTON_CLICKED, 	self.ui_tasks,   		self)
+	self:AddCallback("close_button",	ui_events.BUTTON_CLICKED, 	self.ui_quit,  			self)
+	self:AddCallback("list_contents",	ui_events.LIST_ITEM_CLICKED,self.listItem_selected,	self)
+end	
+
+function PDA:OnKeyboard(DIK, KeyboardAction)
+	CUIScriptWnd.OnKeyboard(self, DIK, KeyboardAction)
+	if KeyboardAction == ui_events.WINDOW_KEY_PRESSED then
+		if DIK == DIK_keys.DIK_ESCAPE then
+			self:ui_quit()
+		end
+	end
+	return true
+end
+
+function PDA:ui_pass()
+end
+
+function PDA:button_base_function(e1, e2, e3, e4, e5, show, new_window)
+	self.button_map:Enable(e1)
+	self.button_diary:Enable(e2)
+	self.button_stats:Enable(e3)
+	self.button_enc:Enable(e4)
+	self.button_tasks:Enable(e5)
+	self.map:Show(e1==false)
+	self.diary:Show(e2==false)
+	self.stats:Show(e3==false)
+	self.enc:Show(e4==false)
+	self.tasks:Show(e5==false)
+	self.active_window = new_window
+	self.list_contents:Show(show)
+	self.active_window:init_values()
+end
+
+function PDA:ui_map()
+	self:button_base_function(false, true, true, true, true, true, self.map)
+end
+
+function PDA:ui_diary()
+	self:button_base_function(true, false, true, true, true, true, self.diary)
+end
+
+function PDA:ui_stats()
+	self:button_base_function(true, true, false, true, true, false, self.stats)
+end
+
+function PDA:ui_enc()
+	self:button_base_function(true, true, true, false, true, true, self.enc)
+end
+
+function PDA:ui_tasks()
+	self:button_base_function(true, true, true, true, false, false, self.tasks)
+end
+
+function PDA:ui_quit()
+	pda_active = false
+	self:GetHolder():start_stop_menu(self,true)
+end
+
+function PDA:listItem_selected()
+	if self.list_contents:GetSize() == 0 then
+		return
+	end
+	local index	= self.list_contents:GetSelectedItem()
+	local item = self.list_contents:GetItem(index)
+	if item == nil then
+		return
+	end
+	local item_text	= item.label_text:GetText()
+	local item_info = item.label_info:GetText()
+	if item_text == "null" or item_info == "null" then
+		return
+	end
+	self.active_window:showDescription(item_text, item_info)
+	self.list_contents:ShowSelectedItem(true)
+end
+
+
+-- Statistics Page
+
+class "PageStats" (CUIWindow)
+function PageStats:__init(parent) super()
+	self.parent = parent
+
+	self:init_interface()
+	self:init_callbacks()
+	self:init_values()
+end
+
+function PageStats:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_pda_stats.xml")
+	
+	xml:InitFrame("frame_stats",self)
+	xml:InitStatic("actor_icon",self)
+	xml:InitStatic("actor_icon_over",self)
+	xml:InitStatic("label_name",self)
+	xml:InitStatic("label_faction",self)
+	self.actor_faction = xml:InitStatic("value_faction",self)
+	xml:InitStatic("label_reputation",self)
+	self.reputation = xml:InitStatic("value_reputation",self)
+	self.rankicon = xml:InitStatic("value_rankicon",self)
+	self.faction_icon = xml:InitStatic("faction_icon",self)
+	xml:InitStatic("faction_icon_over",self)
+	
+	xml:InitStatic("bar_seperator_v_1",self)
+	xml:InitStatic("bar_seperator_h_1",self)
+	xml:InitStatic("bar_seperator_h_2",self)
+	xml:InitStatic("bar_seperator_h_3",self)
+	
+	xml:InitStatic("info_gameplay",self)
+	xml:InitStatic("label_stash",self)
+	self.stashes = xml:InitStatic("value_stash",self)
+	xml:InitStatic("label_money_earnt",self)
+	self.money_won = xml:InitStatic("value_money_earnt",self)
+	xml:InitStatic("label_money_lost",self)
+	self.money_lost = xml:InitStatic("value_money_lost",self)
+	
+	xml:InitStatic("info_tasks",self)
+	xml:InitStatic("label_tasks_total",self)
+	self.tasks_total = xml:InitStatic("value_tasks_total",self)
+	xml:InitStatic("label_tasks_done",self)
+	self.tasks_done = xml:InitStatic("value_tasks_done",self)
+	xml:InitStatic("label_tasks_fail",self)
+	self.tasks_fail = xml:InitStatic("value_tasks_fail",self)
+	
+	xml:InitStatic("info_kills",self)
+	xml:InitStatic("label_kills_human",self)
+	self.kills_human = xml:InitStatic("value_kills_human",self)
+	xml:InitStatic("label_kills_mutant",self)
+	self.kills_mutant = xml:InitStatic("value_kills_mutant",self)
+	xml:InitStatic("label_kills_mutant_powerful",self)
+	self.powerful_mutant_killed_icon = xml:InitStatic("label_kills_mutant_powerful_icon",self)
+	xml:InitStatic("label_kills_mutant_powerful_icon_over",self)
+	
+	xml:InitStatic("label_kills_table",self)
+	xml:InitStatic("list_kills_over",self)
+	self.kill_table = xml:InitList("list_kills_table", self)
+	self.kill_table:EnableScrollBar(true)
+	
+end
+	
+function PageStats:init_callbacks()
+end
+	
+function PageStats:init_values()
+	self.actor_faction:SetText(game.translate_string(tostring(db.actor:character_community())))
+	self.reputation:SetText(self:Get_Reputation())
+	self.stashes:SetText(pda.get_stat(1))
+	self.money_won:SetText(pda.get_stat(2))
+	self.money_lost:SetText(pda.get_stat(3))
+	self.tasks_total:SetText(pda.get_stat(4))
+	self.tasks_done:SetText(pda.get_stat(5))
+	self.tasks_fail:SetText(pda.get_stat(6))
+	self.kills_human:SetText(pda.get_stat(7))
+	self.kills_mutant:SetText(pda.get_stat(8))
+	
+	self.description_main_size = vector2():set(220,22)
+	self.description_text_size = vector2():set(220,22)
+	
+	self:Set_FactionIcon()
+	self:Set_Rank()
+	self:Set_StrongestMutantKilled()
+	self:fillKillTable()
+end
+
+function PageStats:Get_Reputation()
+	local rep = xr_statistic.actor_statistic.reputation
+	if rep < 100 then
+		return game.translate_string("st_reputation_1")
+	elseif rep < 200 then
+		return game.translate_string("st_reputation_2")
+	elseif rep < 300 then
+		return game.translate_string("st_reputation_3")
+	elseif rep < 400 then
+		return game.translate_string("st_reputation_4")
+	elseif rep < 500 then
+		return game.translate_string("st_reputation_5")
+	elseif rep < 600 then
+		return game.translate_string("st_reputation_6")
+	elseif rep >= 600 then
+		return game.translate_string("st_reputation_7")
+	end
+end
+
+function PageStats:Set_Rank()
+	local rank = db.actor:character_rank()
+	if rank > 900 then
+		self.rankicon:InitTexture("ui_hud_status_blue_05")
+	elseif rank > 600 then
+		self.rankicon:InitTexture("ui_hud_status_blue_04")
+	elseif rank > 300 then
+		self.rankicon:InitTexture("ui_hud_status_blue_03")
+	else
+		self.rankicon:InitTexture("ui_hud_status_blue_02")
+	end
+end
+
+function PageStats:Set_FactionIcon()
+	local faction = global_func.getPlayerFaction()
+	if faction ~= "none" then
+		self.faction_icon:InitTexture(tostring(faction.."_wide"))
+	else
+		self.faction_icon:InitTexture(tostring("actor_wide"))
+	end
+end
+
+function PageStats:Set_StrongestMutantKilled()
+	local mutant_icon = {
+		dog 			= "ui_npc_monster_dog",
+		pseudodog 		= "ui_npc_monster_pseudodog",
+		flesh 			= "ui_npc_monster_flesh",
+		boar 			= "ui_npc_monster_mutant_boar",
+		snork 			= "ui_npc_monster_snork",
+		controller 		= "ui_npc_monster_kontroler",
+		bloodsucker 	= "ui_npc_monster_krovosos",
+		tushkano 		= "ui_npc_monster_tushkano",
+		pseudo_gigant	= "ui_npc_monster_psevdogigant",
+		poltergeist 	= "ui_npc_monster_poltergeist",
+		psy_dog 		= "ui_npc_monster_pseudodog_grey",
+		cat 			= "ui_npc_monster_cat",
+		chimera 		= "ui_npc_monster_chimera",
+		NIL 			= ""
+	}
+	local mutant = xr_statistic.actor_statistic.strongest_mutant_kill
+	local icon = mutant_icon[mutant]
+	if icon ~= "" then
+		self.powerful_mutant_killed_icon:InitTexture(tostring(icon))
+	end
+end
+
+function PageStats:fillKillTable()
+	self.kill_table:RemoveAll()
+	self.kill_table:ScrollToBegin()
+	self.kill_table:ShowSelectedItem(false)
+	
+	local i = 0
+	for k,v in pairs(ps_statistics.kill_order) do
+		i = ps_statistics.kill_counts[v]
+		if i > 0 then
+			local element = description_list_item()
+			element:SetWndSize(self.description_main_size)
+			element.label_text:SetWndSize(self.description_text_size)
+			element.label_text:SetWndPos(vector2():set(0,0))
+			element.label_text:SetText(game.translate_string(v.."_name")..": "..tostring(i))
+
+			self.kill_table:AddItem(element)
+		end
+	end
+end
+
+
+
+
+-- List items
+
+class "content_list_item" (CUIListItemEx)
+function content_list_item:__init() super()
+	self.item_name = "itemname"
+	self.label_text = CUIStatic()
+	self.label_text:SetAutoDelete(true)
+	self.label_text:SetFont(GetFontLetterica18Russian())
+	self.label_text:SetElipsis(2,2)
+	self:AttachChild(self.label_text )
+	self.label_info = CUIStatic()
+	self.label_info:SetAutoDelete(true)
+	self.label_info:SetFont(GetFontLetterica16Russian())
+	self:AttachChild(self.label_info)
+end
+
+class "description_list_item" (CUIListItemEx)
+function description_list_item:__init() super()
+	self.item_name = "itemname"
+	self.label_text	= CUIStatic()
+	self.label_text:SetFont(GetFontLetterica16Russian())
+	self:AttachChild(self.label_text)
+end
+
+
+
+-- Map Page
+
+local map_sheets = {
+	"location_agroprom",
+	"location_darkvalley",
+	"location_escape",
+	"location_garbage",
+	"location_limansk",
+	"location_marsh",
+	"location_military",
+	"location_red_forest",
+	"location_yantar",
+}
+
+class "PageMap" (CUIWindow)
+function PageMap:__init(parent) super()
+	self.parent = parent
+	self.list_contents = self.parent.list_contents
+	
+	self:init_interface()
+	self:init_callbacks()
+	self:init_values()
+	
+	self:showDescription("location_escape_name2", "location_escape")
+end
+
+function PageMap:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_pda_map.xml")
+	
+	xml:InitStatic("frame_map",self)
+	self.scroll_window = xml:InitScrollView("scroll_window", self)
+	self.map_pic = xml:InitStatic("static_map", self.scroll_window)
+end
+
+function PageMap:init_callbacks()
+end
+
+function PageMap:init_values()
+	self.content_main_size = vector2():set(220,22)
+	self.content_text_size = vector2():set(220,22)
+	self.content_info_size = vector2():set(0,0)
+
+	self.list_contents:RemoveAll()
+	self.list_contents:ScrollToBegin()
+	self.list_contents:ShowSelectedItem(false)
+	
+	for k,v in pairs(map_sheets) do
+		if db.actor:has_info(v) then
+			self:addContentItem(game.translate_string(tostring(v.."_name2")), tostring(v))
+		end
+	end
+end
+
+function PageMap:addContentItem(text, info)
+	local element = content_list_item()
+	element:SetWndSize(self.content_main_size)
+	element.label_text:SetWndSize(self.content_text_size)
+	element.label_text:SetWndPos(vector2():set(0,0))
+	element.label_text:SetText(tostring(text))
+	element.label_info:SetWndSize(self.content_info_size)
+	element.label_info:SetWndPos(vector2():set(0,0))
+	element.label_info:Show(false)
+	element.label_info:SetText(tostring(info))
+	
+	self.list_contents:AddItem(element)
+end
+
+function PageMap:showDescription(name, info)
+	local texture = "ui_map_"..info
+	local img_texture, img_rect = get_texture_info(texture)
+	self.map_pic:SetWndSize(vector2():set(img_rect.x2,img_rect.y2))
+	error_log(tostring(img_rect.x2).." "..tostring(img_rect.y2))
+	self.map_pic:InitTexture(img_texture)
+end
+
+
+
+-- Diary Page
+
+local diary_stories = {
+	"stalker_novice_1",
+	"stalker_novice_2",
+	"stalker_stalker_1",
+	"stalker_stalker_2",
+	"stalker_veteran_1",
+	"stalker_veteran_2",
+	
+	"monolith_novice_1",
+	"monolith_stalker_1",
+	"monolith_stalker_2",
+	"monolith_veteran_1",
+	
+	"bandit_novice_1",
+	"bandit_stalker_1",
+	"bandit_veteran_1",
+	
+	"army_novice_1",
+	"army_stalker_1",
+	"army_veteran_1",
+	
+	"freedom_novice_1",
+	"freedom_stalker_1",
+	"freedom_stalker_2",
+	"freedom_stalker_3",
+	"freedom_veteran_1",
+	
+	"dolg_novice_1",
+	"dolg_novice_2",
+	"dolg_novice_3",
+	"dolg_stalker_1",
+	"dolg_stalker_2",
+	"dolg_stalker_3",
+	"dolg_stalker_4",
+	"dolg_stalker_5",
+	"dolg_stalker_6",
+	"dolg_veteran_1",
+	"dolg_veteran_2",
+	"dolg_veteran_3",
+	"dolg_master_1",
+}
+
+class "PageDiary" (CUIWindow)
+function PageDiary:__init(parent) super()
+	self.parent = parent
+	self.list_contents = self.parent.list_contents
+	
+	self:init_interface()
+	self:init_callbacks()
+	self:init_values()
+end
+
+function PageDiary:init_interface()
+	self:SetAutoDelete(true)
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_pda_diary.xml")
+	
+	xml:InitStatic("frame_diary",self)
+	
+	self.story_name = xml:InitStatic("label_storyName", self)
+	self.scroll_window = xml:InitScrollView("scroll_window", self)
+	self.story_descr = xml:InitStatic("label_description", self.scroll_window)
+end
+
+function PageDiary:init_callbacks()
+end
+
+function PageDiary:init_values()
+	self.content_main_size = vector2():set(220,42)
+	self.content_text_size = vector2():set(220,42)
+	self.content_info_size = vector2():set(0,0)
+	self.description_main_size = vector2():set(480,20)
+	self.description_text_size = vector2():set(270,20)
+
+	self.list_contents:RemoveAll()
+	self.list_contents:ScrollToBegin()
+	self.list_contents:ShowSelectedItem(false)
+	
+	for k,v in pairs(diary_stories) do
+		if db.actor:has_info(v) then
+			self:addContentItem(game.translate_string(tostring(v.."_name")), tostring(v))
+		end
+	end
+end
+
+function PageDiary:addContentItem(text, info)
+	local element = content_list_item()
+	element:SetWndSize(self.content_main_size)
+	element.label_text:SetWndSize(self.content_text_size)
+	element.label_text:SetWndPos(vector2():set(0,0))
+	element.label_text:SetText(tostring(text))
+	element.label_info:SetWndSize(self.content_info_size)
+	element.label_info:SetWndPos(vector2():set(0,0))
+	element.label_info:Show(false)
+	element.label_info:SetText(tostring(info))
+	
+	self.list_contents:AddItem(element)
+end
+
+function PageDiary:showDescription(name, info)
+	self.story_name:SetText(tostring(name))
+	
+	local descr = game.translate_string(tostring(info.."_descr"))
+	self.story_descr:SetText(descr)
+end
+
+
+-- Encycopedia Page
+
+local item_alias = {
+	faction_duty = "ui_npc_u_dolg_2_mask",
+	faction_freedom = "ui_npc_u_freedom_2_mask",
+	faction_bandit = "ui_npc_u_bandit_4",
+	faction_stalker = "ui_npc_u_neutral_2_mask",
+	faction_csky = "ui_npc_u_nebo_1",
+	faction_monolith = "ui_npc_u_monolith_2",
+	faction_merc = "ui_npc_u_merc_2",
+	faction_army = "ui_npc_u_soldier_4",
+	faction_ecolog = "ui_npc_u_ecolog_1",
+	faction_zombie = "ui_npc_u_zombied_1",
+	
+	mutant_dog = "ui_npc_monster_dog",
+	mutant_boar = "ui_npc_monster_mutant_boar",
+	mutant_flesh = "ui_npc_monster_flesh",
+	mutant_tushkano = "ui_npc_monster_tushkano",
+	mutant_cat = "ui_npc_monster_cat",
+	mutant_snork = "ui_npc_monster_snork",
+	mutant_pseudodog = "ui_npc_monster_pseudodog",
+	mutant_bloodsucker = "ui_npc_monster_krovosos",
+	mutant_psy_dog = "ui_npc_monster_pseudodog_grey",
+	mutant_poltergiest = "ui_npc_monster_poltergeist",
+	mutant_controller = "ui_npc_monster_kontroler",
+	mutant_pseudogiant = "ui_npc_monster_psevdogigant",
+	mutant_chimera = "ui_npc_monster_chimera",
+}
+
+local encyclopedia_items = {
+	"location_agroprom",
+	"location_darkvalley",
+	"location_escape",
+	"location_garbage",
+	"location_limansk",
+	"location_marsh",
+	"location_military",
+	"location_red_forest",
+	"location_yantar",
+	"faction_duty",
+	"faction_freedom",
+	"faction_bandit",
+	"faction_stalker",
+	"faction_army",
+	"faction_merc",
+	"faction_ecolog",
+	"faction_monolith",
+	"faction_csky",
+	"faction_zombie",
+	"mutant_dog",
+	"mutant_boar",
+	"mutant_flesh",
+	"mutant_tushkano",
+	"mutant_cat",
+	"mutant_snork",
+	"mutant_pseudodog",
+	"mutant_bloodsucker",
+	"mutant_psy_dog",
+	"mutant_poltergiest",
+	"mutant_controller",
+	"mutant_pseudogiant",
+	"mutant_chimera",
+}
+
+class "PageEnc" (CUIWindow)
+function PageEnc:__init(parent) super()
+	self.parent = parent
+	self.list_contents = self.parent.list_contents
+	
+	self:init_interface()
+	self:init_callbacks()
+	self:init_values()
+end
+
+function PageEnc:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_pda_enc.xml")
+	
+	xml:InitStatic("frame_enc",self)
+	
+	self.item_name = xml:InitStatic("label_itemName", self)
+	self.item_pic = xml:InitStatic("label_itemPicture", self)
+	self.scroll_window = xml:InitScrollView("scroll_window", self)
+	self.enc_descr = xml:InitStatic("label_encyclopedia", self.scroll_window)
+end
+
+function PageEnc:init_callbacks()
+
+end
+
+function PageEnc:init_values()
+	self.content_main_size = vector2():set(220,22)
+	self.content_text_size = vector2():set(220,22)
+	self.content_info_size = vector2():set(0,0)
+	self.description_main_size = vector2():set(270,20)
+	self.description_text_size = vector2():set(270,20)
+
+	self.list_contents:RemoveAll()
+	self.list_contents:ScrollToBegin()
+	self.list_contents:ShowSelectedItem(false)
+	
+	for k,v in pairs(encyclopedia_items) do
+		if db.actor:has_info(v) then
+			self:addContentItem(game.translate_string(tostring(v.."_name")), tostring(v))
+		end
+	end
+
+end
+
+function PageEnc:addContentItem(text, info)
+	local element = content_list_item()
+	element:SetWndSize(self.content_main_size)
+	element.label_text:SetWndSize(self.content_text_size)
+	element.label_text:SetWndPos(vector2():set(0,0))
+	element.label_text:SetText(tostring(text))
+	element.label_info:SetWndSize(self.content_info_size)
+	element.label_info:SetWndPos(vector2():set(0,0))
+	element.label_info:Show(false)
+	element.label_info:SetText(tostring(info))
+	
+	self.list_contents:AddItem(element)
+end
+
+function PageEnc:showDescription(name, info)
+	self.item_name:SetText(tostring(name))
+	local texture = "ui_"..info
+	local alias = item_alias[info] 
+	if alias ~= nil then
+		texture = alias
+	end
+	self.item_pic:InitTexture(tostring(texture))
+	
+	local descr = game.translate_string(tostring(info.."_descr"))
+	self.enc_descr:SetText(descr)
+end
+
+
+-- Tasks Page
+
+class "PageTasks" (CUIWindow)
+function PageTasks:__init(parent) super()
+	self.parent = parent
+	
+	self:init_interface()
+	self:init_callbacks()
+	self:init_values()
+end
+
+function PageTasks:init_interface()
+	local xml = CScriptXmlInit()
+end
+
+function PageTasks:init_callbacks()
+
+end
+
+function PageTasks:init_values()
+end

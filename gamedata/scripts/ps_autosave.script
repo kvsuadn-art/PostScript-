@@ -1,0 +1,23 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local last_save_time = time_global()	--game.get_game_time()
+
+function update()
+	local time = time_global()	--game.get_game_time()
+	--error_log(time)
+	if ((time - last_save_time) > (ps_settings.AutosaveInterval() * 60 * 1000)) and db.actor:alive() then
+		autosave()
+	end
+end
+
+function autosave()
+	last_save_time = time_global()	--game.get_game_time()
+	local filename = string.lower(user_name().."_autosave")
+	ps_save.set_save_name(filename)
+	local console = get_console()
+	console:execute("save " .. filename)
+end

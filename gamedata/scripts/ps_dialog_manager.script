@@ -1,0 +1,101 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+local levelDialog = {
+	stalker = "escape",
+	bandit = "garbage",
+	dolg = "agrorpom",
+	freedom = "darkvalley",
+	csky = "marsh",
+	ecolog = "yantar",
+	killer = "limansk",
+}
+
+local dialogCount = {
+	stalker_escape = 5,
+	stalker_generic = 4,
+	stalker_garbage = 4,
+	stalker_yantar = 5,
+	bandit_garbage = 9,
+	bandit_generic = 7,
+	dolg_agroprom = 5,
+	dolg_generic = 6,
+	freedom_darkvalley = 5,
+	freedom_generic = 7,
+	csky_marsh = 5,
+	csky_generic = 6,
+	ecolog_yantar = 3,
+	ecolog_generic = 6,
+	killer_limansk = 1,
+}
+
+local anomalyLevelCount = {
+	escape = 4,
+	garbage = 6,
+	darkvalley = 7,
+	agroprom = 7,
+	yantar = 5,
+	military = 4,
+	marsh = 3,
+	limansk = 1,
+}
+
+function getStartDialog(npc, other)
+	local faction = npc:character_community()
+	local lvl = level.name()
+	local dialog = "dmn_intro_"..tostring(faction).."_"
+	local flocation = ""
+	if levelDialog[faction] == lvl then
+		if math.random(10) > 5 then
+			dialog = dialog..tostring(lvl).."_"
+			flocation = tostring(faction.."_"..lvl)
+		else
+			dialog = dialog.."generic_"
+			flocation = tostring(faction).."_generic"
+		end
+	elseif faction == "stalker" then
+		if lvl == "garbage" then
+			dialog = dialog.."garbage_"
+			flocation = tostring(faction).."_garbage"
+		elseif lvl == "yantar" then
+			dialog = dialog.."yantar_"
+			flocation = tostring(faction).."_yantar"
+		else
+			dialog = dialog.."generic_"
+			flocation = tostring(faction).."_generic"
+		end
+	else
+		dialog = dialog.."generic_"
+		flocation = tostring(faction).."_generic"
+	end
+	if faction == "army" or faction == "renegade" or faction == "monolith" or faction == "zombified" or faction == "killer" then
+		return "dmn_intro_enemy"
+	end
+	error_log(flocation)
+	ran = math.random(dialogCount[flocation])
+	if ran == nil then
+		ran = 1
+	end
+	--error_log(tostring(ran))
+	return game.translate_string(tostring(dialog)..tostring(ran))
+end
+
+function getWoundedDialog(npc, other)
+	local ran = math.random(11)
+	return game.translate_string("dm_help_"..ran)
+end
+
+function getAnomalyDialog(npc, other)
+	local lvl = level.name()
+	ran = math.random(anomalyLevelCount[lvl])
+	--error_log(tostring(lvl))
+	if ran == nil then
+		ran = 1
+	end
+	--error_log(tostring(ran))
+	return game.translate_string("dmn_info_"..tostring(lvl).."_anomaly_"..tostring(ran))
+end

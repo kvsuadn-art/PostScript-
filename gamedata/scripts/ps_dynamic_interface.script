@@ -1,0 +1,281 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+local suithud_enable = 1
+local blurs_enable = 1
+local blood_enable = 1
+local bleed_enable = 1
+
+
+local freemem = 0
+local freemem2 = 0
+function doabcevents()
+	if db.actor ~= nil then
+		local chkfreetime = time_global()
+		if freemem == 0 then freemem = time_global() + 1000 end
+		if chkfreetime > freemem then
+			freemem = 0
+			checkmysuithud()
+			bleedcondition()
+		end
+		local chkfreetime2 = time_global()
+		if freemem2 == 0 then freemem2 = time_global() + 40 end
+		if chkfreetime2 > freemem2 then
+			freemem2 = 0
+			init_blurs()
+			blood()
+			set_blood()
+		end
+	end
+end
+
+local current_suithud
+local mycurrent_suithud
+local suit_condition
+local wotsuittype = ""
+local smoktime = 0
+function checkmysuithud()
+if suithud_enable == 0 then return end
+local gsmktime = time_global()
+if smoktime == 0 then smoktime = time_global() + 4000 end
+if db.actor ~= nil then
+ local csuithud = db.actor:get_current_outfit()
+ local suithudtype, isitbino, suithudname
+ if csuithud ~= nil then suithudname = csuithud:section() end
+ if suithudname ~= nil then
+  suit_condition = ""
+  if csuithud:condition() <= 0.25 then suit_condition = "red3" end
+  if csuithud:condition() > 0.25 then suit_condition = "red2" end
+  if csuithud:condition() > 0.40 then suit_condition = "red" end
+  if csuithud:condition() > 0.60 then suit_condition = "yellow" end
+  if csuithud:condition() > 0.69 then suit_condition = "green" end
+  if csuithud:condition() > 0.87 then suit_condition = "blue" end
+  if string.find(suithudname, "exo") then
+		 suithudtype = "hud_exo_" .. suit_condition
+		 wotsuittype = "hud_exo"
+  end
+  if string.find(suithudname, "stalker") then
+		 suithudtype = "hud_gas_" .. suit_condition
+		 wotsuittype = "hud_gas"
+  end
+  if string.find(suithudname, "cs_heavy") then
+		 suithudtype = "hud_mil_" .. suit_condition
+		 wotsuittype = "hud_mil"
+  end
+  if string.find(suithudname, "svoboda_heavy") then
+		 suithudtype = "hud_mil_" .. suit_condition
+		 wotsuittype = "hud_mil"
+  end
+  if string.find(suithudname, "dolg") then
+		 suithudtype = "hud_gas_" .. suit_condition
+		 wotsuittype = "hud_gas"
+  end
+  if string.find(suithudname, "dolg_heavy") then
+		 suithudtype = "hud_kill_" .. suit_condition
+		 wotsuittype = "hud_kill"
+  end
+  if string.find(suithudname, "scientific") then
+		 suithudtype = "hud_sci_" .. suit_condition
+         wotsuittype = "hud_sci"
+  end
+  if string.find(suithudname, "military") then
+		 suithudtype = "hud_mil_" .. suit_condition
+		 wotsuittype = "hud_mil"
+  end
+  if string.find(suithudname, "specops") then
+		 suithudtype = "hud_mil_" .. suit_condition
+		 wotsuittype = "hud_mil"
+  end
+ else
+	suithudtype = nil
+ end
+ if not db.actor:alive() then suithudtype = nil end
+  setmysuithud(suithudtype)
+end
+end
+
+local suitfirstrun = "yes"
+function setmysuithud(hudtype)
+  if hudtype == nil then
+	local wchud = get_hud():GetCustomStatic(mycurrent_suithud)
+	if wchud ~= nil then get_hud():RemoveCustomStatic(mycurrent_suithud) end
+	mycurrent_suithud = nil
+	suitfirstrun = "yes"
+    return
+  end
+  if hudtype ~= mycurrent_suithud then
+    if mycurrent_suithud then
+      get_hud():RemoveCustomStatic(mycurrent_suithud)
+    end
+    if hudtype then
+      get_hud():AddCustomStatic(hudtype)
+	  if string.find(hudtype, wotsuittype) then
+		if suitfirstrun == "no" and suit_condition ~= "green" and suit_condition ~= "blue" then
+			local snd_obj = sound_object("material\\glass\\glass_fall03hl")
+			snd_obj:play_no_feedback(db.actor, sound_object.s2d, 0, vector(), 9.0)
+		end
+		if suitfirstrun == "yes" then suitfirstrun = "no" end
+      end
+    end
+    mycurrent_suithud = hudtype
+  end
+end
+
+local actor_last_health = 0
+local bloodtime = 0
+local bloodtimeb = 0
+local isbleeding = "no"
+local countblood = 0
+function blood()
+if blood_enable == 0 then return end
+local radwidth = db.actor.radiation
+if db.actor ~= nil and radwidth == 0 then
+if db.actor:alive() then
+ local current_health = math.floor(db.actor.health * 100)
+ local cbloodtime = time_global()
+  if cbloodtime > bloodtime and isbleeding == "stopit" then
+    for i=1,4 do
+     if get_hud():GetCustomStatic("hud_blood"..i) ~= nil then
+		get_hud():RemoveCustomStatic("hud_blood"..i)
+		isbleeding = "no"
+	end
+   end
+  end
+  if cbloodtime > bloodtime then
+    bloodtime = time_global() + 1500
+    if actor_last_health > current_health and actor_last_health ~= 0 then isbleeding = "yes" end
+    actor_last_health = math.floor(db.actor.health * 100)
+ end
+end
+end
+end
+
+local m_blood = nil
+function set_blood()
+if blood_enable == 0 then return end
+local radwidth = db.actor.radiation
+local cbloodtimed = time_global()
+if db.actor ~= nil and cbloodtimed > bloodtimeb and isbleeding == "yes" and radwidth == 0 then
+  bloodtimeb = time_global() + 170
+  m_blood={}
+  countblood = countblood + 1
+  get_hud():AddCustomStatic("hud_blood"..countblood)
+  m_blood[countblood]=get_hud():GetCustomStatic("hud_blood"..countblood):wnd()
+  local chudblood = "hud_blood"..countblood
+  if countblood == 4 then
+	isbleeding = "stopit"
+	countblood = 0
+  end
+end
+end
+
+local isactcondset = "false"
+local radeffect = "false"
+function bleedcondition()
+if bleed_enable == 0 then return end
+   if db.actor.health < 0.31 and isactcondset ~= "true" then
+	   level.add_pp_effector ("alcohol.ppe", 2012, true)
+	   isactcondset = "true"
+   end
+   if db.actor.health > 0.30 and isactcondset ~= "false" then
+	   level.remove_pp_effector (2012)
+	   isactcondset = "false"
+   end
+   if db.actor.radiation > 0.3 and radeffect ~= "true" then
+	   level.add_pp_effector ("alcohol.ppe", 2013, true)
+	   radeffect = "true"
+   end
+   if db.actor.radiation == 0 and radeffect ~= "false" then
+	   level.remove_pp_effector (2013)
+	   radeffect = "false"
+   end
+end
+
+function init_blurs()
+	if blurs_enable == 0 then return end
+	if mycurrent_suithud ~= nil and not string.find(mycurrent_suithud,"_red3") and not string.find(mycurrent_suithud,"hud_sci_") then
+		local zoom=67.5/device().fov
+		zoom=(zoom-1)*1.5+1
+		if zoom<1.001 then
+			zoom=1.001
+		end
+		local stretchy=0.75/(math.floor(device().aspect_ratio*1000)/1000)
+		if stretchy<1 then stretchy=1 end
+		local rect={x=-768*zoom+768,y=(-512*zoom+512)*stretchy-(stretchy-1)*300,w=1024*zoom,h=768*zoom*stretchy}
+		set_blurs(true,rect)
+	else
+		set_blurs(false)
+	end
+end
+
+local blurs=nil
+local blurval=0
+local blurlt=0
+local blurcyctime=0
+local blurlastphase=0
+function set_blurs(enabled,rect)
+	if (not blurs) or get_hud():GetCustomStatic("hud_blur1")==nil then
+		blurs={}
+		for i=1,4 do
+			get_hud():AddCustomStatic("hud_blur"..i)
+			blurs[i]=get_hud():GetCustomStatic("hud_blur"..i):wnd()
+			blurs[i]:SetWidth(0)
+		end
+	end
+	if not enabled then
+		for i=1,4 do
+			blurs[i]:SetWidth(0)
+		end
+		return
+	end
+
+	local power=db.actor.power
+	local period=1.0+power*power*1.0 -- текущая частота дыхания от 30 до 120 циклов в минуту
+	local expirt=0.3
+	local breathpower=3
+	local delta=(time_global()-blurlt)/1000 -- дельта в секундах
+	local phase=(time_global()-blurcyctime)/1000 -- фаза дыхательного цикла в сек.
+	blurlt=time_global()
+	if phase>period then
+		phase=phase%period
+		blurcyctime=blurlt-phase*1000
+	end
+	if blurlastphase>phase then
+		blurlastphase=0
+	end
+	local blurdelta=delta*-0.7 -- работа вентилляции
+	if blurlastphase<expirt and phase<expirt then
+		blurdelta=blurdelta+(phase-blurlastphase)*breathpower
+	elseif blurlastphase<expirt then
+		blurdelta=blurdelta+(expirt-blurlastphase)*breathpower
+	end
+	blurlastphase=phase
+	blurval=blurval+blurdelta
+	if blurval>0.999 then
+		blurval=0.999
+	elseif blurval<0 then
+		blurval=0
+	end
+	local tm=math.floor(blurval*3)
+	local tmn=(tm+1)
+	local v=blurval*3-math.floor(blurval*3)
+	v=1-v
+	local v1=1-v
+	if tm~=0 then
+		blurs[tm]:SetColor(GetARGB(v*255,255,255,255))
+	end
+	if tmn~=0 then
+		blurs[tmn]:SetColor(GetARGB(v1*255,255,255,255))
+	end
+	for i=1,4 do
+		if i==tm or i==tmn then
+			blurs[i]:SetWndRect(Frect():set(rect.x,rect.y,rect.w,rect.h))
+		else
+			blurs[i]:SetWndRect(Frect():set(rect.x,rect.y,0,0))
+		end
+	end
+end

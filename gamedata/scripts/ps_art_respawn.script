@@ -1,0 +1,261 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+function respawn()
+	local spawn_types = {
+zone_mine_gravitational_weak = "gravitational",
+zone_mine_gravitational_average = "gravitational",
+zone_mine_gravitational_strong = "gravitational",
+
+zone_mine_thermal_weak = "thermal",
+zone_mine_thermal_average = "thermal",
+zone_mine_thermal_strong = "thermal",
+
+zone_mine_electric_weak = "electric",
+zone_mine_electric_average = "electric",
+zone_mine_electric_strong = "electric",
+
+zone_mine_acidic_weak = "acidic",
+zone_mine_acidic_average  = "acidic",
+zone_mine_acidic_strong = "acidic",
+
+zone_witches_galantine_average = "electric",
+zone_witches_galantine_strong = "electric",
+
+zone_zharka_static_strong = "thermal",
+
+zone_burning_fuzz = "fuzz",
+zone_burning_fuzz_bottom_strong = "fuzz",
+zone_buzz_weak = "fuzz",
+zone_buzz_average = "fuzz",
+zone_buzz_strong = "fuzz",
+}
+
+	local art_sections = {
+
+			gravitational = {
+
+					pack1 = {
+
+						{art_name = "af_medusa", art_chance = 0.6},
+						{art_name = "af_vyvert", art_chance = 0.4},	
+
+						},
+
+					pack2 = {
+
+						{art_name = "af_night_star", art_chance = 0.6},
+						{art_name = "af_gravi", art_chance = 0.3},					
+						{art_name = "af_gold_fish", art_chance = 0.1},
+
+						},
+
+					pack3 = {
+
+						{art_name = "af_medusa", art_chance = 0.6},
+						{art_name = "af_cristall_flower", art_chance = 0.4},
+
+						},
+
+				},
+
+			electric = {
+
+					pack1 = {
+
+						{art_name = "af_dummy_battery", art_chance = 0.6},
+						{art_name = "af_dummy_dummy", art_chance = 0.3},					
+						{art_name = "af_ice", art_chance = 0.1},
+
+						},
+
+					pack2 = {
+
+						{art_name = "af_electra_sparkler", art_chance = 0.6},
+						{art_name = "af_electra_flash", art_chance = 0.4},					
+
+						},
+
+					pack3 = {
+
+						{art_name = "af_dummy_battery", art_chance = 0.6},
+						{art_name = "af_electra_moonlight", art_chance = 0.3},
+						{art_name = "af_spring_dead", art_chance = 0.1},
+					
+
+						},
+
+				},
+
+			thermal = {
+
+					pack1 = {
+
+						{art_name = "af_dummy_glassbeads", art_chance = 0.6},
+						{art_name = "af_eye", art_chance = 0.3},					
+						{art_name = "af_fire", art_chance = 0.1},
+
+						},
+
+					pack2 = {
+
+						{art_name = "af_cristall", art_chance = 0.6},
+						{art_name = "af_fireball", art_chance = 0.4},					
+
+						},
+
+				},
+
+			acidic = {
+
+					pack1 = {
+
+						{art_name = "af_blood", art_chance = 0.6},
+						{art_name = "af_mincer_meat", art_chance = 0.3},
+						{art_name = "af_pellicle", art_chance = 0.1},					
+
+						},
+
+					pack2 = {
+
+						{art_name = "af_soul", art_chance = 0.6},
+						{art_name = "af_fuzz_kolobok", art_chance = 0.3},					
+						{art_name = "af_glass", art_chance = 0.1},
+
+						},
+			
+					pack3 = {
+					
+						{art_name = "af_thorn", art_chance = 0.6},
+						{art_name = "af_crystal_thorn", art_chance = 0.3},				
+						{art_name = "af_baloon", art_chance = 0.1},
+						
+						},
+				
+				},
+
+}
+
+
+	board = sim_board.get_sim_board()
+	for i,zone in pairs(board.anomaly_zones) do
+		if math.random() <= respawn_prob() and art_sections[ spawn_types[ zone:section_name() ] ] ~= nil then
+			--error_log( string.format( "" ) )			
+			local type = spawn_types[zone:section_name()]
+			local pack_nr = 0
+			for a,art_section in pairs(art_sections[type]) do
+				pack_nr = pack_nr + 1
+			end
+			--error_log( string.format( "Number of packs: "..pack_nr ) )
+			local chosen_pack = "pack"..math.random(pack_nr)
+			--error_log( string.format( "Anomaly [%s] is of type [%s] and chose it's pack [%s]", zone:name(), type, chosen_pack ) )
+			local chance_relay = math.random()
+			--error_log( string.format( "chance_relay: "..chance_relay ) )
+			local artifact = nil
+			for q,art_lvl in pairs(art_sections[type][chosen_pack]) do
+				if artifact == nil then 
+					artifact = art_lvl.art_name
+				elseif chance_relay <= art_lvl.art_chance then
+					artifact = art_lvl.art_name
+				end
+			end
+			local anom_obj = alife():object(zone:name())
+			local pos = anom_obj.position
+			pos.y = pos.y + 1
+			pos.x = pos.x + math.random(-2,2)
+			pos.z = pos.z + math.random(-2,2)
+
+			alife():create(artifact, pos, anom_obj.m_level_vertex_id, anom_obj.m_game_vertex_id)
+			
+			--error_log( string.format( "Spawning artifact %s [%s]", game.translate_string("st_"..artifact.."_name"), artifact) )
+
+		end
+	end
+end
+
+function respawn_prob()
+	if ps_settings.ArtifactRespawnChance() < 0 then
+		abort("artifact_respawn_chance is %s, cannot be a negative number!",tostring(ps_settings.artifact_respawn_chance))
+	end
+	local chance = ps_settings.ArtifactRespawnChance()
+	return chance * 0.01
+end
+
+
+
+
+
+
+
+
+class "art_res"
+function art_res:__init()
+	self.Lock = false
+	self.read = false
+end
+			
+function art_res:__finalize()
+	self.Lock = false
+	self.read = false
+end
+
+
+
+function art_res:update()
+
+	if not has_alife_info("first_art_respawn") then
+		respawn()
+		respawn()
+		db.actor:give_info_portion("first_art_respawn")
+	end
+
+
+		
+	if self.Lock == nil then
+		self.Lock = true
+		--error_log( string.format( "Lock was nil, setting to "..tostring(self.Lock) ) )
+	end
+	if self.Lock == false then
+		if level.get_time_hours() >= 23 or level.get_time_hours() <= 5 then
+			respawn()
+			self.Lock = true
+			--error_log( string.format( "Spawned and Locked = "..tostring(self.Lock) ) )
+		end
+		
+		
+	end
+
+	if self.Lock == true and level.get_time_hours() > 5 and level.get_time_hours() < 23 then
+		self.Lock = false
+		--error_log( string.format( "Unlocked = "..tostring(self.Lock) ) )
+	end
+
+
+
+
+
+end
+
+
+
+function art_res:getLock()
+	return self.Lock
+end
+
+function art_res:setLock(value)
+
+
+	if self.read == false or self.read == nil then
+		if value == "true" then
+			self.Lock = true
+		else
+			self.Lock = false
+		end
+		self.read = true
+		--error_log( string.format( "Read and set = "..tostring(self.read) ) )
+	end
+end
+

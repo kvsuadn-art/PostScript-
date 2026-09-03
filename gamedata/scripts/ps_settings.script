@@ -1,0 +1,307 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+local artifact_respawn_chance = 1
+function ArtifactRespawnChance(int)
+	if int == nil then
+		return artifact_respawn_chance
+	else
+		artifact_respawn_chance = int
+	end
+end
+
+
+local smart_display = false
+function SmartTerrainDisplay(bool)
+	if bool == nil then
+		return smart_display
+	else
+		smart_display = bool
+	end
+end
+
+
+local emission_chance = 100000
+function EmissionChance(int)
+	if int == nil then
+		return emission_chance
+	else
+		emission_chance = int
+	end
+end
+
+
+local death_weapon_store = true
+function StoreNPCWeaponsOnDeath(bool)
+	if bool == nil then
+		return death_weapon_store
+	else
+		death_weapon_store = bool
+	end
+end
+
+
+local show_pda_dots = true
+function ShowDefaultPDADots(bool)
+	if bool == nil then
+		return show_pda_dots
+	else
+		show_pda_dots = bool
+	end
+end
+
+
+local hunger_on = true
+function HungerEnabled(bool)
+	if bool == nil then
+		return hunger_on
+	else
+		hunger_on = bool
+	end
+end
+
+
+local autosave_interval = 5
+function AutosaveInterval(int)
+	if int == nil then
+		return autosave_interval
+	else
+		autosave_interval = int
+	end
+end
+
+
+local surge_start_time_lower = 20
+local surge_start_time_upper = 30
+function SurgeStartTimeLower(int)
+	if int == nil then
+		return surge_start_time_lower
+	else
+		surge_start_time_lower = int
+	end
+end
+function SurgeStartTimeUpper(int)
+	if int == nil then
+		return surge_start_time_upper
+	else
+		surge_start_time_upper = int
+	end
+end
+
+
+local spawn_restricted_weapons = true
+function SpawnNPCsWithAddedWeapons(bool)
+	if bool == nil then
+		return spawn_restricted_weapons
+	else
+		spawn_restricted_weapons = bool
+	end
+end
+
+
+local use_mod_pda = true
+function UseModPDAInsteadOfDefault(bool)
+	if bool == nil then
+		return use_mod_pda
+	else
+		use_mod_pda = bool
+	end
+end
+
+
+function save(packet)
+	packet:w_u8(artifact_respawn_chance)
+	packet:w_bool(smart_display)
+	packet:w_u16(emission_chance)
+	packet:w_bool(death_weapon_store)
+	packet:w_bool(show_pda_dots)
+	packet:w_bool(hunger_on)
+	packet:w_u8(autosave_interval)
+	packet:w_u8(surge_start_time_lower)
+	packet:w_u8(surge_start_time_upper)
+	packet:w_bool(spawn_restricted_weapons)
+	packet:w_bool(use_mod_pda)
+end
+
+function load(reader)
+	artifact_respawn_chance = reader:r_u8() -- h
+	smart_display = reader:r_bool()-- l
+	emission_chance = reader:r_u16()-- l
+	death_weapon_store = reader:r_bool() -- h
+	show_pda_dots = reader:r_bool()-- l
+	hunger_on = reader:r_bool() -- h
+	autosave_interval = reader:r_u8() -- h
+	surge_start_time_lower = reader:r_u8() -- h
+	surge_start_time_upper = reader:r_u8() -- h
+	spawn_restricted_weapons = reader:r_bool() -- h
+	use_mod_pda = reader:r_bool() -- h
+end
+
+class "ps_settings_dialog" (CUIScriptWnd)
+
+function ps_settings_dialog:__init() super()
+    self:InitControls()
+    self:InitCallBacks()
+    self:InitValues()
+end
+
+function ps_settings_dialog:__finalize()
+end
+
+function ps_settings_dialog:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	self:Enable(true)
+	
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_ps_settings_menu.xml")
+	
+	xml:InitStatic("background", self)
+	self.dialog = xml:InitStatic("dialog", self)
+	xml:InitFrame("background_frame", self)
+	
+	xml:InitStatic("static_options", self.dialog)
+
+	local btn
+	btn = xml:Init3tButton("button_accept", self.dialog)
+	self:Register(btn, "button_accept")
+	btn = xml:Init3tButton("button_cancel", self.dialog)
+	self:Register(btn, "button_cancel")
+	
+	self.scroll_window = xml:InitScrollView("scroll_window", self)
+	
+	xml:InitStatic("static_af_spawn_chance", self)
+	self.af_spawn_chance = CUISpinner.CUISpinner(self, 0, 0, artifact_respawn_chance, 1, 100, 1, false)
+	self.af_spawn_chance:Show(true)
+	self:AttachChild(self.af_spawn_chance)
+	xml:InitWindow("window_af_spawn_chance_size", 0, self.af_spawn_chance)
+	
+	xml:InitStatic("static_store_weapons_on_death", self)
+	self.store_weapons = CUICheckbox.CUICheckbox(self, 0, 0, death_weapon_store)
+	self.store_weapons:Show(true)
+	self:AttachChild(self.store_weapons)
+	xml:InitWindow("window_store_weapons_on_death", 0, self.store_weapons)
+	
+	xml:InitStatic("static_hunger_on", self)
+	self.hunger = CUICheckbox.CUICheckbox(self, 0, 0, hunger_on)
+	self.hunger:Show(true)
+	self:AttachChild(self.hunger)
+	xml:InitWindow("window_hunger_on", 0, self.hunger)
+	
+	xml:InitStatic("static_autosave_interval", self)
+	self.autosave_interval = CUISpinner.CUISpinner(self, 0, 0, autosave_interval, 2, 60, 1, false)
+	self.autosave_interval:Show(true)
+	self:AttachChild(self.autosave_interval)
+	xml:InitWindow("window_autosave_interval", 0, self.autosave_interval)
+	
+	xml:InitStatic("static_surge_start_time", self)
+	self.surge_start_time = CUISpinner.CUISpinner(self, 0, 0, surge_start_time_lower, 15, 30, 1, false)
+	self.surge_start_time:Show(true)
+	self:AttachChild(self.surge_start_time)
+	xml:InitWindow("window_surge_start_time", 0, self.surge_start_time)
+	
+	xml:InitStatic("static_surge_finish_interval", self)
+	self.surge_finish_interval = CUISpinner.CUISpinner(self, 0, 0, surge_start_time_upper, 1, 10, 1, false)
+	self.surge_finish_interval:Show(true)
+	self:AttachChild(self.surge_finish_interval)
+	xml:InitWindow("window_surge_finish_interval", 0, self.surge_finish_interval)
+	
+	xml:InitStatic("static_spawn_added_weapons", self)
+	self.spawn_added_weapons = CUICheckbox.CUICheckbox(self, 0, 0, spawn_restricted_weapons)
+	self.spawn_added_weapons:Show(true)
+	self:AttachChild(self.spawn_added_weapons)
+	xml:InitWindow("window_spawn_added_weapons", 0, self.spawn_added_weapons)
+	
+	xml:InitStatic("static_use_mod_pda", self)
+	self.use_mod_pda = CUICheckbox.CUICheckbox(self, 0, 0, use_mod_pda)
+	self.use_mod_pda:Show(true)
+	self:AttachChild(self.use_mod_pda)
+	xml:InitWindow("window_use_mod_pda", 0, self.use_mod_pda)
+	
+	xml:InitStatic("static_smart_terain_display", self)
+	self.show_st = CUICheckbox.CUICheckbox(self, 0, 0, smart_display)
+	self.show_st:Show(true)
+	self:AttachChild(self.show_st)
+	xml:InitWindow("window_smart_terain_display", 0, self.show_st)
+	
+	xml:InitStatic("static_emission_chance", self)
+	self.surge_chance = CUISpinner.CUISpinner(self, 0, 0, emission_chance, 15, 100000, 5, true)
+	self.surge_chance:Show(true)
+	self:AttachChild(self.surge_chance)
+	xml:InitWindow("window_emission_chance", 0, self.surge_chance)
+	
+	xml:InitStatic("static_show_pda_dots", self)
+	self.show_pda_dots = CUICheckbox.CUICheckbox(self, 0, 0, show_pda_dots)
+	self.show_pda_dots:Show(true)
+	self:AttachChild(self.show_pda_dots)
+	xml:InitWindow("window_show_pda_dots", 0, self.show_pda_dots)
+end
+
+function ps_settings_dialog:InitCallBacks()
+	self:AddCallback("button_accept",			ui_events.BUTTON_CLICKED,	self.accept,		self)
+	self:AddCallback("button_cancel",			ui_events.BUTTON_CLICKED,	self.cancel,		self)
+end
+
+function ps_settings_dialog:InitValues()
+	self.af_spawn_chance:SetCurrentValue(artifact_respawn_chance)
+	self.store_weapons:SetCheck(death_weapon_store)
+	self.hunger:SetCheck(hunger_on)
+	self.autosave_interval:SetCurrentValue(autosave_interval)
+	self.surge_start_time:SetCurrentValue(surge_start_time_lower)
+	self.surge_finish_interval:SetCurrentValue(surge_start_time_upper)
+	self.spawn_added_weapons:SetCheck(spawn_restricted_weapons)
+	self.use_mod_pda:SetCheck(use_mod_pda)
+	self.show_st:SetCheck(smart_display)
+	self.surge_chance:SetCurrentValue(emission_chance)
+	self.show_pda_dots:SetCheck(show_pda_dots)
+end
+
+function ps_settings_dialog:OnKeyboard(dik, keyboard_action)
+	local res = CUIScriptWnd.OnKeyboard(self,dik,keyboard_action)
+	if res==false then
+		local bind = dik_to_bind(dik)
+		if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+			if dik == DIK_keys.DIK_ESCAPE then
+				self:cancel()
+			end	
+		end
+	end	   
+	return res
+end
+
+function ps_settings_dialog:Refresh()
+	self.af_spawn_chance:update_state()
+	self.surge_chance:update_state()
+end
+
+function ps_settings_dialog:accept()
+	artifact_respawn_chance = self.af_spawn_chance:GetCurrentValue()
+	death_weapon_store = self.store_weapons:GetCheck()
+	hunger_on = self.hunger:GetCheck()
+	autosave_interval = self.autosave_interval:GetCurrentValue()
+	surge_start_time_lower = self.surge_start_time:GetCurrentValue()
+	surge_start_time_upper = self.surge_finish_interval:GetCurrentValue()
+	spawn_restricted_weapons = self.spawn_added_weapons:GetCheck()
+	use_mod_pda = self.use_mod_pda:GetCheck()
+	smart_display = self.show_st:GetCheck()
+	emission_chance = self.surge_chance:GetCurrentValue()
+	show_pda_dots = self.show_pda_dots:GetCheck()
+
+	self:GetHolder():start_stop_menu(self.owner, true)
+	self:GetHolder():start_stop_menu(self,true)
+	self.owner:Show(true)
+end
+
+function ps_settings_dialog:cancel()
+	self:InitValues()
+
+	self:GetHolder():start_stop_menu(self.owner, true)
+	self:GetHolder():start_stop_menu(self,true)
+	self.owner:Show(true)
+end
+
+
+

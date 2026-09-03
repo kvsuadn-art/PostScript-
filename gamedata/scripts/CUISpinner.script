@@ -1,0 +1,102 @@
+class "CUISpinner"(CUIScriptWnd)
+
+function CUISpinner:__init(handler, x, y, start, min, max, size, long) super()
+	if x == nil then x = 0 end
+	if y == nil then y = 0 end
+	if start == nil then start = 0 end
+	if min == nil then min = 0 end
+	if max == nil then max = 10 end
+	if size == nil then size = 1 end
+	if long == nil then long = false end
+	self.handler = handler
+	self.x = x
+	self.y = y
+	self.current = start
+	self.min = min
+	self.max = max
+	self.size = size
+	self.long = long
+	self:init_interface()
+	self:init_callbacks()
+	self:update_state()
+end
+
+function CUISpinner:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_custom_spinner.xml")
+	
+	local e = ""
+	if self.long == true then
+		e = "_long"
+	end
+	self.window = xml:InitStatic("background"..e,self)
+	self:SetWndPos(vector2():set(self.x,self.y))
+	self:SetWndSize(vector2():set(self.window:GetWidth(),self.window:GetHeight()))
+	
+	self.value = xml:InitStatic("label_value",self.window)
+	
+	self.up = xml:Init3tButton("button_up"..e, self)
+	self:Register(self.up, "button_up")
+	self.down = xml:Init3tButton("button_down"..e, self)
+	self:Register(self.down, "button_down")
+end
+
+function CUISpinner:init_callbacks()
+	self:AddCallback("button_up",	ui_events.BUTTON_CLICKED, self.increment, self)
+	self:AddCallback("button_down",	ui_events.BUTTON_CLICKED, self.decrement, self)
+end
+
+function CUISpinner:increment()
+	self.current = self.current + self.size
+	self:update_state()
+end
+
+function CUISpinner:decrement()
+	self.current = self.current - self.size
+	self:update_state()
+end
+
+function CUISpinner:update_state()
+	if self.current >= self.max then
+		self.current = self.max
+		self.up:Enable(false)
+	elseif self.current <= self.min then
+		self.current = self.min
+		self.down:Enable(false)
+	else
+		self.up:Enable(true)
+		self.down:Enable(true)
+	end
+	self.value:SetText(self.current)
+end
+
+function CUISpinner:SetPosition(x, y)
+	self.x = x
+	self.y = y
+end
+
+function CUISpinner:SetCurrentValue(value)
+	self.current = value
+	self.value:SetText(self.current)
+end
+
+function CUISpinner:GetCurrentValue()
+	return self.current
+end
+
+function CUISpinner:SetRange(min, max)
+	self.min = min
+	self.max = max
+	if self.current > max then
+		self.current = max
+	end
+	if self.current < min then
+		self.current = min
+	end
+	self.value:SetText(self.current)
+end
+
+function CUISpinner:SetJumpSize(size)
+	self.size = size
+end
+

@@ -1,0 +1,24 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local nrg,med,cnt,gv,lv,w
+
+function on_game_start()
+	math.randomseed (device ():time_global ())
+end
+
+function first_run() 
+	if ps.load_variable("x_first_run",true) then
+		ps.g_start_timer("show_news",0,0,2)
+		ps.save_variable("x_first_run",false)
+	end
+end 
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+is_sleeping = true
+
+function start()
+	sleep_dialog = ps_sleep.SleepDialog()
+	level.start_stop_menu(sleep_dialog, true)
+end
+
+class "SleepDialog" (CUIScriptWnd)
+function SleepDialog:__init() super()
+	get_hud():HideActorMenu()
+	self:init_interface()
+	self:init_callbacks()
+	self.hours2sleep = 0
+	self:inc_sleep_time()
+end
+
+function SleepDialog:__finalize()  
+end
+
+function SleepDialog:init_interface()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("ui_ps_sleep.xml")
+	
+	self.window = xml:InitStatic("window",self)
+	self:SetWndPos(vector2():set(265,287))
+	self:SetWndSize(vector2():set(self.window:GetWidth(),self.window:GetHeight()))
+	--self.window:SetWndPos(vector2():set(265,287))
+	
+	xml:InitStatic("sleep_icon",self)
+	
+	xml:InitStatic("value_sleep_info",self)
+	
+	self.sleep_start = xml:Init3tButton("button_sleep", self)
+	self:Register(self.sleep_start, "button_sleep")
+	
+	self.sleep_cancel = xml:Init3tButton("button_cancel", self)
+	self:Register(self.sleep_cancel, "button_cancel")
+	
+	self.sleep_left = xml:Init3tButton("button_left", self)
+	self:Register(self.sleep_left, "button_left")
+	
+	self.sleep_right = xml:Init3tButton("button_right", self)
+	self:Register(self.sleep_right, "button_right")
+	
+	self.hours = xml:InitStatic("value_sleep_time",self)
+end
+
+function SleepDialog:init_callbacks()
+	self:AddCallback("button_sleep",	ui_events.BUTTON_CLICKED, self.start_sleep,		self)
+	self:AddCallback("button_cancel",	ui_events.BUTTON_CLICKED, self.ui_quit, 		self)
+	self:AddCallback("button_left",		ui_events.BUTTON_CLICKED, self.dec_sleep_time,	self)
+	self:AddCallback("button_right",	ui_events.BUTTON_CLICKED, self.inc_sleep_time, 	self)
+end	
+
+function SleepDialog:OnKeyboard(DIK, KeyboardAction)
+	CUIScriptWnd.OnKeyboard(self, DIK, KeyboardAction)
+	if KeyboardAction == ui_events.WINDOW_KEY_PRESSED then
+		if DIK == DIK_keys.DIK_ESCAPE then
+			self:ui_quit()
+		end
+	end
+	return true
+end
+
+function SleepDialog:start_sleep()
+	is_sleeping = true
+	local time_factor = (975*self.hours2sleep)--+math.random(-5,5)
+	level.set_time_factor(time_factor)
+	level.add_cam_effector("camera_effects\\empty.anm", 1000000, false, "ps_sleep.dream_callback")
+	level.add_pp_effector("mar_fade.ppe", 1000001, true)
+	xr_effects.disable_ui(nil, nil)
+	self:ui_quit()
+end
+
+function SleepDialog:ui_quit()
+	self:GetHolder():start_stop_menu(self,true)
+end
+
+function SleepDialog:inc_sleep_time()
+	self.hours2sleep = self.hours2sleep + 1
+	if self.hours2sleep > 24 then
+		self.hours2sleep = 24
+	end
+	self.hours:SetText(self.hours2sleep.." hours")
+end
+
+function SleepDialog:dec_sleep_time()
+	self.hours2sleep = self.hours2sleep - 1
+	if self.hours2sleep < 1 then
+		self.hours2sleep = 1
+	end
+	self.hours:SetText(self.hours2sleep.." hours")
+end
+
+
+function dream_callback()
+	is_sleeping = false
+	if xr_surge_hide.surge_warned == true then
+		xr_surge_hide.surge_warned = false
+		news_manager.send_tip(db.actor, "An emission has recently occured in the Zone.", nil, nil)
+		art_respawn.respawn()
+	end
+	level_weathers.get_weather_manager():reset()
+	level.set_time_factor(system_ini():r_float("alife","time_factor"))
+	level.add_cam_effector("camera_effects\\prison_1.anm", 1000002, false, "ps_sleep.dream_callback2")
+	level.remove_pp_effector(1000001)
+end
+
+function dream_callback2()
+	xr_effects.enable_ui(nil, nil)
+end
+
+
+local sleep_zones_tbl =
+{
+	{id = 448,		hint = "st_ui_pda_sleep_place"},
+	{id = 728,		hint = "st_ui_pda_sleep_place"},
+	{id = 1033,		hint = "st_ui_pda_sleep_place"},
+	{id = 1129,		hint = "st_ui_pda_sleep_place"},
+}
+
+function mark_sleep_zones()
+	for k,v in pairs(sleep_zones_tbl) do
+		local obj_id = id_by_sid(v.id)
+		if(obj_id and db.storage[obj_id] and db.storage[obj_id].object) then
+			if(db.storage[obj_id].object:position():distance_to(db.actor:position())<=150 and level.map_has_object_spot(obj_id, "ui_pda2_sleep_zone_location")==0) then
+				level.map_add_object_spot(obj_id, "ui_pda2_sleep_zone_location", v.hint)
+			elseif(db.storage[obj_id].object:position():distance_to(db.actor:position())>150 and level.map_has_object_spot(obj_id, "ui_pda2_sleep_zone_location")~=0) then
+				level.map_remove_object_spot(obj_id, "ui_pda2_sleep_zone_location")
+			end
+		end
+	end
+end
+

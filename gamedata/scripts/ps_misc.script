@@ -1,0 +1,65 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local items = {	"gar_materials_wire", 
+				"gar_materials_transistor",
+				"gar_materials_capacitor",
+				"conserva",
+				"medkit",}
+
+function gar_robbery_items(first_speaker, second_speaker)
+	local item_count = math.random(1,5)
+	local count = 0
+	while count < item_count do
+		local random_item = math.random(#items)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, items[random_item])
+		count = count + 1
+	end
+end
+
+function has_mech_parts(first_speaker, second_speaker)
+	local parts = {	"gar_materials_wire", 
+					"gar_materials_transistor",
+					"gar_materials_capacitor",}
+	for k,v in pairs(parts) do
+		if db.actor:object(v) == true then
+			return true
+		end
+	end
+	return false
+end
+
+function transfer_mech_parts(first_speaker, second_speaker)
+	local parts = {	"gar_materials_wire", 
+					"gar_materials_transistor",
+					"gar_materials_capacitor",}
+	local money = 0
+	for k,v in pairs(parts) do
+		if db.actor then
+			local ini = system_ini()
+			local price = utils.cfg_get_number(ini, v, "cost", nil, false, 0) * 0.5
+			local count = 0
+			while db.actor:object(v) do
+				count = count + 1
+				db.actor:transfer_item(v, second_speaker)
+			end
+			money = money + (count * price)
+			news_manager.relocate_item(db.actor, "out", v, count)
+		end
+	end
+	dialogs.relocate_money(first_speaker, money, "in")
+end
+
+function wake_callback()
+	level.add_cam_effector("camera_effects\\prison_1.anm", 1000000, false, "ps_misc.wake_callback2")
+	level.remove_pp_effector(1000001)
+end
+
+function wake_callback2()
+	db.actor:restore_weapon()
+	xr_effects.enable_ui(nil, nil)
+end
+

@@ -1,0 +1,263 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local item_id = nil
+local item_section = nil
+
+local items = {
+	"medkit",
+	"medkit_army",
+	"medkit_scientic",
+	"antirad",
+	"energy_drink",
+	"vodka",
+	"bread",
+	"kolbasa",
+	"conserva",
+}
+
+local item_times = {
+	antirad = 100,
+	medkit = 50,
+	medkit_army = 50,
+	medkit_scientic = 50,
+	energy_drink = 300,
+	vodka = 50,
+	bread = 25,
+	kolbasa = 25,
+	conserva = 25,
+}
+
+local item_health_restore = {
+	antirad = 0,
+	medkit = 0.012,
+	medkit_army = 0.02,
+	medkit_scientic = 0.012,
+	energy_drink = 0,
+	vodka = 0,
+	bread = 0.0015,
+	kolbasa = 0.0015,
+	conserva = 0.0030,
+}
+
+local item_radiation_reduce = {
+	antirad = -0.008,
+	medkit = 0,
+	medkit_army = 0,
+	medkit_scientic = -0.01,
+	energy_drink = 0,
+	vodka = -0.004,
+	bread = 0,
+	kolbasa = 0,
+	conserva = 0,
+}
+
+local item_stamina_restore = {
+	antirad = 0,
+	medkit = 0,
+	medkit_army = 0.005,
+	medkit_scientic = 0,
+	energy_drink = 0.004,
+	vodka = 0,
+	bread = 0,
+	kolbasa = 0,
+	conserva = 0,
+}
+
+local health_items = {
+	"medkit",
+	"medkit_army",
+	"medkit_scientic",
+	"bread",
+	"kolbasa",
+	"conserva",
+}
+
+local radiation_items = {
+	"medkit_scientic",
+	"vodka",
+	"antirad",
+}
+
+local stamina_items = {
+	"energy_drink",
+	"medkit_army",
+}
+
+
+local health_item = ""
+local stamina_item = ""
+local radiation_item = ""
+
+local start_health = game.get_game_time() 
+local start_stamina = game.get_game_time() 
+local start_radiation = game.get_game_time() 
+
+local elapsed_health_time = 0
+local elapsed_stamina_time = 0 
+local elapsed_radiation_time = 0 
+
+local temp_health = 0
+local temp_stamina = 0 
+local temp_radiation = 0
+ 
+function on_item_drop(obj)
+	item_id = obj:id()
+	item_section = obj:section()	
+end
+
+function contains(item, array)
+	for k,v in pairs(array) do
+		if item == v then
+			return true
+		end
+	end
+	return false
+end
+
+function recover(section)
+	local item = section
+	for k,v in pairs(items) do
+		if item == v then
+			if contains(v, health_items) == true then
+				--error_log("item applied: "..v)
+				health_item = v
+				start_health = game.get_game_time()
+				elapsed_health_time = 0
+			end
+			if contains(v, radiation_items) == true then
+				--error_log("item applied: "..v)
+				radiation_item = v
+				start_radiation = game.get_game_time()
+				elapsed_radiation_time = 0
+			end
+			if contains(v, stamina_items) == true then
+				--error_log("item applied: "..v)
+				stamina_item = v
+				start_stamina = game.get_game_time()
+				elapsed_stamina_time = 0 
+			end
+		end
+	end
+end
+
+function increment_item(item, mode)
+	if db.actor then
+		local time = game.get_game_time()
+		use_time = item_times[tostring(item)]
+		if mode == "health" and contains(item, health_items) == true then
+			if use_time ~= nil and math.floor(time:diffSec(start_health)) >= 2 then
+				elapsed_health_time = elapsed_health_time + 1
+				start_health = time
+				toggle_icon("on", "heal_health_static")
+				db.actor.health = item_health_restore[item]
+				if db.actor.health > 1 then
+					db.actor.health = 1
+				end
+				if use_time < elapsed_health_time then
+					toggle_icon("off", "heal_health_static")
+					health_item = ""
+					start_health = nil
+				end
+			end
+		end
+		if mode == "stamina" and contains(item, stamina_items) == true then
+			if use_time ~= nil and math.floor(time:diffSec(start_stamina)) >= 2 then
+				elapsed_stamina_time = elapsed_stamina_time + 1
+				start_stamina = time
+				toggle_icon("on", "heal_stamina_static")
+				db.actor.power = item_stamina_restore[item]
+				if db.actor.power > 1 then
+					db.actor.power = 1
+				end
+				if use_time < elapsed_stamina_time then
+					toggle_icon("off", "heal_stamina_static")
+					stamina_item = ""
+					start_stamina = nil
+				end
+			end
+		end
+		if mode == "radiation" and contains(item, radiation_items) == true then
+			if use_time ~= nil and math.floor(time:diffSec(start_radiation)) >= 2 then
+				elapsed_radiation_time = elapsed_radiation_time + 1
+				start_radiation = time
+				toggle_icon("on", "heal_rad_static")
+				db.actor.radiation = item_radiation_reduce[item]
+				if db.actor.radiation < 0 then
+					db.actor.radiation = 0
+				end
+				if use_time < elapsed_radiation_time then
+					toggle_icon("off", "heal_rad_static")
+					radiation_item = ""
+					start_radiation = nil
+				end
+			end
+		end
+	end
+end
+
+
+function update()
+	if item_id then
+		if item_id and alife():object(item_id)==nil then
+			recover(item_section)
+		end
+		item_id = nil
+		item_section = nil
+	end
+	if health_item ~= "" and start_health ~= nil then
+		increment_item(health_item, "health")
+	end
+	if radiation_item ~= "" and start_radiation ~= nil then
+		increment_item(radiation_item, "radiation")
+	end
+	if stamina_item ~= "" and start_stamina ~= nil then
+		increment_item(stamina_item, "stamina")
+	end
+end
+
+function toggle_icon(value, static)
+	if value == "on" then
+		local icon = get_hud():GetCustomStatic(static)
+		if not icon then
+			get_hud():AddCustomStatic(static, true)
+			icon = get_hud():GetCustomStatic(static):wnd()	
+		end
+	elseif value == "off" then
+		local icon = get_hud():GetCustomStatic(static)
+		if icon then
+			get_hud():RemoveCustomStatic(static)
+		end		
+	end
+end
+
+function save(package)
+	--set_save_marker(package, "save", false, "psItems")
+	package:w_stringZ(health_item)
+	package:w_stringZ(stamina_item)
+	package:w_stringZ(radiation_item)
+	package:w_int(elapsed_health_time)
+	package:w_int(elapsed_stamina_time)
+	package:w_int(elapsed_radiation_time)
+	package:w_CTime(start_health)
+	package:w_CTime(start_stamina)
+	package:w_CTime(start_radiation)
+	--set_save_marker(package, "save", true, "psItems")
+end
+
+function load(reader)
+	--set_save_marker(reader, "load", false, "psItems")
+	health_item = reader:r_stringZ(health_item)
+	stamina_item = reader:r_stringZ(stamina_item)
+	radiation_item = reader:r_stringZ(radiation_item)
+	elapsed_health_time = reader:r_int(elapsed_health_time)
+	elapsed_stamina_time = reader:r_int(elapsed_stamina_time) 
+	elapsed_radiation_time = reader:r_int(elapsed_radiation_time)
+	start_health = reader:r_CTime(reader)
+	start_stamina = reader:r_CTime(reader)
+	start_radiation = reader:r_CTime(reader)
+	--set_save_marker(reader, "load", true, "psItems")
+end

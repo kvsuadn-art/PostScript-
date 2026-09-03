@@ -1,0 +1,91 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+local items = {
+        bread       = true,
+        kolbasa    = true,
+        conserva  = true,
+}
+
+local items_rad_average = {
+        bread_rad       = true,
+        kolbasa_rad    = true,
+        conserva_rad  = true,
+}
+
+local items_rad_high = {
+        bread_rad_average       = true,
+        kolbasa_rad_average    = true,
+        conserva_rad_average  = true,
+}
+
+function rad_food()
+                 local arad = db.actor.radiation
+if arad >= 0.01 and arad <= 0.02  then
+                spw_rad_food()
+elseif arad >= 0.02 and arad <= 0.03  then
+                spw_rad_average_food()
+elseif arad >= 0.03 then
+                spw_rad_high_food()
+end
+end
+
+             local interval = 0
+
+    function spw_rad_food()
+             if interval < time_global() then
+                         db.actor:iterate_inventory(function (dummy,item)
+             if items[item:section()] then
+                         this.del_item(item)
+             this.spawn_item(tostring(item:section().."_rad"))
+                         end
+             end, nil)
+                         interval = time_global() + 2000
+             end
+             end
+
+             local interval = 0
+
+    function spw_rad_average_food()
+             if interval < time_global() then
+                         db.actor:iterate_inventory(function (dummy,item)
+             if items_rad_average[item:section()] then
+                         this.del_item(item)
+             this.spawn_item(tostring(item:section().."_average"))
+                         end
+             end, nil)
+                         interval = time_global() + 2000
+             end
+             end
+
+             local interval = 0
+
+    function spw_rad_high_food()
+             if interval < time_global() then
+                         db.actor:iterate_inventory(function (dummy,item)
+             if items_rad_high[item:section()] then
+                         this.del_item(item)
+             this.spawn_item(tostring(item:section().."_high"))
+                         end
+             end, nil)
+                         interval = time_global() + 2000
+end
+end
+
+    function spawn_item(item)
+alife():create(item, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), db.actor:id())
+end
+
+    function del_item(item)
+local obj = alife():object(item:id())
+alife():release(obj, true)
+end
+
+-----------------------------------------------------------------------------------------------------------
+-- Не удаляйте копирайды, указывайте настоящего автора(ов)
+-- и не выдавайте чужие идеи и их реализацию за свои. Ведь это элементарная
+-- этика модостроителей! Спасибо за понимание.
+-----------------------------------------------------------------------------------------------------------

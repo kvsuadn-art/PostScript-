@@ -1,0 +1,117 @@
+-- File Name : .script
+-- Development Team : New Arabic Team(NATeam)
+-- Creator : Nod33Eset(Retvil)
+-- Data : 25.08.2012
+-- Scripts Version : 0.8.X
+
+
+local board = nil
+
+local locked_tasks = {}
+
+function save(packet)
+	set_save_marker(packet, "save", false, "PSTask")
+	local n = 0
+	for k,v in pairs(locked_tasks) do
+		n = n + 1
+	end
+	packet:w_u16(n)
+	for k,v in pairs(locked_tasks) do
+		packet:w_stringZ(k)
+		utils.w_CTime(packet, v)
+	end
+	get_task_board():save(packet)
+	set_save_marker(packet, "save", true, "PSTask")
+end
+
+function load(reader)
+	set_save_marker(reader, "load", false, "PSTask")
+	local n = reader:r_u16()
+	locked_tasks = {}
+	for i=1,n do
+		id = reader:r_stringZ()
+		time = utils.r_CTime(reader)
+		locked_tasks[id] = time
+	end
+	get_task_board():load(reader)
+	set_save_marker(reader, "load", true, "PSTask")
+end
+
+
+function is_task_unlocked(section_name)
+	task_time = locked_tasks[section_name]
+	local time = game.get_game_time()
+	if task_time ~= nil then
+		if math.floor(time:diffSec(task_time)) > 86400 then
+		--if math.floor(time:diffSec(task_time)) > 300 then
+			return true
+		end
+	else
+		return true
+	end
+	return false
+end
+
+function unlock_task(section_name)
+	if is_task_unlocked(section_name) == true then
+		local count = 1
+		for k,v in pairs(locked_tasks) do
+			if section_name == k then
+				table.remove(locked_tasks, count)
+				break
+			end
+			count = count + 1
+		end
+	end
+end
+
+function is_task_available(section_name)
+	if is_task_unlocked(section_name) == true then
+		unlock_task(section_name)
+		return true
+	end
+	return false
+end
+
+function lock_task(section_name)
+	local time = game.get_game_time()
+	locked_tasks[section_name] = time
+end
+
+
+function npc_show_tasks(npc, actor)
+	local news_text = ""
+	local task_table = task_manager.get_task_manager().general_tasks
+	local community = npc:character_community()
+	for k,v in pairs(task_table) do
+		local tsk = v
+		if tsk.status == "normal" and tsk.ps_task == true and task.check_target(npc, community) == true then
+			news_text = tsk.item_for_reward
+			npc:give_talk_message2(game.translate_string("sim_deliver_item"), news_text, "ui_iconsTotal_deliver_item", "iconed_answer_item")
+		end
+	end
+end
+
+function transfer_items_and_reward(npc, task)
+	dialogs.relocate_item_section(npc, task.requested_item, "out")
+	local money = task.reward_cash
+	if money ~= 0 then
+		dialogs.relocate_money(npc, money, "in")
+	end
+
+	local items = task.reward_loot
+	if items ~= "" then
+		local ancillary_item_table = {}
+		for k,v in pairs(utils.parse_names(items)) do
+			if ancillary_item_table[v] == nil then
+				ancillary_item_table[v] = 1
+			else
+				ancillary_item_table[v] = ancillary_item_table[v] + 1
+			end
+		end
+		for k,v in pairs(ancillary_item_table) do
+			dialogs.relocate_item_section(npc, k, "in", v)
+		end
+	end
+	task.state = "finished"
+end
