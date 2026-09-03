@@ -1,0 +1,73 @@
+[list_tm_garbadge]
+
+gar_quest_killer_pseudodogs
+gar_bring_item_1
+gar_bring_item_2
+gar_bring_item_3
+
+
+
+;-----------------------------------------------------
+;------------------ Secondary Quests -----------------
+;-----------------------------------------------------
+
+; Убить Ночных Охотников
+[gar_quest_killer_pseudodogs]
+type = storyline
+task_type = storyline
+icon = ui_mt_image_attack_tower
+;spot = mar_defend_tower_location
+target_cond = {-gar_quest_killer_pseudodogs_done} true
+name = gar_quest_killer_pseudodogs_name
+text = gar_quest_killer_pseudodogs_text
+condlist_0 = {+gar_quest_killer_pseudodogs_done} complete
+target_story_ids = 708
+community_relation_delta_complete = 75
+reputation_delta_complete = 10
+;reward_money = 2000
+;immediate_reward = true
+
+;Bring items
+
+[gar_bring_item_1]
+auto_name = false
+type = bring_item
+task_type = additional
+name = gar_bring_item_1_name
+text = gar_bring_item_1_text
+target_cond = {~20 =actor_on_level(garbage)} true
+prior = 2
+faction = bandit
+requested_items = medkit_army, medkit_army
+community_relation_delta_complete = 50
+reputation_delta_complete = -3
+reward_money = {~50} 750, {~50} 1000, 500
+
+[gar_bring_item_2]
+auto_name = false
+type = bring_item
+task_type = additional
+name = gar_bring_item_2_name
+text = gar_bring_item_2_text
+target_cond = {~20 =actor_on_level(garbage)} true
+prior = 2
+faction = bandit
+requested_items = vodka, vodka, vodka, vodka, vodka
+community_relation_delta_complete = 20
+reputation_delta_complete = -3
+reward_money = {~100} 350, {~100} 500, 200
+
+[gar_bring_item_3]
+auto_name = false
+type = bring_item
+task_type = additional
+name = gar_bring_item_3_name
+text = gar_bring_item_3_text
+target_cond = {~20 =actor_on_level(garbage)} true
+prior = 2
+faction = bandit
+requested_items = wpn_wincheaster1300, ammo_12x70_buck, ammo_12x70_buck
+community_relation_delta_complete = 60
+reputation_delta_complete = -3
+reward_money = {~50} 1500, {~50} 2000, 1000
+

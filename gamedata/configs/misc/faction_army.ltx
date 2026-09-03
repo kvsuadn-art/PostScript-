@@ -1,0 +1,81 @@
+[settings]
+glory_0 = 0
+glory_1 = 1
+glory_2 = 2
+glory_3 = 3
+glory_4 = 4
+glory_5 = 5
+
+
+[spawn_by_resource]
+0 = sim_default_military_0, 30, sim_default_military_1, 30, sim_default_military_2, 15, sim_default_military_3, 15, sim_default_military_4, 10
+;0 = sim_default_military_0, 80, sim_default_military_1, 20
+;1 = sim_default_military_0, 40, sim_default_military_1, 30, sim_default_military_2, 30
+;2 = sim_default_military_1, 40, sim_default_military_2, 30, sim_default_military_3, 30
+;3 = sim_default_military_2, 40, sim_default_military_3, 40, sim_default_military_4, 20
+
+
+[spawn_by_level]
+marsh 		= sim_default_military_0, 40, sim_default_military_1, 30, sim_default_military_2, 15, sim_default_military_3, 10, sim_default_military_4,  5
+escape 		= sim_default_military_0, 40, sim_default_military_1, 30, sim_default_military_2, 15, sim_default_military_3, 10, sim_default_military_4,  5
+garbage 	= sim_default_military_0, 30, sim_default_military_1, 40, sim_default_military_2, 15, sim_default_military_3, 10, sim_default_military_4,  5
+darkvalley	= sim_default_military_0, 20, sim_default_military_1, 30, sim_default_military_2, 30, sim_default_military_3, 10, sim_default_military_4, 10
+agroprom 	= sim_default_military_0, 10, sim_default_military_1, 20, sim_default_military_2, 40, sim_default_military_3, 20, sim_default_military_4, 10
+yantar 		= sim_default_military_0, 10, sim_default_military_1, 15, sim_default_military_2, 30, sim_default_military_3, 45, sim_default_military_4, 20
+red_forest 	= sim_default_military_0,  5, sim_default_military_1, 10, sim_default_military_2, 15, sim_default_military_3, 30, sim_default_military_4, 40
+military 	= sim_default_military_0, 15, sim_default_military_1, 20, sim_default_military_2, 25, sim_default_military_3, 25, sim_default_military_4, 15
+
+
+
+
+
+
+
+[expansion_0]
+base_squad_number = 15
+precondition_power = 0.0	;0.2
+respawn_idle_time = 60
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_target = mil_smart_terrain_3_8
+
+[expansion_1]
+base_squad_number = 20
+precondition_power = 0.0	;0.5
+respawn_idle_time = 40
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_target = mil_smart_terrain_7_2
+
+[expansion_2]
+base_squad_number = 25
+precondition_power = 0.0	;0.7
+respawn_idle_time = 30
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_target = gar_smart_terrain_5_2
+
+[expansion_3]
+base_squad_number = 25
+precondition_power = 0.2	;0.7
+respawn_idle_time = 30
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_target = gar_smart_terrain_5_2
+
+
+[secondary_targets]
+mil_smart_terrain_2_6 = {+esc_tut_talk_done} true, false
+
+
+[start_position]
+esc_smart_terrain_3_16_military_2_squad_0 = esc_smart_terrain_3_16
+esc_smart_terrain_3_16_military_2_squad_1 = esc_smart_terrain_3_16
+esc_smart_terrain_3_16_military_2_squad_2 = esc_smart_terrain_3_16
+esc_smart_terrain_3_16_military_2_squad_3 = esc_smart_terrain_3_16
+esc_smart_terrain_3_16_military_2_squad_4 = esc_smart_terrain_3_16
+esc_smart_terrain_5_2_military_2_squad = esc_smart_terrain_5_2
+esc_smart_terrain_7_11_military_2_squad_3 = esc_smart_terrain_7_11
+
+;esc_smart_terrain_5_7_military_1_squad = esc_smart_terrain_5_7
+;esc_smart_terrain_5_7_military_1_squad_2 = esc_smart_terrain_5_7
+;mil_squard_with_zombiers = mil_smart_terrain_3_8	;mil_smart_terrain_7_8
+;mil_military_7_7_1_squad = mil_smart_terrain_7_7
+;mil_military_7_7_2_squad = mil_smart_terrain_7_7
+;mil_military_7_7_3_squad = mil_smart_terrain_7_12

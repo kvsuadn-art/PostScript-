@@ -1,0 +1,81 @@
+[settings]
+glory_0 = 0
+glory_1 = 1
+glory_2 = 2
+glory_3 = 3
+glory_4 = 4
+glory_5 = 5
+
+
+[spawn_by_resource]
+0 = sim_default_stalker_0, 40, sim_default_stalker_1, 25, sim_default_stalker_2, 20, sim_default_stalker_3, 10, sim_default_stalker_4, 5
+
+
+[spawn_by_level]
+marsh 		= sim_default_stalker_0, 40, sim_default_stalker_1, 30, sim_default_stalker_2, 15, sim_default_stalker_3, 10, sim_default_stalker_4,  5
+escape 		= sim_default_stalker_0, 40, sim_default_stalker_1, 30, sim_default_stalker_2, 15, sim_default_stalker_3, 10, sim_default_stalker_4,  5
+garbage 	= sim_default_stalker_0, 30, sim_default_stalker_1, 40, sim_default_stalker_2, 15, sim_default_stalker_3, 10, sim_default_stalker_4,  5
+darkvalley	= sim_default_stalker_0, 20, sim_default_stalker_1, 30, sim_default_stalker_2, 30, sim_default_stalker_3, 10, sim_default_stalker_4, 10
+agroprom 	= sim_default_stalker_0, 10, sim_default_stalker_1, 20, sim_default_stalker_2, 40, sim_default_stalker_3, 20, sim_default_stalker_4, 10
+yantar 		= sim_default_stalker_0, 10, sim_default_stalker_1, 15, sim_default_stalker_2, 30, sim_default_stalker_3, 45, sim_default_stalker_4, 20
+red_forest 	= sim_default_stalker_0,  5, sim_default_stalker_1, 10, sim_default_stalker_2, 15, sim_default_stalker_3, 30, sim_default_stalker_4, 40
+military 	= sim_default_stalker_0,  5, sim_default_stalker_1, 10, sim_default_stalker_2, 15, sim_default_stalker_3, 30, sim_default_stalker_4, 40
+
+
+
+[expansion_0]  ; Подождать окончания сюжета на Кордоне
+base_squad_number = 30
+respawn_idle_time = 90
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_cond = {+esc_tut_talk_done} true, false
+precondition_target = yan_smart_terrain_6_4, esc_smart_terrain_6_6, esc_smart_terrain_1_11
+
+[expansion_1]  ; Подождать окончания сюжета на Кордоне
+base_squad_number = 30
+;precondition_power = 0.5
+respawn_idle_time = 90
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_cond = {+esc_support_squad_attack} true, false
+
+[expansion_2]  ; Подождать окончания сюжета на Кордоне
+base_squad_number = 30
+;precondition_power = 0.5
+respawn_idle_time = 90
+respawn_hours = 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+precondition_target = esc_smart_terrain_7_11
+
+
+
+
+[secondary_targets]
+esc_smart_terrain_3_6 = {+esc_tut_talk_done} true, false
+gar_smart_terrain_3_8 = {+esc_tut_talk_done} true, false
+;gar_smart_terrain_5_6 = {+esc_tut_talk_done} true, false
+;mil_smart_terrain_2_4 = {+esc_tut_talk_done} true, false
+;mil_smart_terrain_3_8 = {+esc_tut_talk_done} true, false
+;mil_smart_terrain_4_2 = {+esc_tut_talk_done} true, false
+yan_smart_terrain_3_6 = {+esc_tut_talk_done} true, false
+esc_smart_terrain_5_7 = {+esc_tut_talk_done} true, false
+
+
+
+[start_position]
+esc_smart_terrain_2_12_stalker_2_squad_1 = esc_smart_terrain_2_12
+esc_smart_terrain_2_12_stalker_2_squad_2 = esc_smart_terrain_2_12
+;esc_smart_terrain_6_8_stalker = esc_smart_terrain_6_8
+esc_smart_terrain_6_8_stalker_sniper = esc_smart_terrain_6_8
+esc_smart_terrain_6_8_stalker_patrol = esc_smart_terrain_6_8
+esc_smart_terrain_4_8_stalker_2_squad = esc_smart_terrain_4_8
+esc_smart_terrain_5_7_stalker_2_squad = esc_smart_terrain_5_7
+esc_smart_terrain_5_7_stalker_2_squad_2 = esc_smart_terrain_5_7
+esc_smart_terrain_1_11_stalker_squad = esc_smart_terrain_1_11
+esc_stalker_squad_5_11 = esc_smart_terrain_5_11
+esc_smart_terrain_7_10_stalker_mission_squad = esc_smart_terrain_7_10
+esc_stalker_squad_3_6_stalker_squad = esc_smart_terrain_3_6
+gar_stalkers_flea_market_squad_1 = gar_smart_terrain_6_3
+gar_stalkers_flea_market_squad_2 = gar_smart_terrain_6_3
+yan_squad_stalker_in_sci_base = yan_smart_terrain_6_4
+yan_squad_stalker_in_sci_base2 = yan_smart_terrain_6_4
+yan_squad_stalker_outpost_guards = yan_smart_terrain_5_5
+mil_smart_terrain_2_4_stalker_squad_1 = mil_smart_terrain_2_4
+mil_smart_terrain_2_4_stalker_squad_2 = mil_smart_terrain_2_4

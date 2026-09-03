@@ -1,0 +1,422 @@
+[list_tm_upgrades]
+esc_find_toolkit_basic
+esc_find_toolkit_advanced
+mar_find_toolkit_advanced
+agr_find_toolkit_expert
+gar_find_toolkit_basic
+gar_find_toolkit_advanced
+gar_find_toolkit_expert
+val_find_toolkit_advanced
+val_find_toolkit_expert
+
+esc_find_flash_up_full_l85
+esc_find_flash_up_full_chaser13
+esc_find_flash_up_part_shotgun_barrel
+val_find_flash_up_full_svu
+val_find_flash_up_full_seva
+val_find_flash_up_full_m249
+val_find_flash_up_part_elec_stab
+val_find_flash_up_part_servomotor
+agr_find_flash_up_full_rp74
+agr_find_flash_up_full_svu
+agr_find_flash_up_part_val
+agr_find_flash_up_part_tunder
+gar_find_flash_up_full_seva
+gar_find_flash_up_full_exo
+gar_find_flash_up_full_g36
+gar_find_flash_up_part_tunder
+gar_find_flash_up_part_military_armor
+gar_find_flash_up_part_shotgun_striker
+mar_find_flash_up_full_mg
+mar_find_flash_up_part_g36
+mar_find_flash_up_part_anomaly_armor
+
+;***************************************************
+; Fluffy22
+; Find Toolkits Missions
+;***************************************************
+[agr_find_toolkit_expert]
+type = find_upgrade
+task_type = additional
+name = st_agr_toolkit_expert_name
+text = st_agr_toolkit_expert_text
+on_complete = %+info_up_agr_toolkit_expert%
+target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_agr_toolkit_expert} true
+cost = 4000
+requested_item = toolkit_expert
+reward_upgr = toolkit_expert, up_a1_pkm
+
+[esc_find_toolkit_basic]
+type = find_upgrade
+task_type = additional
+name = st_esc_toolkit_basic_name
+text = st_esc_toolkit_basic_text
+on_complete = %+info_up_esc_toolkit_basic%
+target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_esc_toolkit_basic} true
+cost = 1000
+requested_item = toolkit_basic
+reward_upgr = toolkit_basic, up_a1_wincheaster1300
+
+[esc_find_toolkit_advanced]
+type = find_upgrade
+task_type = additional
+name = st_esc_toolkit_advanced_name
+text = st_esc_toolkit_advanced_text
+on_complete = %+info_up_esc_toolkit_advanced%
+target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_esc_toolkit_advanced} true
+cost = 2000
+requested_item = toolkit_advanced
+reward_upgr = toolkit_advanced, up_a1_wincheaster1300
+
+[gar_find_toolkit_basic]
+type = find_upgrade
+task_type = additional
+name = st_gar_toolkit_basic_name
+text = st_gar_toolkit_basic_text
+on_complete = %+info_up_gar_toolkit_basic%
+target_cond = {=check_npc_name(gar_digger_fixer) -info_up_gar_toolkit_basic} true
+cost = 1000
+requested_item = toolkit_basic
+reward_upgr = toolkit_basic, up_a1_scientific_outfit
+
+[gar_find_toolkit_advanced]
+type = find_upgrade
+task_type = additional
+name = st_gar_toolkit_advanced_name
+text = st_gar_toolkit_advanced_text
+on_complete = %+info_up_gar_toolkit_advanced%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_toolkit_advanced} true
+cost = 2000
+requested_item = toolkit_advanced
+reward_upgr = toolkit_advanced, up_a1_scientific_outfit
+
+[gar_find_toolkit_expert]
+type = find_upgrade
+task_type = additional
+name = st_gar_toolkit_expert_name
+text = st_gar_toolkit_expert_text
+on_complete = %+info_up_gar_toolkit_expert%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_toolkit_expert} true
+cost = 4000
+requested_item = toolkit_expert
+reward_upgr = toolkit_expert, up_a1_scientific_outfit
+
+[mar_find_toolkit_advanced]
+type = find_upgrade
+task_type = additional
+name = st_mar_toolkit_advanced_name
+text = st_mar_toolkit_advanced_text
+on_complete = %+info_up_mar_toolkit_advanced%
+target_cond = {=check_npc_name(mar_csky_tech) -info_up_mar_toolkit_advanced} true
+cost = 2000
+requested_item = toolkit_advanced
+reward_upgr = toolkit_advanced, up_a1_mp5
+
+[val_find_toolkit_advanced]
+type = find_upgrade
+task_type = additional
+name = st_val_toolkit_advanced_name
+text = st_val_toolkit_advanced_text
+on_complete = %+info_up_val_toolkit_advanced%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_toolkit_advanced} true
+cost = 2000
+requested_item = toolkit_advanced
+reward_upgr = toolkit_advanced, up_a1_svu
+
+[val_find_toolkit_expert]
+type = find_upgrade
+task_type = additional
+name = st_val_toolkit_expert_name
+text = st_val_toolkit_expert_text
+on_complete = %+info_up_val_toolkit_expert%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_toolkit_expert} true
+cost = 4000
+requested_item = toolkit_expert
+reward_upgr = toolkit_expert, up_a1_svu
+
+
+;***************************************************
+;  весты на нахождение апгрейдов.
+;***************************************************
+;Cordon
+[esc_find_flash_up_full_l85]
+type = deliver_item
+task_type = additional
+name = st_esc_flash_up_full_l85_name
+text = st_esc_flash_up_full_l85_text
+dialog = st_esc_flash_up_full_l85
+ps_task = true
+on_complete = %+info_up_esc_flash_up_full_l85%
+target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_esc_flash_up_full_l85 +info_up_esc_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 10000
+requested_item = flash_up_full_l85
+
+[esc_find_flash_up_full_chaser13]
+type = deliver_item
+task_type = additional
+name = st_esc_flash_up_full_chaser13_name
+text = st_esc_flash_up_full_chaser13_text
+dialog = st_esc_flash_up_full_chaser13
+ps_task = true
+on_complete = %+info_up_esc_flash_up_full_chaser13%
+target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_esc_flash_up_full_chaser13 +info_up_esc_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 10000
+requested_item = flash_up_full_chaser13
+
+[esc_find_flash_up_part_shotgun_barrel]
+type = deliver_item
+task_type = additional
+name = st_esc_flash_up_part_shotgun_barrel_name
+text = st_esc_flash_up_part_shotgun_barrel_text
+dialog = st_esc_flash_up_part_shotgun_barrel
+ps_task = true
+on_complete = %+info_up_esc_flash_up_part_shotgun_barrel%
+target_cond = {=check_npc_name(esc_stalker_mechanic) -info_up_esc_flash_up_part_shotgun_barrel +info_up_esc_toolkit_basic} true
+reputation_delta_complete = 3
+reward_cash = 1500
+requested_item = flash_up_part_shotgun_barrel
+
+
+;Dark Valley
+[val_find_flash_up_full_svu]
+type = deliver_item
+task_type = additional
+name = st_val_flash_up_full_svu_name
+text = st_val_flash_up_full_svu_text
+dialog = st_val_flash_up_full_svu
+ps_task = true
+on_complete = %+info_up_val_flash_up_full_svu%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_flash_up_full_svu +info_up_val_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 10000
+requested_item = flash_up_full_svu
+
+[val_find_flash_up_full_seva]
+type = deliver_item
+task_type = additional
+name = st_val_flash_up_full_seva_name
+text = st_val_flash_up_full_seva_text
+dialog = st_val_flash_up_full_seva
+ps_task = true
+on_complete = %+info_up_val_flash_up_full_seva%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_flash_up_full_seva +info_up_val_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 14000
+requested_item = flash_up_full_seva
+
+[val_find_flash_up_full_m249]
+type = deliver_item
+task_type = additional
+name = st_val_flash_up_full_m249_name
+text = st_val_flash_up_full_m249_text
+dialog = st_val_flash_up_full_m249
+ps_task = true
+on_complete = %+info_up_val_flash_up_full_m249%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_flash_up_full_m249 +info_up_val_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 18000
+requested_item = flash_up_full_mg
+
+[val_find_flash_up_part_elec_stab]
+type = deliver_item
+task_type = additional
+name = st_val_flash_up_part_elec_stab_name
+text = st_val_flash_up_part_elec_stab_text
+dialog = st_val_flash_up_part_elec_stab
+ps_task = true
+on_complete = %+info_up_val_flash_up_part_elec_stab%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_flash_up_part_elec_stab +info_up_val_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 5000
+requested_item = flash_up_part_elec_stab
+
+[val_find_flash_up_part_servomotor]
+type = deliver_item
+task_type = additional
+name = st_val_flash_up_part_servomotor_name
+text = st_val_flash_up_part_servomotor_text
+dialog = st_val_flash_up_part_servomotor
+ps_task = true
+on_complete = %+info_up_val_flash_up_part_servomotor%
+target_cond = {=check_npc_name(val_freedom_fixer) -info_up_val_flash_up_part_servomotor +info_up_val_toolkit_expert} true
+reputation_delta_complete = 3
+reward_cash = 11000
+requested_item = flash_up_part_servomotor
+
+
+;Agroprom
+[agr_find_flash_up_full_rp74]
+type = deliver_item
+task_type = additional
+name = st_agr_flash_up_full_rp74_name
+text = st_agr_flash_up_full_rp74_text
+dialog = st_agr_flash_up_full_rp74
+ps_task = true
+on_complete = %+info_up_agr_flash_up_full_rp74%
+target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_agr_flash_up_full_rp74 +info_up_agr_toolkit_expert} true
+reputation_delta_complete = 3
+reward_cash = 18000
+requested_item = flash_up_full_mg
+
+[agr_find_flash_up_full_svu]
+type = deliver_item
+task_type = additional
+name = st_agr_flash_up_full_svu_name
+text = st_agr_flash_up_full_svu_text
+dialog = st_agr_flash_up_full_svu
+ps_task = true
+on_complete = %+info_up_agr_flash_up_full_svu%
+target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_agr_flash_up_full_svu} true
+reputation_delta_complete = 3
+reward_cash = 10000
+requested_item = flash_up_full_svu
+
+[agr_find_flash_up_part_val]
+type = deliver_item
+task_type = additional
+name = st_agr_flash_up_part_val_name
+text = st_agr_flash_up_part_val_text
+dialog = st_agr_flash_up_part_val
+ps_task = true
+on_complete = %+info_up_agr_flash_up_part_val%
+target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_agr_flash_up_part_val +info_up_agr_toolkit_expert} true
+reputation_delta_complete = 3
+reward_cash = 6000
+requested_item = flash_up_part_val
+
+[agr_find_flash_up_part_tunder]
+type = deliver_item
+task_type = additional
+name = st_agr_flash_up_part_tunder_name
+text = st_agr_flash_up_part_tunder_text
+dialog = st_agr_flash_up_part_tunder
+ps_task = true
+on_complete = %+info_up_agr_flash_up_part_tunder%
+target_cond = {=check_npc_name(agr_duty_mechanic) -info_up_agr_flash_up_part_tunder +info_up_agr_toolkit_expert} true
+reputation_delta_complete = 3
+reward_cash = 6500
+requested_item = flash_up_part_tunder_barrel
+
+
+;Garbage
+[gar_find_flash_up_full_seva]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_full_seva_name
+text = st_gar_flash_up_full_seva_text
+dialog = st_gar_flash_up_full_seva
+ps_task = true
+on_complete = %+info_up_gar_flash_up_full_seva%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_full_seva +info_up_gar_toolkit_advanced} true
+reputation_delta_complete = -3
+reward_cash = 14000
+requested_item = flash_up_full_seva
+reward_upgr = flash_up_full_seva, up_a1_seva
+
+[gar_find_flash_up_full_exo]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_full_exo_name
+text = st_gar_flash_up_full_exo_text
+dialog = st_gar_flash_up_full_exo
+ps_task = true
+on_complete = %+info_up_gar_flash_up_full_exo%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_full_exo +info_up_gar_toolkit_expert} true
+reputation_delta_complete = -3
+reward_cash = 26500
+requested_item = flash_up_full_exo
+
+[gar_find_flash_up_full_g36]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_full_g36_name
+text = st_gar_flash_up_full_g36_text
+dialog = st_gar_flash_up_full_g36
+ps_task = true
+on_complete = %+info_up_gar_flash_up_full_g36%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_full_g36 +info_up_gar_toolkit_advanced} true
+reputation_delta_complete = -3
+reward_cash = 12500
+requested_item = flash_up_full_g36
+
+[gar_find_flash_up_part_tunder]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_part_tunder_name
+text = st_gar_flash_up_part_tunder_text
+dialog = st_gar_flash_up_part_tunder
+ps_task = true
+on_complete = %+info_up_gar_flash_up_part_tunder%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_part_tunder +info_up_gar_toolkit_advanced} true
+reputation_delta_complete = -3
+reward_cash = 3000
+requested_item = flash_up_part_tunder_mech
+
+[gar_find_flash_up_part_military_armor]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_part_military_armor_name
+text = st_gar_flash_up_part_military_armor_text
+dialog = st_gar_flash_up_part_military_armor
+ps_task = true
+on_complete = %+info_up_gar_flash_up_part_military_armor%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_part_military_armor +info_up_gar_toolkit_advanced} true
+reputation_delta_complete = -3
+reward_cash = 4400
+requested_item = flash_up_part_military_armor
+
+[gar_find_flash_up_part_shotgun_striker]
+type = deliver_item
+task_type = additional
+name = st_gar_flash_up_part_shotgun_striker_name
+text = st_gar_flash_up_part_shotgun_striker_text
+dialog = st_gar_flash_up_part_shotgun_striker
+ps_task = true
+on_complete = %+info_up_gar_flash_up_part_shotgun_striker%
+target_cond = {=check_npc_name(gar_bandit_fixer) -info_up_gar_flash_up_part_shotgun_striker +info_up_gar_toolkit_advanced} true
+reputation_delta_complete = -3
+reward_cash = 1125
+requested_item = flash_up_part_shotgun_striker
+
+
+;Swamps
+[mar_find_flash_up_full_mg]
+type = deliver_item
+task_type = additional
+name = st_mar_flash_up_full_mg_name
+text = st_mar_flash_up_full_mg_text
+dialog = st_mar_flash_up_full_mg
+ps_task = true
+on_complete = %+info_up_mar_flash_up_full_mg%
+target_cond = {=check_npc_name(mar_csky_tech) -info_up_agr_flash_up_full_mg +info_up_mar_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 18000
+requested_item = flash_up_full_mg
+
+[mar_find_flash_up_part_g36]
+type = deliver_item
+task_type = additional
+name = st_mar_flash_up_part_g36_name
+text = st_mar_flash_up_part_g36_text
+dialog = st_mar_flash_up_part_g36
+ps_task = true
+on_complete = %+info_up_mar_flash_up_part_g36%
+target_cond = {=check_npc_name(mar_csky_tech) -info_up_mar_flash_up_part_g36 +info_up_mar_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 5500
+requested_item = flash_up_part_g36
+
+[mar_find_flash_up_part_anomaly_armor]
+type = deliver_item
+task_type = additional
+name = st_mar_flash_up_part_anomaly_armor_name
+text = st_mar_flash_up_part_anomaly_armor_text
+dialog = st_mar_flash_up_part_anomaly_armor
+ps_task = true
+on_complete = %+info_up_mar_flash_up_part_anomaly_armor%
+target_cond = {=check_npc_name(mar_csky_tech) -info_up_mar_flash_up_part_anomaly_armor +info_up_mar_toolkit_advanced} true
+reputation_delta_complete = 3
+reward_cash = 5500
+requested_item = flash_up_part_anomaly_armor

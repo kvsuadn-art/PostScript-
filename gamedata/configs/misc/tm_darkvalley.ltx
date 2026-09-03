@@ -1,0 +1,186 @@
+[list_tm_darkvalley]
+val_deliver_part_1
+val_deliver_part_2
+val_deliver_part_3
+val_deliver_art_1
+val_deliver_art_2
+val_deliver_weapon_1
+val_deliver_weapon_2
+
+val_bring_item_1
+val_bring_item_2
+val_bring_item_3
+val_bring_item_4
+
+
+;fluffy22
+
+[val_deliver_part_1]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_part_1_name
+text = st_val_deliver_part_1_text
+dialog = st_val_deliver_part_1
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_part_1)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_part_1)} true
+community_relation_delta_complete = +100
+reputation_delta_complete = 8
+reward_cash = 350
+reward_loot = ammo_12x76_zhekan,ammo_12x76_zhekan
+requested_item = mutant_boar_leg
+custom_icon = gar_kill_boars
+
+[val_deliver_part_2]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_part_2_name
+text = st_val_deliver_part_2_text
+dialog = st_val_deliver_part_2
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_part_2)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_part_2)} true
+community_relation_delta_complete = +100
+reputation_delta_complete = 8
+reward_cash = 500
+requested_item = mutant_flesh_eye
+custom_icon = monster_part
+
+[val_deliver_part_3]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_part_3_name
+text = st_val_deliver_part_3_text
+dialog = st_val_deliver_part_3
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_part_3)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_part_3)} true
+community_relation_delta_complete = +100
+reputation_delta_complete = 9
+reward_cash = 800
+requested_item = mutant_snork_leg
+custom_icon = monster_part
+
+[val_deliver_art_1]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_art_1_name
+text = st_val_deliver_art_1_text
+dialog = st_val_deliver_art_1
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_art_1)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_art_1)} true
+community_relation_delta_complete = +150
+reputation_delta_complete = 15
+reward_cash = 2000
+reward_loot = wpn_svu
+requested_item = af_pellicle
+custom_icon = tutorial_find_artefact
+
+[val_deliver_art_2]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_art_2_name
+text = st_val_deliver_art_2_text
+dialog = st_val_deliver_art_2
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_art_2)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_art_2)} true
+community_relation_delta_complete = +130
+reputation_delta_complete = 10
+reward_cash = 1000
+reward_loot = ammo_5.45x39_ap,ammo_5.45x39_ap,ammo_5.45x39_ap,medkit_scientic
+requested_item = af_crystal_thorn
+custom_icon = artefact
+
+[val_deliver_weapon_1]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_weapon_1_name
+text = st_val_deliver_weapon_1_text
+dialog = st_val_deliver_weapon_1
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_weapon_1)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_weapon_1)} true
+community_relation_delta_complete = +180
+reputation_delta_complete = 15
+reward_cash = 5000
+reward_loot = wpn_sig550,ammo_5.56x45_ss190,ammo_5.56x45_ss190
+requested_item = wpn_g36
+custom_icon = bar_hunter_rifle
+
+[val_deliver_weapon_2]
+type = deliver_item
+task_type = additional
+name = st_val_deliver_weapon_2_name
+text = st_val_deliver_weapon_2_text
+dialog = st_val_deliver_weapon_2
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_weapon_2)%
+target_cond = {=check_npc_name(val_freedom_leader) =is_ps_task_available(val_deliver_weapon_2)} true
+community_relation_delta_complete = +180
+reputation_delta_complete = 18
+reward_cash = 6000
+reward_loot = svoboda_medium_outfit
+requested_item = wpn_fn2000
+custom_icon = bar_hunter_rifle
+
+;***************************************************
+;  весты на принесение предметов.
+;***************************************************
+
+[val_bring_item_1]
+auto_name = false
+type = bring_item
+task_type = additional
+name = val_bring_item_1_name
+text = val_bring_item_1_text
+target_cond = {~20} true
+prior = 2
+faction = freedom
+requested_items = wpn_lr300
+community_relation_delta_complete = 30
+reputation_delta_complete = 3
+reward_money = {~50} 1500, {~50} 2000, 1000
+
+[val_bring_item_2]
+auto_name = false
+type = bring_item
+task_type = additional
+name = val_bring_item_2_name
+text = val_bring_item_2_text
+target_cond = {~20} true
+prior = 2
+faction = freedom
+requested_items = ammo_5.56x45_ss190,ammo_5.56x45_ss190,ammo_5.56x45_ss190,ammo_5.56x45_ss190,ammo_5.56x45_ss190
+community_relation_delta_complete = 30
+reputation_delta_complete = 3
+reward_money = {~50} 600, {~50} 800, 400
+
+[val_bring_item_3]
+auto_name = false
+type = bring_item
+task_type = additional
+name = val_bring_item_3_name
+text = val_bring_item_3_text
+target_cond = {~20} true
+prior = 2
+faction = freedom
+requested_items = medkit,medkit,bandage,bandage,bandage
+community_relation_delta_complete = 30
+reputation_delta_complete = 4
+reward_money = {~50} 600, {~50} 800, 400
+
+[val_bring_item_4]
+auto_name = false
+type = bring_item
+task_type = additional
+name = val_bring_item_4_name
+text = val_bring_item_4_text
+target_cond = {~20} true
+prior = 2
+faction = freedom
+requested_items = grenade_rgd5,grenade_rgd5,grenade_rgd5
+community_relation_delta_complete = 30
+reputation_delta_complete = 3
+reward_money = {~50} 700, {~50} 1000, 400

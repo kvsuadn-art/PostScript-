@@ -1,0 +1,207 @@
+[list_tm_yantar]
+yan_deliver_part_1
+yan_deliver_part_2
+yan_deliver_part_3
+yan_deliver_part_4
+yan_deliver_part_5
+yan_deliver_part_6
+
+yan_deliver_art_1
+yan_deliver_art_2
+yan_deliver_art_3
+yan_deliver_art_4
+yan_deliver_art_5
+yan_deliver_art_6
+yan_deliver_art_7
+
+
+[yan_deliver_part_1]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_1_name
+text = st_yan_deliver_part_1_text
+dialog = st_yan_deliver_part_1
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_1)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_1)} true
+reputation_delta_complete = 8
+reward_cash = 500
+requested_item = mutant_tushkano_head
+custom_icon = monster_part
+
+[yan_deliver_part_2]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_2_name
+text = st_yan_deliver_part_2_text
+dialog = st_yan_deliver_part_2
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_2)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_2)} true
+reputation_delta_complete = 18
+reward_cash = 5000
+reward_loot = medkit_scientic, medkit_scientic, medkit_scientic, medkit_scientic
+requested_item = mutant_chimera_cogot
+custom_icon = mutant
+
+[yan_deliver_part_3]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_3_name
+text = st_yan_deliver_part_3_text
+dialog = st_yan_deliver_part_3
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_3)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_3)} true
+reputation_delta_complete = 10
+reward_cash = 1000
+reward_loot = af_medusa
+requested_item = mutant_krovosos_jaw
+custom_icon = mil_kill_controller
+
+[yan_deliver_part_4]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_4_name
+text = st_yan_deliver_part_4_text
+dialog = st_yan_deliver_part_4
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_4)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_4)} true
+reputation_delta_complete = 8
+reward_cash = 300
+reward_loot = antirad, antirad
+requested_item = mutant_boar_leg
+custom_icon = gar_kill_boars
+
+[yan_deliver_part_5]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_5_name
+text = st_yan_deliver_part_5_text
+dialog = st_yan_deliver_part_5
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_5)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_5)} true
+reputation_delta_complete = 8
+reward_cash = 600
+requested_item = mutant_flesh_eye
+custom_icon = monster_part
+
+[yan_deliver_part_6]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_part_6_name
+text = st_yan_deliver_part_6_text
+dialog = st_yan_deliver_part_6
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_part_6)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_part_6)} true
+reputation_delta_complete = 10
+reward_cash = 500
+reward_loot = detector_advanced
+requested_item = mutant_snork_leg
+custom_icon = monster_part
+
+
+[yan_deliver_art_1]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_1_name
+text = st_yan_deliver_art_1_text
+dialog = st_yan_deliver_art_1
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_1)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_1)} true
+reputation_delta_complete = 20
+reward_cash = 5000
+requested_item = af_spring_dead
+custom_icon = artefacts
+
+[yan_deliver_art_2]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_2_name
+text = st_yan_deliver_art_2_text
+dialog = st_yan_deliver_art_2
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_2)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_2)} true
+reputation_delta_complete = 20
+reward_cash = 7000
+requested_item = af_battery_dead
+custom_icon = artefacts
+
+[yan_deliver_art_3]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_3_name
+text = st_yan_deliver_art_3_text
+dialog = st_yan_deliver_art_3
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_3)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_3)} true
+reputation_delta_complete = 20
+reward_cash = 2000
+reward_loot = af_vyvert
+requested_item = af_pellicle
+custom_icon = tutorial_find_artefact
+
+[yan_deliver_art_4]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_4_name
+text = st_yan_deliver_art_4_text
+dialog = st_yan_deliver_art_4
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_4)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_4)} true
+reputation_delta_complete = 15
+reward_cash = 1000
+reward_loot = medkit_scientic, medkit_scientic
+requested_item = af_dummy_glassbeads
+custom_icon = tutorial_find_artefact
+
+[yan_deliver_art_5]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_5_name
+text = st_yan_deliver_art_5_text
+dialog = st_yan_deliver_art_5
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_5)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_5)} true
+reputation_delta_complete = 18
+reward_cash = 3000
+reward_loot = ecologist_red_outfit
+requested_item = af_glass
+custom_icon = tutorial_find_artefact
+
+[yan_deliver_art_6]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_6_name
+text = st_yan_deliver_art_6_text
+dialog = st_yan_deliver_art_6
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_6)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_6)} true
+reputation_delta_complete = 12
+reward_cash = 3000
+requested_item = af_soul
+custom_icon = artefact
+
+[yan_deliver_art_7]
+type = deliver_item
+task_type = additional
+name = st_yan_deliver_art_7_name
+text = st_yan_deliver_art_7_text
+dialog = st_yan_deliver_art_7
+ps_task = true
+on_complete = %=lock_ps_task(yan_deliver_art_7)%
+target_cond = {=check_npc_name(yan_stalker_sakharov) =is_ps_task_available(yan_deliver_art_7)} true
+reputation_delta_complete = 12
+reward_cash = 1000
+reward_loot = wpn_l85, ammo_5.56x45_ss190, ammo_5.56x45_ss190, ammo_5.56x45_ss190
+requested_item = af_thorn
+custom_icon = artefact

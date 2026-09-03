@@ -1,0 +1,234 @@
+[list_ps_tm_tasks]
+;esc_eliminate_smart_1	;doesn't work properly yet
+
+esc_deliver_capacitors
+esc_deliver_transistors
+esc_deliver_wire
+gar_deliver_capacitors
+gar_deliver_transistors
+gar_deliver_wire
+val_deliver_capacitors
+val_deliver_transistors
+val_deliver_wire
+agr_deliver_capacitors
+agr_deliver_transistors
+agr_deliver_wire
+mar_deliver_capacitors
+mar_deliver_transistors
+mar_deliver_wire
+
+[esc_eliminate_smart_1]
+type = eliminate_smart
+task_type = additional
+name = st_esc_eliminate_smart_1_name
+text = st_esc_eliminate_smart_1_text
+dialog = st_esc_eliminate_smart_1
+ps_task = true
+target_smart = esc_smart_terrain_5_6
+on_complete = %=lock_ps_task(esc_eliminate_smart_1)%
+;target_cond = {=check_npc_name(esc_stalker_trader) =is_ps_task_available(esc_eliminate_smart_1) =smart_captured_by_faction(esc_smart_terrain_5_6:monster)} true
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_eliminate_smart_1) =smart_captured_by_faction(esc_smart_terrain_5_6:monster)} true
+community_relation_delta_complete = 30
+reputation_delta_complete = 3
+auto_faction = true
+prior = 3
+
+;*********************
+[esc_deliver_capacitors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_capacitors_name
+text = st_ps_deliver_capacitors_text
+dialog = st_ps_deliver_capacitors
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_capacitors)%
+target_cond = {=check_npc_name(esc_stalker_mechanic) =is_ps_task_available(esc_deliver_capacitors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_capacitor
+
+[esc_deliver_transistors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_transistors_name
+text = st_ps_deliver_transistors_text
+dialog = st_ps_deliver_transistors
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_transistors)%
+target_cond = {=check_npc_name(esc_stalker_mechanic) =is_ps_task_available(esc_deliver_transistors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_transistor
+
+[esc_deliver_wire]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_wire_name
+text = st_ps_deliver_wire_text
+dialog = st_ps_deliver_wire
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_wire)%
+target_cond = {=check_npc_name(esc_stalker_mechanic) =is_ps_task_available(esc_deliver_wire)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_wire
+
+
+[gar_deliver_capacitors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_capacitors_name
+text = st_ps_deliver_capacitors_text
+dialog = st_ps_deliver_capacitors
+ps_task = true
+on_complete = %=lock_ps_task(gar_deliver_capacitors)%
+target_cond = {=check_npc_name(gar_bandit_fixer) =is_ps_task_available(gar_deliver_capacitors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_capacitor
+
+[gar_deliver_transistors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_transistors_name
+text = st_ps_deliver_transistors_text
+dialog = st_ps_deliver_transistors
+ps_task = true
+on_complete = %=lock_ps_task(gar_deliver_transistors)%
+target_cond = {=check_npc_name(gar_bandit_fixer) =is_ps_task_available(gar_deliver_transistors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_transistor
+
+[gar_deliver_wire]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_wire_name
+text = st_ps_deliver_wire_text
+dialog = st_ps_deliver_wire
+ps_task = true
+on_complete = %=lock_ps_task(gar_deliver_wire)%
+target_cond = {=check_npc_name(gar_bandit_fixer) =is_ps_task_available(gar_deliver_wire)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_wire
+
+
+[val_deliver_capacitors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_capacitors_name
+text = st_ps_deliver_capacitors_text
+dialog = st_ps_deliver_capacitors
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_capacitors)%
+target_cond = {=check_npc_name(val_freedom_fixer) =is_ps_task_available(val_deliver_capacitors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_capacitor
+
+[val_deliver_transistors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_transistors_name
+text = st_ps_deliver_transistors_text
+dialog = st_ps_deliver_transistors
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_transistors)%
+target_cond = {=check_npc_name(val_freedom_fixer) =is_ps_task_available(val_deliver_transistors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_transistor
+
+[val_deliver_wire]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_wire_name
+text = st_ps_deliver_wire_text
+dialog = st_ps_deliver_wire
+ps_task = true
+on_complete = %=lock_ps_task(val_deliver_wire)%
+target_cond = {=check_npc_name(val_freedom_fixer) =is_ps_task_available(val_deliver_wire)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_wire
+
+
+[agr_deliver_capacitors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_capacitors_name
+text = st_ps_deliver_capacitors_text
+dialog = st_ps_deliver_capacitors
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_capacitors)%
+target_cond = {=check_npc_name(agr_duty_mechanic) =is_ps_task_available(agr_deliver_capacitors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_capacitor
+
+[agr_deliver_transistors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_transistors_name
+text = st_ps_deliver_transistors_text
+dialog = st_ps_deliver_transistors
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_transistors)%
+target_cond = {=check_npc_name(agr_duty_mechanic) =is_ps_task_available(agr_deliver_transistors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_transistor
+
+[agr_deliver_wire]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_wire_name
+text = st_ps_deliver_wire_text
+dialog = st_ps_deliver_wire
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_wire)%
+target_cond = {=check_npc_name(agr_duty_mechanic) =is_ps_task_available(agr_deliver_wire)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_wire
+
+
+[mar_deliver_capacitors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_capacitors_name
+text = st_ps_deliver_capacitors_text
+dialog = st_ps_deliver_capacitors
+ps_task = true
+on_complete = %=lock_ps_task(mar_deliver_capacitors)%
+target_cond = {=check_npc_name(mar_csky_tech) =is_ps_task_available(mar_deliver_capacitors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_capacitor
+
+[mar_deliver_transistors]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_transistors_name
+text = st_ps_deliver_transistors_text
+dialog = st_ps_deliver_transistors
+ps_task = true
+on_complete = %=lock_ps_task(mar_deliver_transistors)%
+target_cond = {=check_npc_name(mar_csky_tech) =is_ps_task_available(mar_deliver_transistors)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_transistor
+
+[mar_deliver_wire]
+type = deliver_item
+task_type = additional
+name = st_ps_deliver_wire_name
+text = st_ps_deliver_wire_text
+dialog = st_ps_deliver_wire
+ps_task = true
+on_complete = %=lock_ps_task(mar_deliver_wire)%
+target_cond = {=check_npc_name(mar_csky_tech) =is_ps_task_available(mar_deliver_wire)} true
+reputation_delta_complete = 1
+reward_cash = 200
+requested_item = gar_materials_wire

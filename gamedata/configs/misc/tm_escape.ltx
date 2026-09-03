@@ -1,0 +1,242 @@
+[list_tm_escape]
+esc_talk_wolf
+
+esc_deliver_item_trader_1
+esc_deliver_item_trader_2
+esc_deliver_item_trader_3
+esc_deliver_item_trader_4
+esc_deliver_item_trader_5
+esc_deliver_item_trader_6
+esc_deliver_item_trader_7
+esc_deliver_item_trader_8
+esc_deliver_item_trader_9
+
+esc_bring_item_1
+esc_bring_item_2
+esc_bring_item_3
+esc_bring_item_4
+esc_bring_item_5
+
+
+
+[esc_talk_wolf]
+prior = 5
+type = storyline
+task_type = storyline
+icon = ui_mt_image_attack_tower
+name = esc_talk2_wolf
+text = esc_talk2_wolf_text
+target_story_ids = 431
+condlist_0 = {+esc_tut_talk_done} complete
+auto_faction = true
+
+
+; Deliver Items
+
+[esc_deliver_item_trader_1]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_1_name
+text = st_esc_deliver_item_trader_1_text
+dialog = st_esc_deliver_item_trader_1
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_1)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_1)} true
+reputation_delta_complete = 8
+reward_cash = 100
+reward_item = kolbasa
+requested_item = mutant_cat_tail
+custom_icon = monster_part
+
+[esc_deliver_item_trader_2]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_2_name
+text = st_esc_deliver_item_trader_2_text
+dialog = st_esc_deliver_item_trader_2
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_2)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_2)} true
+reputation_delta_complete = 8
+reward_cash = 250
+reward_item = wpn_fort
+requested_item = mutant_psevdodog_tail
+custom_icon = monster_part
+
+[esc_deliver_item_trader_3]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_3_name
+text = st_esc_deliver_item_trader_3_text
+dialog = st_esc_deliver_item_trader_3
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_3)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_3)} true
+reputation_delta_complete = 8
+reward_cash = 200
+reward_item = medkit,medkit
+requested_item = mutant_tushkano_head
+custom_icon = monster_part
+
+[esc_deliver_item_trader_4]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_4_name
+text = st_esc_deliver_item_trader_4_text
+dialog = st_esc_deliver_item_trader_4
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_4)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_4)} true
+reputation_delta_complete = 8
+reward_cash = 1200
+reward_item = antirad,antirad
+requested_item = af_medusa
+custom_icon = tutorial_help_wounded
+
+[esc_deliver_item_trader_5]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_5_name
+text = st_esc_deliver_item_trader_5_text
+dialog = st_esc_deliver_item_trader_5
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_5)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_5)} true
+reputation_delta_complete = 8
+reward_cash = 700
+reward_item = conserva
+requested_item = af_blood
+custom_icon = tutorial_help_wounded
+
+[esc_deliver_item_trader_6]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_6_name
+text = st_esc_deliver_item_trader_6_text
+dialog = st_esc_deliver_item_trader_6
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_6)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_6)} true
+reputation_delta_complete = 12
+reward_cash = 2300
+requested_item = af_dummy_battery
+custom_icon = tutorial_help_wounded
+
+[esc_deliver_item_trader_7]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_7_name
+text = st_esc_deliver_item_trader_7_text
+dialog = st_esc_deliver_item_trader_7
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_7)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_7)} true
+reputation_delta_complete = 10
+reward_cash = 2000
+reward_item = grenade_f1,grenade_f1
+requested_item = wpn_sig550
+custom_icon = weapons
+
+[esc_deliver_item_trader_8]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_8_name
+text = st_esc_deliver_item_trader_8_text
+dialog = st_esc_deliver_item_trader_8
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_8)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_8)} true
+reputation_delta_complete = 10
+reward_cash = 200
+reward_item = energy_drink,energy_drink
+requested_item = wpn_pm_up
+custom_icon = weapons
+
+[esc_deliver_item_trader_9]
+type = deliver_item
+task_type = additional
+name = st_esc_deliver_item_trader_9_name
+text = st_esc_deliver_item_trader_9_text
+dialog = st_esc_deliver_item_trader_9
+ps_task = true
+on_complete = %=lock_ps_task(esc_deliver_item_trader_9)%
+target_cond = {=check_npc_name(esc_m_trader) =is_ps_task_available(esc_deliver_item_trader_9)} true
+reputation_delta_complete = 10
+reward_cash = 900
+reward_item = wpn_gp100,ammo_357_hp_mag,ammo_357_hp_mag
+requested_item = wpn_colt1911_up2
+custom_icon = weapons
+
+
+
+;Bring Items
+
+[esc_bring_item_1]
+auto_name = false
+type = bring_item
+task_type = additional
+name = esc_bring_item_1_name
+text = esc_bring_item_1_text
+target_cond = {~20 =actor_on_level(escape)} true
+prior = 5
+faction = stalker
+requested_items = medkit_army
+community_relation_delta_complete = 10
+reputation_delta_complete = 3
+reward_money = {~50} 500, {~50}, 750, 500
+
+[esc_bring_item_2]
+auto_name = false
+type = bring_item
+task_type = additional
+name = esc_bring_item_2_name
+text = esc_bring_item_2_text
+target_cond = {~20 =actor_on_level(escape)} true
+prior = 5
+faction = stalker
+requested_items = wpn_lr300
+community_relation_delta_complete = 25
+reputation_delta_complete = 3
+reward_money = {~50} 500, {~50}, 1200, 800
+
+[esc_bring_item_3]
+auto_name = false
+type = bring_item
+task_type = additional
+name = esc_bring_item_3_name
+text = esc_bring_item_3_text
+target_cond = {~20 =actor_on_level(escape)} true
+prior = 5
+faction = stalker
+requested_items = wpn_vintorez
+community_relation_delta_complete = 50
+reputation_delta_complete = 5
+reward_money = {~50} 1000, {~50}, 2000, 1500
+
+[esc_bring_item_4]
+auto_name = false
+type = bring_item
+task_type = additional
+name = esc_bring_item_4_name
+text = esc_bring_item_4_text
+target_cond = {~20 =actor_on_level(escape)} true
+prior = 5
+faction = stalker
+requested_items = wpn_spas12, ammo_12x76_zhekan, ammo_12x76_zhekan
+community_relation_delta_complete = 35
+reputation_delta_complete = 4
+reward_money = {~50} 500, {~50}, 1000, 750
+
+[esc_bring_item_5]
+auto_name = false
+type = bring_item
+task_type = additional
+name = esc_bring_item_5_name
+text = esc_bring_item_5_text
+target_cond = {~20 =actor_on_level(escape)} true
+prior = 5
+faction = stalker
+requested_items = wpn_ak74, ammo_5.45x39_fmj, ammo_5.45x39_fmj
+community_relation_delta_complete = 35
+reputation_delta_complete = 4
+reward_money = {~50} 500, {~50}, 1000, 750

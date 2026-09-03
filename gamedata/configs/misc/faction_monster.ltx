@@ -1,0 +1,82 @@
+[settings]
+glory_0 = 0
+glory_1 = 0
+glory_2 = 0
+glory_3 = 0
+glory_4 = 0
+glory_5 = 0
+
+[spawn_by_resource]
+0 = bloodsucker_marsh, 1
+1 = tushkano_normal, 1
+2 = flesh_weak, 1, flesh_normal, 1, flesh_strong, 1
+3 = boar_weak, 1, boar_normal, 1, boar_strong, 1
+4 = cat_weak, 1
+5 = dog_weak, 1, dog_normal, 1, dog_strong, 1, pseudodog_weak, 1, pseudodog_normal, 1, pseudodog_strong, 1
+6 = snork_weak, 1, snork_normal, 1, snork_strong, 1
+7 = bloodsucker_weak, 1, bloodsucker_normal, 1, bloodsucker_strong, 1
+8 = psy_dog, 1
+9 = chimera_weak, 1
+
+[spawn_by_level]
+marsh 		= bloodsucker_marsh, 100, flesh_weak, 70, flesh_normal, 30, boar_weak, 70, boar_normal, 30, dog_weak, 80, dog_normal, 20, tushkano_normal, 100
+escape 		= flesh_weak, 60, flesh_normal, 40, boar_weak, 60, boar_normal, 40, dog_weak, 70, dog_normal, 30, tushkano_normal, 100, cat_weak, 100
+garbage 	= flesh_normal, 70, flesh_strong, 30, boar_normal, 70, boar_strong, 30, dog_normal, 60, dog_strong, 30, pseudodog_weak, 10, snork_weak, 100, tushkano_normal, 100, cat_weak, 100
+darkvalley	= flesh_normal, 60, flesh_strong, 40, boar_normal, 60, boar_strong, 40, dog_normal, 40, dog_strong, 30, pseudodog_weak, 20, pseudodog_normal, 10, snork_weak, 70, snork_normal, 30, bloodsucker_weak, 100, tushkano_normal, 100, cat_weak, 100
+agroprom 	= flesh_normal, 20, flesh_strong, 80, boar_normal, 20, boar_strong, 80, dog_normal, 30, dog_strong, 20, pseudodog_weak, 30, pseudodog_normal, 20, snork_weak, 60, snork_normal, 40, bloodsucker_weak, 70, bloodsucker_normal, 30, tushkano_normal, 100, cat_weak, 100
+yantar 		= snork_normal, 70, snork_strong, 30, psy_dog, 100
+; Red Forest: All mutants: Fleshes, Boars, Snorks, Bloodsuckers, Dogs, Pseudodogs, Tushkanos
+; TODO: Test Contoller with zombies (normal & zombified stalkers?)
+red_forest 	= pseudodog_normal, 40, pseudodog_strong, 30, snork_normal, 60, snork_strong, 40, bloodsucker_normal, 60, bloodsucker_strong, 40, tushkano_normal, 100, psy_dog, 100, chimera_weak, 100
+military 	= flesh_normal, 20, flesh_strong, 80, boar_normal, 20, boar_strong, 80, dog_normal, 10, dog_strong, 20, pseudodog_normal, 40, pseudodog_strong, 30, snork_normal, 60, snork_strong, 40, bloodsucker_normal, 60, bloodsucker_strong, 40, tushkano_normal, 100, psy_dog, 100, chimera_weak, 100, cat_weak, 100
+
+
+
+[expansion_0]
+base_squad_number = 0
+precondition_cond = {+esc_tut_talk_done} true, false
+respawn_idle_time = 60 ;Время между двумя попытками доспауна отрядов в игровых минутах.
+respawn_hours = 0,1,2,3,4,5,6,7,8,9,12,15,18,21,22,23 ;Время, в который можно спаунить отряды (задаются времена суток)
+
+[expansion_1]
+base_squad_number = 40
+precondition_power = 0.5
+respawn_idle_time = 60 ;Время между двумя попытками доспауна отрядов в игровых минутах.
+respawn_hours = 0,1,2,3,4,5,6,7,8,9,12,15,18,21,22,23 ;Время, в который можно спаунить отряды (задаются времена суток)
+
+
+[start_position]
+;Generic
+boars_weak_generic = esc_smart_terrain_8_10, mar_smart_terrain_5_10, mar_smart_terrain_3_7
+boars_normal_generic = gar_smart_terrain_6_1, gar_smart_terrain_6_5
+boars_strong_generic = val_smart_terrain_9_2
+
+dogs_weak_generic = esc_smart_terrain_8_9, esc_smart_terrain_6_7
+dogs_normal_generic = gar_smart_terrain_3_2, val_smart_terrain_6_6
+dogs_strong_generic = mil_smart_terrain_2_3
+
+fleshs_weak_generic = esc_smart_terrain_8_6, mar_smart_terrain_8_8, mar_smart_terrain_3_10, mar_smart_terrain_10_5, mar_smart_terrain_10_5
+fleshs_normal_generic = mar_smart_terrain_8_11, mar_smart_terrain_4_7
+fleshs_strong_generic = val_smart_terrain_9_10
+
+tushkano_normal_generic = esc_smart_terrain_5_9, mar_smart_terrain_11_3, agr_smart_terrain_6_4
+
+bloodsucker_marsh_generic = mar_smart_terrain_5_8, mar_smart_terrain_8_9
+bloodsuckers_weak_generic = val_smart_terrain_7_8
+bloodsuckers_normal_generic = agr_smart_terrain_1_2, mil_smart_terrain_3_2, mil_smart_terrain_4_2
+bloodsuckers_strong_generic = red_smart_terrain_3_3, mil_smart_terrain_4_3
+
+psuedogiant_normal_generic = agr_smart_terrain_4_4
+psuedogiant_strong_generic = red_smart_terrain_monsters
+
+pseudodogs_weak_generic = agr_smart_terrain_5_7, gar_smart_terrain_6_6
+pseudodogs_normal_generic = mil_smart_terrain_2_1, val_smart_terrain_6_4
+pseudodogs_strong_generic = red_smart_terrain_4_3
+
+snorks_weak_generic = gar_smart_terrain_6_7
+snorks_normal_generic = red_smart_terrain_5_6
+snorks_strong_generic = red_smart_terrain_monsters_2
+
+chimera_weak_generic = red_smart_terrain_6_3
+
+cat_weak_generic = esc_smart_terrain_2_14, esc_smart_terrain_5_6, val_smart_terrain_8_9

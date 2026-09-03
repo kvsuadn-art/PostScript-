@@ -1,0 +1,325 @@
+[list_tm_agroprom]
+agr_medic_deliver_item_1
+agr_medic_deliver_item_2
+
+agr_deliver_part_1
+agr_deliver_part_2
+agr_deliver_art_1
+agr_deliver_art_2
+agr_deliver_art_3
+agr_deliver_weapon_1
+agr_deliver_weapon_2
+
+agr_bring_item_1
+;agr_bring_item_2
+agr_bring_item_3
+;agr_bring_item_4
+agr_bring_item_5
+agr_bring_item_6
+agr_bring_item_7
+agr_bring_item_8
+agr_bring_item_9
+;agr_bring_item_10
+
+;***************************************************
+; fluffy22 
+;***************************************************
+[agr_medic_deliver_item_1]
+type = deliver_item
+task_type = additional
+name = agr_additional_quest_1_name
+text = agr_additional_quest_1_text
+dialog = st_agr_additional_quest_1
+ps_task = true
+on_complete = %+agr_additional_quest_1_info_complete%
+target_cond = {=check_npc_name(agr_duty_base_medic) -agr_additional_quest_1_info_complete} true
+community_relation_delta_complete = +100
+reputation_delta_complete = 10
+reward_cash = 2000
+requested_item = af_dummy_battery
+custom_icon = artefacts
+
+[agr_medic_deliver_item_2]
+type = deliver_item
+task_type = additional
+name = agr_additional_quest_3_name
+text = agr_additional_quest_3_text
+dialog = st_agr_additional_quest_3
+ps_task = true
+on_complete = %+agr_additional_quest_3_info_complete%
+target_cond = {=check_npc_name(agr_duty_base_medic) +agr_additional_quest_1_info_complete -agr_additional_quest_3_info_complete} true
+community_relation_delta_complete = +100
+reputation_delta_complete = 10
+reward_cash = 2000
+requested_item = af_fuzz_kolobok
+custom_icon = artefacts
+
+;***************************************************
+; Leader Missions
+;***************************************************
+[agr_deliver_part_1]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_part_1_name
+text = st_agr_deliver_part_1_text
+dialog = st_agr_deliver_part_1
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_part_1)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_part_1)} true
+community_relation_delta_complete = +150
+reputation_delta_complete = 18
+reward_cash = 2000
+reward_loot = wpn_ak74_up,ammo_5.56x45_ap,ammo_5.56x45_ap
+requested_item = mutant_chimera_cogot
+custom_icon = mutant
+
+[agr_deliver_part_2]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_part_2_name
+text = st_agr_deliver_part_2_text
+dialog = st_agr_deliver_part_2
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_part_2)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_part_2)} true
+community_relation_delta_complete = +120
+reputation_delta_complete = 12
+reward_cash = 1500
+reward_loot = ammo_pkm_100
+requested_item = mutant_krovosos_jaw
+custom_icon = mil_kill_controller
+
+[agr_deliver_art_1]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_art_1_name
+text = st_agr_deliver_art_1_text
+dialog = st_agr_deliver_art_1
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_art_1)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_art_1)} true
+community_relation_delta_complete = +150
+reputation_delta_complete = 15
+reward_cash = 1000
+reward_loot = military2_outfit
+requested_item = af_baloon
+custom_icon = artefacts
+
+[agr_deliver_art_2]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_art_2_name
+text = st_agr_deliver_art_2_text
+dialog = st_agr_deliver_art_2
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_art_2)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_art_2)} true
+community_relation_delta_complete = +130
+reputation_delta_complete = 15
+reward_cash = 5000
+requested_item = af_eye
+custom_icon = tutorial_find_artefact
+
+[agr_deliver_art_3]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_art_3_name
+text = st_agr_deliver_art_3_text
+dialog = st_agr_deliver_art_3
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_art_3)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_art_3)} true
+community_relation_delta_complete = +120
+reputation_delta_complete = 12
+reward_cash = 1000
+reward_loot = medkit_army,medkit_army,medkit_army
+requested_item = af_electra_flash
+custom_icon = tutorial_find_artefact
+
+[agr_deliver_weapon_1]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_weapon_1_name
+text = st_agr_deliver_weapon_1_text
+dialog = st_agr_deliver_weapon_1
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_weapon_1)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_weapon_1)} true
+community_relation_delta_complete = +150
+reputation_delta_complete = 18
+reward_cash = 10000
+reward_loot = af_gravi
+requested_item = wpn_svd
+custom_icon = bar_hunter_rifle
+
+[agr_deliver_weapon_2]
+type = deliver_item
+task_type = additional
+name = st_agr_deliver_weapon_2_name
+text = st_agr_deliver_weapon_2_text
+dialog = st_agr_deliver_weapon_2
+ps_task = true
+on_complete = %=lock_ps_task(agr_deliver_weapon_2)%
+target_cond = {=check_npc_name(agr_duty_commander) =is_ps_task_available(agr_deliver_weapon_2)} true
+community_relation_delta_complete = +150
+reputation_delta_complete = 18
+reward_cash = 12000
+reward_loot = wpn_groza,ammo_9x39_pab9,ammo_9x39_pab9,ammo_9x39_pab9,ammo_vog-25p,ammo_vog-25p
+requested_item = wpn_rpg7
+custom_icon = bar_hunter_rifle
+
+
+;***************************************************
+;  весты на принесение предметов.
+;***************************************************
+
+[agr_bring_item_1]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_1_name
+text = agr_bring_item_1_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = wpn_abakan
+community_relation_delta_complete = 40
+reputation_delta_complete = 3
+reward_money = {~50} 1500, {~50} 2000, 1000
+
+[agr_bring_item_2]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_2_name
+text = agr_bring_item_2_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = wpn_groza
+community_relation_delta_complete = 50
+reputation_delta_complete = 4
+reward_money = {~50} 1500, {~50} 2000, 1000
+
+[agr_bring_item_3]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_3_name
+text = agr_bring_item_3_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = ammo_5.45x39_fmj, ammo_5.45x39_fmj, ammo_5.45x39_fmj, ammo_5.45x39_fmj, ammo_5.45x39_fmj
+community_relation_delta_complete = 40
+reputation_delta_complete = 3
+reward_money = {~50} 750, {~50}, 1000, 500
+
+[agr_bring_item_4]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_4_name
+text = agr_bring_item_4_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = ammo_pkm_100
+community_relation_delta_complete = 40
+reputation_delta_complete = 4
+reward_money = {~50} 750, {~50}, 1000, 500
+
+[agr_bring_item_5]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_5_name
+text = agr_bring_item_5_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = ammo_12x76_dart, ammo_12x70_buck, ammo_12x70_buck
+community_relation_delta_complete = 25
+reputation_delta_complete = 3
+reward_money = {~50} 750, {~50}, 1000, 500
+
+[agr_bring_item_6]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_6_name
+text = agr_bring_item_6_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = grenade_rgd5, grenade_rgd5, grenade_f1
+community_relation_delta_complete = 35
+reputation_delta_complete = 3
+reward_money = {~50} 900, {~50}, 1200, 600
+
+[agr_bring_item_7]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_7_name
+text = agr_bring_item_7_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = medkit_army, medkit_army, medkit_army
+community_relation_delta_complete = 35
+reputation_delta_complete = 3
+reward_money = {~50} 1000, {~50}, 1500, 500
+
+[agr_bring_item_8]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_8_name
+text = agr_bring_item_8_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = ammo_9x39_pab9, ammo_9x39_pab9
+community_relation_delta_complete = 35
+reputation_delta_complete = 2
+reward_money = {~50} 600, {~50}, 800, 400
+
+[agr_bring_item_9]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_9_name
+text = agr_bring_item_9_text
+target_cond = {~20} true
+prior = 2
+faction = dolg
+requested_items = wpn_vintorez
+community_relation_delta_complete = 45
+reputation_delta_complete = 4
+reward_money = {~50} 1500, {~50}, 2000, 1000
+
+[agr_bring_item_10]
+auto_name = false
+type = bring_item
+task_type = additional
+name = agr_bring_item_10_name
+text = agr_bring_item_10_text
+target_cond = {~20 =actor_on_level(agroprom)} true
+prior = 2
+faction = stalker
+requested_items = detector_elite
+community_relation_delta_complete = 15
+reputation_delta_complete = 2
+reward_money = {~50} 750, {~50}, 1000, 500
+
+[agr_additional_quest_shooting]
+type = storyline
+task_type = additional
+target_cond = true
+prior = 100
+name = agr_additional_quest_shooting_name
+text = agr_additional_quest_shooting_text
+target_story_ids = 1027
+condlist_0 = {=talking()} complete
+
