@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_info2 = {!counter_equal(mar_monolith_count:5) =distance_to_point_ge(mar_monolith_home:100)} sr_idle@spawn_monolith_1
+
+[sr_idle@spawn_monolith_1]
+on_game_timer = 2000 |{!counter_greater(mar_monolith_count:4) =distance_to_point_ge(mar_monolith_home:100)} sr_idle@check %=inc_counter(mar_monolith_count:1) =spawn_object(mar_monolith_scout:mar_monolith_home)%

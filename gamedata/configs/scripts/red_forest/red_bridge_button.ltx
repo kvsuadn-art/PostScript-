@@ -1,0 +1,23 @@
+[logic]
+active = ph_button@locked
+
+[ph_button@locked]
+anim_blend = true
+anim = idle
+on_press = ph_button@unlocked %+red_bridge_bridge_move%
+on_info = {+red_bridge_down_done} ph_button@stuck
+tooltip = tips_lower_bridge
+
+[ph_button@unlocked]
+anim_blend = true
+anim = off
+on_press = ph_button@locked %-red_bridge_bridge_move%
+on_info = {+red_bridge_down_done} ph_button@stuck
+tooltip = tips_stop_bridge
+
+[ph_button@stuck]
+anim_blend = true
+anim = idle
+on_timer = 5 | sr_idle@stuck
+
+[sr_idle@stuck]

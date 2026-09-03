@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle@setup 
+
+[sr_idle@setup]
+on_info = sr_idle@end %+location_marsh%
+
+[sr_idle@end]
+on_info = {=actor_in_csky} sr_idle@block %=disable_level_changer(311:mar_disabled_level_changer) =disable_level_changer(312:mar_disabled_level_changer) =disable_level_changer(313:mar_disabled_level_changer)%
+
+[sr_idle@block]
+on_info = {!actor_in_csky} sr_idle@end %=enable_level_changer(311) =enable_level_changer(312) =enable_level_changer(313)%

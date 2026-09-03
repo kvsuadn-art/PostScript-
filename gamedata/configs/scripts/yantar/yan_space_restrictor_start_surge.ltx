@@ -1,0 +1,83 @@
+[logic]
+active = sr_idle@stop_surge;sr_idle@warn_1		;sr_idle@start
+
+[sr_idle@start]
+on_info = {+yan_ready_actor_cut2} sr_idle@warn_1
+
+
+; First Surge 
+[sr_idle@warn_1]
+on_game_timer = 3600 | sr_idle@start_surge_1 %=send_danger_message%
+
+[sr_idle@start_surge_1]
+on_game_timer = 1000 | sr_idle@stop_1 %+start_surge -yan_ready_actor_cut2 =stc_boom% 
+on_info = {+yan_quest_levsha} sr_idle@stop_surge
+
+[sr_idle@stop_1]
+on_game_timer = 150 |  sr_idle@safe_1 %-start_surge% 
+
+[sr_idle@safe_1]
+on_game_timer = 1 | sr_idle@warn_2 %=send_safe_message%
+
+
+;Second Surge
+[sr_idle@warn_2]
+on_game_timer = 5000 | sr_idle@start_surge_2 %=send_danger_message%
+
+[sr_idle@start_surge_2]
+on_game_timer = 1000 | sr_idle@stop_2 %+start_surge -yan_ready_actor_cut2 =stc_boom% 
+on_info = {+yan_quest_levsha} sr_idle@stop_surge
+
+[sr_idle@stop_2]
+on_game_timer = 150 |  sr_idle@safe_2 %-start_surge% 
+
+[sr_idle@safe_2]
+on_game_timer = 1 | sr_idle@warn_3 %=send_safe_message%
+
+
+;Third Surge
+[sr_idle@warn_3]
+on_game_timer = 1800 | sr_idle@start_surge_3 %=send_danger_message%
+
+[sr_idle@start_surge_3]
+on_game_timer = 1000 | sr_idle@stop_3 %+start_surge -yan_ready_actor_cut2 =stc_boom% 
+on_info = {+yan_quest_levsha} sr_idle@stop_surge
+
+[sr_idle@stop_3]
+on_game_timer = 150 |  sr_idle@safe_3 %-start_surge% 
+
+[sr_idle@safe_3]
+on_game_timer = 1 | sr_idle@warn_4 %=send_safe_message%
+
+
+;Fourth Surge
+[sr_idle@warn_4]
+on_game_timer = 8300 | sr_idle@start_surgee_4 %=send_danger_message%
+
+[sr_idle@start_surge_4]
+on_game_timer = 1000 | sr_idle@stop_4 %+start_surge -yan_ready_actor_cut2 =stc_boom% 
+on_info = {+yan_quest_levsha} sr_idle@stop_surge
+
+[sr_idle@stop_4]
+on_game_timer = 150 |  sr_idle@safe_4 %-start_surge% 
+
+[sr_idle@safe_4]
+on_game_timer = 1 | sr_idle@warn_5 %=send_safe_message%
+
+
+;Fifth Surge
+[sr_idle@warn_5]
+on_game_timer = 1000 | sr_idle@start_surgee_5 %=send_danger_message%
+
+[sr_idle@start_surge_5]
+on_game_timer = 1000 | sr_idle@stop_5 %+start_surge -yan_ready_actor_cut2 =stc_boom% 
+on_info = {+yan_quest_levsha} sr_idle@stop_surge
+
+[sr_idle@stop_5]
+on_game_timer = 150 |  sr_idle@safe_5 %-start_surge% 
+
+[sr_idle@safe_5]
+on_game_timer = 1 | sr_idle@warn_1 %=send_safe_message%
+
+;End All Surges
+[sr_idle@stop_surge]

@@ -1,0 +1,11 @@
+[logic]
+active = mob_home
+on_death = death
+
+[mob_home]
+path_home = yan_ecolog_home
+home_min_radius = 15
+home_max_radius = 45
+
+[death]
+on_info = %=dec_counter(yan_ecolog_scien_count)%

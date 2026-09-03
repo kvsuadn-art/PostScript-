@@ -1,0 +1,8 @@
+;----логика заданий: куда пойти, рестрикторы и всё такое
+[logic] 
+active = sr_idle@setup 
+
+[sr_idle@setup]
+on_info = sr_idle@stop %+location_yantar%
+
+[sr_idle@stop]

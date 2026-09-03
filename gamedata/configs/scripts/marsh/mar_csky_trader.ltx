@@ -1,0 +1,27 @@
+[logic]
+active = smartcover@main_window_idle
+trade = misc\trade\trade_trader_mar_csky.ltx
+level_spot = trader
+
+;-----------------------------------------------------------------------------
+
+[smartcover@main_window_idle]
+path_walk = mar_smart_terrain_csky_base_trader_walk
+cover_name = mar_smart_cover_csky_trader_lead_stand_look_in_window
+loophole_name = lead_stand_look_in_window
+cover_state = idle_target
+combat_ignore_cond = true
+meet = meet@ward
+
+;-----------------------------------------------------------------------------
+[meet@ward]
+meet_state = 5 | {-mar_intro_talk_with_guide_end} ward_noweap@nil, nil@nil
+meet_state_wpn = 5 | {-mar_intro_talk_with_guide_end} ward_noweap@nil, nil@nil
+victim = 5 | actor
+victim_wpn = 5 | actor
+use = true
+use_wpn = true
+precond = visibility
+sound_start 	= mar_csky_trader_meet
+sound_stop 		= mar_csky_trader_meet_bye
+quest_npc = true

@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_game_timer = 2000 | sr_idle@spawn_walker
+
+[sr_idle@spawn_walker]
+on_info = {!counter_greater(yan_ecolog_scien_count:3) =dist_to_actor_ge(100)} sr_idle@check %=inc_counter(yan_ecolog_scien_count) =spawn_object(yan_ecolog_scien:yan_ecolog_spawn)%

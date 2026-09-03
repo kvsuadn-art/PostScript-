@@ -1,0 +1,23 @@
+[logic]
+active = mob_home
+on_death = death
+on_combat = combat
+
+[mob_home]
+path_home = yan_zombie_home
+home_min_radius = 10
+home_max_radius = 40
+danger = danger_condition
+
+[danger_condition]
+ignore_distance          = 15
+ignore_distance_grenade  = 1
+ignore_distance_corpse   = 5
+ignore_distance_hit      = 20
+ignore_distance_sound    = 20
+
+[death]
+on_info = %=dec_counter(yan_zombie_walker_count)%
+
+[combat]
+combat_type = zombied

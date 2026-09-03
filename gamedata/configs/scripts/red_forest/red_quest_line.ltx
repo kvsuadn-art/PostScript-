@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@setup 
+
+[sr_idle@setup]
+on_info = sr_idle@disable %+location_red_forest%
+
+[sr_idle@disable]
+on_info = sr_idle@nil %=disable_level_changer(527)%
+
+[sr_idle@nil]

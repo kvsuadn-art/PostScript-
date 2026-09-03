@@ -1,0 +1,15 @@
+[logic]
+active = mob_home@1
+on_combat = combat
+on_death = death
+
+[mob_home@1]
+path_home = mar_monolith_home
+home_min_radius = 10
+home_max_radius = 40
+
+[combat]
+combat_type = monolith
+
+[death]
+on_info = %=dec_counter(mar_monolith_count)%

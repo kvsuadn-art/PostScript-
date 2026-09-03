@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_info = {!counter_equal(mar_monster_count:5) =distance_to_point_ge(mar_bloodsucker_home:100)} sr_idle@spawn_monster_1
+
+[sr_idle@spawn_monster_1]
+on_game_timer = 2000 |{!counter_greater(mar_monster_count:4) =distance_to_point_ge(mar_bloodsucker_home:100)} sr_idle@check %=inc_counter(gar_monster_count:1) =spawn_object(mar_bloodsucker_marsh:mar_bloodsucker_home)%
