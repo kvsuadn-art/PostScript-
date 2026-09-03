@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_ps_deliver_capacitors_descr">
+		<text>Найти радиодетали: Конденсаторы</text>
+	</string>
+	<string id="st_ps_deliver_capacitors_descr2">
+		<text>Слушай, мне тут нужны радиодетали — подкрутить одно, переделать другое... В основном конденсаторы. Принесёшь немного, а?</text>
+	</string>
+	<string id="st_ps_deliver_transistors_descr">
+		<text>Найти радиодетали: Транзисторы</text>
+	</string>
+	<string id="st_ps_deliver_transistors_descr2">
+		<text>Привет. Мне нужны детали, чтобы подлатать кое-какое барахло — в первую очередь транзисторы. Достанешь немного?</text>
+	</string>
+	<string id="st_ps_deliver_wire_descr">
+		<text>Найти радиодетали: Медный провод</text>
+	</string>
+	<string id="st_ps_deliver_wire_descr2">
+		<text>Сталкер, мне бы моток медного провода для пару мелких дел. Не принесёшь?</text>
+	</string>
+</string_table>

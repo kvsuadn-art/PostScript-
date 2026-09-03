@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<!-- Fluffy22-->
+<string_table>
+	<!--blank scheme-->
+	<string id="st">
+		<text>Blank</text>
+	</string>
+	<string id="st_upg_zatvor_dur">
+		<text>Bolt replacement</text>
+	</string>
+	<string id="st_upg_zatvor_dur_descr">
+		<text>Replacing the standard bolt with a more durable version increases the weapons reliabilty</text>
+	</string>
+	<string id="st_upg_barrel_weight">
+		<text>Barrel replacement</text>
+	</string>
+	<string id="st_upg_barrel_weight_descr">
+		<text>Replaces the standard barrel with a lightweight version.</text>
+	</string>
+	<string id="st_upg_barrel_cold">
+		<text>Barrel replacement</text>
+	</string>
+	<string id="st_upg_barrel_cold_descr">
+		<text>Replaces the standard barrel with a cold steel version which is more wearproof.</text>
+	</string>
+	<string id="st_upg_head_recoil">
+		<text>Striker replacement</text>
+	</string>
+	<string id="st_upg_head_recoil_descr">
+		<text>Replacing the existing striker with a new custom one helps to decreases the weapon's recoil.</text>
+	</string>
+	<string id="st_upg_recoil_spring">
+		<text>Additional Return Spring</text>
+	</string>
+	<string id="st_upg_recoil_spring_descr">
+		<text>Installation of an additional spring with a reverse coil to reduce recoil without sacrificing flatness.</text>
+	</string>
+	<string id="st_upg_silencer_weight">
+		<text>Silencer replacement</text>
+	</string>
+	<string id="st_upg_silencer_weight_descr">
+		<text>Replacing the default builtin silencer with a lighter version helps to increase the weapons handling characteristics.</text>
+	</string>
+	<string id="st_upg_bind_silencer2">
+		<text>Silencer attachment</text>
+	</string>
+	<string id="st_upg_bind_silencer2_descr">
+		<text>Attaches a permament silencer to your weapon</text>
+	</string>
+	<string id="st_barrel_guide">
+		<text>Guided Barrel</text>
+	</string>
+	<string id="st_barrel_guide_descr">
+		<text>Additional support for the barrel ensures it deviates less during firing.</text>
+	</string>
+	<string id="st_upg_gas_recoil">
+		<text>Gas system modification</text>
+	</string>
+	<string id="st_upg_gas_recoil_descr">
+		<text>An adjustment of the gas system helps reduce the barrel rising during during sustained automatic fire.</text>
+	</string>
+	<string id="st_upg_adjust_mount">
+		<text>Attachment repositioning</text>
+	</string>
+	<string id="st_upg_adjust_mount_descr">
+		<text>Repositioning of the intergral Grenade launcher makes it possible to mount a silencer.</text>
+	</string>
+	<string id="st_barrel_rifling">
+		<text>Improved rifling</text>
+	</string>
+	<string id="st_barrel_rifling_descr">
+		<text>Improving the rifling of the barrel helps to stablize the bullet, increasing accuracy.</text>
+	</string>
+</string_table>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_gar_toolkit_basic_name">
+		<text>Find the Basic Toolkit</text>
+	</string>
+	<string id="st_gar_toolkit_basic_text">
+		<text>With this toolkit, the Flea Market technician will have enough tools to start performing upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_gar_toolkit_advanced_name">
+		<text>Find the Advanced Toolkit</text>
+	</string>
+	<string id="st_gar_toolkit_advanced_text">
+		<text>With this toolkit, Limpid will have tools detailed enough to do better upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_gar_toolkit_expert_name">
+		<text>Find the Expert Toolkit</text>
+	</string>
+	<string id="st_gar_toolkit_expert_text">
+		<text>With this toolkit, Limpid will have tools fine enough to do virtually any upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_gar_flash_up_full_seva_name">
+		<text>Find the Flash Drive: SEVA</text>
+	</string>
+	<string id="st_gar_flash_up_full_seva_text">
+		<text>With this Flash Drive, Limpid will have all the information on how to modify a closed circuit protection suit</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_name">
+		<text>Find the Flash Drive: Exoskeleton</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_text">
+		<text>With this Flash Drive, Limpid will have all the information on how to modify the support systems on the exoskeleton</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_name">
+		<text>Find the Flash Drive: GP37</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_text">
+		<text>With this Flash Drive, Limpid will have all the information on how to modify a GP37 assault rifle</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_name">
+		<text>Find the Flash Drive: Tunder</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_text">
+		<text>With this Flash Drive, Limpid will have information on how to adjust the internal mechanics of the Tunder assault rifle.</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_name">
+		<text>Find the Flash Drive: Military Body Armour</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_text">
+		<text>With this Flash Drive, Limpid will have information on how to add Military type body armor to an armored suit</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_name">
+		<text>Find the Flash Drive: Shotgun Strikers</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_text">
+		<text>With this Flash Drive, Limpid will have information on how to modify the internal strikers of both automatic and semi automatic shotguns</text>
+	</string>
+	
+	<string id="gar_bring_item_1_name">
+		<text>Deliver medical supplies</text>
+	</string>
+	<string id="gar_bring_item_1_text">
+		<text>The Bandit gang is in urgent need of advanced medical supplies</text>
+	</string>
+	<string id="gar_bring_item_2_name">
+		<text>Deliver Vodka</text>
+	</string>
+	<string id="gar_bring_item_2_text">
+		<text>The Bandit gang requires some vodka to help them relax a bit</text>
+	</string>
+	<string id="gar_bring_item_3_name">
+		<text>Deliver Weapon and ammo</text>
+	</string>
+	<string id="gar_bring_item_3_text">
+		<text>The Bandit gang requires a new combat shotgun and ammo for one of it's members</text>
+	</string>
+
+</string_table>

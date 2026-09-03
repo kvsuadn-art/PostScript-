@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ammo-9x18-fmj_descr">
+		<text>Basic FMJ round. Provides good stopping power against soft targets. Suitable for the PMm, PB1s, Fora-12 and APB4s pistols.</text>
+	</string>
+	<string id="ammo-9x18-pmm_descr">
+		<text>This round contains a bullet with enhanced stopping power. Ineffective against armored targets. Suitable for the PMm, PB1s, Fora-12 and APB4s pistols.</text>
+	</string>
+	<string id="ammo-5.56x45-ss190_descr">
+		<text>A standard issue NATO round widely known under it's Belgian SS109 index. Suitable for the IL 86, TRs 301, SGI 5k, GP 37, FT 200M, R15h SM assault rifles and the Tactical RP-74 machine gun.</text>
+	</string>
+	<string id="ammo-5.56x45-ap_descr">
+		<text>An armor-piercing round for the IL 86, TRs 301, SGI 5k, GP 37, FT 200M, R15h SM assault rifles and the Tactical RP-74 machine gun.</text>
+	</string>
+	<string id="ammo_7.62x51_m118">
+		<text>7.62x51 mm M118 rounds</text>
+	</string>
+	<string id="ammo_7.62x51_m118_s">
+		<text>7.62x51 M118</text>
+	</string>
+	<string id="ammo_7.62x51_m118_descr">
+		<text>7.62-caliber high precision armor-piercing sniper round. Used with the FT AS80V assault rifle and DMR X4 sniper rifle.</text>
+	</string>
+	<string id="ammo-7.62x54-7h14_descr">
+		<text>7.62-caliber high precision armor-piercing sniper round. Used with the SVDm 2 and SVUmk2 sniper rifles, and the Mosin Nagant M1891/30 bolt action rifle.</text>
+	</string>
+	<string id="ammo-7.62x54-ape_descr">
+		<text>Cheap 7.62-caliber machine gun round. The bullet contains a cheap version of the explosive core used in the special issue 7.62x54-7h1 sniper round.</text>
+	</string>
+	<string id="ammo-9x39-sp5_descr">
+		<text>Special issue 9x39mm round. It has a lower disperion capacity, meaning improved accuracy at range, while retaining an armour piercing core. Used with the Tunder S14 and SA Avalanche assault rifles, as well as the Vintar BC special-purpose sniper rifle.</text>
+	</string>
+	<string id="ammo-9x39-sp5">
+		<text>9x39mm SP-5 rounds</text>
+	</string>
+	<string id="ammo-9x39-sp5_s">
+		<text>9x39 SP-5</text>
+	</string>
+	<string id="ammo-vog-25p">
+		<text>VOG-25p grenade</text>
+	</string>
+	<string id="ammo-vog-25p_descr">
+		<text>Special grenade for the GP-25 Koster under-barrel grenade launcher, the integrated under-barrel attachment for the Tunder S14, and the Bulldog 6 revolver-type grenade launcher. This variant bounces off the object it hits before exploding, showering the area with shrapnel</text>
+	</string>
+	<string id="st_wpn_m249">
+		<text>Tactical RP-74</text>
+	</string>
+	<string id="st_wpn_m249_descr">
+		<text>This version of the RP-74 was designed to be compatible with NATO ammo and attachments, and comes with custom Picatinny rails. It uses the NATO issue SS109 5.56x45mm round instead of the Warsaw 7.62x54 PP rounds the base weapon uses. This means it isn't as powerful, but the smaller round allows more ammo to be carried.</text>
+	</string>
+	<string id="st_wpn_protecta">
+		<text>Eliminator</text>
+	</string>
+	<string id="st_wpn_protecta_descr">
+		<text>A smoothbore combat revolver-type shotgun intended to provide extreme firepower for militarized units. The weapon benefits from a large magazine and a high effective rate of fire, but it's bulkiness and considerable weight, combined with a long reload time, are the price to be paid for these advantages. Rare in the Zone and is used primarily to clear closed spaces of mutants.</text>
+	</string>
+	<string id="st_wpn_apb">
+		<text>APB4s</text>
+	</string>
+	<string id="st_wpn_apb_descr">
+		<text>Based off the the APS automatic pistol, this weapons was designed for Soviet Spetsnaz and KGB. When the Zone was formed, Spetsnaz units deployed into the Zone were issued with this weapon for increased firepower due to it's magazine capacity and automatic capability. Uses 9x18mm ammo.</text>
+	</string>
+	<string id="st_wpn_fnsa58">
+		<text>FT AS80V</text>
+	</string>
+	<string id="st_wpn_fnsa58_descr">
+		<text>The original design of this weapon dates back to 1946, with the first prototypes coming into service in the early 1950's. This is a much later model, produced in the United Stats, and fitted with a modern Holosight for aiming. It uses the rare 7.62 M118 ammo.</text>
+	</string>
+	<string id="st_wpn_m4alh">
+		<text>R15h SM</text>
+	</string>
+	<string id="st_wpn_m4alh_descr">
+		<text>A standard issue carbine issued to the US military and various private security organisations world wide. It lacks ironsights, but comes with railings for a wide range of attachments. This particular rifle is fitted with a flashlight and a laser rangefinder. Uses 5.56x45mm ammo.</text>
+	</string>
+	<string id="st_wpn_m14">
+		<text>DMR X4</text>
+	</string>
+	<string id="st_wpn_m14_descr">
+		<text>Based off the M14 rifle, this weapon has been reworked, given a polymer stock, fitted with a handgrip, and mounted with a x6 scope. It uses the rare 7.62 M118 ammo.</text>
+	</string>
+	<string id="st_addon_aimpoint">
+		<text>Aimpoint Red Dot Sight</text>
+	</string>
+	<string id="st_addon_aimpoint_descr">
+		<text>A fairly uncommon red dot sight, very rarely used in the Zone. Attached to weapons via Picatinny rails. Despite this, it only seems to be able to fit the R15h SM carbine.</text>
+	</string>
+	<string id="st_addon_silencer_rifle">
+		<text>5.56mm Silencer</text>
+	</string>
+	<string id="st_addon_silencer_rifle_descr">
+		<text>An effective silencer, designed with a particular rifle in mind. The silencer's adaptor is constructed into the silencer, limiting it's use to only a few weapons.</text>
+	</string>
+	<string id="st_addon_silencer_apb">
+		<text>APB Silencer</text>
+	</string>
+	<string id="st_addon_silencer_apb_descr">
+		<text>An effective silencer, designed specifically for and to fit the APB4s Silenced Pistol. It's adaptor means it's not compatible with other weapons.</text>
+	</string>
+	
+	<string id="st_wpn_eagle_descr">
+		<text>The true gun of true heroes - bulky, heavy and highly lethal. Its limited use in the Zone can be attributed to its price, size, and a shortage of elephants to hunt. Uses .357 ammo.</text>
+	</string>
+
+</string_table>

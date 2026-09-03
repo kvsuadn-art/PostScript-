@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="st_wpn_gp100">
+		<text>Ruger GP100</text>
+	</string>
+	<string id="st_wpn_gp100_descr">
+		<text>The Ruger GP100, is a six shot double action revolver that was designed and developed by Sturm, Ruger and Company in 1985. This version is a KGP 141 model, with a 4' barrel. Uses .357 Magnum Hollow Point.</text>
+	</string>
+
+	<string id="ammo-357_hp_mag">
+		<text>.357 Magnum Hollow Point</text>
+	</string>
+	<string id="ammo-357_hp_mag_s">
+		<text>.357 Mag HP</text>
+	</string>
+	<string id="ammo-357_hp_mag_descr">
+		<text>Basic .357 Magnum Hollow Point round which provides good stopping power against soft targets. Used in the Ruger GP100 and Black Kite.</text>
+	</string>
+
+	<string id="st_wpn-m1891_30">
+		<text>Mosin Nagant M1891/30</text>
+	</string>
+	<string id="st_wpn-m1891_30_descr">
+		<text>This rifle is an update on the 1891 version of Captain Sergei Ivanovich Mosin and Lйon Nagant M1891 bolt action rifle. It was updated to more modern standards to improve reliability and ease of use.</text>
+	</string>
+
+	<string id="st_wpn-m1891_30_descr_old_trans">
+		<text>After a conflict during the Russo-Turkish War, the Russian Imperial Army saw a need to adopt a magazine fed multi round weapon. Two contenders were designs submitted by Captain Sergei Ivanovich Mosin of the Imperial Army, and Lйon Nagant from Belgium. Neither weapon was suitable due to complexity and poor quality components, however, the best features of both weapons were combined to form the Mosin Nagant M1891, whcih saw extensive updates and usage over the next 40 years, finally becoming this weapon, the Mosin Nagant M1891/30.</text>
+	</string>
+
+</string_table>

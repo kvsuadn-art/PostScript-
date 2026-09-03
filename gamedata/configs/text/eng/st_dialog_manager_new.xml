@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="dmn_intro_enemy">
+		<text>Huh?</text>
+	</string>
+
+	<string id="dmn_intro_stalker_escape_1">
+		<text>Hi stalker! Welcome to the Cordon!</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_2">
+		<text>Wow, a new face round here. Nice to meet you.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_3">
+		<text>Hey buddy, keep an eye out for those army dudes, they're roaming about more and more.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_4">
+		<text>Taking a break on the outskirts of the Zone? Me too.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_5">
+		<text>Hello brother! Welcome to our neck of the woods!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_1">
+		<text>Hey brother!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_2">
+		<text>Nice to meet a brother in arms!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_3">
+		<text>Got a question? I'm here to help.</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_4">
+		<text>Hey, what brings you all the way over here?</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_1">
+		<text>You chose a bad time to show up at the Garbage, brother.</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_2">
+		<text>Hey, buddy! If only you knew how tired I am of these bandit mugs...</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_3">
+		<text>Searching these piles of trash too are you? Good luck buddy.</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_4">
+		<text>Hiya! Got any loot to spare?</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_1">
+		<text>Watch out for zombies coming from the factory - there's a shitstorm of 'em out there!</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_2">
+		<text>Phew, man. You look so much like a zombie I nearly blew your head off right there.</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_3">
+		<text>Welcome to Yantar lake, where you can catch a hake. Ha-ha! You get it? It rhymes! Ha-ha!</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_4">
+		<text>Welcome to Yantar, brother.</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_5">
+		<text>You're on the right path, stalker - we could use your help around here.</text>
+	</string>
+	
+	<string id="dmn_intro_bandit_garbage_1">
+		<text>How goes it?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_2">
+		<text>Hello to you too. Got a question?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_3">
+		<text>Look who we got here! The Garbage welcomes all except, well, garbage.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_4">
+		<text>Hey-hey, nice to see you're alone with no tail.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_5">
+		<text>Bugger off, punk!</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_6">
+		<text>Sup, man! You must be in some serious trouble to be comin' here.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_7">
+		<text>Well, I'll be horn-swoggled! Where're you from, buddy? Sit-sit, let's have a chat.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_8">
+		<text>Stick your good manners where the sun don't shine and cut to the chase! Whaddaya want?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_9">
+		<text>What's up, bud? Whatcha doing in these here parts? C'mon, speak up now.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_1">
+		<text>What up my man?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_2">
+		<text>Yo, got a smoke?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_3">
+		<text>How goes it?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_4">
+		<text>Take it easy on the handshakes. Whatcha looking for?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_5">
+		<text>Hey-hey, nice to see you're alone with no tail.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_6">
+		<text>Hey yourself. Now come on over here and tell me something new.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_7">
+		<text>Holy crap on a stick! A fresh face in the Zone! Mi casa su casa, amigo!</text>
+	</string>
+	
+	<string id="dmn_intro_dolg_agroprom_1">
+		<text>Hello, friend. I suggest you stay on your toes around here. Being attacked three-four times a night ain't as much fun as it sounds.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_2">
+		<text>This ain't a great time to be here, stalker. We've got a real war on our hands.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_3">
+		<text>Hey! Keep your eyes peeled, 'cause the beasts around here are real smart, drop your guard and you won't know what hit ya!</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_4">
+		<text>Be careful around here and stick to the main roads. One wrong move and some beast will have you for breakfast.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_5">
+		<text>Hi Stalker. Welcome to Agroprom.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_1">
+		<text>Hey, Stalker. If you are here to fight the Zone's spawns, then Duty is your ally.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_2">
+		<text>Hey! Join Duty - the faction for real men.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_3">
+		<text>Hello, friend. Always good to see a fellow stalker.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_4">
+		<text>Wassup? Here's a big Ukrainian welcome for ya.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_5">
+		<text>Hey bro! If you want to ask something, ask away.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_6">
+		<text>...And what have I told you about... Sorry Stalker, thought you were one of my squad. Anyway, what do you need?</text>
+	</string>
+	
+	<string id="dmn_intro_freedom_darkvalley_1">
+		<text>Welcome to the lands of the free stalkers!</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_2">
+		<text>If it's your first time in the Dark Valley, pay a visit to Freedom's base. That's where the fun is at, especially the arguments between the mechanic and Ashot.</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_3">
+		<text>Hi Stalker. Stop by the base, put your feet up, and have a good time.</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_4">
+		<text>Welcome to the Dark Valley. It isn't dark despite the name, and it's the safest place in the Zone, after the Cordon, of course.</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_5">
+		<text>Looking to join those who are truely free? You've come to the right place.</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_1">
+		<text>Yo, brother!</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_2">
+		<text>Welcome, friend!</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_3">
+		<text>Got a question for me, stalker?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_4">
+		<text>Looking for advice?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_5">
+		<text>Regards, friend.</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_6">
+		<text>What can I do for you?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_7">
+		<text>Looking for a free life? Join Freedom, where all are equal.</text>
+	</string>
+	
+	<string id="dmn_intro_csky_marsh_1">
+		<text>Welcome to the Swamps!</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_2">
+		<text>Take my advice - watch out for marshes and monsters.</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_3">
+		<text>A new face around here!</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_4">
+		<text>Trust my advice, friend, and stick to the reeds.</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_5">
+		<text>If you want to get out of these swamps, find a guide first.</text>
+	</string>
+	<string id="dmn_intro_csky_generic_1">
+		<text>Nice to see you!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_2">
+		<text>Greetings!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_3">
+		<text>Hi!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_4">
+		<text>Yes?</text>
+	</string>
+	<string id="dmn_intro_csky_generic_5">
+		<text>Are you looking for help?</text>
+	</string>
+	<string id="dmn_intro_csky_generic_6">
+		<text>Can I help you?</text>
+	</string>
+	
+	<string id="dmn_intro_ecolog_yantar_1">
+		<text>Looking for work? Stop by the bunker.</text>
+	</string>
+	<string id="dmn_intro_ecolog_yantar_2">
+		<text>Do yourself a favor, and stay away from the factory.</text>
+	</string>
+	<string id="dmn_intro_ecolog_yantar_3">
+		<text>I'd like to talk, but right now, I'm too busy.</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_1">
+		<text>You again? What's new this time?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_2">
+		<text>A decisive hello to you, stalker.</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_3">
+		<text>Hello, young man!</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_4">
+		<text>Hello! What do you want?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_5">
+		<text>You want to trade or get a job?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_6">
+		<text>You're probably interested in information. I'll answer all your questions as best I can.</text>
+	</string>
+	
+	<string id="dmn_info_0">
+		<text>Can you tell me something?</text>
+	</string>
+	<string id="dmn_info_1">
+		<text>Sure, what do you want to know?</text>
+	</string>
+	<string id="dmn_info_2">
+		<text>Nevermind. Sorry for wasting your time.</text>
+	</string>
+	<string id="dmn_info_anomaly">
+		<text>Where are the local anomalies?</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_1">
+		<text>Pretty far and few between. Theres a big one north of the Rookie Village - you'll hear it before you see it, as your gieger will be off the charts!</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_2">
+		<text>They say thats theres one out East, near the old electric engine. But I couldn't find it.</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_3">
+		<text>Hell yeah, just about walked into one. I was heading along the road to the Garbage, north of the Old Farmstead, through the trees, avoiding the radiation, and just about walked into a feild of Whirligigs. Thank god for anomaly detectors.</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_4">
+		<text>Sorry, don't know any big anomaly clusters round here, but there are a few small ones though.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_1">
+		<text>The Concentration Camp is one whole anomaly. I don't want to end up there - my balls will get fried. I do plan on having kids when I get out of the Zone, and get a life in the Big World.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_2">
+		<text>The Swamp is one huge chemical anomaly, you can't miss it - look for the huge green clouds. It's like fog. Just don't breath that crap, it'll eat your lungs.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_3">
+		<text>Theres a whole feild of Electros north of the Agroprom road, in a small valley. I tried looking in there, but my head felt all funny and sore after a few moments, so I left. Not worth the pain, I think.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_4">
+		<text>Theres this valley - south of the swamp. It's got so many Gravitational anomalies in there, you couldn't throw a bolt in without hitting 10 of them. My artifact detector was sqealing like mad, but I couldn't get close enough. Oh well.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_5">
+		<text>Ha! Nice one buddy. You can't take a piss without hitting an anomaly round here. Just stay away from Burners and Electro's, and you'll keep the family jewels intact.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_6">
+		<text>This whole place is an anomaly. Look left, anomaly, look right, anomaly, look at your feet, boots being destroyed by an anomaly. You catch my drift?</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_1">
+		<text>There's this huge Vortex feild behind Uncle Yar's Hanger. You can hear it from there. So can your geiger. It's hot, but the rewards might just be worth it.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_2">
+		<text>The whole south complex of Freedom base is a radiation trap, but the boys say they've seen some anomalies in there, so there might be some artifacts.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_3">
+		<text>South of the Old Factory, to the east, there's supposed to be an anomaly feild, but I couldn't find the damn thing.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_4">
+		<text>I dunno, but this cracks opened up in the ground, in the south of the Valley. Our scouts said it got pretty damn hot around their, like they were standing next to a volcano.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_5">
+		<text>I heard someone once found a Kolobok out by the Tanks.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_6">
+		<text>Why do you want to know about the local anomalies? They're not on the regular paths, so don't worry.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_7">
+		<text>Sorry, wish I could help, but I'm not familar with the local anomalies I'm afraid.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_1">
+		<text>Old Factory, the two story building. Plently of Electro anomalies there. But your head hurts like crazy there as well.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_2">
+		<text>The swamp is full of chemical anomalies - and bloodsuckers. Watch out for those bastards.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_3">
+		<text>There's a bunch of gravitational anomalies that block the road to the swamps. They come fairly far into Agroprom.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_4">
+		<text>Yeah, theres this small feild, just North of Duty Base. Easy to spot, since the ground comes up in a claw like formation. A few graviational anomalies.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_5">
+		<text>Theres one in the forest somewhere, I've been told. But I don't know where it is exactly.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_6">
+		<text>Local anomalies. Ha! Agroproms covered in them, both clusters and single anomalies. Watch yourself.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_7">
+		<text>I've got enough problems with the mutants, I don't need more with the anomalies. Now bugger off.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_1">
+		<text>Yeah, the swamp, just outside the Bunker. You can't miss it.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_2">
+		<text>I dunno, you could try looking in the factory to the north, provided you don't mind ending up as a Zombie.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_3">
+		<text>Theres one field, right to the north of the factory, outside of it.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_4">
+		<text>Try the factory, although I don't recommend it.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_5">
+		<text>Trying to stay alive around here with all these zombies is hard enough, I haven't had the time to go anomaly hunting.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_1">
+		<text>I saw a swamp glowing green at night, near the Military base, but I didn't look much closer.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_2">
+		<text>Theres a bunch of Electro's up in the rocks, in the North Western parts around here</text>
+	</string>
+	<string id="dmn_info_military_anomaly_3">
+		<text>Sorry, avoiding the Military and those Monolith nutcases is my biggest concern. Don't have time to worry about anomalies.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_4">
+		<text>Your joking right? Here we are in the middle of a warzone, and your asking where are the local anomalies? Have you lost it man?</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_1">
+		<text>Sorry, I can't tell you.</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_2">
+		<text>I'm looking for some myself. Clan business.</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_3">
+		<text>Haven't you figured it out yet? The whole of the swamps is the anomaly.</text>
+	</string>
+	<string id="dmn_info_limansk_anomaly_1">
+		<text>What? There's a war on and you want to go look at anomalies? I hope you fall in and die a cowards death!</text>
+	</string>
+	
+</string_table>

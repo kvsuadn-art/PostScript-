@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="mil_bring_item_0_name">
+		<text>default</text>
+	</string>
+	<string id="mil_bring_item_0_text">
+		<text>default</text>
+	</string>
+
+	<string id="mil_bring_item_1_name">
+		<text>Deliver Weapons and ammo</text>
+	</string>
+	<string id="mil_bring_item_1_text">
+		<text>The Freedom squad requires a special assult rifle and ammo</text>
+	</string>
+	<string id="mil_bring_item_2_name">
+		<text>Deliver mediacal supplies</text>
+	</string>
+	<string id="mil_bring_item_2_text">
+		<text>The Freedom squad is in urgent need of advanced medical supplies</text>
+	</string>
+	<string id="mil_bring_item_3_name">
+		<text>Deliver Weapon and ammo</text>
+	</string>
+	<string id="mil_bring_item_3_text">
+		<text>The Freedom squad requires a replacement assult rifle and some ammo</text>
+	</string>
+	<string id="mil_bring_item_4_name">
+		<text>Deliver mediacal supplies</text>
+	</string>
+	<string id="mil_bring_item_4_text">
+		<text>The Stalker squad is in urgent need of advanced medical supplies</text>
+	</string>
+	<string id="mil_bring_item_5_name">
+		<text>Deliver detector</text>
+	</string>
+	<string id="mil_bring_item_5_text">
+		<text>The Stalker squad has requested an artfifact detector</text>
+	</string>
+	<string id="mil_bring_item_6_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="mil_bring_item_6_text">
+		<text>The Stalker squad requires a replacement sniper rifle for one of it's members</text>
+	</string>
+	<string id="mil_bring_item_7_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="mil_bring_item_7_text">
+		<text>The Duty squad has requested a special assult rifle for a squad member</text>
+	</string>
+	<string id="mil_bring_item_8_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="mil_bring_item_8_text">
+		<text>The Duty squad has requested a heavy support weapon for it's squad</text>
+	</string>
+	<string id="mil_bring_item_9_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="mil_bring_item_9_text">
+		<text>The Duty squad has requested an anti-armor weapon for it's squad</text>
+	</string>
+	<string id="mil_bring_item_10_name">
+		<text>Deliver Vodka</text>
+	</string>
+	<string id="mil_bring_item_10_text">
+		<text>The Bandit gang requires some vodka to help them relax a bit</text>
+	</string>
+	<string id="mil_bring_item_11_name">
+		<text>Deliver Weapon and ammo</text>
+	</string>
+	<string id="mil_bring_item_11_text">
+		<text>The Bandit gang requires a new combat shotgun and ammo for one of it's members</text>
+	</string>
+	<string id="mil_bring_item_12_name">
+		<text>Deliver Weapon and ammo</text>
+	</string>
+	<string id="mil_bring_item_2_text">
+		<text>The Bandit gang requires a new pistol and ammo for one of it's members</text>
+	</string>
+</string_table>

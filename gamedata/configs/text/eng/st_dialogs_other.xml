@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_ps_deliver_capacitors_descr">
+		<text>Find electrical components: Capacitors</text>
+	</string>
+	<string id="st_ps_deliver_capacitors_descr2">
+		<text>Hey, I need some electronic parts, to fix this, modify that, mainly capacitors. Bring me some will you?</text>
+	</string>
+	<string id="st_ps_deliver_transistors_descr">
+		<text>Find electrical components: Transistors</text>
+	</string>
+	<string id="st_ps_deliver_transistors_descr2">
+		<text>Hey, I need some electronic parts to patch up some broken equipment, mainly transistors. Bring me some will you?</text>
+	</string>
+	<string id="st_ps_deliver_wire_descr">
+		<text>Find electrical component: Copper Wire</text>
+	</string>
+	<string id="st_ps_deliver_wire_descr2">
+		<text>Stalker, I need a roll of copper wire for a few bits and pieces. Could you bring me one?</text>
+	</string>
+</string_table>

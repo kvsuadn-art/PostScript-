@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_val_toolkit_advanced_name">
+		<text>Find the Advanced Toolkit</text>
+	</string>
+	<string id="st_val_toolkit_advanced_text">
+		<text>With this toolkit, Uncle Yar will have tools detailed enough to do better upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_val_toolkit_expert_name">
+		<text>Find the Expert Toolkit</text>
+	</string>
+	<string id="st_val_toolkit_expert_text">
+		<text>With this toolkit, Uncle Yar will have enough tools to do virtually any upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_val_flash_up_full_svu_name">
+		<text>Find the Flash Drive: SVU</text>
+	</string>
+	<string id="st_val_flash_up_full_svu_text">
+		<text>With this Flash Drive, Uncle Yar will have information on how to modify a SVU sniper rifle.</text>
+	</string>
+	<string id="st_val_flash_up_full_m249_name">
+		<text>Find the Flash Drive: Tactical RP-74</text>
+	</string>
+	<string id="st_val_flash_up_full_m249_text">
+		<text>With this Flash Drive, Uncle Yar will have information on how to modify a light machine gun.</text>
+	</string>
+	<string id="st_val_flash_up_full_seva_name">
+		<text>Find the Flash Drive: SEVA</text>
+	</string>
+	<string id="st_val_flash_up_full_seva_text">
+		<text>With this Flash Drive, Uncle Yar will have information on how to modify a closed circuit environmental protection suit.</text>
+	</string>
+	<string id="st_val_flash_up_part_elec_stab_name">
+		<text>Find the Flash Drive: Electronic Stablization</text>
+	</string>
+	<string id="st_val_flash_up_part_elec_stab_text">
+		<text>With this Flash Drive, Uncle Yar will have information on how to add electronic stablization systems to weapons.</text>
+	</string>
+	<string id="st_val_flash_up_part_servomotor_name">
+		<text>Find the Flash Drive: Exoskeleton Servomotors</text>
+	</string>
+	<string id="st_val_flash_up_part_servomotor_text">
+		<text>With this Flash Drive, Uncle Yar will have information on how to modify servomotors on an Exoskeleton.</text>
+	</string>
+	
+	<string id="val_bring_item_1_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="val_bring_item_1_text">
+		<text>The Freedom squad is in need of a replacement assult rifle for a squad member</text>
+	</string>
+	<string id="val_bring_item_2_name">
+		<text>Deliver ammo</text>
+	</string>
+	<string id="val_bring_item_2_text">
+		<text>The Freedom squad has requested ammo for their rifles</text>
+	</string>
+	<string id="val_bring_item_3_name">
+		<text>Deliver mediacal supplies</text>
+	</string>
+	<string id="val_bring_item_3_text">
+		<text>The Freedom squad needs some more medical supplies</text>
+	</string>
+	<string id="val_bring_item_4_name">
+		<text>Deliver grenades</text>
+	</string>
+	<string id="val_bring_item_4_text">
+		<text>The Freedom squad is low on grenades and is requesting more</text>
+	</string>
+	
+	<string id="st_val_deliver_part_1_name">
+		<text>Deliver a Boar's hoof</text>
+	</string>
+	<string id="st_val_deliver_part_1_text">
+		<text>Checkov is making Boar Stew for the other Freedom commanders, and needs the hoof of a Boar to complete it. Shouldn't be too hard to find one.</text>
+	</string>
+	<string id="st_val_deliver_part_2_name">
+		<text>Deliver a Flesh eye</text>
+	</string>
+	<string id="st_val_deliver_part_2_text">
+		<text>One of the Freedom techs is researching eye lens of the Flesh for Sniper rifles. Creepy.</text>
+	</string>
+	<string id="st_val_deliver_part_3_name">
+		<text>Deliver a Snork's leg</text>
+	</string>
+	<string id="st_val_deliver_part_3_text">
+		<text>One of the Freedom techs needs a snork leg for something. Judging by what Checkov said, the guy sounds crazy. Wait till Duty hears of this.</text>
+	</string>
+	
+	<string id="st_val_deliver_art_1_name">
+		<text>Deliver a Pellicle artifact</text>
+	</string>
+	<string id="st_val_deliver_art_1_text">
+		<text>Freedom wants a Pelicile artifact to study, after seeing a Loner with one.</text>
+	</string>
+	<string id="st_val_deliver_art_2_name">
+		<text>Deliver a Crystal Thorn artifact</text>
+	</string>
+	<string id="st_val_deliver_art_2_text">
+		<text>Freedom scientists want to figure out what makes the Crystal Thorn different to the regular Thorn, and want one to study.</text>
+	</string>
+	
+	<string id="st_val_deliver_weapon_1_name">
+		<text>Deliver a GP37 rifle</text>
+	</string>
+	<string id="st_val_deliver_weapon_1_text">
+		<text>Freedom scouts have observed the Bandits with a new assault rifle, and want one to test its capabilities.</text>
+	</string>
+	<string id="st_val_deliver_weapon_2_name">
+		<text>Deliver a FT-200M rifle</text>
+	</string>
+	<string id="st_val_deliver_weapon_2_text">
+		<text>Freedom have heard that the Merc's have some new fancy high tech assault rifle, and want one as proof. Shouldn't be to hard to swipe one now should it?</text>
+	</string>
+
+</string_table>

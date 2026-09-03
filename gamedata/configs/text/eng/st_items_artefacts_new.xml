@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!-- Fluffy22 custom artifacts -->
+	
+	<string id="st_af_hail_name">
+		<text>"Hail"</text>
+	</string>
+	<string id="st_af_hail_descr">
+		<text>This artifact bears a strong resemblence to the "Moonlight" artifact, and forms under similar conditions. Unlike the Moonlight, it can somehow maintain a constant temperature around itself. The artifact emits energy which affects the metabolic rates of living creatures when in close proximity. Emits high levels radiation.</text>
+	</string>
+	<string id="st_af_moss_name">
+		<text>"Moss"</text>
+	</string>
+	<string id="st_af_moss_descr">
+		<text>The Moss artifact closely resembles the Hail artifact, and scientists have determined it is a Hail which has changed into a Moss when exposed to high levels of chemical gases. It retains the Hail's artifacts properties, and also emits a gaseous compound which can neutralise chemical substances and radiation around it. This gas also helps in the healing of wounds.</text>
+	</string>
+	<string id="st_af_thorn_name">
+		<text>"Thorn"</text>
+	</string>
+	<string id="st_af_thorn_descr">
+		<text>The result of an interaction between a careless stalker and the 'Burnt Fuzz' anomaly. The Thorn artifact spikes somehow exaggerates wounds, meaning bleeding is harder to stop. The upside of this that the blood loss removes radiation and toxic compounds from the blood stream. </text>
+	</string>
+	<string id="st_af_crystal_thorn_name">
+		<text>"Crystal Thorn"</text>
+	</string>
+	<string id="st_af_crystal_thorn_descr">
+		<text>This artifact crystalizes in the Burnt Fuzz anomaly from a Thorn which has remained in there for too long. Like the Thorn, it's spikes exaggerate bleeding in addition to radiation and poison removal, but to a higher degree than the Thorn.</text>
+	</string>
+	<string id="st_af_stone_medusa_name">
+		<text>"Stone Fish"</text>
+	</string>
+	<string id="st_af_stone_medusa_descr">
+		<text>This artifact is created in the springboard anomaly and bears a striking resemblence to the Jellyfish artifact. This artifact has traces of metallic compounds in it's structure, which alter it's properties. Scientists have found that it is capable of slightly deflecting the path of bullets and shrapnel. Otherwise, it acts exactly like a Jellyfish.</text>
+	</string>
+	<string id="st_af_pellicle_name">
+		<text>"Pellicle"</text>
+	</string>
+	<string id="st_af_pellicle_descr">
+		<text>This artifact is incredably rare and has no discernably side effects. It's large area allows it to soak up toxic chemical gases with ease. It's so rare that researchers don't believe it forms naturally.</text>
+	</string>
+	<string id="st_af_battery_dead_name">
+		<text>"Battery"</text>
+	</string>
+	<string id="st_af_battery_dead_descr">
+		<text>The origin of this item remains a scientific enigma. It is known only that it's composition includes dielectric elements, but scientists have yet to identify the exact physical conditions required for it's formation. This battery used to be considered a 'dead' artifact, until scientists discovered it stores electrical energy and slowly releases into the immediate environment, charging anything nearby.</text>
+	</string>
+	<string id="st_af_spring_dead_name">
+		<text>"Spring"</text>
+	</string>
+	<string id="st_af_spring_dead_descr">
+		<text>This artifact at first appeared to be a shell, until scientists found that the low gravitational feild surrounding it can take the speed off some slow moving objects, reducing the impact of falls and strikes.</text>
+	</string>
+	<string id="st_af_compass_name">
+		<text>"Compass"</text>
+	</string>
+	<string id="st_af_compass_descr">
+		<text>A rare artifact - it's been several years since one was found. The artifact can locate gaps in anomaly fields, effectively acting as a compass. It is believed that it can help one traverse the most complex anomaly fields completely unharmed. However, very few know how to handle it properly. It's dense structure also helps to protect the weilder, although is the heaviest of all known artifacts.</text>
+	</string>
+</string_table>

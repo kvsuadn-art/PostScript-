@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="esc_wolf_talk_0">
+		<text>So Senya, you all ready?</text>
+	</string>
+	<string id="esc_wolf_talk_1">
+		<text>Yeah, I'm all set. Got my gun, got my suit, got my detector, got my... yeah, I'm ready.</text>
+	</string>
+	<string id="esc_wolf_talk_11">
+		<text>Shame to lose you. You've been a quick learner, and a damn good Rookie. Only wish there were more like you. Well, don't let me hold you up.</text>
+	</string>
+	<string id="esc_wolf_talk_111">
+		<text>Thanks.</text>
+	</string>
+	<string id="esc_wolf_talk_1111">
+		<text>By the way, just remember that the Military has the Cordon under it's thumb, and there are small bands of thugs and rouges every now and then around here, so be careful out there. They won't hesitate to shoot.</text>
+	</string>
+	<string id="esc_wolf_talk_11111">
+		<text>Alright, I'll remember that.</text>
+	</string>
+	<string id="esc_wolf_talk_2">
+		<text>Just stopped by for one last look.</text>
+	</string>
+	<string id="esc_wolf_talk_22">
+		<text>You're not the first to come back for 'One last look'. It seems to be something of an unspoken tradition.</text>
+	</string>
+	<string id="esc_wolf_talk_222">
+		<text>Ah, anyway, see ya.</text>
+	</string>
+	
+	<string id="esc_leader_talk_7">
+		<text>Hello Stalker. Welcome to our new camp.</text>
+	</string>
+	
+	<string id="esc_stalker_support_attack_atp_0">
+		<text>Listen, buddy, see that depot down there? We were going to attack it, but we're a gun short. You keen? You can take whatever you want from the army rats once we're done as payment.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_1">
+		<text>But why do you need my help? You look like you've got enough guns to deal with the army there.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_2">
+		<text>Listen, those army jarheads recently shot one of our brothers as he was heading north from the Rookie Village, where you came from. If we can take and hold that depot, the road north becomes a much safer place. Now, you gonna help or not?</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_3">
+		<text>Sure! Anything to get back at those dirtbags, I've been itching to get some payback on their raids</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_33">
+		<text>Nah, I'll pass. Don't feel like messing with the military right now.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_4">
+		<text>Great! Lets go, and stick with us OK? Do that, and you'll walk away in one peice smiling.</text>
+	</string>
+	
+	<string id="st_esc_flash_up_full_l85_descr">
+		<text>Find the Flash Drive: IL86</text>
+	</string>
+	<string id="st_esc_flash_up_full_l85_descr2">
+		<text>Hey buddy. I need a few schematics on various weapons, and one of them is the IL86 assault rifle. Find me some data on this will you?</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_descr">
+		<text>Find the Flash Drive: Shotgun Barrels</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_descr2">
+		<text>I'm looking to modify the barrel on a shotgun, but before I begin, I need the data on how to correctly do this. Find me some data for this please?</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_descr">
+		<text>Find the Flash Drive: Chaser 13</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_descr2">
+		<text>A stalker came by and asked me to upgrade his shotgun, but I don't have the blueprints needed to do it. Could you find them for me please? The faster the better. I'll make it worth your while.</text>
+	</string>
+	
+	<string id="st_esc_deliver_item_trader_1_descr">
+		<text>Deliver a Cats Tail</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_1_descr2">
+		<text>Hey, I got an order from the big land, Cats Tails for fur coats. I've already got a bunch of Stalkers out hunting, and more tails is more profit for both of us. You in or what?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_descr">
+		<text>Deliver a Psuedodogs Tail</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_descr2">
+		<text>I've got a client, they're looking for the tail of a Psuedodog for some reason. You wouldn't fetching one for me now would you? I'll make it worth your while.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_descr">
+		<text>Deliver a Tushkano's Head</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_descr2">
+		<text>Ok, lets get this order over and done with. I've got a request for the head of a Tushkano. I don't know why, nor do I care. Lets just get this buisness deal over and done with.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_descr">
+		<text>Deliver a Jellyfish Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_descr2">
+		<text>Right, I've got an order for a Jellyfish artifact from the big land. It's fairly common around here, so you shouldn't have trouble finding one now should you?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_descr">
+		<text>Deliver a Stone Blood Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_descr2">
+		<text>Got another order in for a Stone Blood artifact. There aren't any anomalies around here which forms it, so you might have to go deeper into the Zone in order to get your pay Stalker.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_descr">
+		<text>Deliver a Battery Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_descr2">
+		<text>Got an important Client asking for a Battery artifact. Haven't seen one of those cross my desk in several months. Anyway, mind hunting around for one? I'll pay you good.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_descr">
+		<text>Deliver a SIG5K rifle</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_descr2">
+		<text>I had a Stalker drop by and ask for a SIG5K rifle. I told him I didn't have one in stock, but I might be able to get one second hand fairly soon. He was ok with that. So, find me a SIG rifle for this order, OK?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_descr">
+		<text>Deliver an enhanced PMm pistol</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_descr2">
+		<text>A Stalker just dropped by, asking if I had a enhanced PMm pistol in stock. I told him I didn't, but I might be able to get one. I hate to say it, but you might have to scavenge one. They're not usually found in stores.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_descr">
+		<text>Deliver an enhanced Kora-919 pistol</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_descr2">
+		<text>Got a call from a Stalker, long time in Zone client. Anyway, he's looking for an enhaned Kora pistol. I've only seen it a few times, and it's a real leathal monster. Anyway, you mind tracking one down? I'm expecting a call soon.</text>
+	</string>
+</string_table>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="mar_leader_join_csky_0">
+		<text>Can I join your faction? Can I be of any help?</text>
+	</string>
+	<string id="mar_leader_join_csky_1">
+		<text>Help? Yeah, considering you managed to find your way here without a guide. I could use more people like you. However, I cannot let you leave the Great Swamps as one of us, just a heads up. So, you still keen?</text>
+	</string>
+	<string id="mar_leader_join_csky_2_0">
+		<text>Yep. I understand.</text>
+	</string>
+	<string id="mar_leader_join_csky_2_1">
+		<text>Alright. You seem to be able to handle yourself quite well. Most of out guys aren't the fighting type, so if they get swamped by mutants, you'll help. Sorry, bad joke. You familar with our goals?</text>
+	</string>
+	<string id="mar_leader_join_csky_2_2_0">
+		<text>No, fill me in please.</text>
+	</string>
+	<string id="mar_leader_join_csky_2_2_1">
+		<text>Alright. We are Clear Sky. Our goal is to research and understand the Zone, the rules and logic that governs it's existance. The zone is alive, but it's not any sort of life - it reacts to Stalkers and mutants alike. Once we know how and why the Zone exists, we can start to educate humanity about it.</text>
+	</string>
+	<string id="mar_leader_join_csky_2_2_2">
+		<text>Gotcha.</text>
+	</string>
+	<string id="mar_leader_join_csky_2_3_0">
+		<text>Yeah, I've heard already</text>
+	</string>
+	<string id="mar_leader_join_csky_2_4">
+		<text>Great. Your PDA is now tuned to our frequency, and uses our encrytion systems.</text>
+	</string>
+	<string id="mar_leader_join_csky_2_5">
+		<text>Well, I better go start finding out stuff.</text>
+	</string>
+	<string id="mar_leader_join_csky_3">
+		<text>Uh, maybe later?</text>
+	</string>
+	<string id="mar_leader_join_csky_4">
+		<text>Alright, come back later if you change your mind.</text>
+	</string>
+	
+	<string id="mar_leader_leave_csky_0">
+		<text>I've got some business to take care of in the rest of the Zone.</text>
+	</string>
+	<string id="mar_leader_leave_csky_1">
+		<text>I see. You've come to see me about leaving our faction then?</text>
+	</string>
+	<string id="mar_leader_leave_csky_2">
+		<text>Yeah, thats right. You said I couldn't leave the Swamps as a member of Clear Sky, hence here I am.</text>
+	</string>
+	<string id="mar_leader_leave_csky_3">
+		<text>True. You understand if I let you leave, you are not to breath a word of our existance to anyone outside of the swamps. Agreed?</text>
+	</string>
+	<string id="mar_leader_leave_csky_4_0">
+		<text>Agreed. I fully understand.</text>
+	</string>
+	<string id="mar_leader_leave_csky_4_1">
+		<text>Alright, if you ever decide to come back and help us again, I'm sure you'll be able to find us.</text>
+	</string>
+	<string id="mar_leader_leave_csky_4_2">
+		<text>Don't worry. If I do, I'll know these swamps like the back of my hand by then.</text>
+	</string>
+	<string id="mar_leader_leave_csky_5_0">
+		<text>On second thought, my business can wait. The faction work is more important at the moment right now.</text>
+	</string>
+	<string id="mar_leader_leave_csky_5_1">
+		<text>Good. Come back and see me when your ready, if you still need to pursue your business outside of the Swamps.</text>
+	</string>
+	<string id="mar_leader_leave_csky_5_2">
+		<text>I will. I'll get back to work now.</text>
+	</string>
+	
+	<string id="st_mar_flash_up_full_mg_descr">
+		<text>Find the Flash Drive: RP-74</text>
+	</string>
+	<string id="st_mar_flash_up_full_mg_descr2">
+		<text>Getting parts and plans is difficult here, being out in the middle of nowhere. My best chance to get new stuff is when Lebedev seens some of our guys to the Garbage, and I ask them to pick up a few bits and pieces. By the way, I'm looking for machine gun data. Just a curiosity of mine. If you find any, you'll let me know right?</text>
+	</string>
+	<string id="st_mar_flash_up_part_g36_descr">
+		<text>Find the Flash Drive: GP37</text>
+	</string>
+	<string id="st_mar_flash_up_part_g36_descr2">
+		<text>Alright, we've got our hands on some new weapons, thanks to a few 'donations' from somewhere in the big land, only problem is I'm not familar with these weapons. Could you find me some data on them please? Their German made GP37 assault rifles.</text>
+	</string>
+	<string id="st_mar_flash_up_part_anomaly_armor_descr">
+		<text>Find the Flash Drive: Anomaly Proof Coatings</text>
+	</string>
+	<string id="st_mar_flash_up_part_anomaly_armor_descr2">
+		<text>Ok, this is important. The amount of anomalous activity is causing more casualties for our boys than mutants are. I need some data on how to better apply anomaly proof coatings - and so does Beanpoleve. I've told Lebedev, and hes got several guys out looking for data. Still, another pair of eyes won't hurt at all.</text>
+	</string>
+</string_table>

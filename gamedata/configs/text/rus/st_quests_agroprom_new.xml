@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_agr_toolkit_expert_name">
+		<text>Find the Expert Toolkit</text>
+	</string>
+	<string id="st_agr_toolkit_expert_text">
+		<text>With this toolkit, Thunderov will have enough tools to do virtually any upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_agr_flash_up_full_svu_name">
+		<text>Find the Flash Drive: SVU</text>
+	</string>
+	<string id="st_agr_flash_up_full_svu_text">
+		<text>With this Flash Drive, Thunderov will have information on how to modify a SVU sniper rifle.</text>
+	</string>
+	<string id="st_agr_flash_up_full_rp74_name">
+		<text>Find the Flash Drive: RP-74</text>
+	</string>
+	<string id="st_agr_flash_up_full_rp74_text">
+		<text>With this Flash Drive, Thunderov will have information on how to modify a medium machine gun.</text>
+	</string>
+	<string id="st_agr_flash_up_part_val_name">
+		<text>Find the Flash Drive: VAL</text>
+	</string>
+	<string id="st_agr_flash_up_part_val_text">
+		<text>With this Flash Drive, Thunderov will have information on how to adjust the internal mechanics of any subsonic rifle correctly.</text>
+	</string>
+	<string id="st_agr_flash_up_part_tunder_name">
+		<text>Find the Flash Drive: Tunder Barrel</text>
+	</string>
+	<string id="st_agr_flash_up_part_tunder_text">
+		<text>With this Flash Drive, Thunderov will have information on how to adjust the barrel and intergrated grenade launcher of the Tunder assault rifle to take a silencer.</text>
+	</string>
+	
+	<string id="agr_additional_quest_1_name">
+		<text>Find the dead stalker's loot</text>
+	</string>
+	<string id="agr_additional_quest_1_text">
+		<text>Find the artifact the Duty Soldier was sent to find</text>
+	</string>
+	<string id="agr_additional_quest_3_name">
+		<text>Find the missing stalker</text>
+	</string>
+	<string id="agr_additional_quest_3_text">
+		<text>Find the artifact the Duty Soldier was sent to find</text>
+	</string>
+	
+	<string id="agr_bring_item_1_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="agr_bring_item_1_text">
+		<text>The Duty squad requires a replacement assult rifle for a squad member</text>
+	</string>
+	<string id="agr_bring_item_2_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="agr_bring_item_2_text">
+		<text>The Duty squad has requested a special assult rifle for a squad member</text>
+	</string>
+	<string id="agr_bring_item_3_name">
+		<text>Deliver ammo</text>
+	</string>
+	<string id="agr_bring_item_3_text">
+		<text>The Duty squad needs more ammo for it's weapons</text>
+	</string>
+	<string id="agr_bring_item_4_name">
+		<text>Deliver ammo</text>
+	</string>
+	<string id="agr_bring_item_4_text">
+		<text>The Duty squad has requested ammo for a machine gun</text>
+	</string>
+	<string id="agr_bring_item_5_name">
+		<text>Deliver ammo</text>
+	</string>
+	<string id="agr_bring_item_5_text">
+		<text>The Duty squad requires shotgun ammo</text>
+	</string>
+	<string id="agr_bring_item_6_name">
+		<text>Deliver grenades</text>
+	</string>
+	<string id="agr_bring_item_6_text">
+		<text>The Duty squad is low on grenades and is requesting more</text>
+	</string>
+	<string id="agr_bring_item_7_name">
+		<text>Deliver mediacal supplies</text>
+	</string>
+	<string id="agr_bring_item_7_text">
+		<text>The Duty squad is in urgent need of advanced medical supplies</text>
+	</string>
+	<string id="agr_bring_item_8_name">
+		<text>Deliver ammo</text>
+	</string>
+	<string id="agr_bring_item_8_text">
+		<text>The Duty squad needs special rifle rounds for it's weapons</text>
+	</string>
+	<string id="agr_bring_item_9_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="agr_bring_item_9_text">
+		<text>The Duty squad has requested a special sniper weapon for a squad member</text>
+	</string>
+	<string id="agr_bring_item_10_name">
+		<text>Deliver detector</text>
+	</string>
+	<string id="agr_bring_item_10_text">
+		<text>The Stalker squad has requested an artfifact detector</text>
+	</string>
+	
+	<string id="st_agr_deliver_part_1_name">
+		<text>Deliver a Chimera claw</text>
+	</string>
+	<string id="st_agr_deliver_part_1_text">
+		<text>Duty is looking to see how the Chimera can cut through armour so effectively, and requires a claw to examine.</text>
+	</string>
+	<string id="st_agr_deliver_part_2_name">
+		<text>Deliver a Bloodsucker's tentacles</text>
+	</string>
+	<string id="st_agr_deliver_part_2_text">
+		<text>Duty is looking for the tentacles of a Bloodsucker so they can study the saliva it produces, and find a means to stop the bleeding from wounds caused by the Bloodsucker.</text>
+	</string>
+	<string id="st_agr_deliver_art_1_name">
+		<text>Deliver a Bubble artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_1_text">
+		<text>Duty is looking to try and manufacture an alternate antiradtion medicine, and they need a Bubble artifact to help them in their studies.</text>
+	</string>
+	<string id="st_agr_deliver_art_2_name">
+		<text>Deliver a Eye artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_2_text">
+		<text>Krylov wants a Eye artifact to bring him good luck. He probably wants it to provide him with good luck in their fight against the Zone and Freedom.</text>
+	</string>
+	<string id="st_agr_deliver_art_3_name">
+		<text>Deliver a Flash artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_3_text">
+		<text>Duty is conducting research into anomalies, and needs a Flash artifact to assist them in several tests.</text>
+	</string>
+	<string id="st_agr_deliver_weapon_1_name">
+		<text>Deliver a SVD sniper rifle</text>
+	</string>
+	<string id="st_agr_deliver_weapon_1_text">
+		<text>Duty is looking to outfit some of its sniper with SVD rifles, and has requested one for testing.</text>
+	</string>
+	<string id="st_agr_deliver_weapon_2_name">
+		<text>Deliver a RPG-7 rocket launcher</text>
+	</string>
+	<string id="st_agr_deliver_weapon_2_text">
+		<text>A Duty squad recently had one of their rocket launchers destroyed somehow in a firefight with Bandits, and have requested a new one.</text>
+	</string>
+
+</string_table>

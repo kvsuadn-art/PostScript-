@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_location_army">
+		<text>Army warehouses</text>
+	</string>
+	<string id="st_location_killer">
+		<text>Unknown</text>
+	</string>
+	<string id="st_location_monolith">
+		<text>Unconfirmed - Chernobyl NPP</text>
+	</string>
+	<string id="st_location_stalker">
+		<text>No specific location</text>
+	</string>
+	<string id="st_location_csky">
+		<text>Unconfirmed - Swamps</text>
+	</string>
+	
+	<string id="ui_st_name_monolith">
+		<text>Monolith</text>
+	</string>
+	<string id="ui_st_name_army">
+		<text>Military</text>
+	</string>
+	<string id="ui_st_name_ecolog">
+		<text>Ecologists</text>
+	</string>
+	
+	<string id="pda_btn_diary">
+		<text>Diary</text>
+	</string>
+	<string id="pda_btn_diary_hint">
+		<text>Show player's diary</text>
+	</string>
+	<string id="pda_btn_encyclopedia">
+		<text>Encyclopedia</text>
+	</string>
+	<string id="pda_btn_encyclopedia_hint">
+		<text>Show the Zone encyclopedia</text>
+	</string>
+	<string id="pda_btn_map">
+		<text>Map</text>
+	</string>
+	<string id="pda_btn_map_hint">
+		<text>Show map of the Zone</text>
+	</string>
+	<string id="pda_btn_statistics">
+		<text>Statistics</text>
+	</string>
+	<string id="pda_btn_statistics_hint">
+		<text>Show personal and faction information and records</text>
+	</string>
+	<string id="pda_btn_missions">
+		<text>Tasks</text>
+	</string>
+	<string id="pda_btn_missions_hint">
+		<text>Show information about current tasks</text>
+	</string>
+	
+	<string id="pda_stat_general">
+		<text>General Information</text>
+	</string>
+	
+	<string id="ui_st_community">
+		<text>Faction:</text>
+	</string>
+	<string id="ui_st_reputation">
+		<text>Reputation:</text>
+	</string>
+
+	<string id="st_reputation_1">
+		<text>Terrible</text>
+	</string>
+	<string id="st_reputation_2">
+		<text>Unreliable</text>
+	</string>
+	<string id="st_reputation_3">
+		<text>Bad</text>
+	</string>
+	<string id="st_reputation_4">
+		<text>Average</text>
+	</string>
+	<string id="st_reputation_5">
+		<text>Good</text>
+	</string>
+	<string id="st_reputation_6">
+		<text>Reliable</text>
+	</string>
+	<string id="st_reputation_7">
+		<text>Excellent</text>
+	</string>
+	
+	<string id="pda_stat_10">
+		<text>Most Powerful Mutant killed</text>
+	</string>
+	<string id="pda_stat_11">
+		<text>Total Kills</text>
+	</string>
+	<string id="ps_pda_stat_frags">
+		<text>Kills</text>
+	</string>
+	
+	<string id="st_ui_pda_sleep_place">
+		<text>Sleeping Mattress</text>
+	</string>
+	
+</string_table>

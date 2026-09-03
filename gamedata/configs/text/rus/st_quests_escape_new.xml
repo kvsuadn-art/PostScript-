@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="esc_talk2_wolf">
+		<text>Talk to Wolf</text>
+	</string>
+	<string id="esc_talk2_wolf_text">
+		<text>Talk to Wolf</text>
+	</string>
+	
+	<string id="st_esc_toolkit_basic_name">
+		<text>Find the Basic Toolkit</text>
+	</string>
+	<string id="st_esc_toolkit_basic_text">
+		<text>With this toolkit, Van will have enough tools to start performing upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_esc_toolkit_advanced_name">
+		<text>Find the Advanced Toolkit</text>
+	</string>
+	<string id="st_esc_toolkit_advanced_text">
+		<text>With this toolkit, Van will have tools detailed enough to do better upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_esc_flash_up_full_l85_name">
+		<text>Find the Flash Drive: IL86</text>
+	</string>
+	<string id="st_esc_flash_up_full_l85_text">
+		<text>With this Flash Drive, Van will have information on how to modify an IL86 assault rifle.</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_name">
+		<text>Find the Flash Drive: Shotgun Barrels</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_text">
+		<text>With this Flash Drive, Van will have information on how to preform various modifications to shotgun barrels.</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_name">
+		<text>Find the Flash Drive: Chaser 13</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_text">
+		<text>With this Flash Drive, Van will have information on how to modify a Chaser13 combat shotgun.</text>
+	</string>
+	
+	<string id="esc_bring_item_1_name">
+		<text>Deliver medical supplies</text>
+	</string>
+	<string id="esc_bring_item_1_text">
+		<text>The Stalker squad is urgent need of advanced medical supplies.</text>
+	</string>
+	<string id="esc_bring_item_2_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="esc_bring_item_2_text">
+		<text>The Stalker squad requires a replacement assult rifle for one of it's members.</text>
+	</string>
+	<string id="esc_bring_item_3_name">
+		<text>Deliver weapon</text>
+	</string>
+	<string id="esc_bring_item_3_text">
+		<text>The Stalker squad requires a replacement sniper rifle for one of it's members.</text>
+	</string>
+	<string id="esc_bring_item_4_name">
+		<text>Deliver weapon and ammo</text>
+	</string>
+	<string id="esc_bring_item_4_text">
+		<text>The Stalker squad requires a replacement shotgun and ammo for one of it's members.</text>
+	</string>
+	<string id="esc_bring_item_5_name">
+		<text>Deliver weapon and ammo</text>
+	</string>
+	<string id="esc_bring_item_5_text">
+		<text>The Stalker squad requires a replacement assult rifle and ammo for one of it's members.</text>
+	</string>
+
+	<string id="st_esc_deliver_item_trader_1_name">
+		<text>Deliver a Cats Tail</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_1_text">
+		<text>Sidorovich is looking for a Cats Tail to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_name">
+		<text>Deliver a Psuedodogs Tail</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_text">
+		<text>Sidorovich is looking for a Psuedodogs Tail to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_name">
+		<text>Deliver a Tushkano's Head</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_text">
+		<text>Sidorovich is looking for a Tushkano's head to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_name">
+		<text>Deliver a Jellyfish Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_text">
+		<text>Sidorovich is looking for a Jellyfish artifact to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_name">
+		<text>Deliver a Stone Blood Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_text">
+		<text>Sidorovich is looking for a Stone Blood artifact to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_name">
+		<text>Deliver a Battery Artifact</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_text">
+		<text>Sidorovich is looking for a Battery artifact to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_name">
+		<text>Deliver a SIG5K rifle</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_text">
+		<text>Sidorovich is looking for a SIG5K rifle to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_name">
+		<text>Deliver an enhanced PMm pistol</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_text">
+		<text>Sidorovich is looking for an enhanced PMm pistol to complete an order.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_name">
+		<text>Deliver an enhanced Kora-919 pistol</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_text">
+		<text>Sidorovich is looking for an enhanced Kora-919 pistol to complete an order.</text>
+	</string>
+</string_table>

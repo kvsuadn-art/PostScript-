@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="gar_bandit_leader_join_main_0">
+		<text>So, can I join you and your boys? Will you take me?</text>
+	</string>
+	<string id="gar_bandit_leader_join_main_2">
+		<text>Who the hell are you? And what are you doing here? Your nothin' but a punk, a spineless kid, you ain't got a name, and you're no man. No get lost before I tell my boys to make sure you 'get lost'. Get a bit of a reputation, and then we might talk.</text>
+	</string>
+	
+	<string id="gar_bandit_actor_robber_0">
+		<text>Ok, time to pay what you owe us. Hand over your loot.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_1">
+		<text>Ok, here's everything I have spare for you.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_2">
+		<text>Good, now get lost. I'll be back later. Make sure you have something.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_3">
+		<text>Alright, alright, I will.</text>
+	</string>
+	
+	<string id="gar_digger_leader_killer_dogs_0">
+		<text>Something wrong?</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_0">
+		<text>Yeah, the last two days, somethings been attacking us. Only one guy's made it back alive, and he didn't see what it was, only that it wasn't human. It's been the same place, at one of our dig sites. The problem is, while whatever is attacking us, we're scared dig there, even during the day, even though the attacks have occured after dark. Can you deal to it for us?</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_1">
+		<text>Sure, I'll be back before you know it.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_1_0">
+		<text>Great! Head on over to the collapsed crane, near the swamps. People have heard about it, and are avoiding the place. Look after dark, since thats when the attacks occured.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_2">
+		<text>No, I don't feel like dying today.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_2">
+		<text>Nah, nothing you need to worry yourself about.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_3">
+		<text>I'm ready to tackle these monsters of yours.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_done_0">
+		<text>The monsters are dead. Some sort of rabid dog.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_done_1">
+		<text>Good, here's your reward. It's not much, but take it. We'll let all the Stalkers who pass here know what you've done for us.</text>
+	</string>
+	
+	<string id="st_gar_flash_up_full_seva_descr">
+		<text>Find the Flash Drive: SEVA</text>
+	</string>
+	<string id="st_gar_flash_up_full_seva_descr2">
+		<text>Hey Buddy, listen up, and pass me that Vodka there, yes that one. Yoga recently got some of those fancy black suits, the ones with the bubble like helmet. Anyway *hic*, he wants me to tweak them for some of our boys. I can't find anything on them, so mind lending me a hand? I don't think I can stand right now. Pass me that other bottle will you?</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_descr">
+		<text>Find the Flash Drive: Exoskeleton</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_descr2">
+		<text>Look, I need some data on an exo, I'm gonna build us the best exo the Zones ever seen *hic*.</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_descr">
+		<text>Find the Flash Drive: GP37</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_descr2">
+		<text>Hey, see this gun. Made by them Germans. Anyway, as with Anything German, it's a complete mess. Just like their wars. Bring me some plans for this thing so I can find the damn safety for starters.</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_descr">
+		<text>Find the Flash Drive: Tunder</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_descr2">
+		<text>Some of our boys finally got some of those fancy intergrated over unders Duty uses. Only problem is that the internals are a mess - I can figure them out properly. Get me some blueprints on this. Damn, my head hurts now. Pass them that bottle there will you?</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_descr">
+		<text>Find the Flash Drive: Military Body Armour</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_descr2">
+		<text>Hey, we finally got some heavy military armour, but I don't know how to install it. The heaviest thing around here is Yoga's balls or the crowbar Titan carries and uses to wack Loners over the head. And I don't want to install them onto any suits. Can you help me out here? Oi! Stay away from my vodka Senka! Go visit Borov and get another if you need it.</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_descr">
+		<text>Find the Flash Drive: Shotgun Strikers</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_descr2">
+		<text>Eh, Shotguns, ok, lettmesee, yeah, I can do shotguns no problem. Wait, where is it? Oi! Senka! Seennkaa. Senka! Agh, lazy buggers asleep again. Looks like hes taken my page relating to shotgun strikers, cause I don't have it here. Can you go find it for me? Or find me a new one.</text>
+	</string>
+</string_table>

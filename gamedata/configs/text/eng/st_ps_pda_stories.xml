@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="test_story_name">
+		<text>Test Story Example</text>
+	</string>
+	<string id="test_story_descr">
+		<text>Test Story Example description for the pda.</text>
+	</string>
+	
+	<!-- Loners/Stalkers -->
+	<string id="stalker_novice_1_name">
+		<text>Veterans</text>
+	</string>
+	<string id="stalker_novice_1_descr">
+		<text>So I came back from Agroprom the other day. Ran into a band of stalkers - veterans if I ever saw them. They were all fitted up those SEVA's and those noiseless rifles? Scary shit. I mean, things here are pretty serious, but compared to the northern lands, we're just babies. But yeah, these guys were armed to the teeth! Anyway, I followed behind them for a while, thinking they'd lead me down the right paths, then out of nowhere comes these guys, mercs or something. The bastards start popping shots at us like we were dogs or rats! I gotta admit, I dived for cover like a chicken shit. But these stalkers. They picked 'em off like crows! Just goes to show - you think you’re dealing with the zone alright, and then someone comes along and reminds you that your still a newbie!</text>
+	</string>
+	<string id="stalker_novice_2_name">
+		<text>The Zone</text>
+	</string>
+	<string id="stalker_novice_2_descr">
+		<text>This place here the Zone, sure beats being in prison. Stupid judge... 3 years in the slammer, for what, stealing a car? I am better off here than in the Big Land. I have been here 3 weeks now, and I've seen things that boggles your mind... There is talk about a place in the centre that grants wishes. I know I would wish for the Zone never to disappear...</text>
+	</string>
+	
+	<string id="stalker_stalker_1_name">
+		<text>Berkezi's lost it</text>
+	</string>
+	<string id="stalker_stalker_1_descr">
+		<text>Berkezi came to us the other day. We thought he was dead. He kept ranting on about the North and how beautiful it is. It took me a while to click onto what he was rambling on about. But eventually he came out with it. He was a fanatic now. The little shit wouldn't shut up about the Monolith and all that crap. Then all sudden and abruptly he just stopped talking and left, like he'd lost interest in us. Before he left he mentioned he would go back to where he belonged, and that we should join him. I thought I was going to burst, I couldn't believe what the zone had done to him. This wasn't Berk. He was timid and weedy. And here he was, so sure of himself. Blind and hysterical. We didn't let him go back past the scorcher. Taffy was the one to kill him. Said it wasn't fair in letting a friend walk away like that. So we buried him just outside of Sidorovich's bunker. Right next to the fence. Need to make sure Taffy doesn't go and kill himself, we've never lost a friend like this. I don't even know why I'm here anymore. I never wanted this.</text>
+	</string>
+	<string id="stalker_stalker_2_name">
+		<text>Last Trip</text>
+	</string>
+	<string id="stalker_stalker_2_descr">
+		<text>I hope that this trip to The Zone will be my last. I just hope I get enough artifacts to pay of my debt to that bastard bandit, who runs my neighbourhood back in the Big Land. Maybe my family and I can get him off my back, and move somewhere else.</text>
+	</string>
+	
+	<string id="stalker_veteran_1_name">
+		<text>Damn Mutants!</text>
+	</string>
+	<string id="stalker_veteran_1_descr">
+		<text>1700 hours: Grigori, Vanya and I made it to the elevator, just like Sid asked. Still no sign of our mutant friends though.n\1730 hours: We’ve been monitoring the area for a short while now, looking for any movement. It looks clear so we’ve decided to spend the night here and wait and see if our mutated friends show up. It doesn’t really help that we don’t know what mutant to look out for though.\n0045 hours: That fucker ran away! And Vanya, well it wasn’t a very dignified end for him. Fucking rats came out from everywhere, started chewing on the poor bastard before he could get out of his sleeping bag. Then there’s that shithead Grigori. The pussy ran away and left me for dead! If I ever find him I will shove my boot so far up his ass he will be my personal snowboard!\n0130 hours: Made it back to the village after a slow journey down the road. That gang of stalkers didn’t look too friendly. I don’t think they saw me.\n0200 hours: Poor Vanya... I can’t sleep. That blood curdling scream is stuck inside my head. I see his agonising face every time I close my eyes.\n1000 hours: Fucking Sid decided not to pay me as “The threat wasn’t eliminated”. The zone sure isn’t all it’s hyped up to be.</text>
+	</string>
+	<string id="stalker_veteran_2_name">
+		<text>Nut</text>
+	</string>
+	<string id="stalker_veteran_2_descr">
+		<text>Poor Nut, he was a good friend and loyal stalker. That Brain Scorcher destroyed what I knew of him. There we were, sitting by the fire when we heard some moaning and shuffling amidst the darkness of night. Pastry readied himself for another mutant attack, but it was Nut, just staring at the fire and mumbling to himself. We tried talking to him but there was no response, he was just an empty husk of what he once was. His SEVA was destroyed and his mask was smashed to pieces.... and his wounds... fucking hell, blood and gut was hanging from the kid. The guys decided that the best thing to do was kill him so Grishka got him between the eyes. He should never have gone North.</text>
+	</string>
+	
+	<!-- Monolith -->
+	<string id="monolith_novice_1_name">
+		<text>All hail the Monolith</text>
+	</string>
+	<string id="monolith_novice_1_descr">
+		<text>All hail the Monolith, the shining light of our faith. Today we cleansed a part of our heaven, from the non-believers clad in green. Brother Demian sacrificed himself for our faith, he is with the Monolith now. All praise to the Monolith!</text>
+	</string>
+	
+	<string id="monolith_stalker_1_name">
+		<text>Monolith's Enlightenment</text>
+	</string>
+	<string id="monolith_stalker_1_descr">
+		<text>I found my old friends again today! Taffy and Romanov! I was so amazed to see them. But I cannot believe they've not seen the light yet. It chews me up inside to know that they still act so savagely! Oh I told them about the monolith and the wonders of the North! And I told them of the amazing monolith! The heavenly enlightenment it brings! I kept begging them to come with me, but I don't think they're ready to just yet! I think I opened their eyes though! Once I find my brothers in Pripyat I'll be reunited with the Wish Granter! Everything will be perfect! But I'll definitely come back for Romanov and Taffy! I can't wait till they find their true calling!</text>
+	</string>	
+	<string id="monolith_stalker_2_name">
+		<text>Penance to the Monolith</text>
+	</string>
+	<string id="monolith_stalker_2_descr">
+		<text>The Monolith's voice is faint here I can barely hear it. I paid penance to the Monolith, hopefully I can hear its voice more clearly tomorrow. I have faith. I can still kill the non-believers, I can still fire my sacred gun with just 8 fingers... All praise to the Monolith!</text>
+	</string>
+
+	<string id="monolith_veteran_1_name">
+		<text>The Monolith is our Life</text>
+	</string>
+	<string id="monolith_veteran_1_descr">
+		<text>The Monolith is our Life, We are the Monolith! The Monolith is our Life, We are the Monolith! Yesterday one child of the Zone took brother Luka. It appeared amongst us as we were walking...and took him away... I can still hear his voice: "The monolith is our Life, We are the Mo..." Then Silence... He is with the Monolith now... All Praise to the Monolith!</text>
+	</string>
+	
+	<!-- Bandits -->
+	<string id="bandit_novice_1_name">
+		<text>Regrets</text>
+	</string>
+	<string id="bandit_novice_1_descr">
+		<text>Why did I get involved with those guys!? I knew I should have listened to my old mother. I'm tired being a bandit. Once you're marked as a Bandit here, marked for life... I hate The Zone... I hope can leave here soon, hopefully on my own two feet.</text>
+	</string>
+	
+	<string id="bandit_stalker_1_name">
+		<text>Loot and Payback</text>
+	</string>
+	<string id="bandit_stalker_1_descr">
+		<text>That guy we shook down a few days ago sure did have some shiny stuff in his backpack. If he just had kept quiet, we wouldn't have wounded him and thrown him into that anomaly. That was payback for slashing Dmytro's left eye with his knife.</text>
+	</string>
+	
+	<string id="bandit_veteran_1_name">
+		<text>Idiots and Fools</text>
+	</string>
+	<string id="bandit_veteran_1_descr">
+		<text>Last week some rookie wannabe joined our gang. The idiot thought he knew all there is to know about The Zone. He had been with us just 2 days then he fell into a pool of that Witches Jelly crap or whatever. We were following some Loners, to relieve them of their heavy loot. Had to shoot him in the head with my silenced pistol to keep him from screaming... The loners heard him though, and took off before we could get to them... stupid bastard. Good thing that we got rid of him...</text>
+	</string>
+	
+	<!-- Army -->
+	<string id="army_novice_1_name">
+		<text>I hate this place</text>
+	</string>
+	<string id="army_novice_1_descr">
+		<text>I hate this place... I almost shat myself yesterday when that pack of Boars charged our group in the evening, when we returned from our patrol... One of them ran over Vasily like a train - the lucky bastard broke both his legs. So he gets a one-way-ticket to the Big Land... He probably gets to score some hot nurses at the hospital, he always was good at that.</text>
+	</string>
+	
+	<string id="army_stalker_1_name">
+		<text>5 Months left</text>
+	</string>
+	<string id="army_stalker_1_descr">
+		<text>Man this is definitely the last time I drink, and hit a senior officer. That bastard pulled some strings, and I ended up in The Zone... At least I broke his nose, and then he has a permanent reminder of me every time he looks into a mirror.... I just have to get through the next 5 months, then my tour is over, and I can finally go home.</text>
+	</string>
+	
+	<string id="army_veteran_1_name">
+		<text>Making a Fortune</text>
+	</string>
+	<string id="army_veteran_1_descr">
+		<text>I love this place... Me and my mate Yuri, are making a fortune out of being here. Every time we catch a bandit or one of them stalkers, we give them a choice: Hand over the loot, or get a bullet... I can't wait to retrieve our stashes, when we can finally return home.</text>
+	</string>
+	
+	<!-- Freedom -->
+	<string id="freedom_novice_1_name">
+		<text>To Hell with that</text>
+	</string>
+	<string id="freedom_novice_1_descr">
+		<text>Got into my first firefight yesterday, we stumbled over a small group of Duty jarheads. They were more surprised than us. I wasted their leader with a grenade from my M203, he flew into a nearby anomaly from the blast, unfortunately his Groza went with him into the anomaly, that gun would have been a nice trophy. To hell with that, the others are buying the drinks tonight.</text>
+	</string>
+	
+	<string id="freedom_stalker_1_name">
+		<text>Greener Feilds</text>
+	</string>
+	<string id="freedom_stalker_1_descr">
+		<text>So, I know everyone seems settled in, and we’ve got ourselves a nice little base going on over here. But this place is just creepy. I mean, fair enough we’ve got weed, booze and everything else a Freedom'er could need, but the scenery isn’t exactly welcoming. It’s exactly how the Encyclopedia says it is. ‘Always gloomy, always misty and always rainy.’ Now what the hell is that all about? Okay so those Duty dickheads have Agroprom, which is scary as shit; and the bandits are at the garbage which - well, it stinks. And it looks gross. But still! There are plenty of other places we could stay. Look at the Stalkers! They have a comfortable little place in Cordon. Not many mutants, a few renegades or military here and there. But it’s still not as bad as this place. I’ve been talking it over with Uncle Yar, and we both agree that those Military Warehouses would make a much better place to kick back and smoke some weed. We may have to kick those dogs in uniform out first though. And I guess there are the mutants, monolith and the Brain Scorcher breathing down our necks - but it’s better than this place. I know our suits are relatively water-proof, but I’m drenched. I say we move out and find greener fields - or whatever that English saying is!</text>
+	</string>
+	<string id="freedom_stalker_2_name">
+		<text>Merc Chatter</text>
+	</string>
+	<string id="freedom_stalker_2_descr">
+		<text>I intercepted some radio chatter sounded like some Mercs. From what I could tell they were planning on taking the south of the valley. I must have misunderstood what they said, We have the valley locked down tight. I don’t know. Then again, I heard the name of one of our commanders mentioned. Better not write his name down here, best to keep quiet, and keep an eye on him. See if he is up to something...</text>
+	</string>
+	<string id="freedom_stalker_3_name">
+		<text>Ghosts</text>
+	</string>
+	<string id="freedom_stalker_3_descr">
+		<text>Man that weed barkeep sold me a few days ago sure is good stuff. Vadek and I thought we saw some ghosts or something similar, in the building near our base. But I guess it was the weed and the vodka doing it's thing. Vadek said he was going to check it out, I said he was a fool and that he should stay and have another smoke. Don't know where he is now, no one has seen him since that night... perhaps those ghost were real after all. Damn, I need a drink.</text>
+	</string>
+	
+	<string id="freedom_veteran_1_name">
+		<text>Tails</text>
+	</string>
+	<string id="freedom_veteran_1_descr">
+		<text>Why the hell am I stuck up here in this tower doing guard duty, while the others are partying, drinking and smoking the good stuff? I saw some mutant dogs near the base so I shot a few with my silenced rifle. I heard from some stalkers that the eggheads in Yantar pay good money for mutant parts. If I am quick I can get to the dogs and get their tails before my shift is over, I think the rest of the pack ran away after I shot the two dogs. Better be quick.</text>
+	</string>
+	
+	<!-- Dutyy -->
+	<string id="dolg_novice_1_name">
+		<text>Sick of Duty</text>
+	</string>
+	<string id="dolg_novice_1_descr">
+		<text>Man, I'm sick of Duty, and their army ways. Up early and doing drills, guard duty, and patrols almost every day. We are not even allowed to smoke some weed...\nMaybe I should join Freedom instead, but how to get to their base without getting shot by their guards? Perhaps a white flag would help...</text>
+	</string>
+	<string id="dolg_novice_2_name">
+		<text>Rookie in Duty</text>
+	</string>
+	<string id="dolg_novice_2_descr">
+		<text>I'm glad that I was accepted by Duty. I feel more safe going around with fellow Dutiers, than running around The Zone myself. We are going on long patrol today, my first long patrol with Duty. I'm going to prove to my new commander that I'm not just another rookie.</text>
+	</string>
+	<string id="dolg_novice_3_name">
+		<text>Never fear a Mutant Again</text>
+	</string>
+	<string id="dolg_novice_3_descr">
+		<text>One of the officers were carrying one of those drum- shotguns, don't know the name, it's imported. Modified it to have automatic fire, saw him firing it at the range and thought "Damn, I want one of those". Earlier today, I asked him where he got it, says he just found it lying around beside a dead bandit, what a lucky guy... When I get one of those, I won't fear any friggin' mutant that comes charging at me, I'll tear em apart!</text>
+	</string>
+	
+	<string id="dolg_stalker_1_name">
+		<text>Another Day, Another Patrol</text>
+	</string>
+	<string id="dolg_stalker_1_descr">
+		<text>Another day, another patrol, been on patrol duty since the commander caught me with a bottle of vodka... The bastard took the rest of my bottles. I bet he drank them himself...</text>
+	</string>
+	<string id="dolg_stalker_2_name">
+		<text>Boredom</text>
+	</string>
+	<string id="dolg_stalker_2_descr">
+		<text>Guard duty can be boring, but it beats going on mutant hunts... Those underground tunnels and lairs scare the shit out of me. Up here I only have to worry about Bandits, and those bums from Freedom.\nAs long as I can keep a good relationship with the commander I should be alright.</text>
+	</string>
+	<string id="dolg_stalker_3_name">
+		<text>Payment</text>
+	</string>
+	<string id="dolg_stalker_3_descr">
+		<text>I'd better get that artifact soon, the barkeep at the Base, told me to either get the artifact, or cough up the money I owe him. He knows some shady characters, so it will be best for me not cross him. There is an anomaly field nearby, perhaps I can find something good.</text>
+	</string>
+	<string id="dolg_stalker_4_name">
+		<text>Hope</text>
+	</string>
+	<string id="dolg_stalker_4_descr">
+		<text>Christ, why am I here? Every day you get up early and clean your kit, clean your weapons, patrol, listen to the bases propaganda. Do they think anyone believes that shit? I’m seriously considering deserting these bastards and try to escape this place back to my family. Young Sasha must be almost 4 now. And Tanya... how I miss her smile and bright blue eyes. Here’s hoping I get out unscathed.</text>
+	</string>
+	<string id="dolg_stalker_5_name">
+		<text>Damn that Mitay</text>
+	</string>
+	<string id="dolg_stalker_5_descr">
+		<text>Damn that Mitay, such a freaking asshole. Yesterday, I went to the armoury and asked for some ammo and then he goes on about "Ooh ammo again?! Do I shit ammo out of my ass, why the fuck do you people keep asking me for ammo everyday!" and all that. Why don't he go out and fight some friggin' mutants that keep coming out of the catacombs! I'd be glad if a family of snorks adopt him one of these days. Gavrilenko almost kicked his ass at the bar a couple of days ago. If only Shulga and Petrenko didn't stop him, I'd join in the fun too.</text>
+	</string>
+	<string id="dolg_stalker_6_name">
+		<text>Thunderov Expertise</text>
+	</string>
+	<string id="dolg_stalker_6_descr">
+		<text>Thunderov is one hell of tech when it comes to automatic weapons, he says that the weapon will fire so fast that the mutant or anarchist in the way will be dead before you can say "BLOODSUCKER"! Heh, Colonel Tarvansky made him modify his RP-74 and the Colonel tested it out on some mutants, hell the thing fired faster than ever! The Colonel calls it "The Sawblade", he says it cuts through mutants like knife through butter... I'd love a weapon like that.</text>
+	</string>
+	
+	<string id="dolg_veteran_1_name">
+		<text>Dumbass Rookies</text>
+	</string>
+	<string id="dolg_veteran_1_descr">
+		<text>Man, this last patrol we were on, quickly went down the tubes. Some rookie was trying to impress the commander, he went too far ahead of the group, and got wasted by a bloodsucker that was lurking in the shadows.... We got the Bloodsucker, but the rookie was dead meat. I took his shotgun and some ammo for it... well he had no use for it anymore.</text>
+	</string>
+	<string id="dolg_veteran_2_name">
+		<text>Crazy Inquistor</text>
+	</string>
+	<string id="dolg_veteran_2_descr">
+		<text>Inquistor is freaking nuts, he just caught a bloodsucker, yeah a BLOODSUCKER alive, and he’s got it dancin' around in his cage at the base at the moment. Damn that guy has balls; even I won't even try to do that shit. The other day, he put a snork in a cage, sent it to the ecologs, that Sakharov guy seems to love those things. Especially their feet, creepy person to be honest and he kept saying "Hello, hello" it was driving me nuts when I was stationed there.</text>
+	</string>
+	<string id="dolg_veteran_3_name">
+		<text>Wuss</text>
+	</string>
+	<string id="dolg_veteran_3_descr">
+		<text>I heard Brome shit his pants again when he and some other guys were sent to check out a mutant hole, the boys said a snork jumped out of the hole, he panicked and ran for the base. He dropped his gun too, the squad managed to bring it back to base. Oh man General Krylov barked at him for like an hour, he's sitting at Inquisitor’s creepy ass "Zoo" at the moment as ordered by the General, he ain't getting out of there till he stops shitting his pants. What a wussy.</text>
+	</string>
+	
+	<string id="dolg_master_1_name">
+		<text>General Tachenko</text>
+	</string>
+	<string id="dolg_master_1_descr">
+		<text>General Tachenko... Nobody knows where he and his men went, some say he went to the big land, others say he died. Killed by an unknown mutant and all those stories. Nobody knows the truth. Tachenko, Zakharchuk, Chepurny, Bunchuk and Kosmach all gone that day, just like that. They were all good men. I hope they are fine where ever they are now. Only Tachenko knew the truth, the very first member and leader of Duty.</text>
+	</string>
+	
+</string_table>

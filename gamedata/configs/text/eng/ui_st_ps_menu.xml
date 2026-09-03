@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_mm_ps_settings">
+		<text>PostScript Settings</text>
+	</string>
+	<string id="ui_ps_settings">
+		<text>PostScript Settings</text>
+	</string>
+	<string id="ui_ps_settings_apply">
+		<text>Accept</text>
+	</string>
+	<string id="ui_ps_settings_cancel">
+		<text>Cancel</text>
+	</string>
+	<string id="ui_ps_af_spawn_chance">
+		<text>Chance of artefact spawn per anomaly</text>
+	</string>
+	<string id="ui_ps_store_weapons_on_death">
+		<text>Transfer NPC weapons into their inventory on death</text>
+	</string>
+	<string id="ui_ps_hunger_on">
+		<text>Actor hunger enabled</text>
+	</string>
+	<string id="ui_ps_autosave_interval">
+		<text>Time between autosaves in minutes</text>
+	</string>
+	<string id="ui_ps_surge_start_time">
+		<text>Time before emissions can start in game hours</text>
+	</string>
+	<string id="ui_ps_surge_finish_time">
+		<text>Time range for emissions to occur in</text>
+	</string>
+	<string id="ui_ps_spawn_added_weapons">
+		<text>NPCs spawn with mod added weapons (non vanilla)</text>
+	</string>
+	<string id="ui_ps_use_mod_pda">
+		<text>Display the mod PDA instead of the regular PDA</text>
+	</string>
+	<string id="ui_ps_smart_terain_display">
+		<text>Display smart terrains on the PDA map</text>
+	</string>
+	<string id="ui_ps_emission_chance">
+		<text>Chance of an emission occuring</text>
+	</string>
+	<string id="ui_ps_show_pda_dots">
+		<text>Show squad icons on the PDA map</text>
+	</string>
+</string_table>

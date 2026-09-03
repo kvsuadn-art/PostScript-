@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_mm_ps_settings">
+		<text>Настройки PostScript</text>
+	</string>
+	<string id="ui_ps_settings">
+		<text>Настройки PostScript</text>
+	</string>
+	<string id="ui_ps_settings_apply">
+		<text>Принять</text>
+	</string>
+	<string id="ui_ps_settings_cancel">
+		<text>Отмена</text>
+	</string>
+	<string id="ui_ps_af_spawn_chance">
+		<text>Шанс спавна Артефактов в аномалиях (В процентах)</text>
+	</string>
+	<string id="ui_ps_store_weapons_on_death">
+		<text>Убирать Оружие в Рюкзак после смерти NPC</text>
+	</string>
+	<string id="ui_ps_hunger_on">
+		<text>Голод Главного Героя</text>
+	</string>
+	<string id="ui_ps_autosave_interval">
+		<text>Частота автосейва (В минутах)</text>
+	</string>
+	<string id="ui_ps_surge_start_time">
+		<text>Время до выброса</text>
+	</string>
+	<string id="ui_ps_surge_finish_time">
+		<text>Частота Выбросов в игре</text>
+	</string>
+	<string id="ui_ps_spawn_added_weapons">
+		<text>Спавн NPC  с аддонами к оружию</text>
+	</string>
+	<string id="ui_ps_use_mod_pda">
+		<text>Заменить Старый PDA на модифицированный PDA</text>
+	</string>
+	<string id="ui_ps_smart_terain_display">
+		<text>Показывать Места респавном NPC на PDA</text>
+	</string>
+	<string id="ui_ps_emission_chance">
+		<text>Вероятность встретить случайных NPC</text>
+	</string>
+	<string id="ui_ps_show_pda_dots">
+		<text>Показыватm Иконки Сквадов на PDA</text>
+	</string>
+</string_table>

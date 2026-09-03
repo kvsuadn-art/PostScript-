@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="sim_find_upgrade">
+		<text>Find the upgrade</text>
+	</string>
+	<string id="tm_upgr_task_21">
+		<text>There is something. I have been looking for some tools and diagrams of some upgrades for a while. If you come across any, keep them and bring them to me. Here is a list of the ones I'm looking for:</text>
+	</string>
+
+</string_table>

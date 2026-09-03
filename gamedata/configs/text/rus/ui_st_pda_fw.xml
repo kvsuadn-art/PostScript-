@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!-- blank -->
+	<string id="st_stage_icon_">
+		<text>Default</text>
+	</string>
+	
+	<!-- csky -->
+	<string id="st_stage_icon_csky_approach_no">
+		<text>We don't control the approach to our base</text>
+	</string>
+	<string id="st_stage_icon_csky_approach_yes">
+		<text>We control the approach to our base</text>
+	</string>
+	<string id="st_stage_icon_csky_tower_no">
+		<text>We don't control the Observation Tower</text>
+	</string>
+	<string id="st_stage_icon_csky_tower_yes">
+		<text>We control the Observation Tower</text>
+	</string>
+	<string id="st_stage_icon_csky_station_no">
+		<text>We don't control the Pump Station</text>
+	</string>
+	<string id="st_stage_icon_csky_station_yes">
+		<text>We control the Pump Station</text>
+	</string>
+	
+	<string id="st_faction_war_csky_secure_approach">
+		<text>Secure the Fishing Hamlet and the approaches to our base</text>
+	</string>
+	<string id="st_faction_war_csky_secure_tower">
+		<text>Secure the Lookout Tower to observe approaches to our base</text>
+	</string>
+	<string id="st_faction_war_csky_secure_pump">
+		<text>Secure the Pump Station</text>
+	</string>
+	<string id="st_faction_war_csky_area_secure">
+		<text>The Swamps are now under our control</text>
+	</string>
+	
+	<!-- bandit -->
+	<string id="st_stage_icon_bandit_secure_garbage_no">
+		<text>We do not have control over the roads into the Garnage</text>
+	</string>
+	<string id="st_stage_icon_bandit_secure_garbage_yes">
+		<text>We control the roads into the Garbage</text>
+	</string>
+	
+	<string id="st_faction_war_bandit_secure_level">
+		<text>Get control over the paths into the Garbage</text>
+	</string>
+	
+	<!-- freedom -->
+	<string id="st_stage_icon_freedom_capture_garbage_no">
+		<text>We do not control the paths into the Dark Valley from the Garbage</text>
+	</string>
+	<string id="st_stage_icon_freedom_capture_garbage_yes">
+		<text>We control the paths into the Dark Valley from the Garbage</text>
+	</string>
+	
+	<string id="st_faction_war_freedom_capture_garbage">
+		<text>Secure the entrances to the Dark Valley from Garbage</text>
+	</string>
+	
+	<!-- duty-->
+	<string id="st_stage_icon_duty_capture_garbage_no">
+		<text>We do not control the paths into Agroprom from the Garbage</text>
+	</string>
+	<string id="st_stage_icon_duty_capture_garbage_yes">
+		<text>We control the paths into Agroprom from the Garbage</text>
+	</string>
+	
+	<string id="st_faction_war_duty_capture_garbage">
+		<text>Secure the entrances to Agroprom from Garbage</text>
+	</string>
+</string_table>

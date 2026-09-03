@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!-- Toolkits -->
+	<string id="toolkit_basic">
+		<text>Инструменты для грубой работы</text>
+	</string>
+	<string id="toolkit_basic_description">
+		<text>В этом ящике находится набор разнообразных инструментов для работы с оружием и броней. Лишь техник сможет найти им эффективное применение.</text>
+	</string>
+	<string id="toolkit_advanced">
+		<text>Инструменты для тонкой работы</text>
+	</string>
+	<string id="toolkit_advanced_description">
+		<text>В этом ящике находится набор различных инструментов и других предметов для проведения точной модификации оружия и брони. Лишь техник сможет найти им эффективное применение.</text>
+	</string>
+	<string id="toolkit_expert">
+		<text>Инструменты для калибровки</text>
+	</string>
+	<string id="toolkit_expert_description">
+		<text>В этом ящике находится набор сложного оборудования и приспособлений для выполнения наиболее сложных работ по тонкой настройке оружия и брони. Лишь техник сможет найти им эффективное применение.</text>
+	</string>
+	
+	<!-- Flash Drives -->
+	<string id="flash_up_full_l85_name">
+		<text>Флешка с данными об штурмовой винтовке ИЛ86</text>
+	</string>
+	<string id="flash_up_full_l85_descr">
+		<text>Флеш-накопитель со всеми техническими данными по модернизации штурмовой винтовки ИЛ86.</text>
+	</string>
+	<string id="flash_up_full_svu_name">
+		<text>Флешка с данными о снайперских винтовках серии СВ</text>
+	</string>
+	<string id="flash_up_full_svu_descr">
+		<text>Флеш-накопитель с полными техническими данными по модернизации снайперских винтовок серии СВ.</text>
+	</string>
+	<string id="flash_up_full_chaser13_name">
+		<text>Флешка с данными о боевых дробовиках</text>
+	</string>
+	<string id="flash_up_full_chaser13_descr">
+		<text>Флеш-накопитель с техническими данными по модернизации дробовика «Чейзер-13».</text>
+	</string>
+	<string id="flash_up_full_mg_name">
+		<text>Флешка с данными о пулемётных системах</text>
+	</string>
+	<string id="flash_up_full_mg_descr">
+		<text>Флеш-накопитель со всеми техническими данными по модернизации различных пулемётных систем.</text>
+	</string>
+	<string id="flash_up_full_seva_name">
+		<text>Флешка с данными о костюмах с замкнутой системой дыхания</text>
+	</string>
+	<string id="flash_up_full_seva_descr">
+		<text>Флеш-накопитель со всеми техническими данными по модернизации защитных костюмов с замкнутым циклом дыхания.</text>
+	</string>
+	<string id="flash_up_full_exo_name">
+		<text>Флешка с данными о внешних системах боевой поддержки</text>
+	</string>
+	<string id="flash_up_full_exo_descr">
+		<text>Флеш-накопитель со всеми техническими данными по модернизации внешних систем боевой поддержки.</text>
+	</string>
+	<string id="flash_up_full_g36_name">
+		<text>Флешка с данными о современных штурмовых винтовках</text>
+	</string>
+	<string id="flash_up_full_g36_descr">
+		<text>Флеш-накопитель со всеми техническими данными по модернизации штурмовой винтовки ГП37.</text>
+	</string>
+	<string id="flash_up_full_fn2000_name">
+		<text>Фleшка с данными о перспективных штурмовых комплексах</text>
+	</string>
+	<string id="flash_up_full_fn2000_descr">
+		<text>Флеш-накопитель с полными техническими данными по модернизации интегрированного штурмового комплекса ФТ-200М.</text>
+	</string>
+	
+	<string id="flash_up_part_elec_stab_name">
+		<text>Флешка с данными об электронных системах стабилизации</text>
+	</string>
+	<string id="flash_up_part_elec_stab_descr">
+		<text>Флеш-накопитель с техническими данными об электронной системе стабилизации для повышения кучности стрельбы.</text>
+	</string>
+	<string id="flash_up_part_shotgun_barrel_name">
+		<text>Флешка с данными о стволах для дробовиков</text>
+	</string>
+	<string id="flash_up_part_shotgun_barrel_descr">
+		<text>Флеш-накопитель с информацией о доработке и доводке стволов гладкоствольных ружей.</text>
+	</string>
+	<string id="flash_up_part_servomotor_name">
+		<text>Флешка с данными о модернизации сервоприводов</text>
+	</string>
+	<string id="flash_up_part_servomotor_descr">
+		<text>Флеш-накопитель со всеми техническими данными по доработке сервомоторов для повышения их эффективности.</text>
+	</string>
+	<string id="flash_up_part_tunder_barrel_name">
+		<text>Фleшка с данными о подгонке ствола под глушитель</text>
+	</string>
+	<string id="flash_up_part_tunder_barrel_descr">
+		<text>Флеш-накопитель с информацией по доработке встроенного гранатомётного комплекса для возможности установки глушителя.</text>
+	</string>
+	<string id="flash_up_part_tunder_mech_name">
+		<text>Флешка с данными об устройстве внутренних механизмов штурмового комплекса</text>
+	</string>
+	<string id="flash_up_part_tunder_mech_descr">
+		<text>Флеш-накопитель с информацией о безопасной модернизации внутренних механизмов интегрированного штурмового комплекса.</text>
+	</string>
+	<string id="flash_up_part_val_name">
+		<text>Флешка с данными об устройстве специального бесшумного оружия</text>
+	</string>
+	<string id="flash_up_part_val_descr">
+		<text>Флеш-накопитель с информацией о безопасной доработке внутренних механизмов специального бесшумного автомата.</text>
+	</string>
+	<string id="flash_up_part_military_armor_name">
+		<text>Флешка с данными о тяжёлом армейском бронировании</text>
+	</string>
+	<string id="flash_up_part_military_armor_descr">
+		<text>Флеш-накопитель с информацией о правильной установке армейских бронепластин на защитный костюм.</text>
+	</string>
+	<string id="flash_up_part_shotgun_striker_name">
+		<text>Флешка с данными об ударно-спусковых механизмах дробовиков</text>
+	</string>
+	<string id="flash_up_part_shotgun_striker_descr">
+		<text>Флеш-накопитель с данными о различных вариантах доработки УСМ гладкоствольного оружия.</text>
+	</string>
+	<string id="flash_up_part_anomaly_armor_name">
+		<text>Флешка с данными об аномалестойких покрытиях</text>
+	</string>
+	<string id="flash_up_part_anomaly_armor_descr">
+		<text>Флеш-накопитель с данными о нанесении и составе составов для защиты брони от аномальных воздействий.</text>
+	</string>
+	<string id="flash_up_part_g36_name">
+		<text>Флешка с данными о современных штурмовых системах</text>
+	</string>
+	<string id="flash_up_part_g36_descr">
+		<text>Флеш-накопитель с информацией о безопасной доработке внутренних механизмов штурмовой винтовки ГП37.</text>
+	</string>
+</string_table>

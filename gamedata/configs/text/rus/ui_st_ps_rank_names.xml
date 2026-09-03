@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="bandit_experienced_name">
+		<text>Bandit, skilled</text>
+	</string>
+	<string id="bandit_master_name">
+		<text>Bandit, pro</text>
+	</string>
+	<string id="bandit_novice_name">
+		<text>Bandit, tyro</text>
+	</string>
+	<string id="bandit_veteran_name">
+		<text>Bandit, master</text>
+	</string>
+	<string id="bloodsucker_normal_name">
+		<text>Sub Bloodsucker</text>
+	</string>
+	<string id="bloodsucker_strong_name">
+		<text>Dark Bloodsucker</text>
+	</string>
+	<string id="bloodsucker_weak_name">
+		<text>Bloodsucker</text>
+	</string>
+	<string id="boar_normal_name">
+		<text>Grown Boar</text>
+	</string>
+	<string id="boar_strong_name">
+		<text>Mature Boar</text>
+	</string>
+	<string id="boar_weak_name">
+		<text>Young Boar</text>
+	</string>
+	<string id="cat_weak_name">
+		<text>Stray Cat</text>
+	</string>
+	<string id="chimera_weak_name">
+		<text>Juvenile Chimera</text>
+	</string>
+	<string id="controller_weak_name">
+		<text>Controller</text>
+	</string>
+	<string id="dog_normal_name">
+		<text>Rat Hound</text>
+	</string>
+	<string id="dog_strong_name">
+		<text>Albino Dog</text>
+	</string>
+	<string id="dog_weak_name">
+		<text>Wild Dog</text>
+	</string>
+	<string id="dolg_experienced_name">
+		<text>Duty, soldier</text>
+	</string>
+	<string id="dolg_master_name">
+		<text>Duty, elite</text>
+	</string>
+	<string id="dolg_novice_name">
+		<text>Duty, recruit</text>
+	</string>
+	<string id="dolg_veteran_name">
+		<text>Duty, veteran</text>
+	</string>
+	<string id="ecolog_experienced_name">
+		<text>Scientist, learned</text>
+	</string>
+	<string id="ecolog_master_name">
+		<text>Scientist, professor</text>
+	</string>
+	<string id="ecolog_novice_name">
+		<text>Scientist, assistant</text>
+	</string>
+	<string id="decolog_veteran_name">
+		<text>Scientist, doctor</text>
+	</string>
+	<string id="flesh_normal_name">
+		<text>Forest Flesh</text>
+	</string>
+	<string id="flesh_strong_name">
+		<text>Swamp Flesh</text>
+	</string>
+	<string id="flesh_weak_name">
+		<text>Prairie Flesh</text>
+	</string>
+	<string id="freedom_experienced_name">
+		<text>Freedom, seedy</text>
+	</string>
+	<string id="freedom_master_name">
+		<text>Freedom, ace</text>
+	</string>
+	<string id="freedom_novice_name">
+		<text>Freedom, green</text>
+	</string>
+	<string id="freedom_veteran_name">
+		<text>Freedom, war-dog</text>
+	</string>
+	<string id="killer_experienced_name">
+		<text>Merc, grunt</text>
+	</string>
+	<string id="killer_master_name">
+		<text>Merc, old hand</text>
+	</string>
+	<string id="killer_novice_name">
+		<text>Merc, scout</text>
+	</string>
+	<string id="killer_veteran_name">
+		<text>Merc, elite</text>
+	</string>
+	<string id="military_experienced_name">
+		<text>Soldier, Sergeant</text>
+	</string>
+	<string id="military_master_name">
+		<text>Soldier, Captain</text>
+	</string>
+	<string id="military_novice_name">
+		<text>Soldier, Private</text>
+	</string>
+	<string id="military_veteran_name">
+		<text>Soldier, Lieutenant</text>
+	</string>
+	<string id="monolith_experienced_name">
+		<text>Monolithian, follower</text>
+	</string>
+	<string id="monolith_master_name">
+		<text>Monolithian, preacher</text>
+	</string>
+	<string id="monolith_novice_name">
+		<text>Monolithian, initiate</text>
+	</string>
+	<string id="monolith_veteran_name">
+		<text>Monolithian, devoted</text>
+	</string>
+	<string id="neutral_experienced_name">
+		<text>Stalker, trained</text>
+	</string>
+	<string id="neutral_master_name">
+		<text>Stalker, skilled</text>
+	</string>
+	<string id="neutral_novice_name">
+		<text>Stalker, lame</text>
+	</string>
+	<string id="neutral_veteran_name">
+		<text>Stalker, past master</text>
+	</string>
+	<string id="poltergeist_weak_name">
+		<text>Poltergeist</text>
+	</string>
+	<string id="pseudo_gigant_weak_name">
+		<text>Pseudogiant</text>
+	</string>
+	<string id="pseudodog_normal_name">
+		<text>Mature Pseudodog</text>
+	</string>
+	<string id="pseudodog_strong_name">
+		<text>Gray Pseudodog</text>
+	</string>
+	<string id="pseudodog_weak_name">
+		<text>Pseudodog</text>
+	</string>
+	<string id="psy_dog_weak_name">
+		<text>Dusky Pseudodog</text>
+	</string>
+	<string id="renegade_experienced_name">
+		<text>Renegade, deserter</text>
+	</string>
+	<string id="renegade_master_name">
+		<text>Renegade, traitor</text>
+	</string>
+	<string id="renegade_novice_name">
+		<text>Renegade, coward</text>
+	</string>
+	<string id="renegade_veteran_name">
+		<text>Renegade, rouge</text>
+	</string>
+	<string id="snork_normal_name">
+		<text>Scavenger Snork</text>
+	</string>
+	<string id="snork_strong_name">
+		<text>Man-eating Snork</text>
+	</string>
+	<string id="snork_weak_name">
+		<text>Snork</text>
+	</string>
+	<string id="tushkano_weak_name">
+		<text>Tushkano</text>
+	</string>
+	<string id="zombied_experienced_name">
+		<text>Zombified Stalker, experienced</text>
+	</string>
+	<string id="zombied_master_name">
+		<text>Zombified Stalker, expert</text>
+	</string>
+	<string id="zombied_novice_name">
+		<text>Zombified Stalker, rookie</text>
+	</string>
+	<string id="zombied_veteran_name">
+		<text>Zombified Stalker, veteran</text>
+	</string>
+</string_table>

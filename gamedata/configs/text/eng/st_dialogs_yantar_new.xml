@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_yan_deliver_part_1_descr">
+		<text>Deliver a Tushkano head</text>
+	</string>
+	<string id="st_yan_deliver_part_1_descr2">
+		<text>Stalker, we're looking to identify the origins of the Tushkano, and in order to do it, we need to study one. We're planning a cranial examination, so try and bring back a reasonlbly intact head please.</text>
+	</string>
+	<string id="st_yan_deliver_part_2_descr">
+		<text>Deliver a Chimera claw</text>
+	</string>
+	<string id="st_yan_deliver_part_2_descr2">
+		<text>Stalker, we're looking to understand the Chimera's claw, figure out how it is so solid and strong. If we can, it will mean the production of near invunerable body armour and other materials. Are you willing to help us?</text>
+	</string>
+	<string id="st_yan_deliver_part_3_descr">
+		<text>Deliver a Bloodsucker's tentacles</text>
+	</string>
+	<string id="st_yan_deliver_part_3_descr2">
+		<text>You have heard of the Bloodsucker? it's saliva contains a powerful anti-coagulant, and we want to discover it's formula, and reverse engineer it so that it can help heal wounds instead of inflicting them. Bring us the tentacles please?</text>
+	</string>
+	<string id="st_yan_deliver_part_4_descr">
+		<text>Deliver a Boar's hoof</text>
+	</string>
+	<string id="st_yan_deliver_part_4_descr2">
+		<text>Do you know the humble mutant you know as the Boar contains a chemical in it's hooves that forms a key ingerdient of the antiradion mediaction you use? Anyway, our stocks of this chemical are running low, and we need more to make more antiradtion drugs. Simple? Bring us a hoof - just one will suffice.</text>
+	</string>
+	<string id="st_yan_deliver_part_5_descr">
+		<text>Deliver a Flesh eye</text>
+	</string>
+	<string id="st_yan_deliver_part_5_descr2">
+		<text>We know the humble Flesh evolved from domesticated pigs, but much still eludes us. We've become interested in it's eyes after recieving a curious behavoural report. Bring us back one, will you?</text>
+	</string>
+	<string id="st_yan_deliver_part_6_descr">
+		<text>Deliver a Snork's leg</text>
+	</string>
+	<string id="st_yan_deliver_part_6_descr2">
+		<text>Do you know how Snorks jump so well? They contain powerful tendons in their legs, and these we want to study. What? You don't know what tendons are? Basically, their natural rubber bands, forming inside your body, mainly in fingers and toes. Anyway, bring us back the leg of one, either leg will do, we're not fussed.</text>
+	</string>
+	
+	<string id="st_yan_deliver_art_1_descr">
+		<text>Deliver a Spring artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_1_descr2">
+		<text>Stalker, have you heard of the Spring artifact? No, well it is fairly recently discovered. Find one for us and bring it back so we can study it's properties. It looks like a shell, except it's brown, not blue, so it shouldn't hard to spot.</text>
+	</string>
+	<string id="st_yan_deliver_art_2_descr">
+		<text>Deliver a Battery artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_2_descr2">
+		<text>You know of the Battery artifact? Well, there is a rare form of it, and we want one to look at it, find out what makes it form differently. So, you up for the task?</text>
+	</string>
+	<string id="st_yan_deliver_art_3_descr">
+		<text>Deliver a Pellicle artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_3_descr2">
+		<text>The Pellicle artifact, such a wonder of the Zone. The largest artifact known to exist, and virtually no negative properties. And it's positive benefits - it's ability to absorb and neutralise chemical gases is astounding. Bring us one please.</text>
+	</string>
+	<string id="st_yan_deliver_art_4_descr">
+		<text>Deliver the artifact known as Mama's Beads</text>
+	</string>
+	<string id="st_yan_deliver_art_4_descr2">
+		<text>The artifact called Mama's Beads has been known to produce energy emissions - what?, no, not the ones the Zone produces. Anyway, these emissions cause wounds to heal at a much quicker rate. How these emissions affect the body is not fully understood. If you're up to it, we could use one to study.</text>
+	</string>
+	<string id="st_yan_deliver_art_5_descr">
+		<text>Deliver the Firefly artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_5_descr2">
+		<text>The rare artifact Firefly has been known to heal wounds of any nature, according to Stalker reports. Bring people back from the brink of death, reattach or regrow lost limbs, and other such things. We want to examine one in a controlled Labratory experiment.</text>
+	</string>
+	<string id="st_yan_deliver_art_6_descr">
+		<text>Deliver the Soul artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_6_descr2">
+		<text>Stalker, we're looking to do an experiment on a Soul artifact. It's a regular experiment, but we need one as soon as possible. Interested?</text>
+	</string>
+	<string id="st_yan_deliver_art_7_descr">
+		<text>Deliver the Thorn artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_7_descr2">
+		<text>The Thorn artifact can somehow reduce radiation in the body. It does however, lower the bodies capacity to heal wounds. We want figure out how it reduces radiation without causing excessive blood loss like the artifact.</text>
+	</string>
+</string_table>

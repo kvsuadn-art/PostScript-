@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="gar_bandit_leader_join_main_0">
+		<text>Ну так что, примешь меня к себе и пацанам? Возьмёшь в банду?</text>
+	</string>
+	<string id="gar_bandit_leader_join_main_2">
+		<text>Ты кто вообще такой? И чё ты тут забыл? Ты ж сопляк бесхребетный, имя твоё никак и звать тебя ничем. Вали отсюда, пока я пацанам не сказал тебя «свалить». Вот наработаешь авторитет — тогда и перетрём.</text>
+	</string>
+	
+	<string id="gar_bandit_actor_robber_0">
+		<text>Так, время платить по счетам. Гони хабар.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_1">
+		<text>Ладно, вот всё лишнее, что у меня есть.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_2">
+		<text>Гуд. А теперь сквозани отсюда. Я позже вернусь — смотри, чтоб было с чего снова поживиться.</text>
+	</string>
+	<string id="gar_bandit_actor_robber_3">
+		<text>Ладно, ладно, сделаю.</text>
+	</string>
+	
+	<string id="gar_digger_leader_killer_dogs_0">
+		<text>Что-то случилось?</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_0">
+		<text>Да последние два дня на нас кто-то нападает. Только один парень живым вернулся, да и тот не разглядел, кто это был, только что точно не человек. И всё в одном месте — на нашей раскопке. Беда в том, что пока эта тварь там шастает, мы днём-то копать боимся, хоть нападает она только в темноте. Разберёшься с ней для нас?</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_1">
+		<text>Без проблем, быстро оборачиваюсь.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_1_0">
+		<text>Отлично! Дуй к поваленному крану у болот. О нём уже прознали и стороной обходят. Ищи после заката — они только в темноте вылезают.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_1_2">
+		<text>Не, я сегодня умирать не планировал.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_2">
+		<text>Да не, ничего такого, о чём тебе стоит переживать.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_3">
+		<text>Я готов разобраться с твоими монстрами.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_done_0">
+		<text>Твари мертвы. Какая-то стая бешеных собак оказалась.</text>
+	</string>
+	<string id="gar_digger_leader_killer_dogs_done_1">
+		<text>Вот и ладно, держи награду. Негусто, конечно, но забирай. А мы всем сталкерам, кто мимо проходить будет, расскажем, как ты нам помог.</text>
+	</string>
+	
+	<string id="st_gar_flash_up_full_seva_descr">
+		<text>Найти флешку: СЕВА</text>
+	</string>
+	<string id="st_gar_flash_up_full_seva_descr2">
+		<text>Слышь, братуха... передай-ка вон ту водочку... ага, эту. Йога тут на днях притащил пару тех модных чёрных костюмчиков с куполом вместо шлема. Короче *ик*, хочет, чтоб я их под наших пацанов доработал. А я в них ни бельмеса не соображаю. Поможешь? А то я, кажется, встать уже не могу... Подай ещё вон ту бутылку, а?</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_descr">
+		<text>Найти флешку: Экзоскелет</text>
+	</string>
+	<string id="st_gar_flash_up_full_exo_descr2">
+		<text>Слушай, мне нужны данные по экзоскелету... Я нам такой экзоскелет соберу — в Зоне лучшего не виде... *ик*... не видели!</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_descr">
+		<text>Найти флешку: GP37</text>
+	</string>
+	<string id="st_gar_flash_up_full_g36_descr2">
+		<text>Глянь на этот ствол. Немцы делали. Короче, как и всё у немцев — чёрт ногу сломит, прямо как в ихних войнах. Принеси мне чертежи к этой хреновине, а то я для начала даже предохранитель найти не могу.</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_descr">
+		<text>Найти флешку: Гром-3014</text>
+	</string>
+	<string id="st_gar_flash_up_part_tunder_descr2">
+		<text>Наши пацаны наконец разжились теми навороченными стволами со встроенным подствольником, как у долговцев. Вот только внутри там полная каша — сам толком не разберусь. Достань чертежи, а? Ох, башка-то как трещит... Подай бутылку вон ту, а?</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_descr">
+		<text>Найти флешку: Армейский бронежилет</text>
+	</string>
+	<string id="st_gar_flash_up_part_military_armor_descr2">
+		<text>Слышь, разжились мы тут тяжелой армейской броней, а как её ставить — хрен его знает. Сложнее этого у нас тут только яйца Йоги да лом, которым Титан одиночек по башке охаживает. А на костюмы их лепить как-то надо. Поможешь? Эй! Сенька, от вали от моей водки! Сходи к Борову да попроси ещё, если надо!</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_descr">
+		<text>Найти флешку: Ударники дробовика</text>
+	</string>
+	<string id="st_gar_flash_up_part_shotgun_striker_descr2">
+		<text>Э-э, дробовики... так, дай сообразить... да, с дробовиками без проблем соображу. Погоди, а где страница-то? Эй! Сенька! Се-енька-а! Сень! Тьфу, ленивая рожа, опять дрыхнет. Похоже, спер мою страницу про ударники для дробовиков, тут её нету. Сгоняешь за ней? Или новую мне найди.</text>
+	</string>
+</string_table>

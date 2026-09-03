@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="dmn_intro_enemy">
+		<text>А?</text>
+	</string>
+
+	<string id="dmn_intro_stalker_escape_1">
+		<text>Привет, сталкер! Добро пожаловать на Кордон!</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_2">
+		<text>Ого, свежее лицо в наших краях. Рад знакомству.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_3">
+		<text>Привет, дружище. Смотри в оба — вояки совсем распоясались, постоянно тут шастают.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_4">
+		<text>Тоже решил передохнуть на окраинах Зоны? Понимаю, сам такой.</text>
+	</string>
+	<string id="dmn_intro_stalker_escape_5">
+		<text>Здорово, брат! Добро пожаловать в наши края!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_1">
+		<text>Привет, брат!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_2">
+		<text>Рад видеть брата по оружию!</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_3">
+		<text>Есть вопрос? Я готов помочь.</text>
+	</string>
+	<string id="dmn_intro_stalker_generic_4">
+		<text>Эй, а тебя какими судьбами сюда занесло?</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_1">
+		<text>Не лучшее время ты выбрал, чтобы заявиться на Свалку, брат.</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_2">
+		<text>Здорово, братуха! Знал бы ты, как меня достали эти бандитские рожи...</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_3">
+		<text>Тоже в этих кучах хлама копаешься? Ну, удачи тебе, дружище.</text>
+	</string>
+	<string id="dmn_intro_stalker_garbage_4">
+		<text>Привет! Хабаром не поделишься?</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_1">
+		<text>Остерегайся зомби со стороны завода — их там просто хренова туча!</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_2">
+		<text>Фух, мужик. Ты так похож на зомбаря, что я чуть не снёс тебе башку на месте.</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_3">
+		<text>Приветствуем на озере Янтарь! Можешь поймать тут пару тварей... Ха-ха! Оценил каламбур?</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_4">
+		<text>Добро пожаловать на Янтарь, брат.</text>
+	</string>
+	<string id="dmn_intro_stalker_yantar_5">
+		<text>Ты вовремя, сталкер — твоя помощь нам бы сейчас очень пригодилась.</text>
+	</string>
+	
+	<string id="dmn_intro_bandit_garbage_1">
+		<text>Как оно?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_2">
+		<text>И тебе не болеть. Есть чё спросить?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_3">
+		<text>Кого я вижу! Свалка рада всем, кроме, ну... всякого мусора.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_4">
+		<text>Опа-ча, рад видеть, что ты один и без хвоста.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_5">
+		<text>Отвали, фраер!</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_6">
+		<text>Здорово, мужик! Это ж в какую жэ ты влип, что сюда припёрся?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_7">
+		<text>Вот это да, ни хрена себе! Ты откуда такой вырисовался, браток? Присаживайся, перетирём.</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_8">
+		<text>Засунь свои манеры себе в задницу и давай ближе к делу! Чё надо?</text>
+	</string>
+	<string id="dmn_intro_bandit_garbage_9">
+		<text>Здорово, братан. Ты чё в наших краях забыл? Давай, выкладывай.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_1">
+		<text>Чё кого, мужик?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_2">
+		<text>Слышь, закурить не найдётся?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_3">
+		<text>Как дела?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_4">
+		<text>Потише на поворотах, пацан. Чё ищешь?</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_5">
+		<text>Опа-ча, рад видеть, что ты один и без хвоста.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_6">
+		<text>И тебе не кашлять. Подходи ближе да расскажи чё-нибудь новенькое.</text>
+	</string>
+	<string id="dmn_intro_bandit_generic_7">
+		<text>Етишкин корень! Свежее мясо в Зоне! Чувствуй себя как дома, амиго!</text>
+	</string>
+	
+	<string id="dmn_intro_dolg_agroprom_1">
+		<text>Здравствуй, друг. Советую держать ухо востро. Когда на тебя нападают по три-четыре раза за ночь — это совсем не весело.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_2">
+		<text>Не лучшее время для визита, сталкер. У нас тут самая настоящая война.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_3">
+		<text>Эй! Смотри в оба, местное мутачьё очень хитрое: стоит зазеваться — и всё, отбегался!</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_4">
+		<text>Будь осторожен и держись главных дорог. Один неверный шаг — и какая-нибудь тварь схавает тебя на завтрак.</text>
+	</string>
+	<string id="dmn_intro_dolg_agroprom_5">
+		<text>Привет, сталкер. Добро пожаловать на Агропром.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_1">
+		<text>Привет, сталкер. Если ты здесь, чтобы бороться со порождениями Зоны, то «Долг» — твой союзник.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_2">
+		<text>Эй! Вступай в «Долг» — фракцию для настоящих мужчин.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_3">
+		<text>Здравствуй, друг. Всегда рад видеть брата-сталкера.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_4">
+		<text>Как оно? Прими наш душевный украинский привет!</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_5">
+		<text>Здорово, брат! Если хочешь спросить что-то — спрашивай, не стесняйся.</text>
+	</string>
+	<string id="dmn_intro_dolg_generic_6">
+		<text>...И что я тебе говорил насчёт... Ой, извини, сталкер, думал, ты из моего отряда. В общем, че надо-то?</text>
+	</string>
+	
+	<string id="dmn_intro_freedom_darkvalley_1">
+		<text>Добро пожаловать на земли свободных сталкеров!</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_2">
+		<text>Если ты впервые в Тёмной долине, загляни на базу «Свободы». Вот где настоящая движуха, особенно когда техник с Ашотом начинать спорить!</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_3">
+		<text>Привет, сталкер. Заходи на базу, отдохни, расслабься.</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_4">
+		<text>Добро пожаловать в Тёмную долину. Вопреки названию, тут не так уж и темно, да и вообще это самое безопасное место в Зоне после Кордона, конечно.</text>
+	</string>
+	<string id="dmn_intro_freedom_darkvalley_5">
+		<text>Хочешь присоединиться к действительно свободным людям? Ты пришёл по адресу.</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_1">
+		<text>Йо, брат!</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_2">
+		<text>Приветствуем, друг!</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_3">
+		<text>Есть вопрос ко мне, сталкер?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_4">
+		<text>Ищешь совета?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_5">
+		<text>Приветствую, друг.</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_6">
+		<text>Чем могу помочь?</text>
+	</string>
+	<string id="dmn_intro_freedom_generic_7">
+		<text>Ищешь свободной жизни? Вступай в «Свободу», у нас все равны.</text>
+	</string>
+	
+	<string id="dmn_intro_csky_marsh_1">
+		<text>Добро пожаловать на Болота!</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_2">
+		<text>Послушай моего совета — берегись трясины и монстров.</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_3">
+		<text>О, новое лицо в наших краях!</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_4">
+		<text>Поверь моему опыту, друг: держись камышей.</text>
+	</string>
+	<string id="dmn_intro_csky_marsh_5">
+		<text>Если хочешь выбраться с этих болот, сначала найди проводника.</text>
+	</string>
+	<string id="dmn_intro_csky_generic_1">
+		<text>Рад тебя видеть!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_2">
+		<text>Приветствую!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_3">
+		<text>Привет!</text>
+	</string>
+	<string id="dmn_intro_csky_generic_4">
+		<text>Да?</text>
+	</string>
+	<string id="dmn_intro_csky_generic_5">
+		<text>Нужна помощь?</text>
+	</string>
+	<string id="dmn_intro_csky_generic_6">
+		<text>Могу я тебе чем-то помочь?</text>
+	</string>
+	
+	<string id="dmn_intro_ecolog_yantar_1">
+		<text>Ищешь работу? Загляни в бункер.</text>
+	</string>
+	<string id="dmn_intro_ecolog_yantar_2">
+		<text>Сделай одолжение, держись подальше от завода.</text>
+	</string>
+	<string id="dmn_intro_ecolog_yantar_3">
+		<text>Я бы с радостью поговорил, но сейчас я слишком занят.</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_1">
+		<text>Опять ты? Что на этот раз?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_2">
+		<text>Пламенный привет тебе, сталкер.</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_3">
+		<text>Здравствуйте, молодой человек!</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_4">
+		<text>Здравствуйте! Что вам угодно?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_5">
+		<text>Хочешь поторговать или устроиться на работу?</text>
+	</string>
+	<string id="dmn_intro_ecolog_generic_6">
+		<text>Тебя, вероятно, интересует информация. Постараюсь ответить на твои вопросы, насколько смогу.</text>
+	</string>
+	
+	<string id="dmn_info_0">
+		<text>Можешь мне кое-что рассказать?</text>
+	</string>
+	<string id="dmn_info_1">
+		<text>Конечно, что именно ты хочешь знать?</text>
+	</string>
+	<string id="dmn_info_2">
+		<text>Забудь. Извини, что зря потратил твоё время.</text>
+	</string>
+	<string id="dmn_info_anomaly">
+		<text>Где здесь поблизости аномалии?</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_1">
+		<text>Их тут не так уж и много. На север от Деревни новичков есть одна крупная — услышишь раньше, чем увидишь, счётчик Гейгера просто зашкаливать начнёт!</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_2">
+		<text>Говорят, на востоке есть одна, возле старого электровоза. Но я её так и не нашёл.</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_3">
+		<text>Да уж, сам чуть в одну не вляпался. Шёл по дороге на Свалку, к северу от Старой фермы, через деревья, огибая радиацию, и едва не впёрся в поле «Каруселей». Слава богу, детектор сработал.</text>
+	</string>
+	<string id="dmn_info_escape_anomaly_4">
+		<text>Извини, крупных аномальных скоплений тут не знаю, но пара мелких точно найдётся.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_1">
+		<text>Концлагерь — это одна сплошная аномалия. Не дай бог туда попасть, яйца отсохнут. А я ещё детей планирую завести, когда выберусь из Зоны на Большую землю.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_2">
+		<text>Болото — это огромная химическая аномалия, мимо не пройдёшь: ищи гигантские зелёные облака. Как туман. Только не дыши этой дрянью, лёгкие нафиг разъест.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_3">
+		<text>К северу от дороги на Агропром, в лощине, есть целое поле «Электр». Я пытался туда заглянуть, но у меня голова раскалываться начала уже через пару секунд, так что я убрался оттуда. Не стоит оно того.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_4">
+		<text>Есть тут низина, к югу от болота. Там столько гравитационных аномалий, что болт бросишь — обязательно десяток заденешь. Детектор артефактов верещал как резаный, но подобраться ближе я так и не смог. Эх, жаль.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_5">
+		<text>Ха! Ну ты выдал, братуха. Тут отлить негде, чтобы в аномалию не попасть. Просто держись подальше от «Жарок» да «Электр», и твои драгоценности останутся в целости.</text>
+	</string>
+	<string id="dmn_info_garbage_anomaly_6">
+		<text>Да тут всё место — одна сплошная аномалия. Налево глянешь — аномалия, направо — аномалия, под ноги посмотришь — сапоги уже разъедает. Понимаешь, к чему я?</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_1">
+		<text>За ангаром дяди Яра есть огромная «Воронка». Её оттуда отлично слышно. Да и счётчик Гейгера заливается. Место жаркое, но куш того стоит.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_2">
+		<text>Весь южный комплекс базы «Свободы» — это фонящая ловушка, но мужики говорят, что видели там аномалии, так что и артефакты могут быть.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_3">
+		<text>К югу от Старой фабрики, на востоке, должно быть аномальное поле, но я эту хреновину так и не нашёл.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_4">
+		<text>Не знаю, но на юге Долины в земле образовались трещины. Наши разведчики говорили, что там жарища адская, будто рядом с вулканом стоишь.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_5">
+		<text>Я слышал, кто-то однажды нашёл «Колобок» возле цистерн.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_6">
+		<text>А тебе зачем знать про местные аномалии? На привычных тропах их нет, так что не паришься.</text>
+	</string>
+	<string id="dmn_info_darkvalley_anomaly_7">
+		<text>Извини, рад бы помочь, но я с местными аномалиями, увы, не знаком.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_1">
+		<text>Старый завод, двухэтажное здание. Там полно «Электр». Но и голова там раскалывается будь здоров.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_2">
+		<text>Болото кишит химическими аномалиями... и кровососами. Берегись этих ублюдков.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_3">
+		<text>Куча гравитационных аномалий перекрывает дорогу к болотам. Они заходят довольно далеко на территорию Агропрома.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_4">
+		<text>Да, есть тут небольшое поле сразу к северу от базы «Долга». Его легко заметить: земля там дыбом встала, будто когти. Пара гравитационных аномалий имеется.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_5">
+		<text>Мне говорили, что где-то в лесу есть аномалия. Но где именно — без понятия.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_6">
+		<text>Местные аномалии? Ха! Да Агропром ими просто усыпан — и одиночными, и целыми скоплениями. Смотри под ноги.</text>
+	</string>
+	<string id="dmn_info_agroprom_anomaly_7">
+		<text>Мне с мутантами проблем хватает, ещё с аномалиями не хватало возиться. Отвали.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_1">
+		<text>Да, болото прямо у бункера. Мимо точно не пройдёшь.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_2">
+		<text>Даже не знаю... Попробуй поискать на заводе на севере, если не боишься сам в зомбаря превратиться.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_3">
+		<text>Есть одно поле прямо к северу от завода, за его территорией.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_4">
+		<text>Попробуй на заводе, хотя я бы не рекомендовал.</text>
+	</string>
+	<string id="dmn_info_yantar_anomaly_5">
+		<text>Тут выжить среди всех этих зомби — уже задача, так что искать аномалии времени у меня просто не было.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_1">
+		<text>Видел ночью зелёное свечение на болоте возле армейской базы, но ближе подходить не стал.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_2">
+		<text>Там на северо-западе, в скалах, полно «Электр».</text>
+	</string>
+	<string id="dmn_info_military_anomaly_3">
+		<text>Извини, мне бы от вояк да от монолитовских психов подальше держаться. Не до аномалий сейчас.</text>
+	</string>
+	<string id="dmn_info_military_anomaly_4">
+		<text>Ты шутишь? Мы тут посреди зоны боевых действий, а ты меня про аномалии спрашиваешь? Ты из ума выжил, мужик?</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_1">
+		<text>Извини, не могу сказать.</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_2">
+		<text>Я и сам в поиске. Дела клана.</text>
+	</string>
+	<string id="dmn_info_marsh_anomaly_3">
+		<text>Ты до сих пор не понял? Все эти болота — одна сплошная аномалия.</text>
+	</string>
+	<string id="dmn_info_limansk_anomaly_1">
+		<text>Что? Тут война идёт, а ты по аномалиям собрался шляться? Чтоб ты в одну из них провалился и сдох как трус!</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="sim_deliver_item">
+		<text>Доставить предмет</text>
+	</string>
+	
+	<string id="ps_tm_task_0">
+		<text>Работа для меня найдётся?</text>
+	</string>
+	<string id="ps_tm_task_1">
+		<text>Да, конечно! Вот кое-что из того, что мне нужно сделать.</text>
+	</string>
+	<string id="ps_tm_task_2">
+		<text>Идёт, я в деле.</text>
+	</string>
+	<string id="ps_tm_task_3">
+		<text>Что-то не хочется мне сейчас за такое браться.</text>
+	</string>
+	<string id="ps_tm_about_task_0">
+		<text>Я по поводу задания.</text>
+	</string>
+	<string id="ps_tm_about_task_1">
+		<text> По какому именно?</text>
+	</string>
+	<string id="ps_tm_complete_task_0">
+		<text>Я выполнил твоё поручение.</text>
+	</string>
+	<string id="ps_tm_complete_task_1">
+		<text>Отлично! Держи заслуженную награду.</text>
+	</string>
+	<string id="ps_tm_cancel_task_0">
+		<text>Я хочу отказаться от этого задания.</text>
+	</string>
+	<string id="ps_tm_cancel_task_1">
+		<text>Жаль. На твоей репутации это скажется не лучшим образом.</text>
+	</string>
+	<string id="ps_tm_leave_0">
+		<text>Да так, ничего... Я передумал.</text>
+	</string>
+</string_table>

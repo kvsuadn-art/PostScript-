@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="tips_sleep_zone">
+		<text>Sleep ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tips_agroprom_undeground2">
+		<text>Can't get any further</text>
+	</string>
+	<string id="mar_disabled_level_changer">
+		<text>You cannot leave the marshes as a member of Clear Sky.</text>
+	</string>
+	<string id="tips_lower_bridge">
+		<text>Lower Bridge ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tips_stop_bridge">
+		<text>Stop Bridge ($$ACTION_USE$$)</text>
+	</string>
+	
+	<string id="ui_ps_sleep_start">
+		<text>Sleep Now</text>
+	</string>
+	<string id="ui_ps_sleep_cancel">
+		<text>Rest Later</text>
+	</string>
+	<string id="ui_ps_sleep_info">
+		<text>Rest for a while?</text>
+	</string>
+</string_table>

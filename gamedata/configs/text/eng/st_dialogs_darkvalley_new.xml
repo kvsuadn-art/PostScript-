@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="val_comendant_about_freedom_0">
+		<text>Can I join Freedom?</text>
+	</string>
+	<string id="val_comendant_about_freedom_1">
+		<text>Go see Chekhov in his office, he will decide whether Freedom needs you or not.</text>
+	</string>
+	<string id="val_comendant_about_news_0">
+		<text>What's new?</text>
+	</string>
+	<string id="val_comendant_about_news_1">
+		<text>Not a lot, fairly quiet around here. Occasional stray mutant shot cause the dumb thing wandered too close to the base. One of guys found a new artifact. Pretty much the same story every day round here.</text>
+	</string>
+	<string id="val_freedom_comendant_hello_dialog_21">
+		<text>Hi friend, looking for a free life?</text>
+	</string>
+	
+	<string id="val_freedom_leader_join_main_2">
+		<text>Maybe. But I can't let you join right now. Don't ask why...chalk it up to superstition. But time till come when we'll be ready to welcome you with open arms! I'll contact you then. I hope you don't change your mind about joining us by then.</text>
+	</string>
+	
+	<string id="val_leader_leave_freedom_0">
+		<text>I hate to say this, but life in Freedom just doesn't seem free.</text>
+	</string>
+	<string id="val_leader_leave_freedom_1">
+		<text>What?! Come on, sit down, lets talk this over. Whats the main problem?</text>
+	</string>
+	<string id="val_leader_leave_freedom_2">
+		<text>I don't know, life in Freedom isn't exactly what I'd been epecting. I just don't feel entirely at home here.</text>
+	</string>
+	<string id="val_leader_leave_freedom_3">
+		<text>Too bad... Consider hanging around for a while, talk to some of the others, you might just need a little more time to find your true Freedom around here. I know I did.</text>
+	</string>
+	<string id="val_leader_leave_freedom_4_0">
+		<text>I know, but I might just need some time to myself.</text>
+	</string>
+	<string id="val_leader_leave_freedom_4_1">
+		<text>I understand. The life of a Freedom member and a Free Stalker are two different things, although both are about being free. If you ever decide to come back, you know where we are. You can keep your kit we gave you, saves us having to issue you new stuff.</text>
+	</string>
+	<string id="val_leader_leave_freedom_4_2">
+		<text>Thanks, I'll remember that.</text>
+	</string>
+	<string id="val_leader_leave_freedom_5_0">
+		<text>Your right, I might just need a bit of time to adjust from the Free Stalker life to Freedom life.</text>
+	</string>
+	<string id="val_leader_leave_freedom_5_1">
+		<text>Glad we had this chat. I don't want any of my people thinking they aren't free enough. Nice to hear you're going to stay for a while longer, might help you find your true calling here in Freedom.</text>
+	</string>
+	<string id="val_leader_leave_freedom_5_2">
+		<text>Thanks as well. Glad I got that off my chest. I feel much better now.</text>
+	</string>
+	
+	<string id="st_val_flash_up_full_svu_descr">
+		<text>Find the Flash Drive: SVU</text>
+	</string>
+	<string id="st_val_flash_up_full_svu_descr2">
+		<text>Hey Stalker. We recently got a load of SVU sniper rifles, and I was looking through my schematics folder, and I can't find anything on them. Wouldn't be surprised if Ashot's nicked it. Anyway, could you get me some data on this?</text>
+	</string>
+	<string id="st_val_flash_up_full_seva_descr">
+		<text>Find the Flash Drive: SEVA</text>
+	</string>
+	<string id="st_val_flash_up_full_seva_descr2">
+		<text>Whoa brother, we recently got some of those fancy closed Cuircuit suits, and Chekhov wants them modified to fit Freedom standards. Could you get me some data on the SEVA suits? If you do, I'll be able to modify yours the Freedom way.</text>
+	</string>
+	<string id="st_val_flash_up_full_m249_descr">
+		<text>Find the Flash Drive: Tactical RP-74</text>
+	</string>
+	<string id="st_val_flash_up_full_m249_descr2">
+		<text>Well, we've recently managed to get a small shipment of machine guns through the perimeter, and they're already in use. Their Russian made and designed, but they use the NATO ammo, which we have bucketloads of. But I know bugger all about machine guns. Help me out here, find me some data on these monsters!</text>
+	</string>
+	<string id="st_val_flash_up_part_elec_stab_descr">
+		<text>Find the Flash Drive: Electronic Stablization</text>
+	</string>
+	<string id="st_val_flash_up_part_elec_stab_descr2">
+		<text>I need some new upgrade info. I mean, I already have it, but it's old, and no more use now. I need newer intel on it. I'm looking for electronic stabilizers for rifles. Care to help an old man out?</text>
+	</string>
+	<string id="st_val_flash_up_part_servomotor_descr">
+		<text>Find the Flash Drive: Exoskeleton Servomotors</text>
+	</string>
+	<string id="st_val_flash_up_part_servomotor_descr2">
+		<text>You know what an exoskeleton is? Good, well, appearantly there is a way to modify the motors, make them more efficent. This info would be really handy for our boys. Care to try and find some info on this Stalker?</text>
+	</string>
+
+	<string id="st_val_deliver_part_1_descr">
+		<text>Deliver a Boar's hoof</text>
+	</string>
+	<string id="st_val_deliver_part_1_descr2">
+		<text>Hey Stalker. Me and some of the other commanders are having Boar stew for dinner tonight, and its my secret repice. Only they don't know about the stew yet, and I don't want to tip them off. Mind getting me some boar? A hoof should do nicely, plently of interesting flavours.</text>
+	</string>
+	<string id="st_val_deliver_part_2_descr">
+		<text>Deliver a Flesh eye</text>
+	</string>
+	<string id="st_val_deliver_part_2_descr2">
+		<text>The eye of the flesh contains quite a remarkable lens, or so one of my scientists tells me. Anyway, hes looking for a few more eyes to examine, or rather the lenses in them. He's looking to find a way to improve scope lens, which is better for our boys, and you if you decide to use a scope.</text>
+	</string>
+	<string id="st_val_deliver_part_3_descr">
+		<text>Deliver a Snork's leg</text>
+	</string>
+	<string id="st_val_deliver_part_3_descr2">
+		<text>One of my techs needs a snork leg to study. Says he wants to look at the tendon structure, see how it can jump so well, and then he goes off on a tnagent about a suit fitted with a light frame, springs and elastic bands. Can you get a foot so I can shut him up?</text>
+	</string>
+	
+	<string id="st_val_deliver_art_1_descr">
+		<text>Deliver a Pellicle artifact</text>
+	</string>
+	<string id="st_val_deliver_art_1_descr2">
+		<text>Recently a Lone Stalker came by here with some new and rare artifact - he said it was called a Pellicle. Anyway, he was off to Yantar to show it to the scientists there, and we didn't get a good look at it. So, we want one to look at. Find one, and it'll be worth your while.</text>
+	</string>
+	<string id="st_val_deliver_art_2_descr">
+		<text>Deliver a Crystal Thorn artifact</text>
+	</string>
+	<string id="st_val_deliver_art_2_descr2">
+		<text>There is a special form of the Thorn artifact, known as a Crystal Thorn. We want one to look at, study how it forms, and what makes it different exactly. They're bigger than a regular thorn, and slightly more greyish. They form in chemical anomalies, so that would be your best place to start.</text>
+	</string>
+	
+	<string id="st_val_deliver_weapon_1_descr">
+		<text>Deliver a GP37 rifle</text>
+	</string>
+	<string id="st_val_deliver_weapon_1_descr2">
+		<text>I've recieved reports that the Bandits have been arming themselves with a new 5.56mm assault rifle, some fairly modern one too. Intergrated scope, and quite reliable. We want one to test its capabilities, and its effectiveness. Find one and get us one fast before any of our boys get hurt by this thing. You'll be well rewarded for your troubles.</text>
+	</string>
+	<string id="st_val_deliver_weapon_2_descr">
+		<text>Deliver a FT-200M rifle</text>
+	</string>
+	<string id="st_val_deliver_weapon_2_descr2">
+		<text>I've heard rumours that Merc's are carrying some sort of new rifle. Intergrated scope and grenade launcher. Could you find out if the rumours are true? Bring back some proof please.</text>
+	</string>
+	
+</string_table>

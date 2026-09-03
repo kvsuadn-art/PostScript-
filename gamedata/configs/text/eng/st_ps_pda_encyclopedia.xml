@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="test_info_name">
+		<text>Test Encyclopedia Example</text>
+	</string>
+	<string id="test_info_descr">
+		<text>Test Encyclopedia Example description for the pda.</text>
+	</string>
+
+	<!-- locations-->	
+	<string id="location_agroprom_name">
+		<text>Location: Agroprom</text>
+	</string>
+	<string id="location_agroprom_name2">
+		<text>Agroprom Research Institute</text>
+	</string>
+	<string id="location_agroprom_descr">
+		<text>The Agroprom Research Institute. After the accident, the institute conducted research into the effects of agriculture on radiation affected soil, until 2008, when the institute was abandoned overnight. Duty moved in and set up base in the main institute not long after. There is an abandoned factory to the northeast of Duty base, no one know what its purpose was. There is supposed to be a network of underground tunnels, although the entrances are well hidden. There is a swamp to the north, and several roads to Yantar as well. Mutants have an unusually strong presence here, so most Stalkers tend to avoid it.</text>
+	</string>
+	
+	<string id="location_darkvalley_name">
+		<text>Location: Dark Valley</text>
+	</string>
+	<string id="location_darkvalley_name2">
+		<text>Dark Valley</text>
+	</string>
+	<string id="location_darkvalley_descr">
+		<text>The Dark Valley is anything but dark. Located to the east of the Garbage, the Dark Valley has several industrial complexes there, the northern most one currently being used as a base by Freedom. There is a network of underground tunnels throughout the Dark Valley, but they have been blocked off, and no one knows where they lead. Rumours also speak of a secret lab hidden somewhere within the Dark Valley. The Valley is relatively peaceful – anomalies are few, and so are the Mutants. A lot of rookie Stalkers detour via the Dark Valley on their trips deeper into the Zone, simply because of it's safety.</text>
+	</string>
+	
+	<string id="location_escape_name">
+		<text>Location: Cordon</text>
+	</string>
+	<string id="location_escape_name2">
+		<text>Cordon</text>
+	</string>
+	<string id="location_escape_descr">
+		<text>Cordon - the nickname of the area of the Zone to the South of the NPP. The area is quiet, relatively free of mutants and anomalies, and the Military presence is restricted to a few guard posts - except during a Spetsnaz raid or inspection. The area is home to a large number of Rookie Stalkers, who have infiltrated past the military perimeter. There is the Rookie Village, the southernmost Stalker camp in the Zone, and the first one encountered. There is a trader in the old Bomb shelter near the Village; it’s worth stopping by and seeing what he has. There is an old farmstead to the north of the collapsed bridge - Stalkers have set up a camp there. It’s a good place to spend the night. The Military control the main road leading deeper into the Zone; however, several side roads exist.</text>
+	</string>
+	
+	<string id="location_garbage_name">
+		<text>Location: Garbage</text>
+	</string>
+	<string id="location_garbage_name2">
+		<text>Garbage</text>
+	</string>
+	<string id="location_garbage_descr">
+		<text>The Garbage. It’s quite hard to find a bigger hive of villainy and scum anywhere else in the Zone except for the Garbage. After the first accident, everything that couldn't be decontaminated was left here. When Stalkers found and started salvaging the ancient junk, the Bandits set up a base in the old Train Depot, and started robbing Stalkers of the loot they had. The Bandits are essentially the criminal element of the Zone, and have the Garbage on a tight leash - No one gets in or without paying. It’s up to you if you want to pay in cash or blood. Stalkers have set up a small camp northeast of the Depot; however, all of them are in debt to the Bandits. Various factions try and take hold of parts of the garbage - the 'junk' which can be found in the trash, can be used to help obtain equipment and influence. The Garbage is the Zones crossroads, leading east to the Dark Valley, west to Agroprom, South to the Cordon, and North to the Rostok Bar, Military Warehouses, and a passage also exists leading to the southern Red Forest, although anomalies make it a dangerous route.</text>
+	</string>
+	
+	<string id="location_marsh_name">
+		<text>Location: Swamps</text>
+	</string>
+	<string id="location_marsh_name2">
+		<text>The Great Swamps</text>
+	</string>
+	<string id="location_marsh_descr">
+		<text>The Great Swamps used to be farmland until 1991, when Soviet engineers flooded the plains while building a hydro electric dam nearby. No one knows if the flooding was accidental or deliberate, but despite this, there were casualties, and the area was abandoned for years to come. The Great Swamps are difficult to navigate – anomalies block most of the roads in and the paths within it, mutants roam the reeds, and the swampwater is highly radioactive in most places. Stalkers still try and find their way into the swamps in search of fields full of rare artifacts, most of them are never heard of again. Abandoned villages and buildings dot the landscape, offering at least the promise of a relatively safe place to spend the night.</text>
+	</string>
+	
+	<string id="location_military_name">
+		<text>Location: Military Warehouses</text>
+	</string>
+	<string id="location_military_name2">
+		<text>Military Warehouses</text>
+	</string>
+	<string id="location_military_descr">
+		<text>An old army base, the Military Warehouses is now one of the Militaries strongholds within the Zone. Just south of the only road to the Radar complex just on the edge of the Red Forest, it leads to the centre of the Zone, which is a subject of the Military's interest. A road leads south through the Garbage and Cordon, straight out of the Zone, and another road to the west supposedly leads to the Deep part of the Red Forest. An abandoned Village is not far from the Base, and is home to a surprisingly large number of bloodsuckers. The Military has quite a strong grip here, and stalkers rarely venture in. When they do, they tend to stick together in large groups for protection.</text>
+	</string>
+	
+	<string id="location_yantar_name">
+		<text>Location: Yantar</text>
+	</string>
+	<string id="location_yantar_name2">
+		<text>Yantar</text>
+	</string>
+	<string id="location_yantar_descr">
+		<text>Yantar was once home to a vast lake; however, during the construction of the factory to the north, an underground accident caused the lake to slowly drain. Shortly after the Zone was formed, Ecologists chose to setup their bunker in the dried lakebed, which is now mostly a boggy swamp. There is something in the factory to the north which makes your brain boil, eventually turning Stalkers into zombified. Despite this, Stalkers are continually drawn to the factory, hoping to find rare artifacts inside, and get out before they join the shambling shells that dwell within. Because of the factory, one of the roads to the Red Forest remains closed to Stalkers. However, Military Zombified appear constantly in the factory, despite the fact they don't take either of the paths from Agroprom and Wild Territory leading into Yantar, suggesting the Military might have found another road into Yantar, or are somehow coming in through the Red Forest.</text>
+	</string>
+	
+	<string id="location_red_forest_name">
+		<text>Location: Red Forest</text>
+	</string>
+	<string id="location_red_forest_name2">
+		<text>Red Forest</text>
+	</string>
+	<string id="location_red_forest_descr">
+		<text>A large stretch of woodland to the north of the Military Warehouses and Yantar, the Red Forest was known as the Wormwood Forest before the 1986 accident. Most of the forest is highly radioactive, and populated by mutants who can tolerate the radiation. The main road leading to the NPP passes through the eastern Red Forest, which is said to be home to a massive antenna array. Powerful Psi emissions within this part of the red Forest keep the road closed, zombifying any Stalker foolish enough to try and pass through, however Monolith forces can pass through the Psi field to attack the Military outposts within the Military Warehouses. The western Red Forest supposedly lead to the city of Limansk, which continued to run seeming unaffected by the 1986 accident. The Red Forest is said to hold treasure troves of artifacts just waiting to be discovered by Stalkers.</text>
+	</string>
+	
+	<string id="location_limansk_name">
+		<text>Location: Limansk</text>
+	</string>
+	<string id="location_limansk_name2">
+		<text>Limansk</text>
+	</string>
+	<string id="location_limansk_descr">
+		<text>A secretive and forgotten city, believed to be one of the paths deeper into the Zone. No-one knows exactly where it is, or where the path to it is, but it is believed that it is somewhere within the Red Forest. Stalkers have long since looked for the path, but have never been able to find it. The Military also seems to show some interest in Limansk, and helicopters have been observed flying around where Limansk is supposed to be.</text>
+	</string>
+	
+	<!-- factions-->
+	<string id="faction_duty_name">
+		<text>Faction: Duty</text>
+	</string>
+	<string id="faction_duty_descr">
+		<text>The Stalkers who view it as their duty to fight the Zone, and all of it's manifestations are known as Duty. Recognised by their Black and Red uniforms, Duty lives by a strict code, and ensures it's members undergo Spetsnaz style training and drills, and are of the level expected. Formed by Military survivors after the first failed Military expeditions whose members were abandoned. Duty is extremely disciplined and focused, and supposedly has connections with the Spetsnaz. They employ Warsaw pact rifles, and semi-automatic shotguns used for mutant control. They are one of the most influential factions within the Zone. They live by the motto "If we don't do it, who will?"</text>
+	</string>
+	
+	<string id="faction_freedom_name">
+		<text>Faction: Freedom</text>
+	</string>
+	<string id="faction_freedom_descr">
+		<text>Stalkers who declare themselves fighters for free access to the Zone, as the world deserves to know exactly what it is, and what it is dealing with. They are usually recognised by their green camouflage uniforms, although their exoskeleton troops favour orange. They believe in Freedom to all, and as such, are neutral towards most factions within the Zone, except Duty and the Military. They mainly use a mixture of Warsaw Pact and NATO issue equipment, with strong sniper support, and specialize in skirmishes. They are one of the most influential Stalker clans within the Zone.</text>
+	</string>
+	
+	<string id="faction_bandit_name">
+		<text>Faction: Bandits</text>
+	</string>
+	<string id="faction_bandit_descr">
+		<text>The organized criminal element within the Zone, the Bandits view themselves as the only group with an organised structure and code. Their main goal is to establish their own form of order within the Zone, and they’re not afraid to use blackmail, extortion, murder and robbery to achieve it. Loathed even by Freedom with their 'Equal rights policy for all stalkers, provided their not Duty', stalkers tend to avoid them where ever possible. Bandits do not have a set uniform, but can be identified by the black trench coats and jackets many of them wear. They also wear several other suits as well, and are equipped with a wide array of weapons most factions could dream of getting their hands on. Unlike others factions, most of their members are criminals, and have no stomach for odds against them. They are not the most influential clan within the Zone, however, they have the Garbage under strict lock and key.</text>
+	</string>
+	
+	<string id="faction_stalker_name">
+		<text>Faction: Loners</text>
+	</string>
+	<string id="faction_stalker_descr">
+		<text>The term applied to any Stalker not part of one of one the Zones factions. Loners are nomadic, and can be found on all over the Zone, even in the Military controlled Warehouses, although they are commonly found in the Cordon and the Rostok Bar. Loners use a range of suits and weapons, one of the most common being the Stalker 'Sunrise' suit, but most of the time don't have access to faction specific gear. Although not a proper faction as such, they will all share a common enemy, and will band together if a threat emerges. They don't take kindly to misfire from other factions, or each other, and will sometimes retaliate.</text>
+	</string>
+	
+	<string id="faction_army_name">
+		<text>Faction: Army</text>
+	</string>
+	<string id="faction_army_descr">
+		<text>The Ukrainian government uses troops from the State Security Service to enforce the Cordon surrounding the Zone, and to keep all unauthorized people out of the Zone, and artifacts within the Zone without express authorisation of the government. Despite this, they are the most corrupt group that has a presence in the Zone, easily taking bribes to ignore smuggling, attacking Stalkers for fun, or extorting them of their loot. They mostly maintain outposts surrounding the Zone, and maintain a few strongholds within the Zone, which are kept supplied by helicopter or armed conveys. Nearly all the time, the Military troops are hostile towards Stalkers, and don't hesitate to shoot on sight.</text>
+	</string>
+	
+	<string id="faction_merc_name">
+		<text>Faction: Mercenaries</text>
+	</string>
+	<string id="faction_merc_descr">
+		<text>Mercenaries are private soldiers, and guns for hire operating in the Zone. They are all most likely experienced soldiers, former special forces troops, or various irregular forces. They work for the highest bigger, and require payments in cash or artifacts. Despite the fact that nearly all Mercenaries belong to the same faction, there are subgroups within the faction, each one with their own objectives and goals. A Stalkers relations with one group doesn't affect their relations with another. Mercenaries are not regular stalkers, and don't know as much about the Zone as regular Stalkers, and as such, easily fall prey to mutants and anomalies. Some Stalkers have even used surprised mutant packs or anomaly fields to escape their pursuers.</text>
+	</string>
+	
+	<string id="faction_ecolog_name">
+		<text>Faction: Ecologists</text>
+	</string>
+	<string id="faction_ecolog_descr">
+		<text>The Ecologist are government funded Scientists sent into the Zone to conduct research into artifacts, anomalies, and other manifestations of the Zone, in order to discover how the Zone could be used to help advance mankind. They operate out of a armoured bunker at Lake Yantar, just south of the Yantar factory complex. Initially, the Military was supposed to guard them, but somehow they ended up as Zombies, and now dwell within the Factory nearby. As a result, Stalkers and Mercenaries now guard the bunker, and run errands for the Ecologists, as they don't possess any real combat capabilities.</text>
+	</string>
+	
+	<string id="faction_monolith_name">
+		<text>Faction: Monolith</text>
+	</string>
+	<string id="faction_monolith_descr">
+		<text>The Monolith is a cult of religious fanatical extremists, who believe themselves to be the protector of the Monolith. They were originally a small group of Stalkers, brought together by their fascination with the Zone. Fascination slowly turned into obsession, which slowly turned into fanatism, and eventually declared that there was a giant crystal in the centre of the Zone, a unique artifact, the Monolith. They all packed up and left for the centre of the Zone several months ago, and only recently, have begun launching small scale attacks on the Military Garrison with the Army Warehouse. The Military has reported that Monolith soldiers prefer to fight to the death rather than surrender, using anything at hand to attack. They haven't yet succeeded in taking on of these fanatics alive yet to question him.</text>
+	</string>
+	
+	<string id="faction_csky_name">
+		<text>Faction: Clear Sky</text>
+	</string>
+	<string id="faction_csky_descr">
+		<text>Clear Sky is a combination of a Military/Scientific faction, and one of the first factions established in the Zone. They devote themselves to studying and understanding the Zone, in order for humanity to co-exist with it. There are rumours that Clear Sky is actually the front of a NATO or UN funded expedition into the Zone, given their unknown funding and access to various resources outside of selling artifacts. They avoid conflict with other factions, as they aren't really the fighting type. However, if the need arises, they will fight to achieve their goals.</text>
+	</string>
+	
+	<string id="faction_zombie_name">
+		<text>Faction: Zombified</text>
+	</string>
+	<string id="faction_zombie_descr">
+		<text>Not a real faction as such, Zombified is the term given to Stalkers who have been exposed to powerful psy emissions, resulting in the damage to the higher centres of the brain, resulting in some loss of motor control, reasoning, and higher reasoning. They travel in packs, muttering broken phrases to one another, and can be seen standing around in groups, murmuring and waving their hands around. They also sit around fires, in an attempt to keep warm. They don't seem to be aware of faction alignment once zombified, and also possess a suicidal combat tendency, marching relentlessly forward, not stumbling when hit, and not seeking cover, of fleeing from grenades. This unique combat style makes them quite dangerous, as they don't attempt to seek cover, or flank their enemies, and instead home in on their last known position. It’s also interesting to note that they sometimes don't seem to recognize regular stalkers or mutants very well, and tend to ignore them unless attacked.</text>
+	</string>
+	
+	<!-- mutants-->
+	
+	<string id="mutant_dog_name">
+		<text>Mutant: Blind Dog</text>
+	</string>
+	<string id="mutant_dog_descr">
+		<text>One of the most common mutants in the Zone, Blind Dogs originated from wild dogs, living in the exclusion Zone. Years of mutations has rendered the dog blind, but sharpened it's sense of smell and hearing, and gave it something akin to a 6th sense which has allowed to navigate anomalies and radiation, allowing it to survive better than the average dog. Blind dogs hunt in large packs, and are completely feral. They are sometimes regarded as one of the less dangerous mutants, their sharp teeth are more than capable of causing a serious wound to a lone stalker. Killing off most of the pack will often cause them to panic, and run, although they won't stay gone for long.</text>
+	</string>
+	
+	<string id="mutant_boar_name">
+		<text>Mutant: Mutant Boar</text>
+	</string>
+	<string id="mutant_boar_descr">
+		<text>Boars are one of the most widespread mutants within the Zone. They are quite large, some specimens capable of reaching 1.5m at the shoulder. The Mutant Boar has evolved beyond the regular boar by radiation and anomalous exposure, causing drastic changes: they have lost virtually all their fur in some places, and have grown long bristly fur in others, and their claws have become sharper.  They are aggressive, and attack by charging and knocking down an opponent, before ripping into them with their hooves and teeth. Boars have been known to survive in highly radioactive areas with little or no effect to their health.</text>
+	</string>
+	
+	<string id="mutant_flesh_name">
+		<text>Mutant: Flesh</text>
+	</string>
+	<string id="mutant_flesh_descr">
+		<text>The flesh once used to be a pig. However, mutations changed it so much that it's regenerative properties improved, and has grown a more robust skeleton and a covering of scales, in addition to a more complex nervous system. They also possess a distinct enlarged eye. Their legs have grown into something resembling that of an insects, ending in a single large claw, which they use to swipe at enemies. Despite their appearance, they are actually quite cowardly, and prefer to attack lone stalkers when in a large pack. Killing several will often cause them to panic, and flee.</text>
+	</string>
+	
+	<string id="mutant_tushkano_name">
+		<text>Mutant: Tushkano</text>
+	</string>
+	<string id="mutant_tushkano_descr">
+		<text>The Zones Rodents, known as "Tushkano" to stalkers, and "Jerboa's" to others, are a vicious little quadrupedal mutant, capable of reaching up to 40cm at the shoulder. Unlike other mutant species, scientists have so far been unable to determine what animal the Rodent evolved from, although they know that their ancestors were gregarious mammals. Rodents are small, fast, and agile little mutants, and quite aggressive and ravenous. They mainly live in basements and destroyed/abandoned buildings, eating anything they can lay hold to, including plants and careless stalkers. They are not afraid to attack and kill larger species of mutants, although they tend to panic when faced with even numbers, or outgunned. Some Stalkers consider them, size for aggressiveness, the most dangerous mutant in the Zone.</text>
+	</string>
+	
+	<string id="mutant_pseudodog_name">
+		<text>Mutant: Pseudodog</text>
+	</string>
+	<string id="mutant_pseudodog_descr">
+		<text>Despite their name, Psuedodog’s are actually descended from wolves. They can be recognised by their ragged fur, and pug like faces. They are often seen travelling in packs with Blind Dogs, and are stronger, faster, and more vicious than their blind relatives. Oddly enough, killing all the Pseudodog’s within a pack will often cause Blind Dogs to panic and flee. They are very aggressive and territorial, and don't hesitate to attack. They use their large mouths to wound and then incapacitate their prey. Stalkers always consider these mutants a threat, and use caution when dealing with them. It’s harder to hear them approaching, as they don't bark like Blind Dogs.</text>
+	</string>
+	
+	<string id="mutant_snork_name">
+		<text>Mutant: Snork</text>
+	</string>
+	<string id="mutant_snork_descr">
+		<text>The Snork is what is left of humans who have succumbed to the Zone. Horrifically mutated, Snorks possess a darker skin than normal, and are covered in ragged wounds and scraps, most noticeably the flayed flesh around the spine, which is unable to support the monsters weight, reducing it to crawling around on all fours. However, it is capable of rearing up when attacking. Wearing what’s left of their gear, Snork’s most noticeable have military issue boots, tattered trousers, and a military issue gasmask. It is believed than exposure to radiation, anomalies, and psi fields, has reduced the human to a mindless, ravenous, cold blooded predator. The Snork moves around on all fours, and constantly sniffs the ground, searching for a scent. They are mostly blind, as their gasmask lenses are cracked and covered in dirt. Their vocal chords are destroyed, leaving the creature capable of growling only. They attack by leaping, thanks to mutated tendons in their lower legs and feet, kicking with their boots, and clawing at the enemy, trying to bring them down to the ground, where they can tear their victim apart.</text>
+	</string>
+	
+	<string id="mutant_cat_name">
+		<text>Mutant: Cat</text>
+	</string>
+	<string id="mutant_cat_descr">
+		<text>Believed to be a mutated version of the domestic housecat or wildcat, Mutant Cats are much larger than their other brethren, and feature a large pair of glands on the side of their faces, the purpose of which is currently unknown. They travel in packs of 4 or 5, or they travel and hunt alone, and attack with their claws and bite, and do seem to roam about more than other mutants. Stalkers have also reported blurred vision, and strange sounds when facing these mutants. Despite their fearsome appearance, they are actually cowardly, as they prefer to attack Lone Stalkers rather than a group, and when confronted with a groups of Stalkers, tend to panic and run.</text>
+	</string>
+	
+	<string id="mutant_psy_dog_name">
+		<text>Mutant: Psy Dog</text>
+	</string>
+	<string id="mutant_psy_dog_descr">
+		<text>The Psy Dog, also known as the Chernobyl Dog, is a sub species of the Pseudodog. They have greyish fur instead, and like the Pseudodog’s, travel in packs with other dogs. Unlike Pseudodog’s, they don't directly attack, and instead summon various illusory clones, which they use to confuse their prey, while other dogs or the actual Psy Dog itself attacks. The clones don't inflict much damage, but sometimes Stalkers have reported taking damage from these clones. Scientists theorize that sometimes the Psi energy used to construct the clones can affect stalkers if they aren't shielded sufficiently.</text>
+	</string>
+	
+	<string id="mutant_bloodsucker_name">
+		<text>Mutant: Bloodsucker</text>
+	</string>
+	<string id="mutant_bloodsucker_descr">
+		<text>This mutant is rare, and in some parts of the Zone, a myth. It appears in deep areas of the Zone, or in underground areas, and is incredibly powerful. It stands about 7 feet tall, and has a humanoid appearance with claws and tentacles surrounding the mouth, along with an abnormal growth on their back, giving them a slightly hunched appearance. They are fast and powerful, and possess a unique optic camouflage ability, which allows them to obscure their location to the naked eye, which also somehow makes them near invulnerable to damage. Their eyes reflect any available light, giving them excellent vision at night, but also makes them easier to spot due to the glow of their eyes. They usually hunt alone, charging prey, and attacking them with their claws, becoming visible for a moment. While not attacking, they return to their invisible state, allowing them to surprise their next victim. Once all enemies are dead, the Bloodsucker will drink the blood from their victims corpse, and it is this behavioural pattern which give them their name. Their tentacles contain glands which secrete an enzyme capable of dissolving flesh, and stopping blood from clotting, which allows them to drain the blood from their victim. Some species of bloodsucker will actually feed on their victim while alive. Bloodsuckers possess a thick hide, which helps to protect themselves against various injuries, such as knives or gunfire. There is one main species of Bloodsucker, although several other variations have been reported, one with slightly redder skin, and another with mottled green and white skin.</text>
+	</string>
+	
+	<string id="mutant_poltergiest_name">
+		<text>Mutant: Poltergeist</text>
+	</string>
+	<string id="mutant_poltergiest_descr">
+		<text>A mysterious and supernatural creature, some Stalkers don't even believe that this mutant exists, due to the natural of it's supposed appearance and form of attacks. What reports exist of meeting this creature are conflicting, and don't make much sense, but all describe various objects being levitated and thrown around by and unseen force, a random and erratic moving electrical anomaly, and a wide range of sounds from insane laughter to screams of horror and howling. Rumours have it that these creatures are the spirits of Stalkers who were killed during emissions, and tormented by their existence, attack Stalkers relentlessly.</text>
+	</string>
+	
+	<string id="mutant_controller_name">
+		<text>Mutant: Controller</text>
+	</string>
+	<string id="mutant_controller_descr">
+		<text>A rare mutant appearing deep inside the Zone, from a distance the Controller appears to be a zombified shell ambling about, but in reality is one of the most dangerous mutants in the Zone. Controllers look human, except for a large head, and leathery three toed feet, and oddly proportioned limbs, wearing tattered blue jeans and with what appears to be bandages wound around their body and arms. Despite their appearance, Controllers are highly intelligent and perceptive, mainly due to their telepathic abilities, which they can use to control the minds of other animals, or in the case of some specimens, humans. They rarely attack from the open, and prefer to manipulate their victims mind so they kill themselves, like making you believe you’re walking along a road, when in reality, you are about to fall off a cliff, or putting yourself into a dangerous situation, like standing around with your friends, who in reality are a bunch of zombies. When confronted, they make use of a devastating psi blast, capable of disorientating skilled Stalkers. If an enemy somehow gets too close to safely use their psi blast, Controllers resort to swiping at their victims. They can usually be sensed before they are seen, as their psi field that their minds generate can be felt at a distance, and a skirled Stalker can use this to get away before the creature senses them.</text>
+	</string>
+	
+	<string id="mutant_pseudogiant_name">
+		<text>Mutant: Pseudogiant</text>
+	</string>
+	<string id="mutant_pseudogiant_descr">
+		<text>This massive mutant is as rare as it is powerful, and few Stalkers have survived an encounter with one. It has a roughly humanoid appearance, with a large face, a pair of small arms, and another pair of muscular arms which serve as the creature’s legs. It also has a small tail, and a unused humanoid foot sticking out of it's back. Believed to be a mutated human, Scientists have been yet unable to figure out what could cause a human to mutate so drastically. The Pseudogiant possesses a strong skeletal structure, and is covered in muscles, enabling it to take large amounts of punishment before going down. Despite it's size, the Pseudogiant is deceptively fast and agile. It attacks by biting with it's mouth, or clawing at the enemy with it's short arms. It is also capable of slamming the ground with one of it's 'legs', generating a localized shockwave damaging anything within range, and knocking other mutants and Stalkers to the ground.</text>
+	</string>
+	
+	<string id="mutant_chimera_name">
+		<text>Mutant: Chimera</text>
+	</string>
+	<string id="mutant_chimera_descr">
+		<text>The Chimera is a dog like creature about the size of a cow with two heads, no fur, and a broad tail. They are incredibly strong, capable of jumping long distances, and have claws that are as hard as diamond, making short work of any armour. Their attacks are quite simple - a jump onto their prey followed by repeated strikes with their claws, or swiped with their claws. The jump can stun those who are hit by it, allowing the Chimera to get several follow up attacks in. However, their swipes are quite powerful, more than capable of sending a corpse flying into the air, which Stalkers use as a sign that a Chimera is about. Chimera's have earned the nickname of 'Man Opener', since they are capable of tearing apart a Stalker even in reinforced armoured suits.</text>
+	</string>
+	
+	<string id="af_medusa_name">
+		<text>Artifact: Jellyfish</text>
+	</string>
+	<string id="af_medusa_descr">
+		<text>A small brownish artifact with a diamond like shape, and multiple recessess running through its surface, the Jellyfish is formed in gravitational anomalies, its structure a side effect of the gravitational feild it is created in. It's gravitational feild seems to slowly draw in and somehow neutralize radioactive particles slowly, protecting against radiation, and reducing the effects on the body to a degree. It is quite a common artifact, and there are very few Stalker's who haven't seen or found one of their own.</text>
+	</string>
+	
+	<string id="af_cristall_flowe_name">
+		<text>Artifact: Stone Flower</text>
+	</string>
+	<string id="af_cristall_flowe_descr">
+		<text>A flat circular artifact deformed by gravitational forces, light brown in colour, with several recesses coloured white, giving the impression of a flower when looking down on it. Its granite like properties somehow provide protection against psi emissions, but with the side effect of being  slightly radioactive. A fair few of these get traded, since to most Stalker's they are worthless.</text>
+	</string>
+	
+	<string id="af_night_star_name">
+		<text>Artifact: Night Star</text>
+	</string>
+	<string id="af_night_star_descr">
+		<text>This glowing artifact is a small sphere with hundreds of spikes growing out of it. During the day, it glows faintly, but at night, it lights up a warm golden color, giving rise to its name - Night Star. It generates a low gravity feild near to it, allowing Stalkers to carry more weight but at the side effect of slight radiation emissions. Widely used by Stalkers to help them carry loads further, or to carry more weight.</text>
+	</string>
+	
+	<string id="af_vyvert_name">
+		<text>Artifact: Wrenched</text>
+	</string>
+	<string id="af_vyvert_descr">
+		<text>This strangly deformed artifact often appears in areas consisting of high graviational energy. It doesn't seem to produce any detectible  energy emissions of any sort, but yet it will absorb radiation from the surrounding area, including the environment, objects, or living creatures. It is treasured by Stalkers who find one because of its ability to reduce radiation on their body, or to absorb the radiation from other artifacts.</text>
+	</string>
+	
+	<string id="af_gravi_name">
+		<text>Artifact: Gravi</text>
+	</string>
+	<string id="af_gravi_descr">
+		<text>Despite its appearance, the Gravi artifact is actually quite light, despite its high metal particle content. Stalkers claim that the Gravi reduces the weight of anything surrounding it, and scientific studies have shown that it produces an antigravity feild around it, most likely due to the high metal content. However, it also emits high levels of radiation, making prolonged use without an antiradiational artifact dangerous.</text>
+	</string>
+	
+	<string id="af_gold_fish_name">
+		<text>Artifact: Goldfish</text>
+	</string>
+	<string id="af_gold_fish_descr">
+		<text>Formed under the most intense gravitational energies, this artifact strongly resembles a Gravi artifact, except for the fact that it is more of a golden colour than the Gravi. Like the Gravi, it also produces strong antigravity feilds, but on a much greater magnitude, allowing for even more weight to be carried. Scientists have determined the conditions for its formation, but are unable to replicate the effects in the Laboratory. Even so, the artifact is in great demand amoung Stalkers due to the amount of extra weight it enables them to carry.</text>
+	</string>
+	
+	<string id="af_cristall_name">
+		<text>Artifact: Crystal</text>
+	</string>
+	<string id="af_cristall_descr">
+		<text>A light reddish artifact resembling a crystal formation, the Crystal is formed in areas of intense thermal activity. Through a yet unknown scientific method, it somehow rapidly abosrbs heat above certain temperatures, with the rate of abosrbsion depending on the heat. As a side effect, the artifact is slightly radioactive. Although it is mainly used by rookie Stalkers, some more experienced Stalkers say it can be used to help regulate body temperature during a fever. If so, then it might explain why some Sid always seems to have an order for these tucked away somewhere.</text>
+	</string>
+	
+	<string id="af_fireball_name">
+		<text>Artifact: Fireball</text>
+	</string>
+	<string id="af_fireball_descr">
+		<text>An artifact resembling a bright glowing charcoal ball, the Fireball is a thermal artifact formed in areas of high thermal activity. Despite its name, it is named after its appearence, not after any properties it might posses. It is cool to the touch, maintaining a comfortably warm temperatire around it, regardless of how hot or cold the environment is. It is popular with all Stalkers in winter, and even Duty members have been known to hide one away come winter. As a side effect, it emits low levels of radiation, making prolonged use dangerous.</text>
+	</string>
+	
+	<string id="af_dummy_glassbeads_name">
+		<text>Artifact: Mama's Beads</text>
+	</string>
+	<string id="af_dummy_glassbeads_descr">
+		<text>A thermal artifact with the curious shape of a double helix, resembling that of human DNA, but with the sections towards the middle being thicker than the rest. These sections produce emissions which stimulate the metabolism of living creatures, helping wounds heal quicker. It is not exactly known why Stalkers call this artifact "Mama's Beads", but it is believed that a Stalker who found this artifact named them after his mothers prayer beads.</text>
+	</string>
+	
+	<string id="af_eye_name">
+		<text>Artifact: Eye</text>
+	</string>
+	<string id="af_eye_descr">
+		<text>A large drop shaped artifact, the thicker end of it resembling an eyeball, leading to its name. It is a thermal artifact, bright red in colour, with the 'eye' being more of an orange. Somehow, it stimulates the bodies metabolism, helping in the healing of wounds. Some experienced Stalkers say that the artifact brings you good luck. If so, it could explain why Stalkers get rich when selling this artifact, and why there is such a demand for it outside of the Zone. The Eye emits high levels of radiation, which is its only known downside. Stalkers say for the luck it's supposed to bring, its a small price to pay.</text>
+	</string>
+	
+	<string id="af_fire_name">
+		<text>Artifact: Flame</text>
+	</string>
+	<string id="af_fire_descr">
+		<text>This rare thermal artifact resembles the Flame in shape, but has a much brighter glow, in addition to emitting powerful infrared emissions, magnifying metabolic processes tenfold within a short distance of it, literally healing wounds in front of holders eyes in next to no time at all. It is highly sought after by Stalkers because of its properties, and fetches higher prices amoung Stalkers than traders or their outside clients. However, in addition to the infrared emissions, it produces dangerously high level of radiation.</text>
+	</string>
+	
+	<string id="af_blood_name">
+		<text>Artifact: Stone Blood</text>
+	</string>
+	<string id="af_blood_descr">
+		<text>An oddly shaped formation of compressed and polymerized remains of plants, soil and bones known to form in chemically active areas, the Stone blood is a unremarkable artifact. Some rookie Stalkers, upon finding a Stone Blood, believe that their detectors have malfunctioned, since it doesn't look like the artifacts they have heard about in stories. Somehow, the artifact is capable of neutralizing small amounts of chemical gases and poisons around it. It emits low levels of radiation</text>
+	</string>
+	
+	<string id="af_mincer_meat_name">
+		<text>Artifact: Meat Chunk</text>
+	</string>
+	<string id="af_mincer_meat_descr">
+		<text>An oddly shaped and twisted formation of fossilized and mutated animal tissues, this greenish artifact forms in areas of high chemical activity. It continuously extrudes a mucous fluid forming a layer around it which can neutralize low levels of toxic gases and poisons, but is slightly radioactive. Stalkers quickly learn to carry these in plastic bags, so the mucous doesn't flood their backpacks as it rubs off.</text>
+	</string>
+	
+	<string id="af_soul_name">
+		<text>Artifact: Soul</text>
+	</string>
+	<string id="af_soul_descr">
+		<text>A sphere shaped artifact with a perfect surface and glows with an bluish inner light. This artifact somehow increases the bodies natural rate of recovery, healing more serious and deep wounds. The artifact is surprisingly common, but that doesn't diminsh its demand outside of the Zone due to its appearance. Stalkers can get rich quick by selling these to traders with connections outside of the Zone.</text>
+	</string>
+	
+	<string id="af_fuzz_kolobok_name">
+		<text>Artifact: Kolobok</text>
+	</string>
+	<string id="af_fuzz_kolobok_descr">
+		<text>A spiky artifact known to rarely form in Chemically active areas. It stimulates the bodies cells, causing large scale tissue regrowth and blood replenishment. Scientists aren't too sure how this happend, but they believe it has something to do with the spikes of the artifact. However, in addition to curing wounds, it emits moderate levels of radiation.</text>
+	</string>
+	
+	<string id="af_baloon_name">
+		<text>Artifact: Bubble</text>
+	</string>
+	<string id="af_baloon_descr">
+		<text>Named after its appearance - the Bubble has a compund structure consisting of several hollow bubbles with an organic composition. These bubbles produce a gas which is highly effective at neutralizing radioactive particles. The gas is non toxic, and can safely be breathed in to neutralize radiation in the body, as far as scientists can tell. Scientists also don't understand the requirements for its formation, only that it must depend on uncommon environmental conditions since since it is so rare.</text>
+	</string>
+	
+	<string id="af_glass_name">
+		<text>Artifact: Firefly</text>
+	</string>
+	<string id="af_glass_descr">
+		<text>temp</text>
+	</string>
+	
+	<string id="af__name">
+		<text>Artifact: </text>
+	</string>
+	<string id="af__descr">
+		<text>temp</text>
+	</string>
+	
+</string_table>

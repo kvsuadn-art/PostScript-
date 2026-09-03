@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="sim_deliver_item">
+		<text>Deliver Item</text>
+	</string>
+	
+	<string id="ps_tm_task_0">
+		<text>Do you have any work for me?</text>
+	</string>
+	<string id="ps_tm_task_1">
+		<text>Yeah Sure! These are some of the things I need done.</text>
+	</string>
+	<string id="ps_tm_task_2">
+		<text>Yeah, I'm up for it.</text>
+	</string>
+	<string id="ps_tm_task_3">
+		<text>I don't feel like this sort of work right now.</text>
+	</string>
+	<string id="ps_tm_about_task_0">
+		<text>I'm here about my job.</text>
+	</string>
+	<string id="ps_tm_about_task_1">
+		<text>Which one?</text>
+	</string>
+	<string id="ps_tm_complete_task_0">
+		<text>I've done your job.</text>
+	</string>
+	<string id="ps_tm_complete_task_1">
+		<text>Great! Here's your reward.</text>
+	</string>
+	<string id="ps_tm_cancel_task_0">
+		<text>I don't want to do this job now.</text>
+	</string>
+	<string id="ps_tm_cancel_task_1">
+		<text>Too bad. It's not going to look good for you.</text>
+	</string>
+	<string id="ps_tm_leave_0">
+		<text>Nevermind... I've changed my mind.</text>
+	</string>
+</string_table>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<!-- Fluffy22-->
+<string_table>
+	<!--blank scheme-->
+	<string id="st">
+		<text>Blank</text>
+	</string>
+	<string id="st_upg_curtain">
+		<text>Curtain helmet</text>
+	</string>
+	<string id="st_upg_curtain_descr">
+		<text>A high quality dome helmet serves as one's primary protection from psi emissions, radioactive dust and noxious chemicals. It provides limited bullet protection to the head.</text>
+	</string>
+	<string id="st_upg_health_sustaining_sys_helmet">
+		<text>Life support system</text>
+	</string>
+	<string id="st_upg_health_sustaining_sys_helmet_descr">
+		<text>This apparatus is installed inside the helmet, and automaticlly releases a healing solution into the air supply when the user is wounded, and is constantly generating calibrated elctrical pulses designed to restore stamina.</text>
+	</string>
+	<string id="st_upg_radiation_reduce_sys_battle">
+		<text>Radiation neutralization system</text>
+	</string>
+	<string id="st_upg_radiation_reduce_sys_battle_descr">
+		<text>This apparatus is worn on the wrist and, when an inbuilt sensor dectects an increase of radiation in the body, automatically injects antiradiation drugs.</text>
+	</string>
+	<string id="st_upg_resist_dur_suit">
+		<text>Resistant suit</text>
+	</string>
+	<string id="st_upg_resist_dur_suitdescr">
+		<text>This suits fabric is tougher than normal, reducing the effects of damage to the other parts of the suit</text>
+	</string>
+	<string id="st_upg_respirator">
+		<text>Respirator</text>
+	</string>
+	<string id="st_upg_respirator_descr">
+		<text>This gas mask serves as one's primary protection from radioactive dust and noxious chemicals. If offers limited protection from psi emissions due to metallic components.</text>
+	</string>
+	<string id="st_upg_sphere">
+		<text>Sphere-12M helmet</text>
+	</string>
+	<string id="st_upg_sphere_descr">
+		<text>This titanium/aluminuim plated comabt helmet seves as ones primary protection from gunfire and shrapnel. It's builtin gas mask also protects from radioactive dust and noxious chemicals, as well as limited psi emissions.</text>
+	</string>
+	<string id="st_upg_light_gear">
+		<text>Lightweight elements</text>
+	</string>
+	<string id="st_upg_light_gear_descr">
+		<text>Select parts of the suit are removed and replaced with lighter analogues to reduce weight</text>
+	</string>
+	<string id="st_upg_light_armor">
+		<text>Lightweight armor</text>
+	</string>
+	<string id="st_upg_light_armor_descr">
+		<text>The suits current armor plates are removed and replaced with lighter but equally strong replacments to reduce overall weight</text>
+	</string>
+	<string id="st_upg_psi_helmet">
+		<text>Psi Emission Helmet</text>
+	</string>
+	<string id="st_upg_psi_helmet_descr">
+		<text>A psi emission helmet is installed on the inside of the hood, offering some protection from psi emissions</text>
+	</string>
+	<string id="st_healing_treatment">
+		<text>Streptozoidal treatment</text>
+	</string>
+	<string id="st_healing_treatment_descr">
+		<text>The fabric of the suit is saturated with a streptozoidal lotion, which speeds up the healing of wounds.</text>
+	</string>
+	<string id="st_upg_insulation">
+		<text>Airproof insulation coating</text>
+	</string>
+	<string id="st_upg_insulation_descr">
+		<text>This special sealant coating can be used to seal off a suit from all known environmental anomalies.</text>
+	</string>
+	<string id="st_upg_wire_mesh">
+		<text>Wire Mesh</text>
+	</string>
+	<string id="st_upg_wire_mesh_descr">
+		<text>A wire mesh installed into the suit helps to ground electrical currents.</text>
+	</string>
+	<string id="st_upg_thermo_cool">
+		<text>Cooling system</text>
+	</string>
+	<string id="st_upg_thermo_cool_descr">
+		<text>A cooling system is installed to help maintain air temperature within the suit.</text>
+	</string>
+	<string id="st_upg_rebreather">
+		<text>Air Pumping System</text>
+	</string>
+	<string id="st_upg_rebreather_descr">
+		<text>A pressurized air pump is installed into the filtering system, providing an ample supply of air to the user.</text>
+	</string>
+	<string id="st_upg_armor_helmet">
+		<text>Armoured Helmet</text>
+	</string>
+	<string id="st_upg_armor_helmet_descr">
+		<text>Additional Armour is inserted into the helm to offer better bullet protection.</text>
+	</string>
+	<string id="st_upg_light_carcass_battle">
+		<text>Lightweight frame</text>
+	</string>
+	<string id="st_upg_light_carcass_battle_descr">
+		<text>Lightweight frame elements decreases an exoskeleton's weight.</text>
+	</string>
+	<string id="st_upg_armor_body">
+		<text>Additional</text>
+	</string>
+	<string id="st_upg_armor_body_descr">
+		<text>Additional Armour plates are added to parts of the suit to offer better bullet protection.</text>
+	</string>
+	<string id="st_upg_powered_servo_motor_run">
+		<text>Custom servomotors</text>
+	</string>
+	<string id="st_upg_powered_servo_motor_run_descr">
+		<text>Replacing the regular servomotors with specially designed custom ones allow the wear to run.</text>
+	</string>
+	
+	<string id="st_prop_thermo">
+		<text>thermal protection</text>
+	</string>
+	<string id="st_prop_electro">
+		<text>electrical protection</text>
+	</string>
+	<string id="st_prop_rad">
+		<text>radiation protection</text>
+	</string>
+	<string id="st_prop_chem">
+		<text>chemical protection</text>
+	</string>
+	<string id="st_prop_restore_rad">
+		<text>radiation neutralization</text>
+	</string>
+	<string id="st_prop_night_vision_2">
+		<text>2nd generation night vision</text>
+	</string>
+</string_table>

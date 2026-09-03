@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="esc_wolf_talk_0">
+		<text>Ну что, Сеня, готов?</text>
+	</string>
+	<string id="esc_wolf_talk_1">
+		<text>Да, всё готово. Пушка со мной, комбез на мне, детектор собрал... Да, я готов.</text>
+	</string>
+	<string id="esc_wolf_talk_11">
+		<text>Жаль тебя терять. Ты быстро учился и был чертовски хорошим отмычкой. Эх, побольше бы таких. Ладно, не буду тебя задерживать.</text>
+	</string>
+	<string id="esc_wolf_talk_111">
+		<text>Спасибо.</text>
+	</string>
+	<string id="esc_wolf_talk_1111">
+		<text>Кстати, помни: Кордон под завязку забит военными, да и мелкие банды отморозков тут и там шастают, так что будь осторожен. Они долго думать не будут — сразу на поражение.</text>
+	</string>
+	<string id="esc_wolf_talk_11111">
+		<text>Ладно, я запомню.</text>
+	</string>
+	<string id="esc_wolf_talk_2">
+		<text>Заглянул просто... бросить напоследок взгляд на деревню.</text>
+	</string>
+	<string id="esc_wolf_talk_22">
+		<text>Ты не первый, кто возвращается «напоследок взглянуть». Похоже, это уже вроде как негласная традиция.</text>
+	</string>
+	<string id="esc_wolf_talk_222">
+		<text>А, в общем, бывай.</text>
+	</string>
+	
+	<string id="esc_leader_talk_7">
+		<text>Привет, сталкер. Добро пожаловать в наш новый лагерь.</text>
+	</string>
+	
+	<string id="esc_stalker_support_attack_atp_0">
+		<text>Слышь, братуха, видишь то депо вон там? Мы тут штурмануть его собрались, да одного ствола не хватает. Ты как, в деле? Вся добыча с этих армейских крыс после боя — твоя, в счёт оплаты.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_1">
+		<text>А зачем вам моя помощь? У вас, вроде, и своих стволов хватает, чтобы с вояками разобраться.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_2">
+		<text>Слушай, эти сапоги недавно шлёпнули нашего брата, когда он шёл на север из Деревни новичков — оттуда, откуда ты сам припёрся. Если мы заберем и удержим это депо, дорога на север станет куда безопаснее. Ну так что, поможешь или как?</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_3">
+		<text>По рукам! С радостью умыл бы этих уродцев, у меня к ним после их облав свои счёты.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_33">
+		<text>Не, я пас. Что-то не охота сейчас с военными связываться.</text>
+	</string>
+	<string id="esc_stalker_support_attack_atp_4">
+		<text>Отлично! Погнали. И держись рядом, понял? Будешь делать всё умом — уйдёшь целым и с улыбкой на роже.</text>
+	</string>
+	
+	<string id="st_esc_flash_up_full_l85_descr">
+		<text>Найти флешку: ИЛ86</text>
+	</string>
+	<string id="st_esc_flash_up_full_l85_descr2">
+		<text>Здорово, дружище. Мне тут нужны чертежи для разного оружия, и один из них — для винтовки ИЛ86. Достанешь данные по ней?</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_descr">
+		<text>Найти флешку: Стволы дробовика</text>
+	</string>
+	<string id="st_esc_flash_up_part_shotgun_barrel_descr2">
+		<text>Я тут хочу переделать ствол на одном дробовике, но перед тем как начать, мне нужны правильные расчёты и данные. Найдёшь инфу по этой теме?</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_descr">
+		<text>Найти флешку: Чейзер-13</text>
+	</string>
+	<string id="st_esc_flash_up_full_chaser13_descr2">
+		<text>Заходил тут один сталкер, просил апгрейдить его дробовик, да только чертежей нужных у меня нет. Достанешь их для меня? Чем быстрее, тем лучше. В долгу не останусь.</text>
+	</string>
+	
+	<string id="st_esc_deliver_item_trader_1_descr">
+		<text>Принести хвост кота</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_1_descr2">
+		<text>Слушай, тут с Большой земли заказ пришёл на хвосты мутантов-котов — видать, на шубы пустят. У меня уже куча сталкеров на охоте, но чем больше хвостов, тем больше навар нам обоим. Ты в деле или как?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_descr">
+		<text>Принести хвост псевдособаки</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_2_descr2">
+		<text>У меня тут клиент объявился, зачем-то ему понадобился хвост псевдособаки. Не сгоняешь за одним? Я в долгу не останусь.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_descr">
+		<text>Принести голову тушкана</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_3_descr2">
+		<text>Так, давай с этим заказом покончим. Поступил запрос на голову тушкана. Зачем она ему — без понятия и знать не хочу. Давай просто выполним сделку и разбежимся.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_descr">
+		<text>Принести артефакт «Медуза»</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_4_descr2">
+		<text>Значит так: пришёл заказ на «Медузу» с Большой земли. Артефакт тут частый, так что найти его проблем не составит, верно?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_descr">
+		<text>Принести артефакт «Каменный цветок»</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_5_descr2">
+		<text>Пришёл ещё один заказ — на артефакт «Каменный цветок». В наших краях аномалий, порождающих его, нет, так что за наградой тебе, возможно, придётся прогуляться поглубже в Зону, сталкер.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_descr">
+		<text>Принести артефакт «Батарейка»</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_6_descr2">
+		<text>Важный клиент просит артефакт «Батарейка». Я уже несколько месяцев ничего подобного в руках не держал. В общем, не поохотишься за ним? Заплачу щедро.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_descr">
+		<text>Принести винтовку СГИ-5к</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_7_descr2">
+		<text>Заглядывал тут один сталкер, спрашивал про винтовку СГИ-5к. Я сказал, что в наличии нет, но смогу достать б/у в ближайшее время. Его это устроило. В общем, найди мне эту винтовку для заказа, лады?</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_descr">
+		<text>Принести модифицированный ПМм</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_8_descr2">
+		<text>Тут сталкер заходил, спрашивал, нет ли у меня в наличии доработанного ПМм. Я ответил, что пока нет, но достать можно. Жаль тебя расстраивать, но тебе, скорее всего, придётся снять его с чьего-то трупа. В магазинах такие не продаются.</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_descr">
+		<text>Принести модифицированный пистолет «Кора-919»</text>
+	</string>
+	<string id="st_esc_deliver_item_trader_9_descr2">
+		<text>Звонил тут один мой давний клиент, старый сталкер. В общем, ищет модифицированную «Кору». Я такую пару раз всего видел — убойная монструозная штука. Не возьмёшься отыскать? Он скоро должен перезвонить.</text>
+	</string>
+</string_table>

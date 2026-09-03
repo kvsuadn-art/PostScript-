@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_yan_deliver_part_1_name">
+		<text>Deliver a Tushkano head</text>
+	</string>
+	<string id="st_yan_deliver_part_1_text">
+		<text>Sakharov needs an intact Tushkano head to study as part of an experiment.</text>
+	</string>
+	<string id="st_yan_deliver_part_2_name">
+		<text>Deliver a Chimera claw</text>
+	</string>
+	<string id="st_yan_deliver_part_2_text">
+		<text>Sakharov is researching the chemical structure of the Chimera's claw, and needs one to study.</text>
+	</string>
+	<string id="st_yan_deliver_part_3_name">
+		<text>Deliver a Bloodsucker's tentacles</text>
+	</string>
+	<string id="st_yan_deliver_part_3_text">
+		<text>Sakharov is studying the saliva of the Bloodsucker to produce a powerful coagulant and needs the tentacles from a Bloodsucker.</text>
+	</string>
+	<string id="st_yan_deliver_part_4_name">
+		<text>Deliver a Boar's hoof</text>
+	</string>
+	<string id="st_yan_deliver_part_4_text">
+		<text>Sakharov needs a Boar's hoof to produce some more antiradation drugs.</text>
+	</string>
+	<string id="st_yan_deliver_part_5_name">
+		<text>Deliver a Flesh eye</text>
+	</string>
+	<string id="st_yan_deliver_part_5_text">
+		<text>Sakharov wants to study the Flesh mutant, and has requested the eye of one.</text>
+	</string>
+	<string id="st_yan_deliver_part_6_name">
+		<text>Deliver a Snork's leg</text>
+	</string>
+	<string id="st_yan_deliver_part_6_text">
+		<text>Sakharov wants to understand more on how the snork can make it's unbelievable jumps, and needs the foot of one to study.</text>
+	</string>
+	
+	<string id="st_yan_deliver_art_1_name">
+		<text>Deliver a Spring artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_1_text">
+		<text>Sakharov wishes to study a Spring artifact, to determine it's properties.</text>
+	</string>
+	<string id="st_yan_deliver_art_2_name">
+		<text>Deliver a Battery artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_2_text">
+		<text>Sakharov wants to study the rare form of the Battery artifact, to discover what makes it form differently.</text>
+	</string>
+	<string id="st_yan_deliver_art_3_name">
+		<text>Deliver a Pellicle artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_3_text">
+		<text>Sakharov wants to study the structure of the Pellicle artifact and figure out what makes it such a potent absorber of chemical gases.</text>
+	</string>
+	<string id="st_yan_deliver_art_4_name">
+		<text>Deliver the artifact known as Mama's Beads</text>
+	</string>
+	<string id="st_yan_deliver_art_4_text">
+		<text>Sakharov wants to analyse the emissions produced by the Mama's Beads to figure out how it affects the bodies metabolism.</text>
+	</string>
+	<string id="st_yan_deliver_art_5_name">
+		<text>Deliver the Firefly artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_5_text">
+		<text>Sakharov wants a better understanding of how the Firefly artifact causes increased cellular activity.</text>
+	</string>
+	<string id="st_yan_deliver_art_6_name">
+		<text>Deliver the Soul artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_6_text">
+		<text>Sakharov needs a Soul artifact to conduct an experiment on.</text>
+	</string>
+	<string id="st_yan_deliver_art_7_name">
+		<text>Deliver the Thorn artifact</text>
+	</string>
+	<string id="st_yan_deliver_art_7_text">
+		<text>Sakharov requires a Thorn artifact to study it's effects on reducing radiation in the human body.</text>
+	</string>
+</string_table>

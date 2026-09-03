@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!-- Mutant body parts -->
+	<string id="mutant_flesh_eye_description">
+		<text>The mutated, swollen eye of the Flesh acquired a number of strange characteristics, the most useful of which is the ability to regenerate the lens. The specifics of the process are hitherto unknown, although such discovery would most certainly revolutionize modern medicine. You can play your part in scientific development by selling Flesh eyes to scientists for their experiments.</text>
+	</string>
+	<string id="mutant_flesh_eye">
+		<text>Flesh Eye</text>
+	</string>
+	<string id="mutant_boar_leg_description">
+		<text>Hoofs of Boars can be used to produce various drugs, for example antiradation serums.</text>
+	</string>
+	<string id="mutant_boar_leg">
+		<text>Boar Leg</text>
+	</string>
+	<string id="mutant_dog_tail_description">
+		<text>The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab examination.</text>
+	</string>
+	<string id="mutant_dog_tail">
+		<text>Dog Tail</text>
+	</string>
+	<string id="mutant_psevdodog_tail_description">
+		<text>The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab examination.</text>
+	</string>
+	<string id="mutant_psevdodog_tail">
+		<text>Psuedodog Tail</text>
+	</string>
+	<string id="mutant_krovosos_jaw_description">
+		<text>Bloodsucker tentacles contain a special gland producing an enzyme capable of dissolving the skin and simultaneously preventing blood from clotting. Discovering the enzyme's composition could be the cornerstone of a whole series of great medical advances.</text>
+	</string>
+	<string id="mutant_krovosos_jaw">
+		<text>Bloodsucker Jaw</text>
+	</string>
+	<string id="mutant_snork_leg_description">
+		<text>Snork feet and legs contain a huge number of highly elastic tendons. This explains the beast's ability to make those unbelievably long jumps. Scientists still look for useful possibilities to use them, and they would be thankful for all help they get.</text>
+	</string>
+	<string id="mutant_snork_leg">
+		<text>Snork Leg</text>
+	</string>
+	<string id="mutant_chimera_cogot_description">
+		<text>The claw of a Chimera. It's exact molecular composition is unknown, but it is known that it is as strong as diamonds, explaining the beasts capacity to rip apart a man even inside an armoured suit.</text>
+	</string>
+	<string id="mutant_chimera_cogot">
+		<text>Chimera Claw</text>
+	</string>
+	<string id="mutant_cat_tail_description">
+		<text>The soft fur of the mutant cat tail has excellent insulating properties as well as an attractive look that makes it a material that has a wide range of uses both inside and out of the zone.</text>
+	</string>
+	<string id="mutant_cat_tail">
+		<text>Cat Tail</text>
+	</string>
+	<string id="mutant_tushkano_head_description">
+		<text>The head of a Tushkano mutant. Scientists wish to study these in order to help them identify what creature the Tushkano originated from.</text>
+	</string>
+	<string id="mutant_tushkano_head">
+		<text>Tushkano Head</text>
+	</string>
+	
+	<!-- actor pda -->
+	<string id="st_device_pda_actor_descr">
+		<text>A handheld personal PC. Used to store collected information and other bits and pieces by stalkers, as well as being a navigation and communication device.</text>
+	</string>
+	<string id="st_device_pda_actor">
+		<text>Personal PDA</text>
+	</string>
+	
+	<!-- medical supplies and food -->
+	<string id="st_antirad_descr">
+		<text>A pack of pills with active ingredients that help expel radionucleoids from the body. The pills do not protect the body from new radiation, but only reduce the existing radiation dose.\n%c[255,238,153,26]• %c[default]Radiation reduction: %c[255,1,128,54]-4\n%c[255,238,153,26]• %c[default]Time: 20 seconds</text>
+	</string>
+	<string id="st_medkit_descr">
+		<text>Basic medical kit. Handy for treating various injuries - wounds, burns, poisoning and others.\n%c[255,238,153,26]• %c[default]Health: %c[255,1,128,54]+6\n%c[255,238,153,26]• %c[default]Time: 10 seconds</text>
+	</string>
+	<string id="st_medkit_army_descr">
+		<text>A specialized medical kit for dealing with physical injuries and bleeding. Packed full of blood coagulants, painkillers, antibiotics and immunostimulants.\n%c[255,238,153,26]• %c[default]Health: %c[255,1,128,54]+10\n%c[255,238,153,26]• %c[default]Stamina: %c[255,1,128,54]+5\n%c[255,238,153,26]• %c[default]Time: 10 seconds</text>
+	</string>
+	<string id="st_medkit_science_descr">
+		<text>A medical kit designed specifically for use in the Zone. The kit contains products for handling wounds, as well as expelling radionucleoids from the body. Prevents the development of radiation sickness and lowers the existing radiation dose.\n%c[255,238,153,26]• %c[default]Health:%c[255,1,128,54]+6\n%c[255,238,153,26]• %c[default]Radiation reduction:%c[255,1,128,54]-5\n%c[255,238,153,26]• %c[default]Time: 10 seconds</text>
+	</string>
+	<string id="st_energy_drink_descr">
+		<text>Often used by stalkers on long trips when no breaks can be afforded. The drink contains easily digestible carbohydrates, as well as drugs that stimulate the release of adrenaline into the blood.\n%c[255,238,153,26]• %c[default]Stamina: %c[255,1,128,54]+4\n%c[255,238,153,26]• %c[default]Time: 60 seconds</text>
+	</string>
+	<string id="st_vodka_descr">
+		<text>Made by GSC. Goes down easy and considerably lowers radiation effects. Should be enjoyed in moderation.\n%c[255,238,153,26]• %c[default]Radiation reduction: %c[255,1,128,54]-2\n%c[255,238,153,26]• %c[default]Time: 10 seconds</text>
+	</string>
+	<string id="st_bread_descr">
+		<text>No bakers have ever been identified in the Zone, but this bread is not contaminated and is actually quite edible. At least no complaints have been reported thus far.\n%c[255,238,153,26]• %c[default]Health: %c[255,1,128,54]+0.75\n%c[255,238,153,26]• %c[default]Time: 5 seconds</text>
+	</string>
+	<string id="st_kolbasa_descr">
+		<text>For better or worse, this sausage - a mix of chicken and soy substitute - is often a stalker's breakfast, lunch and dinner in one.\n%c[255,238,153,26]• %c[default]Health: %c[255,1,128,54]+0.75\n%c[255,238,153,26]• %c[default]Time: 5 seconds</text>
+	</string>
+	<string id="st_conserva_descr">
+		<text>Canned goods from an army ration depot looted by stalkers. Should still be good to eat, if you believe the best before date.\n%c[255,238,153,26]• %c[default]Health: %c[255,1,128,54]+1.5\n%c[255,238,153,26]• %c[default]Time: 5 seconds</text>
+	</string>
+	
+	<!-- electrical components -->
+	<string id="st_gar_materials_capacitor_descr">
+		<text>A pack of capacitors salvaged from abandoned electrical equipment in the Zone. Not as effective or as reliable as modern capacitors, they are still widely used due to their availabilty.</text>
+	</string>
+	<string id="st_gar_materials_capacitor">
+		<text>A pack of capacitors</text>
+	</string>
+	<string id="st_gar_materials_transistor_descr">
+		<text>A box of transistors salvaged from abandoned electrical equipment in the Zone. Not as effective or as reliable as modern transistors, they are still in demand due to their effectiveness compared to valves.</text>
+	</string>
+	<string id="st_gar_materials_transistor">
+		<text>A box of transistors</text>
+	</string>
+	<string id="st_gar_materials_wire_descr">
+		<text>A roll of copper wire salvaged from abandoned electrical equipment in the Zone. The wire has a few stray dents in it, but is still in good working order. The wire has a wide range of uses within the Zone, and is hence in high demand.</text>
+	</string>
+	<string id="st_gar_materials_wire">
+		<text>A roll of copper wire</text>
+	</string>
+</string_table>

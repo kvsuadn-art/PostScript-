@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ecologist_red_outfit_description">
+		<text>A SSP-99 chemical protection suit specifically designed for the zones conditions. It is used primarily by scientific expeditions and the eco-stalkers who co-operate with them. It has an intergrated air filtering and conditioning system offering excellent protection against radiation and chemical exposure, includes an anomaly suppression system, and uses a fabric which offers excellent heat and electrical resistance. It isn't designed for combat, so it provides neither bullet or splinter protection. Includes a container capable of holding 2 artifacts. Comes with a Closed circuit respiratory module.</text>
+	</string>
+	<string id="ecologist_red_outfit_name">
+		<text>"SSP-99 Ecologist" suit</text>
+	</string>
+	<string id="ecologist_green_outfit_description">
+		<text>High quality modified SSP-99 suit. It provides increased body protection from bullet and splinter damage. It is designed for the guards working with scientific expeditions. It provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments and other effects dangerous to the body. Includes a container capable of holding 2 artifacts. Comes with a Closed circuit respiratory module.</text>
+	</string>
+	<string id="ecologist_green_outfit_name">
+		<text>"SSP-99M Ecologist" suit</text>
+	</string>
+</string_table>

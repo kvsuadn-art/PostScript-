@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="bandit_outfit_description">
+		<text>Traditional bandit clothing - a leather jacket with armor pieces sewed in. The protection it provides is completely inadequate for the harsh conditions of the Zone. The jacket comes with a container that can hold up to two artifacts. Comes with a Gasmask.</text>
+	</string>
+	<string id="dolg_outfit_description">
+		<text>A modernized version of the Duty protective suit, which provides good anomaly protection unlike the PSZ series suits. The built-in body armor is capable of stopping a pistol round. Cannot be modified to include an artifact container, but can be modified to include a combat support system. Comes with a Gasmask.</text>
+	</string>
+	<string id="dolg_outfit_name">
+		<text>PSZ-9d "Duty Suit" suit</text>
+	</string>
+	<string id="exo_outfit_description">
+		<text>An experimental sample of a military exoskeleton. Was never mass-produced due to the extreme cost and some design flaws. Small batches are nonetheless produced in underground facilities outside Ukraine. This is a third-generation exoskeleton, which corrects the mobility-impeding design flaws of previous versions and features stronger armor. Comes with a Armoured helmet.</text>
+	</string>
+	<string id="military_outfit_description">
+		<text>The Bulat military armored suit is designed for assault operations in highly anomalous areas. Comprises a heavy military armored suit, a built-in compensation suit, and the Sphere-12M helmet. The suits armor is capable of stopping an assault rifle round. Doesn't include any artifact container's by default. Comes with a Sphere-12M helmet.</text>
+	</string>
+	<string id="military_outfit_name">
+		<text>SKAT-9 "Bulat" armored suit</text>
+	</string>
+	<string id="scientific_outfit_description">
+		<text>This suit, produced by one of Kiev's Research Institutes, provides a great alternative to other homemade stalker suits. It is a fine combination of an armored bodysuit, a closed-cycle respiratory module and an anomaly field suppression system. That, plus well-chosen materials, makes this suit a fine choice, with the price being the only drawback. Comes with a Closed circuit respiratory module.</text>
+	</string>
+	<string id="specops_outfit_description">
+		<text>The Berill-5M is a Spetsnaz bodysuit, modified for use in the Zone. The suit includes PSZ-9a series military body armor with beryllium sputter and a Sphere-08 helmet. Designed for assault operations in extremely radioactive regions, it is ineffective in areas of high anomalous activity. Comes with a Sphere-08 helmet.</text>
+	</string>
+	<string id="stalker_outfit_description">
+		<text>Made and manufactured by "do-it-yourselfers," this stalker suit effectively combines light military body armor and a bodysuit of rubberized cloth. Despite the fact that the body armor is incapable of protecting the wearer from even pistol rounds, the suit enjoys great popularity due to it's low cost and modification potential. Includes a container that can hold up to two artifacts. Comes with a Gasmask.</text>
+	</string>
+	<string id="svoboda_heavy_outfit_description">
+		<text>A reinforced stalker bodysuit made by Freedom craftsmen. It's standard military body armor in combination with plated zirconium elements yields good protection against submachine gun and assault rifle rounds and fragmentation damage at all distances. The suits dual-layered material combines specially treated leather with a fabric that contains asbestos yarn. The suit offers limited protection against various anomalies and radiation. Comes with a Sphere-08 helmet.</text>
+	</string>
+	<string id="svoboda_light_outfit_description">
+		<text>This lightweight stalker bodysuit is made by Freedom craftsmen. It's light military body armor is reinforced with Kevlar plating to offer protection from small arms fire. The suits fabric is treated with a special solution, which increases it's resistance to anomalies. Comes with a Gasmask.</text>
+	</string>
+	<string id="csky_heavy_outfit_description">
+		<text>Standard equipment used by Clear Sky assault squads. This body armor is able to stop a pistol bullet, while it's integrated gas mask provides good protection from anomalous exposure. Includes a container capable of holding one artifact. Comes with a Armoured helmet.</text>
+	</string>
+	<string id="csky_light_outfit_description">
+		<text>This body armor was designed for conducting search operations in areas of low anomalous activity. It's higher quality materials result in greater durability. Includes a container capable of holding one artifact. Doesn't come with any headgear by default.</text>
+	</string>
+	<string id="dolg_heavy_outfit_description">
+		<text>An early Duty suit model based on the Skat-9M. Became known for it's built-in body armor and virtually no protection from anomalous exposure. Cannot be modified to include an artifact container, but can be modified to include a combat support system. Comes with a Sphere-12M helmet.</text>
+	</string>
+	<string id="dolg_heavy_outfit_name">
+		<text>PSZ-12d Duty armored suit</text>
+	</string>
+	<string id="exo_freedom_outfit_description">
+		<text>An modified version of a regular exoskeleton. The use of lighter materials allowed the designers to reduce the suits weight and boost it's durability. Comes with a Armoured helmet.</text>
+	</string>
+	<string id="novice_outfit_description">
+		<text>Common garb of a novice stalker. It won't save you from bullets or anomalies, but it's still better than nothing. Capable of being upgraded to hold up to two artifacts. Comes with a Gasmask.</text>
+	</string>
+	
+	<string id="monolith_outfit_description">
+		<text>Armour used by the monolith faction. The designers and producers are unknown. It's structure is similar to the suit popular with neutral stalkers which combines a bulletproof vest and a radiation protection suit. It provides good protection from gunfire. How this particular suit was obtained is better off not being known. Includes a container capable of holding one artifact. Comes with a Gasmask.</text>
+	</string>
+	<string id="monolith_outfit_name">
+		<text>"Monolith" suit</text>
+	</string>
+	<string id="merc_outfit_description">
+		<text>Standard issue armour used commonly by the Mercenary Faction. The armour has specially treated fabrics to retain armour protection while moving. Combines medium military armour with treated fabrics to provide anomalous and combat protection.  Includes a container capable of holding two artifacts. Comes with a Gasmask.</text>
+	</string>
+	<string id="merc_outfit_name">
+		<text>"Mercenary" suit</text>
+	</string>
+	<string id="svoboda_medium_outfit_description">
+		<text>The Guardian of Freedom suit is based on the PSZ-9 suit, but modified by Freedom craftsmen. It consists of light body armour with reinforcing zirconium elements to provide addition bullet and splinter protection. The material of the suit comprises of two layers: specially treated leather and fabric combined with asbestos yarn. It has become the standard armoured suit of the Freedom Faction. Includes a container capable of holding two artifacts. Comes with a Gasmask.</text>
+	</string>
+	<string id="svoboda_medium_outfit_name">
+		<text>"Guardian of Freedom" suit</text>
+	</string>
+	<string id="dolg_scientific_outfit_description">
+		<text>The Duty issue version of the SEVA suit, the PSZ-9Md is appricated by stalkers because it combines excellent anomaly and bullet-proof qualities. It uses a better version of the PSZ-9d suit, a closed cycle breathing system and an intergrated system of anomalous feild suppresion. It provides better bullet and splinter protection, but reduced anomaly protection. Used by Duty soldiers in highly anomalous areas.  Includes a container capable of holding two artifacts. Comes with a Closed circuit respiratory module.</text>
+	</string>
+	<string id="dolg_scientific_outfit_name">
+		<text>PSZ-9Md "Universal Protection"</text>
+	</string>
+	<string id="trench_outfit_description">
+		<text>A regular black leather trench coat. Has no special purpose other than to keep the wearer warm at night or protect him from a blind dog bite. Although the trench coat is not particularly comfortable, it is often used by bandits in the Zone - either because it allows them to hide in the dark or simply due to it's "cool" appearance. Doesn't include any artifact container's by default. Doesn't come with any headgear by default.</text>
+	</string>
+	<string id="trench_outfit_name">
+		<text>Leather Trenchcoat</text>
+	</string>
+	<string id="psz9_outfit_description">
+		<text>This suit, produced by one of Kiev's Research Institutes, provides a great alternative to other homemade stalker suits. Combining light Military body armor with an anomaly protection suit, this is capable of protecting the wearer in the harsh environments of the Zone. It's high quality materials allow it to easily withstand the wear and tear suits sustain within the Zone. Includes a container capable of holding two artifacts. Comes with a Gasmask.</text>
+	</string>
+	<string id="psz9_outfit_name">
+		<text>PSZ-9 "Twilight" suit</text>
+	</string>
+	<string id="csky_medium_outfit_description">
+		<text>This suit was designed specifically for Clear Sky assault squads where mobility was required. It's body armor is more than capable of stopping a bullet, and it's intergrated gasmask helps to protect against anomalous exposure. Includes a container capable of holding one artifact. Comes with a Armoured helmet.</text>
+	</string>
+	<string id="csky_medium_outfit_name">
+		<text>CS-2 body armor</text>
+	</string>
+	<string id="skat9m_outfit_description">
+		<text>The precursor to the SKAT-9 Bulat suit, this suit offers higher levels of combat protection, but not as much anomaly protection. Obsolete, some traders still have several of these suits in stock, due to their protective capabilities. Doesn't include any artifact container's by default. Comes with a Sphere-12M helmet.</text>
+	</string>
+	<string id="skat9m_outfit_name">
+		<text>SKAT-9M Military armored suit</text>
+	</string>
+	<string id="exo_frame_outfit_description">
+		<text>A Generation 2 exoskeleton frame, antiquidated, but still used by some stalkers due to it's low cost. It comes fitted with a Sunrise suit. It has a tendancy to suffer from periodic power failures.</text>
+	</string>
+	<string id="exo_frame_outfit_name">
+		<text>Generation 2 Exoskeleton</text>
+	</string>
+</string_table>

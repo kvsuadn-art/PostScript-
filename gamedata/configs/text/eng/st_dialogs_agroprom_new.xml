@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="agr_leader_leave_duty_0">
+		<text>Sir, I wish to resign.</text>
+	</string>
+	<string id="agr_leader_leave_duty_1">
+		<text>How come soldier?</text>
+	</string>
+	<string id="agr_leader_leave_duty_2">
+		<text>Sir, life in Duty, it's just not working out for me Sir. I don't think I'm quite ready for this sort of life, Sir.</text>
+	</string>
+	<string id="agr_leader_leave_duty_3">
+		<text>Hmm, are you sure? Stick around for a bit, maybe things will get better for you.</text>
+	</string>
+	<string id="agr_leader_leave_duty_4_0">
+		<text>I'm sure, Sir.</text>
+	</string>
+	<string id="agr_leader_leave_duty_4_1">
+		<text>Too bad. Sometimes life in Duty can be hard to adjust to. If you ever change your mind, you know where to find me. You can keep your gear as well, as a reminder of your service.</text>
+	</string>
+	<string id="agr_leader_leave_duty_4_2">
+		<text>Thank you Sir. Sorry Sir.</text>
+	</string>
+	<string id="agr_leader_leave_duty_5_0">
+		<text>I'll give it a while longer Sir, see if things do get better. I might need a bit more time...</text>
+	</string>
+	<string id="agr_leader_leave_duty_5_1">
+		<text>Good lad. If at first you don't succeed, try again. We'll pretend this conversation never happened.</text>
+	</string>
+	<string id="agr_leader_leave_duty_5_2">
+		<text>Thank you Sir.</text>
+	</string>
+	
+	<string id="st_agr_additional_quest_1_descr">
+		<text>Find the Artifact and the Soldier</text>
+	</string>
+	<string id="st_agr_additional_quest_1_descr2">
+		<text>Stalker, I sent several of our people out to search for several artifacts after Krylov approved it, but we haven't heard or seen them since they left. Given the mutant problem, Krylov doesn't want to send anyone else out to look, and I want to know what happened to them, and the artifacts I needed. The first one was a Battery, and our man went East first.</text>
+	</string>
+	<string id="st_agr_additional_quest_3_descr">
+		<text>Find the Artifact and the Soldier</text>
+	</string>
+	<string id="st_agr_additional_quest_3_descr2">
+		<text>Thanks for your help, a patrol found the body not that long ago. I told Krylov, and hes quite pleased. Anyway, we've still got one missing Stalker, and one missing artifact. Feel up to it? it's a Kolobok I'm needing this time.</text>
+	</string>
+	
+	<string id="st_agr_flash_up_full_svu_descr">
+		<text>Find the Flash Drive: SVU</text>
+	</string>
+	<string id="st_agr_flash_up_full_svu_descr2">
+		<text>Hey, Stalker, got a job for you. We recently 'obtained' a small stack of these bullpup sniper rifles, SVU type. Only problem is, I don't know how to modify them correctly. Find me some info, and I'll give you a cut of the profit I'll make from upgrading them for the boys.</text>
+	</string>
+	<string id="st_agr_flash_up_full_rp74_descr">
+		<text>Find the Flash Drive: RP-74</text>
+	</string>
+	<string id="st_agr_flash_up_full_rp74_descr2">
+		<text>Uh, I don't believe it. I was cleaning out my old blueprints, and I accidentally threw away the ones for our heavy machine guns. I need a new set, and fast. I'll pay you extra to get me a new set.</text>
+	</string>
+	<string id="st_agr_flash_up_part_val_descr">
+		<text>Find the Flash Drive: VAL</text>
+	</string>
+	<string id="st_agr_flash_up_part_val_descr2">
+		<text>I'm looking for a few bits and pieces to obtain a full set of schematics. One such schematic that needs to be completed is for our VLA assault rifles. Could you bring me some info on this, if you find any?</text>
+	</string>
+	<string id="st_agr_flash_up_part_tunder_descr">
+		<text>Find the Flash Drive: Tunder Barrel</text>
+	</string>
+	<string id="st_agr_flash_up_part_tunder_descr2">
+		<text>I've heard that the Army techs have found a way to put a Silencer onto the Tunder assault rifles. I know this info has leaked into the Zone, so find it for me. I'll give you a full 40% of what I'd have to pay Sid over in the Cordon for this info.</text>
+	</string>
+	
+	<string id="st_agr_deliver_part_1_descr">
+		<text>Deliver a Chimera claw</text>
+	</string>
+	<string id="st_agr_deliver_part_1_descr2">
+		<text>You have heard of the Chimera? Well, its a mutant so powerful that it can tear a person limb from limb, and even tear open a Stalker inside an Radiation Armoured Suit. It uses its claws for this task, and we want one to look at, so we can figure out to create armour to resist it. It'll be a difficult hunt, but the rewards will be worth it in the end.</text>
+	</string>
+	<string id="st_agr_deliver_part_2_descr">
+		<text>Deliver a Bloodsucker's tentacles</text>
+	</string>
+	<string id="st_agr_deliver_part_2_descr2">
+		<text>Bloodsuckers, now thats a frightful mutant. Dangerous predators, with their speed, strenght, and invisibilty. And what makes them even more dangerous is that their saliva contains a chemical that prevents blood from clotting, and wounds from healing. We need a cure, bad, and to get one we will need a fresh, uncontaminated saliva sample from their tentacles. You'll be saving lives if you do.</text>
+	</string>
+	
+	<string id="st_agr_deliver_art_1_descr">
+		<text>Deliver a Bubble artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_1_descr2">
+		<text>The artifact known as 'Bubble' is fairly rare, and supposedly releases a chemical gas that neutralizes radioactive particles. We are looking for one to examine, so we can determine if the gases can be used to make a new form of Antirad, one that can be breathed in, preventing painful ejections and slow acting medication, and being absorbed directly into the body. So, you interested?</text>
+	</string>
+	<string id="st_agr_deliver_art_2_descr">
+		<text>Deliver an Eye artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_2_descr2">
+		<text>They say the artifact known as 'Eye' brings good luck. Well, I'm in need of some. Bring me one, and you might encounter some unexpected cash.</text>
+	</string>
+	<string id="st_agr_deliver_art_3_descr">
+		<text>Deliver a Flash artifact</text>
+	</string>
+	<string id="st_agr_deliver_art_3_descr2">
+		<text>We're conducting some anomaly research, and we need to see how effective the Flash artifact is at grounding electric fields. Its fairly common, so it shouldn't be too hard to find one.</text>
+	</string>
+	
+	<string id="st_agr_deliver_weapon_1_descr">
+		<text>Deliver a SVD sniper rifle</text>
+	</string>
+	<string id="st_agr_deliver_weapon_1_descr2">
+		<text>We're looking to outfit some of our snipers with a more effective weapon, and we have decided that the SVD sniper rifle would probably suit us fine. Mind getting one for us to test?</text>
+	</string>
+	<string id="st_agr_deliver_weapon_2_descr">
+		<text>Deliver a RPG-7 rocket launcher</text>
+	</string>
+	<string id="st_agr_deliver_weapon_2_descr2">
+		<text>Well, one of squads recently had one of their RPG launchers get destroyed in a firefight with some Bandits, and we need a replacement one. They're not that common, so there is a lot of cash in it for you Stalker if you're the first one to one in. Used is Ok.</text>
+	</string>
+</string_table>

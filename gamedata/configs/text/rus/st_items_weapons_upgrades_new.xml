@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<!-- Fluffy22-->
+<string_table>
+	<!--blank scheme-->
+	<string id="st">
+		<text>Пусто</text>
+	</string>
+	<string id="st_upg_zatvor_dur">
+		<text>Замена затвора</text>
+	</string>
+	<string id="st_upg_zatvor_dur_descr">
+		<text>Замена стандартного затвора на более прочный аналог повышает надёжность оружия.</text>
+	</string>
+	<string id="st_upg_barrel_weight">
+		<text>Замена ствола</text>
+	</string>
+	<string id="st_upg_barrel_weight_descr">
+		<text>Замена штатного ствола на облегчённую версию.</text>
+	</string>
+	<string id="st_upg_barrel_cold">
+		<text>Замена ствола</text>
+	</string>
+	<string id="st_upg_barrel_cold_descr">
+		<text>Замена штатного ствола на износостойкий ствол из стали холодной ковки.</text>
+	</string>
+	<string id="st_upg_head_recoil">
+		<text>Замена ударника</text>
+	</string>
+	<string id="st_upg_head_recoil_descr">
+		<text>Замена штатного ударника на модифицированный снижает отдачу оружия.</text>
+	</string>
+	<string id="st_upg_recoil_spring">
+		<text>Дополнительная возвратная пружина</text>
+	</string>
+	<string id="st_upg_recoil_spring_descr">
+		<text>Установка дополнительной пружины со встречной навивкой снижает отдачу без ущерба для настильности стрельбы.</text>
+	</string>
+	<string id="st_upg_silencer_weight">
+		<text>Замена глушителя</text>
+	</string>
+	<string id="st_upg_silencer_weight_descr">
+		<text>Замена встроенного штатного глушителя на более лёгкую модель повышает удобство обращения с оружием.</text>
+	</string>
+	<string id="st_upg_bind_silencer2">
+		<text>Крепление глушителя</text>
+	</string>
+	<string id="st_upg_bind_silencer2_descr">
+		<text>Установка несъёмного глушителя на оружие.</text>
+	</string>
+	<string id="st_barrel_guide">
+		<text>Направляющая ствола</text>
+	</string>
+	<string id="st_barrel_guide_descr">
+		<text>Дополнительная фиксация ствола уменьшает его уход с линии прицеливания во время стрельбы.</text>
+	</string>
+	<string id="st_upg_gas_recoil">
+		<text>Модификация газоотвода</text>
+	</string>
+	<string id="st_upg_gas_recoil_descr">
+		<text>Регулировка газоотводного механизма позволяет уменьшить подброс ствола при длительной стрельбе очередями.</text>
+	</string>
+	<string id="st_upg_adjust_mount">
+		<text>Смещение крепления</text>
+	</string>
+	<string id="st_upg_adjust_mount_descr">
+		<text>Изменение положения интегрированного подствольного гранатомёта делает возможной установку глушителя.</text>
+	</string>
+	<string id="st_barrel_rifling">
+		<text>Улучшенная нарезочная часть</text>
+	</string>
+	<string id="st_barrel_rifling_descr">
+		<text>Модификация нарезов ствола обеспечивает лучшую стабилизацию пули в полёте, повышая кучность стрельбы.</text>
+	</string>
+</string_table>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!-- Toolkits -->
+	<string id="toolkit_basic">
+		<text>Basic Tools</text>
+	</string>
+	<string id="toolkit_basic_description">
+		<text>This box contains a set of various tools that can be used to work on weapons and armor. Only a technician would know how to use this effectively.</text>
+	</string>
+	<string id="toolkit_advanced">
+		<text>Advanced Tools</text>
+	</string>
+	<string id="toolkit_advanced_description">
+		<text>This box contains a set of various tools and other items that can be used to do sophisticated work on weapons and armor. Only a technician would know how to use this effectively.</text>
+	</string>
+	<string id="toolkit_expert">
+		<text>Expert Tools</text>
+	</string>
+	<string id="toolkit_expert_description">
+		<text>This box contains a set of various complicated looking tools and other items that can be used to perform complex work on weapons and armor. Only a technician would know how to use this effectively.</text>
+	</string>
+	
+	<!-- Flash Drives -->
+	<string id="flash_up_full_l85_name">
+		<text>Flash drive with data on the IL86 assault rifle</text>
+	</string>
+	<string id="flash_up_full_l85_descr">
+		<text>Flash drive with full technical data on the IL86 assault rifle</text>
+	</string>
+	<string id="flash_up_full_svu_name">
+		<text>Flash drive with data on SV series sniper rifles</text>
+	</string>
+	<string id="flash_up_full_svu_descr">
+		<text>Flash drive with full technical data on the SV series sniper rifles</text>
+	</string>
+	<string id="flash_up_full_chaser13_name">
+		<text>Flash drive with data on combat shotguns</text>
+	</string>
+	<string id="flash_up_full_chaser13_descr">
+		<text>Flash drive with technical data on the Chaser13 Shotgun</text>
+	</string>
+	<string id="flash_up_full_mg_name">
+		<text>Flash drive with data on machine gun systems</text>
+	</string>
+	<string id="flash_up_full_mg_descr">
+		<text>Flash drive with full technical data on various machine guns</text>
+	</string>
+	<string id="flash_up_full_seva_name">
+		<text>Flash drive with data on closed circuit protection suits</text>
+	</string>
+	<string id="flash_up_full_seva_descr">
+		<text>Flash drive with full technical data on closed circuit protection suits</text>
+	</string>
+	<string id="flash_up_full_exo_name">
+		<text>Flash drive with data on exterior combat support systems</text>
+	</string>
+	<string id="flash_up_full_exo_descr">
+		<text>Flash drive with full technical data on exterior combat support systems</text>
+	</string>
+	<string id="flash_up_full_g36_name">
+		<text>Flash drive with data on modern assault rifle systems</text>
+	</string>
+	<string id="flash_up_full_g36_descr">
+		<text>Flash drive with full technical data on the GP37 assault rifle</text>
+	</string>
+	<string id="flash_up_full_fn2000_name">
+		<text>Flash drive with data on advanced assault rifle systems</text>
+	</string>
+	<string id="flash_up_full_fn2000_descr">
+		<text>Flash drive with full technical data on the FT200M intergrated assault rifle</text>
+	</string>
+	
+	<string id="flash_up_part_elec_stab_name">
+		<text>Flash drive with data on a electronic stablization system</text>
+	</string>
+	<string id="flash_up_part_elec_stab_descr">
+		<text>Flash drive with full technical data on a electronic stablization system to help improve accuracy</text>
+	</string>
+	<string id="flash_up_part_shotgun_barrel_name">
+		<text>Flash drive with data on shotgun barrels</text>
+	</string>
+	<string id="flash_up_part_shotgun_barrel_descr">
+		<text>Flash drive with information on modifing shotgun barrels</text>
+	</string>
+	<string id="flash_up_part_servomotor_name">
+		<text>Flash drive with data on servomotor modifications</text>
+	</string>
+	<string id="flash_up_part_servomotor_descr">
+		<text>Flash drive with full technical data on how to modify servomotors for increased performance</text>
+	</string>
+	<string id="flash_up_part_tunder_barrel_name">
+		<text>Flash drive with data on a barrel adjustment procedure</text>
+	</string>
+	<string id="flash_up_part_tunder_barrel_descr">
+		<text>Flash drive with data on how to adjust a intergrated grenade launcher to allow the addition of a silencer</text>
+	</string>
+	<string id="flash_up_part_tunder_mech_name">
+		<text>Flash drive with data on the operation of an intergrated assault rifle's internal mechanics</text>
+	</string>
+	<string id="flash_up_part_tunder_mech_descr">
+		<text>Flash drive with data on how to modify the internal mechanics safely of an intergrated assault rifle</text>
+	</string>
+	<string id="flash_up_part_val_name">
+		<text>Flash drive with data on the operation of a special subsonic rifle</text>
+	</string>
+	<string id="flash_up_part_val_descr">
+		<text>Flash drive with data on how to modify the internal mechanics safely of a special subsonic rifle</text>
+	</string>
+	<string id="flash_up_part_military_armor_name">
+		<text>Flash drive with data on heavy duty military class armor</text>
+	</string>
+	<string id="flash_up_part_military_armor_descr">
+		<text>Flash drive with data on how to correctly add military class armor to an armored suit</text>
+	</string>
+	<string id="flash_up_part_shotgun_striker_name">
+		<text>Flash drive with data on shotgun striking mechanisms</text>
+	</string>
+	<string id="flash_up_part_shotgun_striker_descr">
+		<text>Flash drive with data on different forms of shotgun striker modifications</text>
+	</string>
+	<string id="flash_up_part_anomaly_armor_name">
+		<text>Flash drive with data on anomaly proof coatings</text>
+	</string>
+	<string id="flash_up_part_anomaly_armor_descr">
+		<text>Flash drive with data on how to design and cover armor with anomaly proof coatings</text>
+	</string>
+	<string id="flash_up_part_g36_name">
+		<text>Flash drive with data on modern assault rifle systems</text>
+	</string>
+	<string id="flash_up_part_g36_descr">
+		<text>Flash drive with data on how to modify the internal mechanics safely on the GP37 assault rifle</text>
+	</string>
+</string_table>

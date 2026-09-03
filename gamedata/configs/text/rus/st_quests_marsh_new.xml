@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_mar_toolkit_advanced_name">
+		<text>Find the Advanced Toolkit</text>
+	</string>
+	<string id="st_mar_toolkit_advanced_text">
+		<text>With this toolkit, Grey will have tools detailed enough to do better upgrades for weapons and armor.</text>
+	</string>
+	<string id="st_mar_flash_up_full_mg_name">
+		<text>Find the Flash Drive: RP-74</text>
+	</string>
+	<string id="st_mar_flash_up_full_mg_text">
+		<text>With this Flash Drive, Grey will have information on how to modify a medium machine gun.</text>
+	</string>
+	<string id="st_mar_flash_up_part_g36_name">
+		<text>Find the Flash Drive: GP37</text>
+	</string>
+	<string id="st_mar_flash_up_part_g36_text">
+		<text>With this Flash Drive, Grey will have information on how to adjust the internal mechanics of a GP37 assault rifle</text>
+	</string>
+	<string id="st_mar_flash_up_part_anomaly_armor_name">
+		<text>Find the Flash Drive: Anomaly Proof Coatings</text>
+	</string>
+	<string id="st_mar_flash_up_part_anomaly_armor_text">
+		<text>With this Flash Drive, Grey will have information on how to design and cover armor with anomaly proof coatings</text>
+	</string>
+
+</string_table>

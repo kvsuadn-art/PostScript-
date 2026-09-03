@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_ps_deliver_capacitors_name">
+		<text>Find electrical components: Capacitors</text>
+	</string>
+	<string id="st_ps_deliver_capacitors_text">
+		<text>Deliever a pack of capacitors to the mechanic.</text>
+	</string>
+	<string id="st_ps_deliver_transistors_name">
+		<text>Find electrical components: Transistors</text>
+	</string>
+	<string id="st_ps_deliver_transistors_text">
+		<text>Deliever a pack of transistors to the mechanic.</text>
+	</string>
+	<string id="st_ps_deliver_wire_name">
+		<text>Find electrical component: Copper Wire</text>
+	</string>
+	<string id="st_ps_deliver_wire_text">
+		<text>Deliever a roll of copper wire to the mechanic.</text>
+	</string>
+</string_table>
