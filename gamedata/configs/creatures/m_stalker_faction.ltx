@@ -1,0 +1,191 @@
+;---Base stalker classes
+
+;---------------------------------------------------------------------
+;Duty Profile
+;---------------------------------------------------------------------
+[stalker_dolg]:stalker
+$spawn = "stalkers\stalker_dolg"
+;---Panic variable
+panic_threshold					= 0.01
+
+;---FIRE DISPERSIONS--------------------------------------------------
+; Duty is highly disicplined, and excels at combat on the move
+disp_walk_stand					= 6
+disp_walk_crouch				= 4
+disp_run_stand					= 10
+disp_run_crouch					= 6
+disp_stand_stand				= 4
+disp_stand_crouch				= 2
+disp_stand_stand_zoom			= 1.5
+disp_stand_crouch_zoom			= 1.25
+
+;---------------------------------------------------------------------
+;Freedom Profile
+;---------------------------------------------------------------------
+
+[stalker_svoboda_movement_speeds]
+; Freedom are skirmishers, so focus on ambushes, and hence faster on the move
+	; danger
+	;; crouch
+	;;; walk
+	danger_crouch_walk_forward 	= 1.2
+	danger_crouch_walk_backward	= 1.15
+	danger_crouch_walk_left		= 1.15
+	danger_crouch_walk_right 	= 1.15
+	;;; run
+	danger_crouch_run_forward   = 2.6
+	danger_crouch_run_backward	= 2.2
+	danger_crouch_run_left		= 2.5
+	danger_crouch_run_right		= 2.5
+	;; stand
+	;;; walk
+	danger_stand_walk_forward	= 1.9
+	danger_stand_walk_backward	= 1.9
+	danger_stand_walk_left		= 2.1
+	danger_stand_walk_right		= 2.1
+	;;; run
+	danger_stand_run_forward	= 3.7
+	danger_stand_run_backward	= 2.6
+	danger_stand_run_left		= 2.1
+	danger_stand_run_right		= 2.1
+	; free
+	;; stand
+	;;; forward
+	free_stand_walk_forward		= 1.2
+	free_stand_run_forward		= 3.1
+	; panic
+	;; stand
+	;;; run
+	;;;; forward
+	panic_stand_run_forward		= 5.2
+	
+[stalker_svoboda]:stalker
+$spawn = "stalkers\stalker_svoboda"
+;---Panic variable
+panic_threshold					= 0.015
+
+;---FIRE DISPERSIONS--------------------------------------------------
+; Freedom are marksmen, and skirmishers, so good when stationary and moving
+disp_walk_stand					= 7
+disp_walk_crouch				= 3.5
+disp_run_stand					= 12
+disp_run_crouch					= 5
+disp_stand_stand				= 3
+disp_stand_crouch				= 1.5
+disp_stand_stand_zoom			= 1.25
+disp_stand_crouch_zoom			= 1.15
+
+;---MOVEMENT----------------------------------------------------------
+movement_speeds					= stalker_svoboda_movement_speeds;
+
+;---------------------------------------------------------------------
+;Army Profile
+;---------------------------------------------------------------------
+[army_sound_perceive]
+	weapon					= 2
+	item					= 0.5
+	npc						= 1
+	anomaly					= 0.3		; Not regular stalkers, so they aren't as good at listening for anomalies
+	world					= 0.35
+	
+[stalker_army]:stalker
+$spawn = "stalkers\stalker_army"
+;---SOUND-------------------------------------------------------------
+sound_perceive_section			= army_sound_perceive
+
+;---Panic variable
+panic_threshold					= 0.01
+
+;---FIRE DISPERSIONS--------------------------------------------------
+; Army is highly disicplined, adept at most combat
+disp_walk_stand					= 8
+disp_walk_crouch				= 4
+disp_run_stand					= 14
+disp_run_crouch					= 6
+disp_stand_stand				= 4
+disp_stand_crouch				= 2
+disp_stand_stand_zoom			= 1.5
+disp_stand_crouch_zoom			= 1.25
+
+
+;---------------------------------------------------------------------
+;Bandit Profile
+;---------------------------------------------------------------------
+[stalker_bandit_condition]
+;Bandits aren't really trained for combat, so they aren't as focused or effective once wounded or in combat, they are more prone to panicking
+satiety_v					= 0.00001				;скорость уменьшения сытости со временем
+radiation_v					= 0.0001				;скорость уменьшения радиации
+satiety_power_v				= 0.0005				;увеличение силы при уменьшении сытости
+satiety_health_v			= 0.1 ;0.0001				;увеличение здоровья при уменьшении сытости
+satiety_critical			= 0.0					;критическое значения сытости (в процентах от 0..1) когда здоровье начианает уменьшаться
+radiation_health_v			= 0.001					;уменьшение здоровья при воздействии радиации
+morale_v					= 0.0005				;скорость восстановления морали
+health_hit_part				= 1.0					;процент хита, уходящий на отнимание здоровья
+power_hit_part				= 0.0					;процент хита, уходящий на отнимание силы
+psy_health_v				= 0.01					; скорость восстановления psy-здоровья
+health_restore_v            = 0.0002				;скорость восстановления здоровья
+
+sleep_health				= 1.0					;коэффициенты скоростей изменения параметров во время сна
+sleep_power					= 1.0
+sleep_satiety				= 1.0
+sleep_radiation 			= 1.0
+sleep_psy_health			= 1.0
+
+;---LIMPING STATE-----------------------------------------------------
+use_limping_state			= on
+limping_threshold			= 0.6
+
+; Open wounds
+bleeding_v					= 0.03	;0.002		; Blood loss at nominal wound in a second
+wound_incarnation_v			= 0.15	;0.005		; rate of wound healing, The slope of the curve healing (what percentage of the wound will heal in the game after the second)
+min_wound_size				= 0.15	;0.02		; minimum amount of wounds, after which she considered to be healed
+
+[stalker_bandit]:stalker
+$spawn = "stalkers\stalker_bandit"
+
+;---SECTIONS----------------------------------------------------------
+condition_sect					= stalker_bandit_condition
+
+;---Panic variable
+panic_threshold					= 0.03
+
+;---OFFLINE ALIFE------------------------------------------------------------------
+;More likely to scavenge loot
+search_speed					= 0.6					; option for ALife Simulator
+going_item_detect_probability	= 0.6					; option for ALife Simulator
+search_item_detect_probability	= 1.0
+MaxHealthValue					= 80	; Not as hardy as other factions
+
+;---FIRE DISPERSIONS--------------------------------------------------
+; Bandits are a ragtag bunch, so they are not as disicplined, their power comes from massed firepower
+disp_walk_stand					= 10 ;6
+disp_walk_crouch				= 6 ;3
+disp_run_stand					= 16 ;12;8
+disp_run_crouch					= 8  ;4
+disp_stand_stand				= 5
+disp_stand_crouch				= 3
+disp_stand_stand_zoom			= 2 ;1
+disp_stand_crouch_zoom			= 1.75;1
+
+[stalker_ecolog]:stalker
+$spawn = "stalkers\stalker_ecolog"
+
+;---OFFLINE ALIFE------------------------------------------------------------------
+MaxHealthValue					= 80	; Not as hardy as other factions
+
+;---Panic variable
+panic_threshold					= 0.03
+
+;---FIRE DISPERSIONS--------------------------------------------------
+;Ecologists aren't really fighters as such
+disp_walk_stand					= 10 ;6
+disp_walk_crouch				= 5 ;3
+disp_run_stand					= 18 ;12;8
+disp_run_crouch					= 8  ;4
+disp_stand_stand				= 5
+disp_stand_crouch				= 3
+disp_stand_stand_zoom			= 2 ;1
+disp_stand_crouch_zoom			= 1.75;1
+
+;---CRITICAL WOUND------------------------------------------------------------------
+critical_wound_threshold		= 0.7		; more likely to suffer from a critical wound

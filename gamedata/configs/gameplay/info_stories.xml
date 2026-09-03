@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+	<!-- test infoportion -->
+	<info_portion id="test_story"></info_portion>
+	
+	<!-- stalker stories -->
+	<info_portion id="stalker_novice_1"></info_portion>
+	<info_portion id="stalker_novice_2"></info_portion>
+	
+	<info_portion id="stalker_stalker_1"></info_portion>
+	<info_portion id="stalker_stalker_2"></info_portion>
+	
+	<info_portion id="stalker_veteran_1"></info_portion>
+	<info_portion id="stalker_veteran_2"></info_portion>
+	
+	<!-- monolith stories -->
+	<info_portion id="monolith_novice_1"></info_portion>
+	
+	<info_portion id="monolith_stalker_1"></info_portion>
+	<info_portion id="monolith_stalker_2"></info_portion>
+	
+	<info_portion id="monolith_veteran_1"></info_portion>
+	
+	<!-- bandit stories -->
+	<info_portion id="bandit_novice_1"></info_portion>
+	
+	<info_portion id="bandit_stalker_1"></info_portion>
+	
+	<info_portion id="bandit_veteran_1"></info_portion>
+	
+	<!-- army stories -->
+	<info_portion id="army_novice_1"></info_portion>
+	
+	<info_portion id="army_stalker_1"></info_portion>
+	
+	<info_portion id="army_veteran_1"></info_portion>
+	
+	<!-- freedom stories -->
+	<info_portion id="freedom_novicer_1"></info_portion>
+	
+	<info_portion id="freedom_stalker_1"></info_portion>
+	<info_portion id="freedom_stalker_2"></info_portion>
+	<info_portion id="freedom_stalker_3"></info_portion>
+	
+	<info_portion id="freedom_veteran_1"></info_portion>
+	
+	<!-- duty stories -->
+	<info_portion id="dolg_novice_1"></info_portion>
+	<info_portion id="dolg_novice_2"></info_portion>
+	<info_portion id="dolg_novice_3"></info_portion>
+	
+	<info_portion id="dolg_stalker_1"></info_portion>
+	<info_portion id="dolg_stalker_2"></info_portion>
+	<info_portion id="dolg_stalker_3"></info_portion>
+	<info_portion id="dolg_stalker_4"></info_portion>
+	<info_portion id="dolg_stalker_5"></info_portion>
+	<info_portion id="dolg_stalker_6"></info_portion>
+	
+	<info_portion id="dolg_veteran_1"></info_portion>
+	<info_portion id="dolg_veteran_2"></info_portion>
+	<info_portion id="dolg_veteran_3"></info_portion>
+	
+	<info_portion id="dolg_master_1"></info_portion>
+
+</game_information_portions>

@@ -1,0 +1,11 @@
+[logic]
+active = ph_idle@sleep
+level_spot = sleep_zone
+
+[ph_idle@sleep]
+on_use = %=start_ps_sleep%
+tips = tips_sleep_zone
+on_info = {=is_surge_activated} sr_idle@wait
+
+[sr_idle@wait]
+on_info = {=is_surge_complete} ph_idle@sleep

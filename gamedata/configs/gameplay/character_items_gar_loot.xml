@@ -1,0 +1,3 @@
+gar_materials_wire = 4, prob=0.3 \n
+gar_materials_transistor = 4, prob=0.3 \n
+gar_materials_capacitor = 4, prob=0.3 \n

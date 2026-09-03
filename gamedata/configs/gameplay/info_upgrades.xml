@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+
+	<!-- fluffy22 -->
+	<info_portion id="info_up_esc_toolkit_basic"></info_portion>
+	<info_portion id="info_up_esc_toolkit_advanced"></info_portion>
+	
+	<info_portion id="info_up_mar_toolkit_advanced"></info_portion>
+	
+	<info_portion id="info_up_agr_toolkit_expert"></info_portion>
+
+	<info_portion id="info_up_gar_toolkit_basic"></info_portion>
+	<info_portion id="info_up_gar_toolkit_advanced"></info_portion>
+	<info_portion id="info_up_gar_toolkit_expert"></info_portion>
+	
+	<info_portion id="info_up_val_toolkit_advanced"></info_portion>
+	<info_portion id="info_up_val_toolkit_expert"></info_portion>
+	
+	
+	<info_portion id="info_up_val_flash_up_full_svu"></info_portion>
+	<info_portion id="info_up_val_flash_up_full_seva"></info_portion>
+	<info_portion id="info_up_val_flash_up_full_m249"></info_portion>
+	<info_portion id="info_up_val_flash_up_part_elec_stab"></info_portion>
+	<info_portion id="info_up_val_flash_up_part_servomotor"></info_portion>
+	
+	<info_portion id="info_up_esc_flash_up_full_l85"></info_portion>
+	<info_portion id="info_up_esc_flash_up_full_chaser13"></info_portion>
+	<info_portion id="info_up_esc_flash_up_part_shotgun_barrel"></info_portion>
+	
+	<info_portion id="info_up_agr_flash_up_full_svu"></info_portion>
+	<info_portion id="info_up_agr_flash_up_full_rp74"></info_portion>
+	<info_portion id="info_up_agr_flash_up_part_tunder"></info_portion>
+	<info_portion id="info_up_agr_flash_up_part_val"></info_portion>
+	
+	<info_portion id="info_up_gar_flash_up_full_seva"></info_portion>
+	<info_portion id="info_up_gar_flash_up_full_exo"></info_portion>
+	<info_portion id="info_up_gar_flash_up_full_g36"></info_portion>
+	<info_portion id="info_up_gar_flash_up_part_tunder"></info_portion>
+	<info_portion id="info_up_gar_flash_up_part_military_armor"></info_portion>
+	<info_portion id="info_up_gar_flash_up_part_shotgun_striker"></info_portion>
+	
+	<info_portion id="info_up_mar_flash_up_full_mg"></info_portion>
+	<info_portion id="info_up_mar_flash_up_part_g36"></info_portion>
+	<info_portion id="info_up_mar_flash_up_part_anomaly_armor"></info_portion>
+
+</game_information_portions>

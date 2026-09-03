@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+	<!-- test infoportion -->
+	<info_portion id="test_info"></info_portion>
+	
+	<!-- locations-->
+	<info_portion id="location_agroprom"></info_portion>
+	<info_portion id="location_darkvalley"></info_portion>
+	<info_portion id="location_escape"></info_portion>
+	<info_portion id="location_garbage"></info_portion>
+	<info_portion id="location_limansk"></info_portion>
+	<info_portion id="location_marsh"></info_portion>
+	<info_portion id="location_military"></info_portion>
+	<info_portion id="location_red_forest"></info_portion>
+	<info_portion id="location_yantar"></info_portion>
+	
+	<!-- factions-->
+	<info_portion id="faction_duty"></info_portion>
+	<info_portion id="faction_freedom"></info_portion>
+	<info_portion id="faction_bandit"></info_portion>
+	<info_portion id="faction_stalker"></info_portion>
+	<info_portion id="faction_army"></info_portion>
+	<info_portion id="faction_merc"></info_portion>
+	<info_portion id="faction_ecolog"></info_portion>
+	<info_portion id="faction_monolith"></info_portion>
+	<info_portion id="faction_csky"></info_portion>
+	<info_portion id="faction_zombie"></info_portion>
+	
+	<!-- mutants-->
+	<info_portion id="mutant_dog"></info_portion>
+	<info_portion id="mutant_boar"></info_portion>
+	<info_portion id="mutant_flesh"></info_portion>
+	<info_portion id="mutant_tushkano"></info_portion>
+	<info_portion id="mutant_cat"></info_portion>
+	<info_portion id="mutant_snork"></info_portion>
+	<info_portion id="mutant_pseudodog"></info_portion>
+	<info_portion id="mutant_bloodsucker"></info_portion>
+	<info_portion id="mutant_psy_dog"></info_portion>
+	<info_portion id="mutant_poltergiest"></info_portion>
+	<info_portion id="mutant_controller"></info_portion>
+	<info_portion id="mutant_pseudogiant"></info_portion>
+	<info_portion id="mutant_chimera"></info_portion>
+
+</game_information_portions>

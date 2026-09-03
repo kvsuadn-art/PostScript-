@@ -1,0 +1,5 @@
+bread = 1, prob=0.3 \n
+kolbasa = 2, prob=0.4 \n
+conserva = 2, prob=0.3 \n
+vodka = 1, prob=0.4 \n
+energy_drink = 1, prob=0.4 \n
