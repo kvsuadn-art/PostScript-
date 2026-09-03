@@ -1,0 +1,54 @@
+///////////////////////////////////////
+// STALKER Shaders MAX 0.7 - By Kingo64
+#ifndef SSM_Mount
+#define SSM_Mount
+//////////////////////////////////////////////////////////////////
+//Feature Enable/Disable: Comment a feature (Add the //) to disable, or uncomment (Remove the //) to enable.
+//////////////////////////////////////////////////////////////////
+
+	//#define FLOAT32
+	//#define FLOAT32_SUNSHAFTS
+	//#define JITTER_SUN_SHAFTS
+	//#define USE_MBLUR	//Broken		//Enables Motion Blur. This forces Motion Blur on like -mblur. Adjust the blur amount with "r2_mblur" in the console.
+	//#define CUSTOM_SHADOWMAP_RESOLUTION int(2048)	//Use a custom shadow size. Default is 1024 (1024x1024).
+
+//////////////////////////////
+//Motion Blur
+//////////////////////////////
+
+	#define MBLUR_SAMPLES_VAR half(12)
+	#define MBLUR_CLAMP_VAR half(0.001)
+
+//////////////////////////////
+//Forced Settings - Debug
+//////////////////////////////
+
+// #define DBG_TEST_NMAP
+// #define DBG_TEST_NMAP_SPEC
+// #define DBG_TEST_SPEC
+// #define DBG_TEST_LIGHT
+// #define DBG_TEST_LIGHT_SPEC
+
+// #define USE_GAMMA_22
+// #define USE_SJITTER
+// #define USE_SUNFILTER
+// #define USE_FETCH4
+// #define USE_MBLUR
+// #define USE_HWSMAP
+// #define USE_HWSMAP_PCF
+
+// #define USE_BRANCHING
+// #define USE_VTF
+// #define FP16_FILTER
+// #define FP16_BLEND
+
+// #define USE_SUPER_SPECULAR
+// #define USE_PARALLAX
+// #define USE_TDETAIL
+// #define USE_LM_HEMI
+// #define USE_DISTORT
+// #define USE_R2_STATIC_SUN
+// #define USE_SUNMASK
+// #define DBG_TMAPPING
+
+#endif
