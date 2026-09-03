@@ -1,0 +1,79 @@
+;First NPC
+[logic@work1]
+active = walker@enter_work1
+suitable = {=check_npc_name(esc_stalker_guard_east_bridge)} true
+meet = meet
+
+[walker@enter_work1]
+path_walk = grd_3_walk
+path_look = grd_3_look
+on_actor_in_zone = esc_space_restrictor_nasip_bridge | remark@idle
+
+[remark@idle]
+anim = guard
+target = actor
+on_info = walker@last_work1
+
+[walker@last_work1]
+path_walk = grd_3_walk
+path_look = grd_3_look
+meet = meet
+
+[meet]
+meet_state = 5| guard@meet_comander_start
+meet_state_wpn = 7| backoff@meet_weapon_wait
+victim = 10| nil| 5| actor
+victim_wpn = 10| nil| 5| actor
+use	= true
+use_wpn = false
+meet_dialog = esc_stalker_bridge_talk
+
+;Second NPC
+[logic@work2]
+active = walker@enter_work2
+suitable = {=check_npc_name(esc_stalker_guard_west_bridge)} true
+meet = meet@2
+
+[walker@enter_work2]
+path_walk = grd_2_walk
+path_look = grd_2_look
+meet = meet@2
+
+[meet@2]
+meet_state = 5| guard@meet_comander_start
+meet_state_wpn = 7| backoff@meet_weapon_wait
+victim = 10| nil| 5| actor
+victim_wpn = 10| nil| 5| actor
+use	= true
+use_wpn = false
+meet_dialog = esc_stalker_bridge_talk
+
+;Third NPC
+[logic@work3]
+active = camper@bridge_work3
+suitable = true
+
+[camper@bridge_work3]
+path_walk = snp_1_walk
+path_look = snp_1_look
+sniper = true
+
+;Fourth NPC
+[logic@work4]
+active = camper@bridge_work4
+suitable = true
+
+[camper@bridge_work4]
+path_walk = snp_1_1_walk
+path_look = snp_1_1_look
+sniper = true
+
+;Fifth NPC
+[logic@work5]
+active = camper@bridge_work5
+suitable = true
+
+[camper@bridge_work5]
+path_walk = snp_3_walk
+path_look = snp_3_look
+sniper = true

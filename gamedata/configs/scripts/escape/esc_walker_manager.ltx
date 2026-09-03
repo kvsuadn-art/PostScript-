@@ -1,0 +1,12 @@
+[logic]
+active = nil	;sr_idle@check
+
+[sr_idle@check]
+on_info = {!counter_greater(esc_walker_count:20) =distance_to_point_ge(esc_stalker_walker_spawn_1:100)} sr_idle@spawn_walker_1
+on_info2 = {!counter_greater(esc_walker_count:20) =distance_to_point_ge(esc_stalker_walker_spawn_2:100)} sr_idle@spawn_walker_2
+
+[sr_idle@spawn_walker_1]
+on_game_timer = 500 |{!counter_greater(esc_walker_count:20) =distance_to_point_ge(esc_stalker_walker_spawn_1:100)} sr_idle@check %=inc_counter(esc_walker_count) =spawn_object(sim_esc_stalker_default_walker_1:esc_stalker_walker_spawn_1)%
+
+[sr_idle@spawn_walker_2]
+on_game_timer = 500 |{!counter_greater(esc_walker_count:20) =distance_to_point_ge(esc_stalker_walker_spawn_2:100)} sr_idle@check %=inc_counter(esc_walker_count) =spawn_object(sim_esc_stalker_default_walker_1:esc_stalker_walker_spawn_2)%

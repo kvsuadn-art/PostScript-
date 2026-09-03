@@ -1,0 +1,28 @@
+[logic@work1]
+active = walker@enter_t_work1
+suitable = {=check_npc_name(sim_default_stalker_)} true
+meet = meet
+
+[walker@enter_t_work1]
+path_walk = grd_2_walk
+path_look = grd_2_look
+on_actor_in_zone = esc_space_restrictor_nasip_tonnel | remark@yes_t_work1
+
+[remark@yes_t_work1]
+anim = guard
+target = actor
+on_info = walker@last_t_work1
+
+[walker@last_t_work1]
+path_walk = grd_2_walk
+path_look = grd_2_look
+meet = meet
+
+[meet]
+meet_state = 10| guard@meet_comander_start
+meet_state_wpn = 15| backoff@meet_weapon_wait
+victim = 30| actor| 20| actor
+victim_wpn = 30| actor| 20| actor
+use	= true
+use_wpn = false
+abuse = true

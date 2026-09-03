@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_info = {!counter_greater(gar_walker_count:8) =dist_to_actor_ge(100)} sr_idle@spawn_walker
+
+[sr_idle@spawn_walker]
+on_game_timer = 2000 | sr_idle@check %=inc_counter(gar_walker_count) =spawn_object(sim_gar_stalker_default_walker_1:gar_stalker_walker_spawn)%

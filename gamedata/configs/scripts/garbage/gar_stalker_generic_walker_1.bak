@@ -1,0 +1,128 @@
+[logic]
+active = mob_home@base
+on_death = death
+on_hit = hit
+
+;roam sequence
+[mob_home@base]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 40
+on_game_timer = 500 | {=random_chance(10:4000)} walker@dig_1, {=random_chance(10:4000)} walker@dig_2, {=random_chance(10:4000)} walker@dig_3, {=random_chance(10:4000)} walker@dig_4, {=random_chance(10:4000)} walker@dig_5, {=random_chance(10:4000)} walker@dig_6
+
+;transition sequences
+[walker@shift]
+path_look = gar_walker_home
+path_walk = gar_walker_home
+;on_info = mob_home@wait
+on_game_timer = 5 | mob_home@wait
+
+[mob_home@wait]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 40
+on_game_timer = 2500 | mob_home@base
+
+;search sites
+[walker@dig_1]
+path_look = gar_dig_site_1_look
+path_walk = gar_dig_site_1_walk
+on_signal = path_end | remark@dig_1
+
+[remark@dig_1]
+;anim= search
+target = gar_dig_site_1_look, 0
+on_signal = anim_end | walker@dig_1_1
+
+[walker@dig_1_1]
+path_look = gar_dig_site_1_1_look
+path_walk = gar_dig_site_1_1_walk
+on_signal = path_end | remark@dig_1_1
+
+[remark@dig_1_1]
+;anim= search
+target = gar_dig_site_1_1_look, 0
+on_signal = anim_end | walker@shift
+
+
+[walker@dig_2]
+path_look = gar_dig_site_2_look
+path_walk = gar_dig_site_2_walk
+on_signal = path_end | remark@dig_2
+
+[remark@dig_2]
+;anim= search
+target = gar_dig_site_2_look, 0
+on_signal = anim_end | walker@dig_2_1
+
+[walker@dig_2_1]
+path_look = gar_dig_site_2_1_look
+path_walk = gar_dig_site_2_1_walk
+on_signal = path_end | remark@dig_2_1
+
+[remark@dig_2_1]
+;anim= search
+target = gar_dig_site_2_1_look, 0
+on_signal = anim_end | walker@shift
+
+
+[walker@dig_3]
+path_look = gar_dig_site_3_look
+path_walk = gar_dig_site_3_walk
+on_signal = path_end | remark@dig_3
+
+[remark@dig_3]
+;anim= search
+target = gar_dig_site_2_look, 0
+on_signal = anim_end | walker@shift
+
+
+[walker@dig_4]
+path_look = gar_dig_site_4_look
+path_walk = gar_dig_site_4_walk
+on_signal = path_end | remark@dig_4
+
+[remark@dig_4]
+;anim= search
+target = gar_dig_site_4_look, 0
+on_signal = anim_end | walker@shift
+
+
+[walker@dig_5]
+path_look = gar_dig_site_5_look
+path_walk = gar_dig_site_5_walk
+on_signal = path_end | remark@dig_5
+
+[remark@dig_5]
+;anim= search
+target = gar_dig_site_5_look, 0
+on_signal = anim_end | walker@dig_5_1
+
+[walker@dig_5_1]
+path_look = gar_dig_site_5_1_look
+path_walk = gar_dig_site_5_1_walk
+on_signal = path_end | remark@dig_5_1
+
+[remark@dig_5_1]
+;anim= search
+target = gar_dig_site_5_1_look, 0
+on_signal = anim_end | walker@shift
+
+
+[walker@dig_6]
+path_look = gar_dig_site_6_look
+path_walk = gar_dig_site_6_walk
+on_signal = path_end | remark@dig_6
+
+[remark@dig_6]
+;anim = search
+target = gar_dig_site_6_look, 0
+on_signal = anim_end | walker@shift
+
+
+;death and hit info
+[death]
+on_info = %=dec_counter(gar_walker_count)%
+
+[hit]
+on_info = {=npc_not_hit_by_actor} nil %=npc_hit_npc%

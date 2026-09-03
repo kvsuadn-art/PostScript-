@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@line_0
+
+[sr_idle@line_0]
+on_info = sr_idle@line_1 %=create_squad(agru_smart_terrain_1_duty_squad:agru_smart_terrain_1) =create_squad(agru_smart_terrain_2_duty_squad:agru_smart_terrain_1)%
+
+[sr_idle@line_1]

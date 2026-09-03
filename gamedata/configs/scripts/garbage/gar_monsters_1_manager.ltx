@@ -1,0 +1,27 @@
+[logic]
+active = nil	;sr_idle@check
+
+;[sr_idle@check]
+;on_info = sr_idle@dospawn
+
+;[sr_idle@dospawn]
+;on_game_timer = 200 |{!counter_greater(gar_monster_count:19) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@testNew %=spawn_roaming_mutants(gar_monster_walker_spawn_1:gar_smart_terrain_8_5:gar_roam_:gar_monster_count)%
+
+
+[sr_idle@check]
+on_info = {!counter_equal(gar_monster_count:20) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@spawn_monster_1
+
+[sr_idle@spawn_monster_1]
+on_game_timer = 2000 |{!counter_greater(gar_monster_count:19) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@spawn_monster_2 %=inc_counter(gar_monster_count:3) =spawn_object(gar_roam_flesh_normal:gar_monster_walker_spawn_1) =spawn_object(gar_roam_flesh_strong:gar_monster_walker_spawn_1) =spawn_object(gar_roam_flesh_normal:gar_monster_walker_spawn_1)%
+
+[sr_idle@spawn_monster_2]
+on_game_timer = 2000 |{!counter_greater(gar_monster_count:19) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@spawn_monster_3 %=inc_counter(gar_monster_count:3) =spawn_object(gar_roam_boar_normal:gar_monster_walker_spawn_1) =spawn_object(gar_roam_boar_strong:gar_monster_walker_spawn_1) =spawn_object(gar_roam_boar_normal:gar_monster_walker_spawn_1)%
+
+[sr_idle@spawn_monster_3]
+on_game_timer = 2000 |{!counter_greater(gar_monster_count:19) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@spawn_monster_4 %=inc_counter(gar_monster_count:4) =spawn_object(gar_roam_dog_normal:gar_monster_walker_spawn_1) =spawn_object(gar_roam_dog_strong:gar_monster_walker_spawn_1) =spawn_object(gar_roam_dog_normal:gar_monster_walker_spawn_1) =spawn_object(gar_roam_pseudodog_weak:gar_monster_walker_spawn_1)%
+
+[sr_idle@spawn_monster_4]
+on_game_timer = 2000 |{!counter_greater(gar_monster_count:19) =distance_to_point_ge(gar_monster_walker_spawn_1:100)} sr_idle@spawn_monster_5 %=inc_counter(gar_monster_count:2) =spawn_object(gar_roam_snork_weak:gar_monster_walker_spawn_1) =spawn_object(gar_roam_snork_weak:gar_monster_walker_spawn_1)%
+
+[sr_idle@spawn_monster_5]
+on_info = sr_idle@check

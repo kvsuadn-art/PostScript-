@@ -1,0 +1,8 @@
+[logic]
+active = nil
+
+[sr_idle@check]
+on_info = {!counter_greater(gar_bandit_count:7) =dist_to_actor_ge(100)} sr_idle@spawn_walker
+
+[sr_idle@spawn_walker]
+on_game_timer = 1000 | sr_idle@check %=inc_counter(gar_bandit_count) =spawn_object(sim_gar_bandit_default_walker_1:gar_bandit_walker_spawn)%

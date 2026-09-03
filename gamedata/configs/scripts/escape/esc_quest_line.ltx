@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@setup 
+
+[sr_idle@setup]
+on_info = sr_idle@save %=actor_wake =give_inited_task(storyline:esc_talk_wolf:stalker) =disable_level_changer(443) =disable_level_changer(444) =disable_level_changer(445) =disable_level_changer(446) =disable_level_changer(447) =start_sim +location_escape%
+
+[sr_idle@save]
+on_info = sr_idle@end %=autosave_game%
+
+[sr_idle@end]

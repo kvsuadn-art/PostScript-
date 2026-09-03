@@ -1,0 +1,82 @@
+[logic]
+active = mob_home@setup
+on_death = death
+on_hit = hit
+
+[mob_home@setup]
+path_home = esc_walker_home_north
+home_min_radius = 10
+home_max_radius = 200
+on_info = mob_home@1 %force_npc_online(true)%
+
+;******************
+;North Roam area
+;******************
+[mob_home@north1]
+path_home = esc_walker_home_north
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@night
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@north2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@north2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@north2]
+path_home = esc_walker_home_north
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@north_night2
+
+[mob_home@north_night]
+path_home = esc_stalker_walker_spawn_2
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@north1
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@north_night2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@north_night2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@north_night2]
+path_home = esc_stalker_walker_spawn_2
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@north2
+
+;******************
+;South Roam area
+;******************
+[mob_home@south1]
+path_home = esc_walker_home_south
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@night
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@south2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@south2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@south2]
+path_home = esc_walker_home_south
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@south_night2
+
+[mob_home@north_south]
+path_home = esc_stalker_walker_spawn_1
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@south1
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@south_night2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@south_night2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@south_night2]
+path_home = esc_stalker_walker_spawn_1
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@south2
+
+[death]
+on_info = %=dec_counter(esc_walker_count)%
+
+[hit]
+on_info = {=npc_not_hit_by_actor} nil %=npc_hit_npc%

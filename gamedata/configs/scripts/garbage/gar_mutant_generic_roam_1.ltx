@@ -1,0 +1,11 @@
+[logic]
+active = mob_home@1
+on_death = death
+
+[mob_home@1]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 200
+
+[death]
+on_info = %=dec_counter(gar_monster_count)%

@@ -1,0 +1,36 @@
+[logic@wolf]
+active = walker@wait
+suitable = {=check_npc_name(esc_wolf)} true
+on_death = death
+level_spot = quest_npc
+
+[walker@wait]
+path_walk = esc_wolf_way
+path_look = esc_wolf_look
+on_actor_dist_le_nvis = 16 | {-esc_wolf_call_sound} sr_idle@start_game % +esc_wolf_call_sound%
+meet = meet
+on_info = {+esc_tut_talk_done} %=enable_level_changer(443) =enable_level_changer(444) =enable_level_changer(445) =enable_level_changer(446) =enable_level_changer(447) %
+
+[sr_idle@start_game]
+on_info = remark@hello
+
+[remark@hello]
+anim = hello_wpn
+target = actor
+on_actor_dist_le = 3 | walker@ready
+on_actor_dist_ge_nvis = 8 | walker@wait
+
+[walker@ready]
+path_walk = esc_wolf_way
+path_look = esc_wolf_look
+
+[death]
+on_info = %+esc_wolf_dead%
+
+[meet]
+meet_state = 15| wait@esc_wolf_call | 5| ward@nil
+victim = 15| actor
+victim_wpn = 15| actor
+use        = true
+use_wpn        = false
+abuse = true

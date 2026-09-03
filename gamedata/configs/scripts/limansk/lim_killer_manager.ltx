@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_game_timer = 1000 | sr_idle@spawn_walker
+
+[sr_idle@spawn_walker]
+on_info = {!counter_greater(lim_killer_walker_count:4) =dist_to_actor_ge(100)} sr_idle@check %=inc_counter(lim_killer_walker_count) =spawn_object(lim_merc_trooper:lim_killer_spawn)%

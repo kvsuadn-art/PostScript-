@@ -1,0 +1,46 @@
+[logic]
+active = mob_home@setup
+on_death = death
+on_hit = hit
+
+[mob_home@setup]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 200
+on_info = mob_home@1 %force_npc_online(true)%
+
+[mob_home@1]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@night
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@2]
+path_home = gar_walker_home
+home_min_radius = 10
+home_max_radius = 200
+on_info = {!is_day} mob_home@night2
+
+[mob_home@night]
+path_home = gar_bandit_walker_spawn
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@night
+on_info2 = {=hit_by_actor =actor_is_enemy} mob_home@night2
+on_info3 = {=npc_hit_by_actor =actor_is_enemy} mob_home@night2
+on_info4 = {=actor_is_enemy} nil %=actor_neutral%
+
+[mob_home@night2]
+path_home = gar_bandit_walker_spawn
+home_min_radius = 5
+home_max_radius = 20
+on_info = {=is_day} mob_home@2
+
+[death]
+on_info = %=dec_counter(gar_bandit_count)%
+
+[hit]
+on_info = {=npc_not_hit_by_actor} nil %=npc_hit_npc%

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+;on_info = {-esc_tut_talk_done} sr_idle@end_section %=autosave_game =give_inited_task(storyline:esc_main_tutorial_talk:stalker) =disable_level_changer(443) =disable_level_changer(444) =disable_level_changer(445) =disable_level_changer(446) =disable_level_changer(447) =start_sim%
+
+;[sr_idle@end_section]
+;on_info = {+esc_tut_talk_done} sr_idle@final %=enable_level_changer(443) =enable_level_changer(444) =enable_level_changer(445) =enable_level_changer(446) =enable_level_changer(447)%
+
+;[sr_idle@final]

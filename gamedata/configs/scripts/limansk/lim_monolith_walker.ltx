@@ -1,0 +1,15 @@
+[logic]
+active = mob_home
+on_death = death
+on_combat = combat
+
+[mob_home]
+path_home = lim_monolith_home
+home_min_radius = 10
+home_max_radius = 40
+
+[death]
+on_info = %=dec_counter(lim_monolith_walker_count)%
+
+[combat]
+combat_type = monolith

@@ -1,0 +1,30 @@
+[logic]
+active = walker@2
+on_use = use
+level_spot = quest_npc
+
+[task_manager]
+reward = dolg
+
+[walker@2]
+path_walk = agr_duty_commander_walk
+path_look = agr_duty_commander_look
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+meet = meet
+invulnerable = true
+
+[meet]
+meet_state 		= 5|ward@nil|10|wait@nil
+meet_state_wpn 		= 5|ward@nil|10|wait@nil
+victim 			= 5|actor
+victim_wpn 		= 10|actor
+use			= true
+use_wpn			= true
+trade_enable 		= false
+sound_start 		= agr_duty_leader_meet
+sound_stop 		= agr_duty_leader_meet_bye
+quest_npc = true
+
+[use]
+on_info = {+agr_actor_inside_11} %+agr_take_reward_complete%

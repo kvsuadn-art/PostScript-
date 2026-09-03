@@ -1,0 +1,19 @@
+[logic]
+active = mob_home@1
+on_death = death
+on_hit = hit
+
+[mob_home@1]
+path_home = esc_walker_home_north
+home_min_radius = 10
+home_max_radius = 250
+on_info = {!is_day} mob_home@night
+
+[mob_home@night]
+path_home = esc_stalker_walker_spawn_1
+home_min_radius = 5
+home_max_radius = 30
+on_info = {=is_day} mob_home@1
+
+[death]
+on_info = %=dec_counter(esc_walker_count)

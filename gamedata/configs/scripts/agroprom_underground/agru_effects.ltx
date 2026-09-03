@@ -1,0 +1,29 @@
+[logic]
+active = sr_idle@loop_start
+
+[sr_idle@loop_start]
+on_info = {=actor_in_zone(agru_danger_zone) =actor_on_level(agroprom_underground)} =play_sound(agru_sound_truba)% sr_idle@line_1
+
+[sr_idle@line_1]
+on_game_timer = 20 | =play_sound(agru_sound_truba)% sr_idle@line_2
+
+[sr_idle@line_2]
+on_game_timer = 30 | =play_sound(agru_sound_truba)% sr_idle@line_3
+
+[sr_idle@line_3]
+on_game_timer = 70 | =play_sound(agru_sound_truba)% sr_idle@line_4
+
+[sr_idle@line_4]
+on_game_timer = 60 | =play_sound(agru_sound_truba)% sr_idle@line_5
+
+[sr_idle@line_5]
+on_game_timer = 30 | =play_sound(agru_sound_truba)% sr_idle@line_6
+
+[sr_idle@line_6]
+on_game_timer = 70 | =play_sound(agru_sound_truba)% sr_idle@line_7
+
+[sr_idle@line_7]
+on_game_timer = 40 | =play_sound(agru_sound_truba)% sr_idle@line_8
+
+[sr_idle@line_8]
+on_game_timer = 60 | =play_sound(agru_sound_truba)% sr_idle@loop_start

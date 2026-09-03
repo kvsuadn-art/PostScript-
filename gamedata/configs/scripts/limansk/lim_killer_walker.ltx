@@ -1,0 +1,11 @@
+[logic]
+active = mob_home
+on_death = death
+
+[mob_home]
+path_home = lim_killer_home
+home_min_radius = 10
+home_max_radius = 40
+
+[death]
+on_info = %=dec_counter(lim_killer_walker_count)%
