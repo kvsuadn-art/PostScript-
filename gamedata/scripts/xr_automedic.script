@@ -1,0 +1,93 @@
+
+class "evaluator_need_automedic" (property_evaluator)
+
+function evaluator_need_automedic:__init(storage, name) super (nil, name)
+	self.st = storage
+end
+
+function evaluator_need_automedic:evaluate()
+	local npc = self.object
+	if npc:character_community() == "zombied" then
+		return false
+	end
+	if npc:critically_wounded() == true then
+		return false
+	end
+	if npc.health < 0.6 then
+		if (npc:object("medkit") ~= nil) or  (npc:object("medkit_army") ~= nil) or (npc:object("medkit_scientic") ~= nil)then
+			return true
+		end
+	end
+	return false
+end
+
+function health_critical(npc)
+	if npc.health < 0.4 then
+		if (npc:object("medkit") ~= nil) or  (npc:object("medkit_army") ~= nil) or (npc:object("medkit_scientic") ~= nil)then
+			return true
+		end
+	end
+	return false
+end
+
+----------------------------------------------------------------------------------------------------------------------
+class "action_automedic" (action_base)
+
+function action_automedic:__init(npc_name, action_name, storage) super (nil, action_name)
+	self.st = storage
+end
+
+function action_automedic:initialize()
+
+end
+
+function action_automedic:execute ()
+	local npc = self.object
+	error_log("Health critical!! "..npc.health)
+	--alife():create("medkit_script", npc:position(), npc:level_vertex_id(), npc:game_vertex_id(), npc:id())
+	--npc:eat(npc:object("medkit_script"))
+	npc.health = 0.5
+	error_log("Health now "..npc.health)
+	if npc:object("medkit") ~= nil then
+		npc:eat(npc:object("medkit"))
+	elseif npc:object("medkit_army") ~= nil then
+		npc:eat(npc:object("medkit_army"))
+	elseif npc:object("medkit_scientic") ~= nil then
+		npc:eat(npc:object("medkit_scientic"))
+	end
+	action_base.execute(self)
+end
+
+function action_automedic:finalize ()
+	action_base.finalize(self)
+end
+
+----------------------------------------------------------------------------------------------------------------------
+function add_to_binder(npc, ini, scheme, section, storage)
+	local operators    = {} --operators id (actions)
+	local properties  = {} --properties id (evaluator)
+
+	local manager = npc:motivation_action_manager()
+	
+	properties["autoheal"]	= 30000
+	operators["autoheal"]	= 30000
+	
+	manager:add_evaluator(properties["autoheal"], this.evaluator_need_automedic(storage, "autoheal_evaluator"))
+	
+	local new_action = this.action_automedic(npc:name(), "autoheal_activity", storage)
+	new_action:add_precondition(world_property(stalker_ids.property_alive,	true))
+	new_action:add_precondition(world_property(stalker_ids.property_enemy,	false))
+	new_action:add_precondition(world_property(properties["autoheal"],true))
+	new_action:add_effect(world_property(properties["autoheal"],false))
+	manager:add_action(operators["autoheal"], new_action)
+
+	new_action = manager:action(xr_actions_id.alife)
+	new_action:add_precondition(world_property(properties["autoheal"], false))
+end
+
+
+function set_scheme(npc, ini, scheme, section)
+	local st = xr_logic.assign_storage_and_bind(npc, ini, scheme, section)
+end
+
+
